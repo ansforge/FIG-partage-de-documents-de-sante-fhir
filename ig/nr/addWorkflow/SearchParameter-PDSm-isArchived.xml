@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="PDSm-isArchived"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>PDSm_isArchived</h2><p>Parameter <code>isArchived</code>:<code>token</code></p><div><p>Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère derecherche l'élément isARchived qui permet distinguer les lots de soumission et les fiches archivés des actives.</p>
+</div><table class="grid"><tr><td>Resources</td><td><a href="http://hl7.org/fhir/R4/documentreference.html">DocumentReference</a>, <a href="http://hl7.org/fhir/R4/list.html">List</a></td></tr><tr><td>Expression</td><td><code>(extension('http://esante.gouv.fr/cisis/fhir/StructureDefinition/PDSm_isArchived').value as Boolean)</code></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>
+  </text>
+  <url value="https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSm-isArchived"/>
+  <version value="3.0.0"/>
+  <name value="PDSm_isArchived"/>
+  <status value="active"/>
+  <date value="2021-07-30"/>
+  <publisher value="ANS"/>
+  <contact>
+    <name value="ANS"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <description value="Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère derecherche l'élément isARchived qui permet distinguer les lots de soumission et les fiches archivés des actives."/>
+  <code value="isArchived"/>
+  <base value="DocumentReference"/>
+  <base value="List"/>
+  <type value="token"/>
+  <expression value="(extension('http://esante.gouv.fr/cisis/fhir/StructureDefinition/PDSm_isArchived').value as Boolean)"/>
+</SearchParameter>

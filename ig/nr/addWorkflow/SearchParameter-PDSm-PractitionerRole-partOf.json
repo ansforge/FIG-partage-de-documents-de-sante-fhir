@@ -1,0 +1,26 @@
+{
+  "resourceType" : "SearchParameter",
+  "id" : "PDSm-PractitionerRole-partOf",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>PDSm_partOf</h2><p>Parameter <code>partOf</code>:<code>reference</code></p><div><p>Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'extension partof qui permet de faire référence à l'exercice professionnel depuis la situation d'exercice</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/practitionerrole.html\">PractitionerRole</a></td></tr><tr><td>Expression</td><td><code>(extension('https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-partOf').value as Reference)</code></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>"
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSm-PractitionerRole-partOf",
+  "version" : "3.0.0",
+  "name" : "PDSm_partOf",
+  "status" : "active",
+  "date" : "2021-07-30",
+  "publisher" : "ANS",
+  "contact" : [{
+    "name" : "ANS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'extension partof qui permet de faire référence à l'exercice professionnel depuis la situation d'exercice",
+  "code" : "partOf",
+  "base" : ["PractitionerRole"],
+  "type" : "reference",
+  "expression" : "(extension('https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-partOf').value as Reference)"
+}

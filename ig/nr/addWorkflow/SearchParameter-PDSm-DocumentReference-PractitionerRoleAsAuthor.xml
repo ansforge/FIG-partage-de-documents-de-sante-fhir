@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="PDSm-DocumentReference-PractitionerRoleAsAuthor"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>PDSm_DocumentReference_PractitionerRoleAsAuthor</h2><p>Parameter <code>author</code>:<code>reference</code></p><div><p>Paramètre de recherche chaîné créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'élément author:PractitionerRole.practitioner:Practitioner.identifier, author:PractitionerRole.practitioner:Practitioner.given et author:PractitionerRole.practitioner:Practitioner.family</p>
+</div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R4/documentreference.html">DocumentReference</a></td></tr><tr><td>Expression</td><td><code>DocumentReference.author</code></td></tr><tr><td>Processing Mode</td><td>Normal</td></tr><tr><td>Target Resources</td><td><a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a></td></tr><tr><td>Multiples</td><td>The parameter can repeat (and) and can have repeating values (or)</td></tr><tr><td>Chains</td><td>Allowed: partOf.practitioner.identifier, partOf.practitioner.given, partOf.practitioner.family, partOf.givenEx, partOf.familyEx</td></tr></table></div>
+  </text>
+  <url value="https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSm-DocumentReference-PractitionerRoleAsAuthor"/>
+  <version value="3.0.0"/>
+  <name value="PDSm_DocumentReference_PractitionerRoleAsAuthor"/>
+  <derivedFrom value="http://hl7.org/fhir/SearchParameter/DocumentReference-author"/>
+  <status value="active"/>
+  <date value="2021-10-21T14:14:41.3948746+00:00"/>
+  <publisher value="ANS"/>
+  <contact>
+    <name value="ANS"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <description value="Paramètre de recherche chaîné créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'élément author:PractitionerRole.practitioner:Practitioner.identifier, author:PractitionerRole.practitioner:Practitioner.given et author:PractitionerRole.practitioner:Practitioner.family"/>
+  <code value="author"/>
+  <base value="DocumentReference"/>
+  <type value="reference"/>
+  <expression value="DocumentReference.author"/>
+  <xpathUsage value="normal"/>
+  <target value="PractitionerRole"/>
+  <multipleOr value="true"/>
+  <multipleAnd value="true"/>
+  <chain value="partOf.practitioner.identifier"/>
+  <chain value="partOf.practitioner.given"/>
+  <chain value="partOf.practitioner.family"/>
+  <chain value="partOf.givenEx"/>
+  <chain value="partOf.familyEx"/>
+</SearchParameter>
