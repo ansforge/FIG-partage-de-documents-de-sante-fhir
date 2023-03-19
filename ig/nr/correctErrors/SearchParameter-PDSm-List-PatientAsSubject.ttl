@@ -1,0 +1,43 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSm-List-PatientAsSubject> a fhir:SearchParameter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PDSm-List-PatientAsSubject"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>PDSm_List_PatientAsSubject</h2><p>Parameter <code>patient</code>:<code>reference</code></p><div><p>Paramètre de recherche chaîné créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'élément subject:Patient.identifier</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/list.html\">List</a></td></tr><tr><td>Expression</td><td><code>List.subject.where(resolve() is Patient)</code></td></tr><tr><td>Multiples</td><td>The parameter can repeat (and) and can have repeating values (or)</td></tr><tr><td>Modifiers</td><td>Allowed: missing, type, identifier</td></tr><tr><td>Chains</td><td>Allowed: identifier</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSm-List-PatientAsSubject"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "3.0.0"] ; # 
+  fhir:name [ fhir:v "PDSm_List_PatientAsSubject"] ; # 
+  fhir:derivedFrom [
+     fhir:v "http://hl7.org/fhir/SearchParameter/clinical-patient"^^xsd:anyURI ;
+     fhir:link <http://hl7.org/fhir/SearchParameter/clinical-patient>
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2021-07-30"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "ANS"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "ANS" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://esante.gouv.fr" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Paramètre de recherche chaîné créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'élément subject:Patient.identifier"] ; # 
+  fhir:code [ fhir:v "patient"] ; # 
+  fhir:base ( [ fhir:v "List"] ) ; # 
+  fhir:type [ fhir:v "reference"] ; # 
+  fhir:expression [ fhir:v "List.subject.where(resolve() is Patient)"] ; # 
+  fhir:multipleOr [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:multipleAnd [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:modifier ( [ fhir:v "missing"] [ fhir:v "type"] [ fhir:v "identifier"] ) ; # 
+  fhir:chain ( [ fhir:v "identifier"] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,6 @@
+{
+  "version" : "3.0.0",
+  "fhirVersion" : ["4.0.1"],
+  "date" : "20230319161521",
+  "name" : "ans.fhir.fr.pdsm"
+}
