@@ -3,7 +3,7 @@
 
 err = 1, warn = 108, info = 0
 IG Publisher Version: 1.2.52
-Generated Sun Mar 19 15:55:20 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.pdsm#3.0.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/pdsm)
+Generated Sun Mar 19 16:06:49 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.pdsm#3.0.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/pdsm)
  Build Errors : 329 / 5 / 0
  /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/Bundle-a9c10f8a-882d-4000-a280-7150e0aeb478 : 0 / 0 / 1
  /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/CapabilityStatement-PDSm-ConsommateurDeDocuments : 0 / 0 / 1
