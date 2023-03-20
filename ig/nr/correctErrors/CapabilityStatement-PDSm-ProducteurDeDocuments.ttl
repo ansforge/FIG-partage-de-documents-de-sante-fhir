@@ -10,11 +10,11 @@
   fhir:id [ fhir:v "PDSm-ProducteurDeDocuments"] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>PDSm-ProducteurDeDocuments</h2><div><p>Il s’agit d’un système d’information ou d’un composant de système d’information qui envoie au gestionnaire de partage de documents une  demande d’ajout de nouveaux documents et/ou des nouvelles versions de documents. Ce système fournit également les modifications des  métadonnées du document.</p>\n</div><table><tr><td>Mode</td><td>CLIENT</td></tr><tr><td>Description</td><td><div><p>Ajout d’un lot de documents et Demande de mise à jour des métadonnées de la fiche</p>\n</div></td></tr><tr><td>Transaction</td><td>y</td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title=\"GET a resource (read interaction)\">Read</b></th><th><b title=\"GET all set of resources of the type (search interaction)\">Search</b></th><th><b title=\"PUT a new resource version (update interaction)\">Update</b></th><th><b title=\"PATCH a new resource version (patch interaction)\">Patch</b></th><th><b title=\"POST a new resource (create interaction)\">Create</b></th></tr><tr><td>DocumentReference</td><td><a href=\"http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/PDSm_ComprehensiveDocumentReference\">http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/PDSm_ComprehensiveDocumentReference</a></td><td></td><td></td><td></td><td>y</td><td></td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>PDSmProducteurDeDocuments</h2><div><p>Il s’agit d’un système d’information ou d’un composant de système d’information qui envoie au gestionnaire de partage de documents une  demande d’ajout de nouveaux documents et/ou des nouvelles versions de documents. Ce système fournit également les modifications des  métadonnées du document.</p>\n</div><table><tr><td>Mode</td><td>CLIENT</td></tr><tr><td>Description</td><td><div><p>Ajout d’un lot de documents et Demande de mise à jour des métadonnées de la fiche</p>\n</div></td></tr><tr><td>Transaction</td><td>y</td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title=\"GET a resource (read interaction)\">Read</b></th><th><b title=\"GET all set of resources of the type (search interaction)\">Search</b></th><th><b title=\"PUT a new resource version (update interaction)\">Update</b></th><th><b title=\"PATCH a new resource version (patch interaction)\">Patch</b></th><th><b title=\"POST a new resource (create interaction)\">Create</b></th></tr><tr><td>DocumentReference</td><td><a href=\"https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference\">https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference</a></td><td></td><td></td><td></td><td>y</td><td></td></tr></table></div>"
   ] ; # 
   fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/CapabilityStatement/PDSm-ProducteurDeDocuments"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "3.0.0"] ; # 
-  fhir:name [ fhir:v "PDSm-ProducteurDeDocuments"] ; # 
+  fhir:name [ fhir:v "PDSmProducteurDeDocuments"] ; # 
   fhir:title [ fhir:v "CI-SIS Partage-De-Documents-De-Sante - ProducteurDeDocuments"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
@@ -31,6 +31,10 @@
   fhir:kind [ fhir:v "requirements"] ; # 
   fhir:fhirVersion [ fhir:v "4.0.0"] ; # 
   fhir:format ( [ fhir:v "xml"] [ fhir:v "json"] ) ; # 
+  fhir:implementationGuide ( [
+     fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/ImplementationGuide/ans.fhir.fr.pdsm"^^xsd:anyURI ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/ImplementationGuide/ans.fhir.fr.pdsm>
+  ] ) ; # 
   fhir:rest ( [
      fhir:mode [ fhir:v "client" ] ;
      fhir:documentation [ fhir:v "Ajout d’un lot de documents et Demande de mise à jour des métadonnées de la fiche" ] ;
@@ -41,8 +45,8 @@
      fhir:resource ( [
        fhir:type [ fhir:v "DocumentReference" ] ;
        fhir:profile [
-         fhir:v "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/PDSm_ComprehensiveDocumentReference"^^xsd:anyURI ;
-         fhir:link <http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/PDSm_ComprehensiveDocumentReference>
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"^^xsd:anyURI ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference>
        ] ;
        fhir:interaction ( [
          fhir:code [ fhir:v "patch" ]
@@ -51,7 +55,7 @@
      ] ) ;
      fhir:interaction ( [
        fhir:code [ fhir:v "transaction" ] ;
-       fhir:documentation [ fhir:v "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/PDSm_ComprehensiveProvideDocumentBundle" ]
+       fhir:documentation [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-provide-document-bundle" ]
      ] )
   ] ) . # 
 

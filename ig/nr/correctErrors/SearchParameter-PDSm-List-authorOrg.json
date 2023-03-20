@@ -3,13 +3,13 @@
   "id" : "PDSm-List-authorOrg",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>PDSm-authorOrg</h2><p>Parameter <code>authorOrg</code>:<code>reference</code></p><div><p>Recherche sur l'auteur d'une organisation</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/list.html\">List</a></td></tr><tr><td>Expression</td><td><code>(extension('http://profiles.ihe.net/ITI/MHD/StructureDefinition/ihe-authorOrg').value as Reference)</code></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>PDSmAuthorOrg</h2><p>Parameter <code>authorOrg</code>:<code>reference</code></p><div><p>Recherche sur l'auteur d'une organisation</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/list.html\">List</a></td></tr><tr><td>Expression</td><td><code>(extension('http://profiles.ihe.net/ITI/MHD/StructureDefinition/ihe-authorOrg').value as Reference)</code></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>"
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSm-List-authorOrg",
   "version" : "3.0.0",
-  "name" : "PDSm-authorOrg",
+  "name" : "PDSmAuthorOrg",
   "status" : "active",
-  "date" : "2023-03-20T09:08:06+00:00",
+  "date" : "2023-03-20T10:34:11+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

@@ -1,27 +1,27 @@
 ﻿PDSm : Validation Results
 =========================================
 
-err = 1, warn = 113, info = 0
+err = 1, warn = 98, info = 0
 IG Publisher Version: 1.2.53
-Generated Mon Mar 20 09:09:11 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.pdsm#3.0.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/pdsm)
+Generated Mon Mar 20 10:35:08 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.pdsm#3.0.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/pdsm)
  Build Errors : 329 / 5 / 0
  /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/Bundle-a9c10f8a-882d-4000-a280-7150e0aeb478 : 0 / 0 / 1
- /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/CapabilityStatement-PDSm-ConsommateurDeDocuments : 0 / 1 / 1
- /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/CapabilityStatement-PDSm-GestionnaireDePartageDeDocuments : 0 / 1 / 1
- /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/CapabilityStatement-PDSm-ProducteurDeDocuments : 0 / 1 / 1
+ /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/CapabilityStatement-PDSm-ConsommateurDeDocuments : 0 / 0 / 1
+ /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/CapabilityStatement-PDSm-GestionnaireDePartageDeDocuments : 0 / 0 / 1
+ /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/CapabilityStatement-PDSm-ProducteurDeDocuments : 0 / 0 / 1
  /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.pdsm : 0 / 0 / 1
- /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/SearchParameter-PDSm-DocumentReference-PatientAsSubject : 0 / 1 / 1
- /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/SearchParameter-PDSm-DocumentReference-PractitionerRoleAsAuthor : 0 / 1 / 1
- /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/SearchParameter-PDSm-DocumentReference-period-end : 0 / 2 / 1
- /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/SearchParameter-PDSm-DocumentReference-period-start : 0 / 2 / 1
- /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/SearchParameter-PDSm-List-PatientAsSource : 0 / 1 / 1
- /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/SearchParameter-PDSm-List-PatientAsSubject : 0 / 1 / 1
- /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/SearchParameter-PDSm-List-PractitionerRoleAsSource : 0 / 1 / 1
- /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/SearchParameter-PDSm-List-authorOrg : 0 / 1 / 1
- /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/SearchParameter-PDSm-PractitionerRole-family-ex : 0 / 1 / 1
- /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/SearchParameter-PDSm-PractitionerRole-given-ex : 0 / 1 / 1
- /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/SearchParameter-PDSm-PractitionerRole-partOf : 0 / 1 / 1
- /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/SearchParameter-PDSm-isArchived : 0 / 1 / 1
+ /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/SearchParameter-PDSm-DocumentReference-PatientAsSubject : 0 / 0 / 1
+ /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/SearchParameter-PDSm-DocumentReference-PractitionerRoleAsAuthor : 0 / 0 / 1
+ /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/SearchParameter-PDSm-DocumentReference-period-end : 0 / 1 / 1
+ /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/SearchParameter-PDSm-DocumentReference-period-start : 0 / 1 / 1
+ /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/SearchParameter-PDSm-List-PatientAsSource : 0 / 0 / 1
+ /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/SearchParameter-PDSm-List-PatientAsSubject : 0 / 0 / 1
+ /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/SearchParameter-PDSm-List-PractitionerRoleAsSource : 0 / 0 / 1
+ /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/SearchParameter-PDSm-List-authorOrg : 0 / 0 / 1
+ /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/SearchParameter-PDSm-PractitionerRole-family-ex : 0 / 0 / 1
+ /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/SearchParameter-PDSm-PractitionerRole-given-ex : 0 / 0 / 1
+ /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/SearchParameter-PDSm-PractitionerRole-partOf : 0 / 0 / 1
+ /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/SearchParameter-PDSm-isArchived : 0 / 0 / 1
  /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/StructureDefinition-PDSmIsArchived : 0 / 1 / 1
  /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/StructureDefinition-PDSmintendedrecipient : 0 / 1 / 1
  /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/StructureDefinition-pdsm-comprehensive-document-reference : 0 / 41 / 1
@@ -369,38 +369,23 @@ WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-ta
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/Bundle-a9c10f8a-882d-4000-a280-7150e0aeb478.json ==
 == fsh-generated/resources/CapabilityStatement-PDSm-ConsommateurDeDocuments.json ==
-WARNING: CapabilityStatement/PDSm-ConsommateurDeDocuments: CapabilityStatement: Rule cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated/resources/CapabilityStatement-PDSm-GestionnaireDePartageDeDocuments.json ==
-WARNING: CapabilityStatement/PDSm-GestionnaireDePartageDeDocuments: CapabilityStatement: Rule cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated/resources/CapabilityStatement-PDSm-ProducteurDeDocuments.json ==
-WARNING: CapabilityStatement/PDSm-ProducteurDeDocuments: CapabilityStatement: Rule cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated/resources/ImplementationGuide-ans.fhir.fr.pdsm.json ==
 == fsh-generated/resources/SearchParameter-PDSm-DocumentReference-PatientAsSubject.json ==
-WARNING: SearchParameter/PDSm-DocumentReference-PatientAsSubject: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated/resources/SearchParameter-PDSm-DocumentReference-PractitionerRoleAsAuthor.json ==
-WARNING: SearchParameter/PDSm-DocumentReference-PractitionerRoleAsAuthor: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated/resources/SearchParameter-PDSm-DocumentReference-period-end.json ==
-WARNING: SearchParameter/PDSm-DocumentReference-period-end: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 WARNING: SearchParameter/PDSm-DocumentReference-period-end: SearchParameter: The expression 'DocumentReference.context.period.end' is not compatible with the expression 'DocumentReference.context.period' in the derivedFrom SearchParameter http://hl7.org/fhir/SearchParameter/DocumentReference-period, and this likely indicates that the derivation relationship is not valid
 == fsh-generated/resources/SearchParameter-PDSm-DocumentReference-period-start.json ==
-WARNING: SearchParameter/PDSm-DocumentReference-period-start: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 WARNING: SearchParameter/PDSm-DocumentReference-period-start: SearchParameter: The expression 'DocumentReference.context.period.start' is not compatible with the expression 'DocumentReference.context.period' in the derivedFrom SearchParameter http://hl7.org/fhir/SearchParameter/DocumentReference-period, and this likely indicates that the derivation relationship is not valid
 == fsh-generated/resources/SearchParameter-PDSm-List-PatientAsSource.json ==
-WARNING: SearchParameter/PDSm-List-PatientAsSource: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated/resources/SearchParameter-PDSm-List-PatientAsSubject.json ==
-WARNING: SearchParameter/PDSm-List-PatientAsSubject: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated/resources/SearchParameter-PDSm-List-PractitionerRoleAsSource.json ==
-WARNING: SearchParameter/PDSm-List-PractitionerRoleAsSource: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated/resources/SearchParameter-PDSm-List-authorOrg.json ==
-WARNING: SearchParameter/PDSm-List-authorOrg: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated/resources/SearchParameter-PDSm-PractitionerRole-family-ex.json ==
-WARNING: SearchParameter/PDSm-PractitionerRole-family-ex: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated/resources/SearchParameter-PDSm-PractitionerRole-given-ex.json ==
-WARNING: SearchParameter/PDSm-PractitionerRole-given-ex: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated/resources/SearchParameter-PDSm-PractitionerRole-partOf.json ==
-WARNING: SearchParameter/PDSm-PractitionerRole-partOf: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated/resources/SearchParameter-PDSm-isArchived.json ==
-WARNING: SearchParameter/PDSm-isArchived: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated/resources/StructureDefinition-PDSmIsArchived.json ==
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/PDSmIsArchived'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-PDSmintendedrecipient.json ==

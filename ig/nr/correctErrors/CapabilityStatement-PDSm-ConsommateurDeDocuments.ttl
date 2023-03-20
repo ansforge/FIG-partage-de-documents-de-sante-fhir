@@ -10,11 +10,11 @@
   fhir:id [ fhir:v "PDSm-ConsommateurDeDocuments"] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>PDSm-ConsommateurDeDocuments</h2><div><p>Il s’agit d’un système d’information ou d’un composant de système d’information qui recherche des documents selon certains critères, et qui peut consulter les documents qui l’intéressent.</p>\n</div><table><tr><td>Mode</td><td>CLIENT</td></tr><tr><td>Description</td><td><div><p>Recherche de documents de santé et consultation de documents d'intérêt</p>\n</div></td></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title=\"GET a resource (read interaction)\">Read</b></th><th><b title=\"GET all set of resources of the type (search interaction)\">Search</b></th><th><b title=\"PUT a new resource version (update interaction)\">Update</b></th><th><b title=\"POST a new resource (create interaction)\">Create</b></th></tr><tr><td>List</td><td><a href=\"http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/PDSm_SubmissionSetComprehensive\">http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/PDSm_SubmissionSetComprehensive</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>DocumentReference</td><td><a href=\"http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/PDSm_ComprehensiveDocumentReference\">http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/PDSm_ComprehensiveDocumentReference</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Binary</td><td><a href=\"http://hl7.org/fhir/StructureDefinition/Binary\">http://hl7.org/fhir/StructureDefinition/Binary</a></td><td>y</td><td></td><td></td><td></td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>PDSmConsommateurDeDocuments</h2><div><p>Il s’agit d’un système d’information ou d’un composant de système d’information qui recherche des documents selon certains critères, et qui peut consulter les documents qui l’intéressent.</p>\n</div><table><tr><td>Mode</td><td>CLIENT</td></tr><tr><td>Description</td><td><div><p>Recherche de documents de santé et consultation de documents d'intérêt</p>\n</div></td></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title=\"GET a resource (read interaction)\">Read</b></th><th><b title=\"GET all set of resources of the type (search interaction)\">Search</b></th><th><b title=\"PUT a new resource version (update interaction)\">Update</b></th><th><b title=\"POST a new resource (create interaction)\">Create</b></th></tr><tr><td>List</td><td><a href=\"https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-submissionset-comprehensive\">https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-submissionset-comprehensive</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>DocumentReference</td><td><a href=\"https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference\">https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Binary</td><td><a href=\"http://hl7.org/fhir/StructureDefinition/Binary\">http://hl7.org/fhir/StructureDefinition/Binary</a></td><td>y</td><td></td><td></td><td></td></tr></table></div>"
   ] ; # 
   fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/CapabilityStatement/PDSm-ConsommateurDeDocuments"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "3.0.0"] ; # 
-  fhir:name [ fhir:v "PDSm-ConsommateurDeDocuments"] ; # 
+  fhir:name [ fhir:v "PDSmConsommateurDeDocuments"] ; # 
   fhir:title [ fhir:v "CI-SIS Partage-De-Documents-De-Sante - ConsommateurDeDocuments"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
@@ -32,8 +32,8 @@
   fhir:fhirVersion [ fhir:v "4.0.0"] ; # 
   fhir:format ( [ fhir:v "xml"] [ fhir:v "json"] ) ; # 
   fhir:implementationGuide ( [
-     fhir:v "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuides/CI-SIS.PartageDeDocumentsDeSante"^^xsd:anyURI ;
-     fhir:link <http://esante.gouv.fr/ci-sis/fhir/ImplementationGuides/CI-SIS.PartageDeDocumentsDeSante>
+     fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/ImplementationGuide/ans.fhir.fr.pdsm"^^xsd:anyURI ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/ImplementationGuide/ans.fhir.fr.pdsm>
   ] ) ; # 
   fhir:rest ( [
      fhir:mode [ fhir:v "client" ] ;
@@ -45,8 +45,8 @@
      fhir:resource ( [
        fhir:type [ fhir:v "List" ] ;
        fhir:profile [
-         fhir:v "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/PDSm_SubmissionSetComprehensive"^^xsd:anyURI ;
-         fhir:link <http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/PDSm_SubmissionSetComprehensive>
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-submissionset-comprehensive"^^xsd:anyURI ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-submissionset-comprehensive>
        ] ;
        fhir:interaction ( [
          fhir:code [ fhir:v "read" ]
@@ -88,8 +88,8 @@
        ] [
          fhir:name [ fhir:v "PDSm_isArchived" ] ;
          fhir:definition [
-           fhir:v "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/PDSm_isArchived"^^xsd:anyURI ;
-           fhir:link <http://esante.gouv.fr/ci-sis/fhir/SearchParameter/PDSm_isArchived>
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmIsArchived"^^xsd:anyURI ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmIsArchived>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "permet distinguer les lots de soumission et les fiches archivés des actifs." ]
@@ -120,8 +120,8 @@
        ] [
          fhir:name [ fhir:v "PDSm_authorOrg" ] ;
          fhir:definition [
-           fhir:v "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/PDSm_authorOrg"^^xsd:anyURI ;
-           fhir:link <http://esante.gouv.fr/ci-sis/fhir/SearchParameter/PDSm_authorOrg>
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmAuthorOrg"^^xsd:anyURI ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmAuthorOrg>
          ] ;
          fhir:type [ fhir:v "reference" ] ;
          fhir:documentation [ fhir:v "Représente l’auteur du lot de soumission, quand l'auteur est de type organization." ]
@@ -136,24 +136,24 @@
        ] [
          fhir:name [ fhir:v "PDSm_List_PatientAsSource" ] ;
          fhir:definition [
-           fhir:v "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/PDSm_List_PatientAsSource"^^xsd:anyURI ;
-           fhir:link <http://esante.gouv.fr/ci-sis/fhir/SearchParameter/PDSm_List_PatientAsSource>
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmListPatientAsSource"^^xsd:anyURI ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmListPatientAsSource>
          ] ;
          fhir:type [ fhir:v "reference" ] ;
          fhir:documentation [ fhir:v "Recherche sur les éléments source:Patient.given et source:Patient.family." ]
        ] [
          fhir:name [ fhir:v "PDSm_List_PatientAsSubject" ] ;
          fhir:definition [
-           fhir:v "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/PDSm_List_PatientAsSubject"^^xsd:anyURI ;
-           fhir:link <http://esante.gouv.fr/ci-sis/fhir/SearchParameter/PDSm_List_PatientAsSubject>
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmListPatientAsSubject"^^xsd:anyURI ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmListPatientAsSubject>
          ] ;
          fhir:type [ fhir:v "reference" ] ;
          fhir:documentation [ fhir:v "Recherche sur l'élément subject:Patient.identifier." ]
        ] [
          fhir:name [ fhir:v "PDSm_List_PractitionerRoleAsSource" ] ;
          fhir:definition [
-           fhir:v "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/PDSm_List_PractitionerRoleAsSource"^^xsd:anyURI ;
-           fhir:link <http://esante.gouv.fr/ci-sis/fhir/SearchParameter/PDSm_List_PractitionerRoleAsSource>
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmListPractitionerRoleAsSource"^^xsd:anyURI ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmListPractitionerRoleAsSource>
          ] ;
          fhir:type [ fhir:v "reference" ] ;
          fhir:documentation [ fhir:v "Recherche sur les éléments source:PractitionerRole.practitioner:Practitioner.given et source:PractitionerRole.practitioner:Practitioner.family." ]
@@ -161,8 +161,8 @@
      ] [
        fhir:type [ fhir:v "DocumentReference" ] ;
        fhir:profile [
-         fhir:v "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/PDSm_ComprehensiveDocumentReference"^^xsd:anyURI ;
-         fhir:link <http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/PDSm_ComprehensiveDocumentReference>
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"^^xsd:anyURI ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference>
        ] ;
        fhir:interaction ( [
          fhir:code [ fhir:v "read" ]
@@ -220,24 +220,24 @@
        ] [
          fhir:name [ fhir:v "PDSm_isArchived" ] ;
          fhir:definition [
-           fhir:v "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/PDSm_isArchived"^^xsd:anyURI ;
-           fhir:link <http://esante.gouv.fr/ci-sis/fhir/SearchParameter/PDSm_isArchived>
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmIsArchived"^^xsd:anyURI ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmIsArchived>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "permet distinguer les lots de soumission et les fiches archivés des actifs." ]
        ] [
          fhir:name [ fhir:v "PDSm_DocumentReference_period-start" ] ;
          fhir:definition [
-           fhir:v "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/PDSm_DocumentReference_period-start"^^xsd:anyURI ;
-           fhir:link <http://esante.gouv.fr/ci-sis/fhir/SearchParameter/PDSm_DocumentReference_period-start>
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmDocumentReferencePeriodStart"^^xsd:anyURI ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmDocumentReferencePeriodStart>
          ] ;
          fhir:type [ fhir:v "date" ] ;
          fhir:documentation [ fhir:v "Représente la date de début de l’acte de référence." ]
        ] [
          fhir:name [ fhir:v "PDSm_DocumentReference_period-end" ] ;
          fhir:definition [
-           fhir:v "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/PDSm_DocumentReference_period-end"^^xsd:anyURI ;
-           fhir:link <http://esante.gouv.fr/ci-sis/fhir/SearchParameter/PDSm_DocumentReference_period-end>
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmDocumentReferencePeriodEnd"^^xsd:anyURI ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmDocumentReferencePeriodEnd>
          ] ;
          fhir:type [ fhir:v "date" ] ;
          fhir:documentation [ fhir:v "Représente la date de fin de l’acte de référence." ]
@@ -284,32 +284,32 @@
        ] [
          fhir:name [ fhir:v "PDSm_DocumentReference_PatientAsSubject" ] ;
          fhir:definition [
-           fhir:v "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/PDSm_DocumentReference_PatientAsSubject"^^xsd:anyURI ;
-           fhir:link <http://esante.gouv.fr/ci-sis/fhir/SearchParameter/PDSm_DocumentReference_PatientAsSubject>
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmDocumentReferencePatientAsSubject"^^xsd:anyURI ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmDocumentReferencePatientAsSubject>
          ] ;
          fhir:type [ fhir:v "reference" ] ;
          fhir:documentation [ fhir:v "Représente l'identifiant du patient qui est le sujet du document." ]
        ] [
          fhir:name [ fhir:v "PDSm_DocumentReference_DeviceAsAuthor" ] ;
          fhir:definition [
-           fhir:v "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/PDSm_DocumentReference_DeviceAsAuthor"^^xsd:anyURI ;
-           fhir:link <http://esante.gouv.fr/ci-sis/fhir/SearchParameter/PDSm_DocumentReference_DeviceAsAuthor>
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmDocumentReferenceDeviceAsAuthor"^^xsd:anyURI ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmDocumentReferenceDeviceAsAuthor>
          ] ;
          fhir:type [ fhir:v "reference" ] ;
          fhir:documentation [ fhir:v "Représente l'identifiant du dispositif médical qui est l'auteur du document." ]
        ] [
          fhir:name [ fhir:v "PDSm_DocumentReference_PatientAsAuthor" ] ;
          fhir:definition [
-           fhir:v "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/PDSm_DocumentReference_PatientAsAuthor"^^xsd:anyURI ;
-           fhir:link <http://esante.gouv.fr/ci-sis/fhir/SearchParameter/PDSm_DocumentReference_PatientAsAuthor>
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmDocumentReferencePatientAsAuthor"^^xsd:anyURI ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmDocumentReferencePatientAsAuthor>
          ] ;
          fhir:type [ fhir:v "reference" ] ;
          fhir:documentation [ fhir:v "Représente l'identifiant, le nom, le prénom du patient qui est l'auteur du document." ]
        ] [
          fhir:name [ fhir:v "PDSm_DocumentReference_PractitionerRoleAsAuthor" ] ;
          fhir:definition [
-           fhir:v "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/PDSm_DocumentReference_PractitionerRoleAsAuthor"^^xsd:anyURI ;
-           fhir:link <http://esante.gouv.fr/ci-sis/fhir/SearchParameter/PDSm_DocumentReference_PractitionerRoleAsAuthor>
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmDocumentReferencePractitionerRoleAsAuthor"^^xsd:anyURI ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmDocumentReferencePractitionerRoleAsAuthor>
          ] ;
          fhir:type [ fhir:v "reference" ] ;
          fhir:documentation [ fhir:v "Représente l'identifiant, le nom, le prénom du praticien dans sa situation d'exercice qui est l'auteur du document." ]

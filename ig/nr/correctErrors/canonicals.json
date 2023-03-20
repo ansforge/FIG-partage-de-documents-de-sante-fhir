@@ -4,21 +4,21 @@
     "type" : "CapabilityStatement",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/CapabilityStatement/PDSm-ConsommateurDeDocuments",
     "version" : "3.0.0",
-    "name" : "PDSm-ConsommateurDeDocuments"
+    "name" : "PDSmConsommateurDeDocuments"
   },
   {
     "id" : "PDSm-GestionnaireDePartageDeDocuments",
     "type" : "CapabilityStatement",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/CapabilityStatement/PDSm-GestionnaireDePartageDeDocuments",
     "version" : "3.0.0",
-    "name" : "PDSm-GestionnaireDePartageDeDocuments"
+    "name" : "PDSmGestionnaireDePartageDeDocuments"
   },
   {
     "id" : "PDSm-ProducteurDeDocuments",
     "type" : "CapabilityStatement",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/CapabilityStatement/PDSm-ProducteurDeDocuments",
     "version" : "3.0.0",
-    "name" : "PDSm-ProducteurDeDocuments"
+    "name" : "PDSmProducteurDeDocuments"
   },
   {
     "id" : "ans.fhir.fr.pdsm",
@@ -32,84 +32,84 @@
     "type" : "SearchParameter",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSm-DocumentReference-PatientAsSubject",
     "version" : "3.0.0",
-    "name" : "PDSm-DocumentReference-PatientAsSubject"
+    "name" : "PDSmDocumentReferencePatientAsSubject"
   },
   {
     "id" : "PDSm-DocumentReference-PractitionerRoleAsAuthor",
     "type" : "SearchParameter",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSm-DocumentReference-PractitionerRoleAsAuthor",
     "version" : "3.0.0",
-    "name" : "PDSm-DocumentReference-PractitionerRoleAsAuthor"
+    "name" : "PDSmDocumentReferencePractitionerRoleAsAuthor"
   },
   {
     "id" : "PDSm-DocumentReference-period-end",
     "type" : "SearchParameter",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSm-DocumentReference-period-end",
     "version" : "3.0.0",
-    "name" : "PDSm-DocumentReference-period-end"
+    "name" : "PDSmDocumentReferencePeriodEnd"
   },
   {
     "id" : "PDSm-DocumentReference-period-start",
     "type" : "SearchParameter",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSm-DocumentReference-period-start",
     "version" : "3.0.0",
-    "name" : "PDSm-DocumentReference-period-start"
+    "name" : "PDSmDocumentReferencePeriodStart"
   },
   {
     "id" : "PDSm-List-PatientAsSource",
     "type" : "SearchParameter",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSm-List-PatientAsSource",
     "version" : "3.0.0",
-    "name" : "PDSm-List-PatientAsSource"
+    "name" : "PDSmListPatientAsSource"
   },
   {
     "id" : "PDSm-List-PatientAsSubject",
     "type" : "SearchParameter",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSm-List-PatientAsSubject",
     "version" : "3.0.0",
-    "name" : "PDSm-List-PatientAsSubject"
+    "name" : "PDSmListPatientAsSubject"
   },
   {
     "id" : "PDSm-List-PractitionerRoleAsSource",
     "type" : "SearchParameter",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSm-List-PractitionerRoleAsSource",
     "version" : "3.0.0",
-    "name" : "PDSm-List-PractitionerRoleAsSource"
+    "name" : "PDSmListPractitionerRoleAsSource"
   },
   {
     "id" : "PDSm-List-authorOrg",
     "type" : "SearchParameter",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSm-List-authorOrg",
     "version" : "3.0.0",
-    "name" : "PDSm-authorOrg"
+    "name" : "PDSmAuthorOrg"
   },
   {
     "id" : "PDSm-PractitionerRole-family-ex",
     "type" : "SearchParameter",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSm-PractitionerRole-family-ex",
     "version" : "3.0.0",
-    "name" : "PractitionerRole-family-ex"
+    "name" : "PractitionerRoleFamilyEx"
   },
   {
     "id" : "PDSm-PractitionerRole-given-ex",
     "type" : "SearchParameter",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSm-PractitionerRole-given-ex",
     "version" : "3.0.0",
-    "name" : "PractitionerRole-given-ex"
+    "name" : "PractitionerRoleGivenEx"
   },
   {
     "id" : "PDSm-PractitionerRole-partOf",
     "type" : "SearchParameter",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSm-PractitionerRole-partOf",
     "version" : "3.0.0",
-    "name" : "PDSm-partOf"
+    "name" : "PDSmPartOf"
   },
   {
     "id" : "PDSm-isArchived",
     "type" : "SearchParameter",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSm-isArchived",
     "version" : "3.0.0",
-    "name" : "PDSm-isArchived"
+    "name" : "PDSmIsArchived"
   },
   {
     "id" : "PDSmIsArchived",
