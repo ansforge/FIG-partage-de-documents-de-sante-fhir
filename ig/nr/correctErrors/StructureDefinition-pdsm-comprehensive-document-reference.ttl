@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "PDSm_ComprehensiveDocumentReference"] ; # 
   fhir:title [ fhir:v "PDSm Comprehensive DocumentReference"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-03-20T10:38:51+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-03-20T10:43:12+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -336,7 +336,7 @@
          fhir:key [ fhir:v "constr-cdr-maj" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Elément requis lorsque le flux envoyé correspond à une mise à jour des données d’une fiche" ] ;
-         fhir:xpath [ fhir:v "f:meta/f:versionId" ] ;
+         fhir:expression [ fhir:v "f:meta/f:versionId" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference>
@@ -1127,7 +1127,7 @@
          fhir:key [ fhir:v "constr-bind-type" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :\n\r\n TRE_A05-TypeDocComplementaireCISIS, OID : 1.2.250.1.213.1.1.4.12\n\r\n TRE_A04-TypeDocument-LOINC, OID : 2.16.840.1.113883.6.1\n\r\n TRE_A12-NomenclatureASTM, OID : ASTM\n\r\nLes valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J66-TypeCode-DMP).\r\nEn l’absence de spécifications complémentaires, le jeu de valeurs JDV_J07-XdsTypeCode-CISIS peut être utilisé." ] ;
-         fhir:xpath [ fhir:v "f:type" ] ;
+         fhir:expression [ fhir:v "f:type" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference>
@@ -1203,7 +1203,7 @@
          fhir:key [ fhir:v "constr-bind-category" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :\n-	TRE_A03-ClasseDocument-CISIS, OID : 1.2.250.1.213.1.1.4.1\n-	TRE_A10-NomenclatureURN, OID : URN\nLes valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J57-ClassCode-DMP).\nEn l’absence de spécifications complémentaires, le jeu de valeurs JDV_J06-XdsClassCode-CISIS peut être utilisé." ] ;
-         fhir:xpath [ fhir:v "f:category" ] ;
+         fhir:expression [ fhir:v "f:category" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference>
@@ -1276,7 +1276,7 @@
          fhir:key [ fhir:v "constr-subj-ref" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "La ressource référencée doit être présente sous l’élément DocumentReference.contained.\nRéférence contrainte au profil FrPatient\nCette même ressource est référencée depuis context.sourcePatientInfo." ] ;
-         fhir:xpath [ fhir:v "f:subject" ] ;
+         fhir:expression [ fhir:v "f:subject" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference>
@@ -1401,7 +1401,7 @@
          fhir:key [ fhir:v "constr-bind-author" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Cardinalité contrainte à [1..*]\nReference contrainte à :\n- PractitionerRole : Dans le cas d’un auteur professionnel, c’est le profil PractitionerRoleOrganizationalRoleRASSreprésentant la situation d’exercice qui doit être référencé. Lui-même fera le lien avec le profil PractitionerRoleProfessionalRoleRASS représentant l’exercice professionnel et avec FrPractitioner.\n- Device,\n- Patient contrainte au profil FrPatient." ] ;
-         fhir:xpath [ fhir:v "f:author" ] ;
+         fhir:expression [ fhir:v "f:author" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference>
@@ -1473,7 +1473,7 @@
          fhir:key [ fhir:v "constr-bind-authenticator" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Cardinalité contrainte à [1..1]\nRéférence contrainte au profil \n- PractitionerRole : Dans le cas d’un authentificateur professionnel, c’est le profil PractitionerRoleOrganizationalRoleRASS représentant la situation d’exercice qui doit être référencé. Lui-même fera le lien avec le profil PractitionerRoleProfessionalRoleRASS représentant l’exercice professionnel et avec FrPractitioner.\n-  Organization contrainte au profil FrOrganization." ] ;
-         fhir:xpath [ fhir:v "f:authenticator" ] ;
+         fhir:expression [ fhir:v "f:authenticator" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference>
@@ -1586,7 +1586,7 @@
          fhir:key [ fhir:v "constr-cdr-rempl" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Elément requis lorsque le flux envoyé correspond au remplacement d'un document" ] ;
-         fhir:xpath [ fhir:v "f:relatesTo" ] ;
+         fhir:expression [ fhir:v "f:relatesTo" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference>
@@ -1595,7 +1595,7 @@
          fhir:key [ fhir:v "constr-bind-relatesTo" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Cardinalité contrainte à [1..1] lorsque le flux envoyé correspond au remplacement d’un document." ] ;
-         fhir:xpath [ fhir:v "f:relatesTo" ] ;
+         fhir:expression [ fhir:v "f:relatesTo" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference>
@@ -1823,7 +1823,7 @@
          fhir:key [ fhir:v "constr-bind-relatesToTarget" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Référence contrainte au profil PDSm_ComprehensiveDocumentReference" ] ;
-         fhir:xpath [ fhir:v "f:relatesTo/f:target" ] ;
+         fhir:expression [ fhir:v "f:relatesTo/f:target" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference>
@@ -1925,7 +1925,7 @@
          fhir:key [ fhir:v "constr-bind-securityLabel" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Les codes pour cet élément doivent provenir du ValueSet spécifié par le standard. Lorsqu’aucun code ne correspond au concept recherché, un code provenant de la terminologie de référence TRE_A07-StatusVisibiliteDocument, OID : 1.2.250.1.213.1.1.4.13 peut être utilisé." ] ;
-         fhir:xpath [ fhir:v "f:securityLabel" ] ;
+         fhir:expression [ fhir:v "f:securityLabel" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference>
@@ -2440,7 +2440,7 @@
          fhir:key [ fhir:v "constr-bind-attachmenturl" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Dans le cas de l’ajout de document, l’url fait référence à la ressource Binary (« Binary/[id] »).\nDans le cas de la recherche, il s’agit de l’URL permettant d’accéder au document" ] ;
-         fhir:xpath [ fhir:v "f:content/f:attachment/f:url" ] ;
+         fhir:expression [ fhir:v "f:content/f:attachment/f:url" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference>
@@ -2652,7 +2652,7 @@
          fhir:key [ fhir:v "constr-bind-format" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :\n- TRE_A06-FormatCodeComplementaire, OID : 1.2.250.1.213.1.1.4.2.282\n- TRE_A11-IheFormatCode, OID : 1.3.6.1.4.1.19376.1.2.3\n- TRE_A09-DICOMuidRegistry, OID : 1.2.840.10008.2.6.1\n- TRE_A10-NomenclatureURN, OID : URN\nLes valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J60-FormatCode-DMP).\nEn l’absence de spécifications complémentaires, le jeu de valeurs JDV_J10-XdsFormatCode-CISIS peut être utilisé." ] ;
-         fhir:xpath [ fhir:v "f:content/f:format" ] ;
+         fhir:expression [ fhir:v "f:content/f:format" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference>
@@ -2919,7 +2919,7 @@
          fhir:key [ fhir:v "constr-bind-context-event" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Nomenclatures utilisées :\n- CCAM pour les actes médicaux (OID=\"1.2.250.1.213.2.5\");\n- CIM-10 pour les diagnostics de pathologie (OID=\"2.16.840.1.113883.6.3\").\n- TRE_A00-ProducteurDocNonPS pour les documents d'expression personnelle du patient." ] ;
-         fhir:xpath [ fhir:v "f:context/f:event" ] ;
+         fhir:expression [ fhir:v "f:context/f:event" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference>
@@ -3191,7 +3191,7 @@
          fhir:key [ fhir:v "constr-bind-ProducteurDoc" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :\n-	TRE_A00-ProducteurDocNonPS, OID : 1.2.250.1.213.1.1.4.6 (lorsque l’auteur du document est un patient ou un équipement sous sa responsabilité)\n-	TRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 (lorsque l’auteur du document est un professionnel ou un équipement sous sa responsabilité)\nLes valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J61-HealthcareFacilityTypeCode-DMP).\nEn l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-XdsHealthcareFacilityTypeCode-CISIS peut être utilisé." ] ;
-         fhir:xpath [ fhir:v "f:context/f:facilityType or f:context/f:practiceSetting" ] ;
+         fhir:expression [ fhir:v "f:context/f:facilityType or f:context/f:practiceSetting" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference>
@@ -3258,7 +3258,7 @@
          fhir:key [ fhir:v "constr-bind-ProducteurDoc" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :\n-	TRE_A00-ProducteurDocNonPS, OID : 1.2.250.1.213.1.1.4.6 (lorsque l’auteur du document est un patient ou un équipement sous sa responsabilité)\n-	TRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 (lorsque l’auteur du document est un professionnel ou un équipement sous sa responsabilité)\nLes valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J61-HealthcareFacilityTypeCode-DMP).\nEn l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-XdsHealthcareFacilityTypeCode-CISIS peut être utilisé." ] ;
-         fhir:xpath [ fhir:v "f:context/f:facilityType or f:context/f:practiceSetting" ] ;
+         fhir:expression [ fhir:v "f:context/f:facilityType or f:context/f:practiceSetting" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference>
@@ -3641,7 +3641,7 @@
          fhir:key [ fhir:v "constr-cdr-maj" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Elément requis lorsque le flux envoyé correspond à une mise à jour des données d’une fiche" ] ;
-         fhir:xpath [ fhir:v "f:meta/f:versionId" ] ;
+         fhir:expression [ fhir:v "f:meta/f:versionId" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference>
@@ -3748,7 +3748,7 @@
          fhir:key [ fhir:v "constr-bind-type" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :\n\r\n TRE_A05-TypeDocComplementaireCISIS, OID : 1.2.250.1.213.1.1.4.12\n\r\n TRE_A04-TypeDocument-LOINC, OID : 2.16.840.1.113883.6.1\n\r\n TRE_A12-NomenclatureASTM, OID : ASTM\n\r\nLes valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J66-TypeCode-DMP).\r\nEn l’absence de spécifications complémentaires, le jeu de valeurs JDV_J07-XdsTypeCode-CISIS peut être utilisé." ] ;
-         fhir:xpath [ fhir:v "f:type" ] ;
+         fhir:expression [ fhir:v "f:type" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference>
@@ -3774,7 +3774,7 @@
          fhir:key [ fhir:v "constr-bind-category" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :\n-	TRE_A03-ClasseDocument-CISIS, OID : 1.2.250.1.213.1.1.4.1\n-	TRE_A10-NomenclatureURN, OID : URN\nLes valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J57-ClassCode-DMP).\nEn l’absence de spécifications complémentaires, le jeu de valeurs JDV_J06-XdsClassCode-CISIS peut être utilisé." ] ;
-         fhir:xpath [ fhir:v "f:category" ] ;
+         fhir:expression [ fhir:v "f:category" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference>
@@ -3808,7 +3808,7 @@
          fhir:key [ fhir:v "constr-subj-ref" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "La ressource référencée doit être présente sous l’élément DocumentReference.contained.\nRéférence contrainte au profil FrPatient\nCette même ressource est référencée depuis context.sourcePatientInfo." ] ;
-         fhir:xpath [ fhir:v "f:subject" ] ;
+         fhir:expression [ fhir:v "f:subject" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference>
@@ -3845,7 +3845,7 @@
          fhir:key [ fhir:v "constr-bind-author" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Cardinalité contrainte à [1..*]\nReference contrainte à :\n- PractitionerRole : Dans le cas d’un auteur professionnel, c’est le profil PractitionerRoleOrganizationalRoleRASSreprésentant la situation d’exercice qui doit être référencé. Lui-même fera le lien avec le profil PractitionerRoleProfessionalRoleRASS représentant l’exercice professionnel et avec FrPractitioner.\n- Device,\n- Patient contrainte au profil FrPatient." ] ;
-         fhir:xpath [ fhir:v "f:author" ] ;
+         fhir:expression [ fhir:v "f:author" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference>
@@ -3875,7 +3875,7 @@
          fhir:key [ fhir:v "constr-bind-authenticator" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Cardinalité contrainte à [1..1]\nRéférence contrainte au profil \n- PractitionerRole : Dans le cas d’un authentificateur professionnel, c’est le profil PractitionerRoleOrganizationalRoleRASS représentant la situation d’exercice qui doit être référencé. Lui-même fera le lien avec le profil PractitionerRoleProfessionalRoleRASS représentant l’exercice professionnel et avec FrPractitioner.\n-  Organization contrainte au profil FrOrganization." ] ;
-         fhir:xpath [ fhir:v "f:authenticator" ] ;
+         fhir:expression [ fhir:v "f:authenticator" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference>
@@ -3895,7 +3895,7 @@
          fhir:key [ fhir:v "constr-cdr-rempl" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Elément requis lorsque le flux envoyé correspond au remplacement d'un document" ] ;
-         fhir:xpath [ fhir:v "f:relatesTo" ] ;
+         fhir:expression [ fhir:v "f:relatesTo" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference>
@@ -3904,7 +3904,7 @@
          fhir:key [ fhir:v "constr-bind-relatesTo" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Cardinalité contrainte à [1..1] lorsque le flux envoyé correspond au remplacement d’un document." ] ;
-         fhir:xpath [ fhir:v "f:relatesTo" ] ;
+         fhir:expression [ fhir:v "f:relatesTo" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference>
@@ -3926,7 +3926,7 @@
          fhir:key [ fhir:v "constr-bind-relatesToTarget" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Référence contrainte au profil PDSm_ComprehensiveDocumentReference" ] ;
-         fhir:xpath [ fhir:v "f:relatesTo/f:target" ] ;
+         fhir:expression [ fhir:v "f:relatesTo/f:target" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference>
@@ -3953,7 +3953,7 @@
          fhir:key [ fhir:v "constr-bind-securityLabel" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Les codes pour cet élément doivent provenir du ValueSet spécifié par le standard. Lorsqu’aucun code ne correspond au concept recherché, un code provenant de la terminologie de référence TRE_A07-StatusVisibiliteDocument, OID : 1.2.250.1.213.1.1.4.13 peut être utilisé." ] ;
-         fhir:xpath [ fhir:v "f:securityLabel" ] ;
+         fhir:expression [ fhir:v "f:securityLabel" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference>
@@ -3984,7 +3984,7 @@
          fhir:key [ fhir:v "constr-bind-attachmenturl" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Dans le cas de l’ajout de document, l’url fait référence à la ressource Binary (« Binary/[id] »).\nDans le cas de la recherche, il s’agit de l’URL permettant d’accéder au document" ] ;
-         fhir:xpath [ fhir:v "f:content/f:attachment/f:url" ] ;
+         fhir:expression [ fhir:v "f:content/f:attachment/f:url" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference>
@@ -4028,7 +4028,7 @@
          fhir:key [ fhir:v "constr-bind-format" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :\n- TRE_A06-FormatCodeComplementaire, OID : 1.2.250.1.213.1.1.4.2.282\n- TRE_A11-IheFormatCode, OID : 1.3.6.1.4.1.19376.1.2.3\n- TRE_A09-DICOMuidRegistry, OID : 1.2.840.10008.2.6.1\n- TRE_A10-NomenclatureURN, OID : URN\nLes valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J60-FormatCode-DMP).\nEn l’absence de spécifications complémentaires, le jeu de valeurs JDV_J10-XdsFormatCode-CISIS peut être utilisé." ] ;
-         fhir:xpath [ fhir:v "f:content/f:format" ] ;
+         fhir:expression [ fhir:v "f:content/f:format" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference>
@@ -4059,7 +4059,7 @@
          fhir:key [ fhir:v "constr-bind-context-event" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Nomenclatures utilisées :\n- CCAM pour les actes médicaux (OID=\"1.2.250.1.213.2.5\");\n- CIM-10 pour les diagnostics de pathologie (OID=\"2.16.840.1.113883.6.3\").\n- TRE_A00-ProducteurDocNonPS pour les documents d'expression personnelle du patient." ] ;
-         fhir:xpath [ fhir:v "f:context/f:event" ] ;
+         fhir:expression [ fhir:v "f:context/f:event" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference>
@@ -4096,7 +4096,7 @@
          fhir:key [ fhir:v "constr-bind-ProducteurDoc" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :\n-	TRE_A00-ProducteurDocNonPS, OID : 1.2.250.1.213.1.1.4.6 (lorsque l’auteur du document est un patient ou un équipement sous sa responsabilité)\n-	TRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 (lorsque l’auteur du document est un professionnel ou un équipement sous sa responsabilité)\nLes valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J61-HealthcareFacilityTypeCode-DMP).\nEn l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-XdsHealthcareFacilityTypeCode-CISIS peut être utilisé." ] ;
-         fhir:xpath [ fhir:v "f:context/f:facilityType or f:context/f:practiceSetting" ] ;
+         fhir:expression [ fhir:v "f:context/f:facilityType or f:context/f:practiceSetting" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference>
@@ -4122,7 +4122,7 @@
          fhir:key [ fhir:v "constr-bind-ProducteurDoc" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :\n-	TRE_A00-ProducteurDocNonPS, OID : 1.2.250.1.213.1.1.4.6 (lorsque l’auteur du document est un patient ou un équipement sous sa responsabilité)\n-	TRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 (lorsque l’auteur du document est un professionnel ou un équipement sous sa responsabilité)\nLes valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J61-HealthcareFacilityTypeCode-DMP).\nEn l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-XdsHealthcareFacilityTypeCode-CISIS peut être utilisé." ] ;
-         fhir:xpath [ fhir:v "f:context/f:facilityType or f:context/f:practiceSetting" ] ;
+         fhir:expression [ fhir:v "f:context/f:facilityType or f:context/f:practiceSetting" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference>

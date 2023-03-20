@@ -1,9 +1,9 @@
 ﻿PDSm : Validation Results
 =========================================
 
-err = 1, warn = 96, info = 0
+err = 1, warn = 50, info = 0
 IG Publisher Version: 1.2.53
-Generated Mon Mar 20 10:39:42 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.pdsm#3.0.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/pdsm)
+Generated Mon Mar 20 10:44:07 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.pdsm#3.0.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/pdsm)
  Build Errors : 329 / 5 / 0
  /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/Bundle-a9c10f8a-882d-4000-a280-7150e0aeb478 : 0 / 0 / 1
  /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/CapabilityStatement-PDSm-ConsommateurDeDocuments : 0 / 0 / 1
@@ -23,13 +23,13 @@ Generated Mon Mar 20 10:39:42 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.pdsm#
  /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/SearchParameter-PDSm-PractitionerRole-partOf : 0 / 0 / 1
  /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/SearchParameter-PDSm-isArchived : 0 / 0 / 1
  /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/StructureDefinition-PDSmintendedrecipient : 0 / 1 / 1
- /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/StructureDefinition-pdsm-comprehensive-document-reference : 0 / 41 / 1
+ /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/StructureDefinition-pdsm-comprehensive-document-reference : 0 / 11 / 1
  /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/StructureDefinition-pdsm-comprehensive-provide-document-bundle : 0 / 1 / 1
  /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/StructureDefinition-pdsm-find-documentreferences-comprehensive-response : 0 / 1 / 1
  /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/StructureDefinition-pdsm-find-lists-response : 0 / 1 / 1
  /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/StructureDefinition-pdsm-folder-comprehensive : 0 / 1 / 1
  /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/StructureDefinition-pdsm-is-archived : 0 / 1 / 1
- /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/StructureDefinition-pdsm-simplified-publish : 0 / 31 / 1
+ /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/StructureDefinition-pdsm-simplified-publish : 0 / 15 / 1
  /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/StructureDefinition-pdsm-submissionset-comprehensive : 0 / 13 / 1
 </table>
 == n/a ==
@@ -387,36 +387,6 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 == fsh-generated/resources/StructureDefinition-PDSmintendedrecipient.json ==
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/PDSmintendedrecipient'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-pdsm-comprehensive-document-reference.json ==
-WARNING: StructureDefinition/pdsm-comprehensive-document-reference: StructureDefinition.snapshot.element[5].constraint[1]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
-WARNING: StructureDefinition/pdsm-comprehensive-document-reference: StructureDefinition.snapshot.element[23].constraint[1]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
-WARNING: StructureDefinition/pdsm-comprehensive-document-reference: StructureDefinition.snapshot.element[24].constraint[1]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
-WARNING: StructureDefinition/pdsm-comprehensive-document-reference: StructureDefinition.snapshot.element[25].constraint[1]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
-WARNING: StructureDefinition/pdsm-comprehensive-document-reference: StructureDefinition.snapshot.element[27].constraint[1]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
-WARNING: StructureDefinition/pdsm-comprehensive-document-reference: StructureDefinition.snapshot.element[28].constraint[1]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
-WARNING: StructureDefinition/pdsm-comprehensive-document-reference: StructureDefinition.snapshot.element[30].constraint[1]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
-WARNING: StructureDefinition/pdsm-comprehensive-document-reference: StructureDefinition.snapshot.element[30].constraint[2]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
-WARNING: StructureDefinition/pdsm-comprehensive-document-reference: StructureDefinition.snapshot.element[35].constraint[1]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
-WARNING: StructureDefinition/pdsm-comprehensive-document-reference: StructureDefinition.snapshot.element[37].constraint[1]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
-WARNING: StructureDefinition/pdsm-comprehensive-document-reference: StructureDefinition.snapshot.element[48].constraint[1]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
-WARNING: StructureDefinition/pdsm-comprehensive-document-reference: StructureDefinition.snapshot.element[53].constraint[1]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
-WARNING: StructureDefinition/pdsm-comprehensive-document-reference: StructureDefinition.snapshot.element[59].constraint[1]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
-WARNING: StructureDefinition/pdsm-comprehensive-document-reference: StructureDefinition.snapshot.element[65].constraint[1]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
-WARNING: StructureDefinition/pdsm-comprehensive-document-reference: StructureDefinition.snapshot.element[66].constraint[1]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
-WARNING: StructureDefinition/pdsm-comprehensive-document-reference: StructureDefinition.differential.element[1].constraint[0]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
-WARNING: StructureDefinition/pdsm-comprehensive-document-reference: StructureDefinition.differential.element[8].constraint[0]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
-WARNING: StructureDefinition/pdsm-comprehensive-document-reference: StructureDefinition.differential.element[9].constraint[0]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
-WARNING: StructureDefinition/pdsm-comprehensive-document-reference: StructureDefinition.differential.element[10].constraint[0]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
-WARNING: StructureDefinition/pdsm-comprehensive-document-reference: StructureDefinition.differential.element[12].constraint[0]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
-WARNING: StructureDefinition/pdsm-comprehensive-document-reference: StructureDefinition.differential.element[13].constraint[0]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
-WARNING: StructureDefinition/pdsm-comprehensive-document-reference: StructureDefinition.differential.element[14].constraint[0]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
-WARNING: StructureDefinition/pdsm-comprehensive-document-reference: StructureDefinition.differential.element[14].constraint[1]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
-WARNING: StructureDefinition/pdsm-comprehensive-document-reference: StructureDefinition.differential.element[16].constraint[0]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
-WARNING: StructureDefinition/pdsm-comprehensive-document-reference: StructureDefinition.differential.element[18].constraint[0]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
-WARNING: StructureDefinition/pdsm-comprehensive-document-reference: StructureDefinition.differential.element[21].constraint[0]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
-WARNING: StructureDefinition/pdsm-comprehensive-document-reference: StructureDefinition.differential.element[26].constraint[0]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
-WARNING: StructureDefinition/pdsm-comprehensive-document-reference: StructureDefinition.differential.element[28].constraint[0]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
-WARNING: StructureDefinition/pdsm-comprehensive-document-reference: StructureDefinition.differential.element[32].constraint[0]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
-WARNING: StructureDefinition/pdsm-comprehensive-document-reference: StructureDefinition.differential.element[33].constraint[0]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
 WARNING: StructureDefinition/pdsm-comprehensive-document-reference: StructureDefinition.differential.element[8].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS on element DocumentReference.type could not be resolved
 WARNING: StructureDefinition/pdsm-comprehensive-document-reference: StructureDefinition.differential.element[9].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J06-XdsClassCode-CISIS/FHIR/JDV-J06-XdsClassCode-CISIS on element DocumentReference.category could not be resolved
 WARNING: StructureDefinition/pdsm-comprehensive-document-reference: StructureDefinition.differential.element[26].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J10-XdsFormatCode-CISIS/FHIR/JDV-J10-XdsFormatCode-CISIS on element DocumentReference.content.format could not be resolved
@@ -439,24 +409,8 @@ WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir
 == fsh-generated/resources/StructureDefinition-pdsm-is-archived.json ==
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-is-archived'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-pdsm-simplified-publish.json ==
-WARNING: StructureDefinition/pdsm-simplified-publish: StructureDefinition.snapshot.element[5].constraint[1]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
-WARNING: StructureDefinition/pdsm-simplified-publish: StructureDefinition.snapshot.element[21].constraint[1]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
-WARNING: StructureDefinition/pdsm-simplified-publish: StructureDefinition.snapshot.element[22].constraint[1]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
-WARNING: StructureDefinition/pdsm-simplified-publish: StructureDefinition.snapshot.element[25].constraint[1]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
-WARNING: StructureDefinition/pdsm-simplified-publish: StructureDefinition.snapshot.element[26].constraint[1]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
-WARNING: StructureDefinition/pdsm-simplified-publish: StructureDefinition.snapshot.element[35].constraint[1]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
-WARNING: StructureDefinition/pdsm-simplified-publish: StructureDefinition.snapshot.element[51].constraint[1]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
-WARNING: StructureDefinition/pdsm-simplified-publish: StructureDefinition.snapshot.element[57].constraint[1]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
 WARNING: StructureDefinition/pdsm-simplified-publish: StructureDefinition.snapshot.element[59].constraint[1]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
 WARNING: StructureDefinition/pdsm-simplified-publish: StructureDefinition.snapshot.element[60].constraint[1]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
-WARNING: StructureDefinition/pdsm-simplified-publish: StructureDefinition.differential.element[1].constraint[0]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
-WARNING: StructureDefinition/pdsm-simplified-publish: StructureDefinition.differential.element[5].constraint[0]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
-WARNING: StructureDefinition/pdsm-simplified-publish: StructureDefinition.differential.element[6].constraint[0]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
-WARNING: StructureDefinition/pdsm-simplified-publish: StructureDefinition.differential.element[9].constraint[0]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
-WARNING: StructureDefinition/pdsm-simplified-publish: StructureDefinition.differential.element[10].constraint[0]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
-WARNING: StructureDefinition/pdsm-simplified-publish: StructureDefinition.differential.element[12].constraint[0]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
-WARNING: StructureDefinition/pdsm-simplified-publish: StructureDefinition.differential.element[20].constraint[0]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
-WARNING: StructureDefinition/pdsm-simplified-publish: StructureDefinition.differential.element[22].constraint[0]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
 WARNING: StructureDefinition/pdsm-simplified-publish: StructureDefinition.differential.element[23].constraint[0]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
 WARNING: StructureDefinition/pdsm-simplified-publish: StructureDefinition.differential.element[24].constraint[0]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
 WARNING: StructureDefinition/pdsm-simplified-publish: StructureDefinition.differential.element[5].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS on element DocumentReference.type could not be resolved

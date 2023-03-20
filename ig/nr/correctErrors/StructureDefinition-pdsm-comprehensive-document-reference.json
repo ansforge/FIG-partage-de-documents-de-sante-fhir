@@ -10,7 +10,7 @@
   "name" : "PDSm_ComprehensiveDocumentReference",
   "title" : "PDSm Comprehensive DocumentReference",
   "status" : "active",
-  "date" : "2023-03-20T10:38:51+00:00",
+  "date" : "2023-03-20T10:43:12+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -324,7 +324,7 @@
         "key" : "constr-cdr-maj",
         "severity" : "error",
         "human" : "Elément requis lorsque le flux envoyé correspond à une mise à jour des données d’une fiche",
-        "xpath" : "f:meta/f:versionId",
+        "expression" : "f:meta/f:versionId",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"
       }],
       "mustSupport" : true,
@@ -1065,7 +1065,7 @@
         "key" : "constr-bind-type",
         "severity" : "error",
         "human" : "Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :\n\r\n TRE_A05-TypeDocComplementaireCISIS, OID : 1.2.250.1.213.1.1.4.12\n\r\n TRE_A04-TypeDocument-LOINC, OID : 2.16.840.1.113883.6.1\n\r\n TRE_A12-NomenclatureASTM, OID : ASTM\n\r\nLes valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J66-TypeCode-DMP).\r\nEn l’absence de spécifications complémentaires, le jeu de valeurs JDV_J07-XdsTypeCode-CISIS peut être utilisé.",
-        "xpath" : "f:type",
+        "expression" : "f:type",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"
       }],
       "mustSupport" : true,
@@ -1142,7 +1142,7 @@
         "key" : "constr-bind-category",
         "severity" : "error",
         "human" : "Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :\n-\tTRE_A03-ClasseDocument-CISIS, OID : 1.2.250.1.213.1.1.4.1\n-\tTRE_A10-NomenclatureURN, OID : URN\nLes valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J57-ClassCode-DMP).\nEn l’absence de spécifications complémentaires, le jeu de valeurs JDV_J06-XdsClassCode-CISIS peut être utilisé.",
-        "xpath" : "f:category",
+        "expression" : "f:category",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"
       }],
       "mustSupport" : true,
@@ -1211,7 +1211,7 @@
         "key" : "constr-subj-ref",
         "severity" : "error",
         "human" : "La ressource référencée doit être présente sous l’élément DocumentReference.contained.\nRéférence contrainte au profil FrPatient\nCette même ressource est référencée depuis context.sourcePatientInfo.",
-        "xpath" : "f:subject",
+        "expression" : "f:subject",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"
       }],
       "mustSupport" : true,
@@ -1335,7 +1335,7 @@
         "key" : "constr-bind-author",
         "severity" : "error",
         "human" : "Cardinalité contrainte à [1..*]\nReference contrainte à :\n- PractitionerRole : Dans le cas d’un auteur professionnel, c’est le profil PractitionerRoleOrganizationalRoleRASSreprésentant la situation d’exercice qui doit être référencé. Lui-même fera le lien avec le profil PractitionerRoleProfessionalRoleRASS représentant l’exercice professionnel et avec FrPractitioner.\n- Device,\n- Patient contrainte au profil FrPatient.",
-        "xpath" : "f:author",
+        "expression" : "f:author",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"
       }],
       "mustSupport" : true,
@@ -1405,7 +1405,7 @@
         "key" : "constr-bind-authenticator",
         "severity" : "error",
         "human" : "Cardinalité contrainte à [1..1]\nRéférence contrainte au profil \n- PractitionerRole : Dans le cas d’un authentificateur professionnel, c’est le profil PractitionerRoleOrganizationalRoleRASS représentant la situation d’exercice qui doit être référencé. Lui-même fera le lien avec le profil PractitionerRoleProfessionalRoleRASS représentant l’exercice professionnel et avec FrPractitioner.\n-  Organization contrainte au profil FrOrganization.",
-        "xpath" : "f:authenticator",
+        "expression" : "f:authenticator",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"
       }],
       "mustSupport" : true,
@@ -1520,14 +1520,14 @@
         "key" : "constr-cdr-rempl",
         "severity" : "error",
         "human" : "Elément requis lorsque le flux envoyé correspond au remplacement d'un document",
-        "xpath" : "f:relatesTo",
+        "expression" : "f:relatesTo",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"
       },
       {
         "key" : "constr-bind-relatesTo",
         "severity" : "error",
         "human" : "Cardinalité contrainte à [1..1] lorsque le flux envoyé correspond au remplacement d’un document.",
-        "xpath" : "f:relatesTo",
+        "expression" : "f:relatesTo",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"
       }],
       "mustSupport" : true,
@@ -1746,7 +1746,7 @@
         "key" : "constr-bind-relatesToTarget",
         "severity" : "error",
         "human" : "Référence contrainte au profil PDSm_ComprehensiveDocumentReference",
-        "xpath" : "f:relatesTo/f:target",
+        "expression" : "f:relatesTo/f:target",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"
       }],
       "isModifier" : false,
@@ -1850,7 +1850,7 @@
         "key" : "constr-bind-securityLabel",
         "severity" : "error",
         "human" : "Les codes pour cet élément doivent provenir du ValueSet spécifié par le standard. Lorsqu’aucun code ne correspond au concept recherché, un code provenant de la terminologie de référence TRE_A07-StatusVisibiliteDocument, OID : 1.2.250.1.213.1.1.4.13 peut être utilisé.",
-        "xpath" : "f:securityLabel",
+        "expression" : "f:securityLabel",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"
       }],
       "mustSupport" : true,
@@ -2353,7 +2353,7 @@
         "key" : "constr-bind-attachmenturl",
         "severity" : "error",
         "human" : "Dans le cas de l’ajout de document, l’url fait référence à la ressource Binary (« Binary/[id] »).\nDans le cas de la recherche, il s’agit de l’URL permettant d’accéder au document",
-        "xpath" : "f:content/f:attachment/f:url",
+        "expression" : "f:content/f:attachment/f:url",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"
       }],
       "isModifier" : false,
@@ -2562,7 +2562,7 @@
         "key" : "constr-bind-format",
         "severity" : "error",
         "human" : "Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :\n- TRE_A06-FormatCodeComplementaire, OID : 1.2.250.1.213.1.1.4.2.282\n- TRE_A11-IheFormatCode, OID : 1.3.6.1.4.1.19376.1.2.3\n- TRE_A09-DICOMuidRegistry, OID : 1.2.840.10008.2.6.1\n- TRE_A10-NomenclatureURN, OID : URN\nLes valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J60-FormatCode-DMP).\nEn l’absence de spécifications complémentaires, le jeu de valeurs JDV_J10-XdsFormatCode-CISIS peut être utilisé.",
-        "xpath" : "f:content/f:format",
+        "expression" : "f:content/f:format",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"
       }],
       "mustSupport" : true,
@@ -2818,7 +2818,7 @@
         "key" : "constr-bind-context-event",
         "severity" : "error",
         "human" : "Nomenclatures utilisées :\n- CCAM pour les actes médicaux (OID=\"1.2.250.1.213.2.5\");\n- CIM-10 pour les diagnostics de pathologie (OID=\"2.16.840.1.113883.6.3\").\n- TRE_A00-ProducteurDocNonPS pour les documents d'expression personnelle du patient.",
-        "xpath" : "f:context/f:event",
+        "expression" : "f:context/f:event",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"
       }],
       "isModifier" : false,
@@ -3088,7 +3088,7 @@
         "key" : "constr-bind-ProducteurDoc",
         "severity" : "error",
         "human" : "Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :\n-\tTRE_A00-ProducteurDocNonPS, OID : 1.2.250.1.213.1.1.4.6 (lorsque l’auteur du document est un patient ou un équipement sous sa responsabilité)\n-\tTRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 (lorsque l’auteur du document est un professionnel ou un équipement sous sa responsabilité)\nLes valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J61-HealthcareFacilityTypeCode-DMP).\nEn l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-XdsHealthcareFacilityTypeCode-CISIS peut être utilisé.",
-        "xpath" : "f:context/f:facilityType or f:context/f:practiceSetting",
+        "expression" : "f:context/f:facilityType or f:context/f:practiceSetting",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"
       }],
       "mustSupport" : true,
@@ -3153,7 +3153,7 @@
         "key" : "constr-bind-ProducteurDoc",
         "severity" : "error",
         "human" : "Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :\n-\tTRE_A00-ProducteurDocNonPS, OID : 1.2.250.1.213.1.1.4.6 (lorsque l’auteur du document est un patient ou un équipement sous sa responsabilité)\n-\tTRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 (lorsque l’auteur du document est un professionnel ou un équipement sous sa responsabilité)\nLes valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J61-HealthcareFacilityTypeCode-DMP).\nEn l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-XdsHealthcareFacilityTypeCode-CISIS peut être utilisé.",
-        "xpath" : "f:context/f:facilityType or f:context/f:practiceSetting",
+        "expression" : "f:context/f:facilityType or f:context/f:practiceSetting",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"
       }],
       "mustSupport" : true,
@@ -3522,7 +3522,7 @@
         "key" : "constr-cdr-maj",
         "severity" : "error",
         "human" : "Elément requis lorsque le flux envoyé correspond à une mise à jour des données d’une fiche",
-        "xpath" : "f:meta/f:versionId",
+        "expression" : "f:meta/f:versionId",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"
       }],
       "mustSupport" : true,
@@ -3620,7 +3620,7 @@
         "key" : "constr-bind-type",
         "severity" : "error",
         "human" : "Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :\n\r\n TRE_A05-TypeDocComplementaireCISIS, OID : 1.2.250.1.213.1.1.4.12\n\r\n TRE_A04-TypeDocument-LOINC, OID : 2.16.840.1.113883.6.1\n\r\n TRE_A12-NomenclatureASTM, OID : ASTM\n\r\nLes valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J66-TypeCode-DMP).\r\nEn l’absence de spécifications complémentaires, le jeu de valeurs JDV_J07-XdsTypeCode-CISIS peut être utilisé.",
-        "xpath" : "f:type",
+        "expression" : "f:type",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"
       }],
       "binding" : {
@@ -3641,7 +3641,7 @@
         "key" : "constr-bind-category",
         "severity" : "error",
         "human" : "Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :\n-\tTRE_A03-ClasseDocument-CISIS, OID : 1.2.250.1.213.1.1.4.1\n-\tTRE_A10-NomenclatureURN, OID : URN\nLes valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J57-ClassCode-DMP).\nEn l’absence de spécifications complémentaires, le jeu de valeurs JDV_J06-XdsClassCode-CISIS peut être utilisé.",
-        "xpath" : "f:category",
+        "expression" : "f:category",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"
       }],
       "binding" : {
@@ -3667,7 +3667,7 @@
         "key" : "constr-subj-ref",
         "severity" : "error",
         "human" : "La ressource référencée doit être présente sous l’élément DocumentReference.contained.\nRéférence contrainte au profil FrPatient\nCette même ressource est référencée depuis context.sourcePatientInfo.",
-        "xpath" : "f:subject",
+        "expression" : "f:subject",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"
       }],
       "mapping" : [{
@@ -3696,7 +3696,7 @@
         "key" : "constr-bind-author",
         "severity" : "error",
         "human" : "Cardinalité contrainte à [1..*]\nReference contrainte à :\n- PractitionerRole : Dans le cas d’un auteur professionnel, c’est le profil PractitionerRoleOrganizationalRoleRASSreprésentant la situation d’exercice qui doit être référencé. Lui-même fera le lien avec le profil PractitionerRoleProfessionalRoleRASS représentant l’exercice professionnel et avec FrPractitioner.\n- Device,\n- Patient contrainte au profil FrPatient.",
-        "xpath" : "f:author",
+        "expression" : "f:author",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"
       }],
       "mapping" : [{
@@ -3719,7 +3719,7 @@
         "key" : "constr-bind-authenticator",
         "severity" : "error",
         "human" : "Cardinalité contrainte à [1..1]\nRéférence contrainte au profil \n- PractitionerRole : Dans le cas d’un authentificateur professionnel, c’est le profil PractitionerRoleOrganizationalRoleRASS représentant la situation d’exercice qui doit être référencé. Lui-même fera le lien avec le profil PractitionerRoleProfessionalRoleRASS représentant l’exercice professionnel et avec FrPractitioner.\n-  Organization contrainte au profil FrOrganization.",
-        "xpath" : "f:authenticator",
+        "expression" : "f:authenticator",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"
       }],
       "mustSupport" : true,
@@ -3737,14 +3737,14 @@
         "key" : "constr-cdr-rempl",
         "severity" : "error",
         "human" : "Elément requis lorsque le flux envoyé correspond au remplacement d'un document",
-        "xpath" : "f:relatesTo",
+        "expression" : "f:relatesTo",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"
       },
       {
         "key" : "constr-bind-relatesTo",
         "severity" : "error",
         "human" : "Cardinalité contrainte à [1..1] lorsque le flux envoyé correspond au remplacement d’un document.",
-        "xpath" : "f:relatesTo",
+        "expression" : "f:relatesTo",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"
       }]
     },
@@ -3765,7 +3765,7 @@
         "key" : "constr-bind-relatesToTarget",
         "severity" : "error",
         "human" : "Référence contrainte au profil PDSm_ComprehensiveDocumentReference",
-        "xpath" : "f:relatesTo/f:target",
+        "expression" : "f:relatesTo/f:target",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"
       }],
       "mapping" : [{
@@ -3791,7 +3791,7 @@
         "key" : "constr-bind-securityLabel",
         "severity" : "error",
         "human" : "Les codes pour cet élément doivent provenir du ValueSet spécifié par le standard. Lorsqu’aucun code ne correspond au concept recherché, un code provenant de la terminologie de référence TRE_A07-StatusVisibiliteDocument, OID : 1.2.250.1.213.1.1.4.13 peut être utilisé.",
-        "xpath" : "f:securityLabel",
+        "expression" : "f:securityLabel",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"
       }],
       "mapping" : [{
@@ -3822,7 +3822,7 @@
         "key" : "constr-bind-attachmenturl",
         "severity" : "error",
         "human" : "Dans le cas de l’ajout de document, l’url fait référence à la ressource Binary (« Binary/[id] »).\nDans le cas de la recherche, il s’agit de l’URL permettant d’accéder au document",
-        "xpath" : "f:content/f:attachment/f:url",
+        "expression" : "f:content/f:attachment/f:url",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"
       }],
       "mapping" : [{
@@ -3868,7 +3868,7 @@
         "key" : "constr-bind-format",
         "severity" : "error",
         "human" : "Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :\n- TRE_A06-FormatCodeComplementaire, OID : 1.2.250.1.213.1.1.4.2.282\n- TRE_A11-IheFormatCode, OID : 1.3.6.1.4.1.19376.1.2.3\n- TRE_A09-DICOMuidRegistry, OID : 1.2.840.10008.2.6.1\n- TRE_A10-NomenclatureURN, OID : URN\nLes valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J60-FormatCode-DMP).\nEn l’absence de spécifications complémentaires, le jeu de valeurs JDV_J10-XdsFormatCode-CISIS peut être utilisé.",
-        "xpath" : "f:content/f:format",
+        "expression" : "f:content/f:format",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"
       }],
       "binding" : {
@@ -3895,7 +3895,7 @@
         "key" : "constr-bind-context-event",
         "severity" : "error",
         "human" : "Nomenclatures utilisées :\n- CCAM pour les actes médicaux (OID=\"1.2.250.1.213.2.5\");\n- CIM-10 pour les diagnostics de pathologie (OID=\"2.16.840.1.113883.6.3\").\n- TRE_A00-ProducteurDocNonPS pour les documents d'expression personnelle du patient.",
-        "xpath" : "f:context/f:event",
+        "expression" : "f:context/f:event",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"
       }],
       "mapping" : [{
@@ -3933,7 +3933,7 @@
         "key" : "constr-bind-ProducteurDoc",
         "severity" : "error",
         "human" : "Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :\n-\tTRE_A00-ProducteurDocNonPS, OID : 1.2.250.1.213.1.1.4.6 (lorsque l’auteur du document est un patient ou un équipement sous sa responsabilité)\n-\tTRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 (lorsque l’auteur du document est un professionnel ou un équipement sous sa responsabilité)\nLes valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J61-HealthcareFacilityTypeCode-DMP).\nEn l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-XdsHealthcareFacilityTypeCode-CISIS peut être utilisé.",
-        "xpath" : "f:context/f:facilityType or f:context/f:practiceSetting",
+        "expression" : "f:context/f:facilityType or f:context/f:practiceSetting",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"
       }],
       "binding" : {
@@ -3954,7 +3954,7 @@
         "key" : "constr-bind-ProducteurDoc",
         "severity" : "error",
         "human" : "Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :\n-\tTRE_A00-ProducteurDocNonPS, OID : 1.2.250.1.213.1.1.4.6 (lorsque l’auteur du document est un patient ou un équipement sous sa responsabilité)\n-\tTRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 (lorsque l’auteur du document est un professionnel ou un équipement sous sa responsabilité)\nLes valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J61-HealthcareFacilityTypeCode-DMP).\nEn l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-XdsHealthcareFacilityTypeCode-CISIS peut être utilisé.",
-        "xpath" : "f:context/f:facilityType or f:context/f:practiceSetting",
+        "expression" : "f:context/f:facilityType or f:context/f:practiceSetting",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"
       }],
       "binding" : {
