@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "PDSm"] ; # 
   fhir:title [ fhir:v "Partage de Documents de Santé en mobilité (PDSm)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-03-20T10:34:11+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-03-20T10:37:48+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -608,8 +608,8 @@
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/PDSmIsArchived> ;
-         fhir:reference [ fhir:v "StructureDefinition/PDSmIsArchived" ]
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-is-archived> ;
+         fhir:reference [ fhir:v "StructureDefinition/pdsm-is-archived" ]
        ] ;
        fhir:name [ fhir:v "PDSm_isArchived" ] ;
        fhir:description [ fhir:v "Extension définie par le volet ANS \"Volet Partage de documents de santé en mobilité\" sur les ressources List et DocumentReference pour distinguer les lots de soumission et les fiches archivés des actives." ] ;

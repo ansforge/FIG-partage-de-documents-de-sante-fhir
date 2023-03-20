@@ -4,17 +4,17 @@
   "fhirVersion": "4.0.1",
   "extensions": [
     {
-      "url": "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/PDSmIsArchived",
-      "title": "PDSm_isArchived",
-      "types": [
-        "boolean"
-      ]
-    },
-    {
       "url": "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/PDSmintendedrecipient",
       "title": "PDSm_intendedRecipient",
       "types": [
         "Reference"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-is-archived",
+      "title": "PDSm_isArchived",
+      "types": [
+        "boolean"
       ]
     }
   ],
@@ -88,11 +88,11 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
-    "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/PDSmIsArchived": [
-      "DocumentReference",
+    "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/PDSmintendedrecipient": [
       "List"
     ],
-    "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/PDSmintendedrecipient": [
+    "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-is-archived": [
+      "DocumentReference",
       "List"
     ],
     "https://profiles.ihe.net/ITI/MHD/StructureDefinition/ihe-authorOrg": [

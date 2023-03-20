@@ -49,7 +49,7 @@ Device {[]} {[]}PractitionerRole {[CanonicalType[https://apifhir.annuaire.sante.
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"DocumentReference.extension:isArchived","DocumentReference.extension","isArchived","","",0,1,"Y","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/PDSmIsArchived]]} {[]}
+"DocumentReference.extension:isArchived","DocumentReference.extension","isArchived","","",0,1,"Y","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-is-archived]]} {[]}
 ","Extension définie par ce volet pour distinguer les fiches archivées des actives.","Extension définie par le volet ANS ""Volet Partage de documents de santé en mobilité"" sur les ressources List et DocumentReference pour distinguer les lots de soumission et les fiches archivés des actives.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","statut : [1..1] Code"

@@ -299,6 +299,22 @@ This outcome is not used for error responses in batch/transaction, only for hint
 "pdsm-find-documentreferences-comprehensive-response","Bundle.signature","Bundle.signature","","","",0,1,"","","Y","Signature {[]} {[]}
 ","Digital Signature","Digital Signature - base64 encoded. XML-DSig or a JWT.","The signature could be created by the ""author"" of the bundle or by the originating device.   Requirements around inclusion of a signature, verification of signatures and treatment of signed/non-signed bundles is implementation-environment specific.","A Signature holds an electronic representation of a signature and its supporting context in a FHIR accessible form. The signature may either be a cryptographic type (XML DigSig or a JWS), which is able to provide non-repudiation proof, or it may be a graphical image that represents a signature or a signature process. This element allows capturing signatures on documents, messages, transactions or even search responses, to support content-authentication, non-repudiation or other business cases. This is primarily relevant where the bundle may travel through multiple hops or via other mechanisms where HTTPS non-repudiation is insufficient.","","","","","","","",,,,,"",,,,"Bundle.signature",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
+"pdsm-is-archived","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","PDSm_isArchived","Extension définie par le volet ANS ""Volet Partage de documents de santé en mobilité"" sur les ressources List et DocumentReference pour distinguer les lots de soumission et les fiches archivés des actives.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+",""
+"pdsm-is-archived","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"pdsm-is-archived","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"pdsm-is-archived","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-is-archived""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"pdsm-is-archived","Extension.value[x]","Extension.value[x]","","","",1,1,"","","","boolean {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
 "pdsm-find-lists-response","Bundle","Bundle","","","",0,*,"","","","null {[]} {[]}
 ","Contains a collection of resources","A container for a collection of resources.","","","","","","","","","",,,,,"",,,,"Bundle",0,*,"",""
 "pdsm-find-lists-response","Bundle.id","Bundle.id","","","",0,1,"","","Y","id {[]} {[]}
@@ -799,7 +815,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "pdsm-submissionset-comprehensive","List.extension:intendedRecipient","List.extension","intendedRecipient","","",0,0,"","","","Extension {[CanonicalType[https://profiles.ihe.net/ITI/MHD/StructureDefinition/ihe-intendedRecipient]]} {[]}
 ","Intended recipient of the SubmissionSet","holds the identity of the organization or person the SubmissionSet is intended. For XDR and eMail (e.g. Direct) this tends to be a Practitioner or Patient with a telecom holding an email, but this is not strictly required.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"pdsm-submissionset-comprehensive","List.extension:isArchived","List.extension","isArchived","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/PDSmIsArchived]]} {[]}
+"pdsm-submissionset-comprehensive","List.extension:isArchived","List.extension","isArchived","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-is-archived]]} {[]}
 ","Extension définie par ce volet pour distinguer les lots de soumission archivés des actives. ","Extension définie par le volet ANS ""Volet Partage de documents de santé en mobilité"" sur les ressources List et DocumentReference pour distinguer les lots de soumission et les fiches archivés des actives.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "pdsm-submissionset-comprehensive","List.extension:PDSm_intendedRecipient","List.extension","PDSm_intendedRecipient","","",0,*,"Y","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/PDSmintendedrecipient]]} {[]}
@@ -2385,22 +2401,6 @@ This outcome is not used for error responses in batch/transaction, only for hint
 "pdsm-comprehensive-provide-document-bundle","Bundle.signature","Bundle.signature","","","",0,1,"","","Y","Signature {[]} {[]}
 ","Digital Signature","Digital Signature - base64 encoded. XML-DSig or a JWT.","The signature could be created by the ""author"" of the bundle or by the originating device.   Requirements around inclusion of a signature, verification of signatures and treatment of signed/non-signed bundles is implementation-environment specific.","A Signature holds an electronic representation of a signature and its supporting context in a FHIR accessible form. The signature may either be a cryptographic type (XML DigSig or a JWS), which is able to provide non-repudiation proof, or it may be a graphical image that represents a signature or a signature process. This element allows capturing signatures on documents, messages, transactions or even search responses, to support content-authentication, non-repudiation or other business cases. This is primarily relevant where the bundle may travel through multiple hops or via other mechanisms where HTTPS non-repudiation is insufficient.","","","","","","","",,,,,"",,,,"Bundle.signature",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"PDSmIsArchived","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","PDSm_isArchived","Extension définie par le volet ANS ""Volet Partage de documents de santé en mobilité"" sur les ressources List et DocumentReference pour distinguer les lots de soumission et les fiches archivés des actives.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
-",""
-"PDSmIsArchived","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
-","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
-"PDSmIsArchived","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
-","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
-","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"PDSmIsArchived","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
-","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/PDSmIsArchived""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
-"PDSmIsArchived","Extension.value[x]","Extension.value[x]","","","",1,1,"","","","boolean {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
 "PDSmintendedrecipient","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
 ","Représente le destinataire du lot de soumission","Représente le destinataire du lot de soumission","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ",""
@@ -2467,7 +2467,7 @@ Device {[]} {[]}PractitionerRole {[CanonicalType[https://apifhir.annuaire.sante.
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"pdsm-comprehensive-document-reference","DocumentReference.extension:isArchived","DocumentReference.extension","isArchived","","",0,1,"Y","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/PDSmIsArchived]]} {[]}
+"pdsm-comprehensive-document-reference","DocumentReference.extension:isArchived","DocumentReference.extension","isArchived","","",0,1,"Y","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-is-archived]]} {[]}
 ","Extension définie par ce volet pour distinguer les fiches archivées des actives.","Extension définie par le volet ANS ""Volet Partage de documents de santé en mobilité"" sur les ressources List et DocumentReference pour distinguer les lots de soumission et les fiches archivés des actives.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"

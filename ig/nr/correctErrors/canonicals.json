@@ -112,13 +112,6 @@
     "name" : "PDSmIsArchived"
   },
   {
-    "id" : "PDSmIsArchived",
-    "type" : "StructureDefinition",
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/PDSmIsArchived",
-    "version" : "3.0.0",
-    "name" : "PDSm_IsArchived"
-  },
-  {
     "id" : "PDSmintendedrecipient",
     "type" : "StructureDefinition",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/PDSmintendedrecipient",
@@ -159,6 +152,13 @@
     "url" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-folder-comprehensive",
     "version" : "3.0.0",
     "name" : "PDSm_FolderComprehensive"
+  },
+  {
+    "id" : "pdsm-is-archived",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-is-archived",
+    "version" : "3.0.0",
+    "name" : "PDSm_IsArchived"
   },
   {
     "id" : "pdsm-simplified-publish",

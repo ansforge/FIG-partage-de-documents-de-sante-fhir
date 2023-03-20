@@ -10,7 +10,7 @@
   <name value="PDSm"/>
   <title value="Partage de Documents de Santé en mobilité (PDSm)"/>
   <status value="draft"/>
-  <date value="2023-03-20T10:34:11+00:00"/>
+  <date value="2023-03-20T10:37:48+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -528,7 +528,7 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/PDSmIsArchived"/>
+        <reference value="StructureDefinition/pdsm-is-archived"/>
       </reference>
       <name value="PDSm_isArchived"/>
       <description value="Extension définie par le volet ANS &quot;Volet Partage de documents de santé en mobilité&quot; sur les ressources List et DocumentReference pour distinguer les lots de soumission et les fiches archivés des actives."/>
