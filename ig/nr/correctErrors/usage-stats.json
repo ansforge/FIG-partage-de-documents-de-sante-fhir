@@ -1,6 +1,6 @@
 {
   "package": "ans.fhir.fr.pdsm",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "fhirVersion": "4.0.1",
   "extensions": [
     {

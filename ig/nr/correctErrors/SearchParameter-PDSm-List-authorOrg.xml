@@ -7,10 +7,10 @@
 </div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R4/list.html">List</a></td></tr><tr><td>Expression</td><td><code>(extension('http://profiles.ihe.net/ITI/MHD/StructureDefinition/ihe-authorOrg').value as Reference)</code></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>
   </text>
   <url value="https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSm-List-authorOrg"/>
-  <version value="3.0.0"/>
+  <version value="3.0.1"/>
   <name value="PDSmAuthorOrg"/>
   <status value="active"/>
-  <date value="2023-03-20T10:49:37+00:00"/>
+  <date value="2023-03-20T10:53:05+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>

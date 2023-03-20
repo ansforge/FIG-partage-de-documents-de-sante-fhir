@@ -7,7 +7,7 @@
 </div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R4/list.html">List</a></td></tr><tr><td>Expression</td><td><code>List.subject.where(resolve() is Patient)</code></td></tr><tr><td>Multiples</td><td>The parameter can repeat (and) and can have repeating values (or)</td></tr><tr><td>Modifiers</td><td>Allowed: missing, type, identifier</td></tr><tr><td>Chains</td><td>Allowed: identifier</td></tr></table></div>
   </text>
   <url value="https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSm-List-PatientAsSubject"/>
-  <version value="3.0.0"/>
+  <version value="3.0.1"/>
   <name value="PDSmListPatientAsSubject"/>
   <derivedFrom value="http://hl7.org/fhir/SearchParameter/clinical-patient"/>
   <status value="active"/>

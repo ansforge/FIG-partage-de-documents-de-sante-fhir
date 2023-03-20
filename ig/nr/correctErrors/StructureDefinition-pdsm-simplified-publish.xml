@@ -69,11 +69,11 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
 <tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
   <url value="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish"/>
-  <version value="3.0.0"/>
+  <version value="3.0.1"/>
   <name value="PDSm_SimplifiedPublish"/>
   <title value="PDSm Simplified Publish"/>
   <status value="active"/>
-  <date value="2023-03-20T10:49:37+00:00"/>
+  <date value="2023-03-20T10:53:05+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>

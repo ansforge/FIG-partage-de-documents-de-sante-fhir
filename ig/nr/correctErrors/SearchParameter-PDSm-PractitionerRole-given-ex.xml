@@ -7,7 +7,7 @@
 </div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a></td></tr><tr><td>Expression</td><td><code>(extension('https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-name').valueHumanName.given as String)</code></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>
   </text>
   <url value="https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSm-PractitionerRole-given-ex"/>
-  <version value="3.0.0"/>
+  <version value="3.0.1"/>
   <name value="PractitionerRoleGivenEx"/>
   <status value="active"/>
   <date value="2021-12-01"/>
