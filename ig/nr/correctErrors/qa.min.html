@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 328, errors = 1, warn = 98, info = 0-->
+<!-- broken links = 328, errors = 1, warn = 96, info = 0-->
 <head>
   <title>PDSm : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for PDSm</h1>
- <p>Generated Mon Mar 20 10:38:41 UTC 2023, FHIR version 4.0.1 for ans.fhir.fr.pdsm#3.0.0 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/pdsm">https://interop.esante.gouv.fr/ig/fhir/pdsm</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/pdsm/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
+ <p>Generated Mon Mar 20 10:39:42 UTC 2023, FHIR version 4.0.1 for ans.fhir.fr.pdsm#3.0.0 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/pdsm">https://interop.esante.gouv.fr/ig/fhir/pdsm</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/pdsm/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.2.53</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ans.fhir.fr.pdsm, Canonical = https://interop.esante.gouv.fr/ig/fhir/pdsm</td></tr>
@@ -64,7 +64,7 @@
  <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
  <tr><td>Previous Version Comparison:</td><td> </td></tr>
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
- <tr><td>Summary:</td><td> errors = 1, warn = 98, info = 0, broken links = 328</td></tr>
+ <tr><td>Summary:</td><td> errors = 1, warn = 96, info = 0, broken links = 328</td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -72,12 +72,6 @@
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#internal"><b>Build Errors</b></a></td><td><b>329</b></td><td><b>5</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_FIG-partage-de-documents-de-sante-fhir_FIG-partage-de-documents-de-sante-fhir_fsh-generated_resources_SearchParameter-PDSm-DocumentReference-period-end"><b>/home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/SearchParameter-PDSm-DocumentReference-period-end</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_FIG-partage-de-documents-de-sante-fhir_FIG-partage-de-documents-de-sante-fhir_fsh-generated_resources_SearchParameter-PDSm-DocumentReference-period-start"><b>/home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/SearchParameter-PDSm-DocumentReference-period-start</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_FIG-partage-de-documents-de-sante-fhir_FIG-partage-de-documents-de-sante-fhir_fsh-generated_resources_StructureDefinition-PDSmintendedrecipient"><b>/home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/StructureDefinition-PDSmintendedrecipient</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
@@ -1116,35 +1110,9 @@
    </tr>
 </table>
 <hr/>
-<a name="_home_runner_work_FIG-partage-de-documents-de-sante-fhir_FIG-partage-de-documents-de-sante-fhir_fsh-generated_resources_SearchParameter-PDSm-DocumentReference-period-end"> </a>
-<h2><a href="SearchParameter-PDSm-DocumentReference-period-end.html">fsh-generated/resources/SearchParameter-PDSm-DocumentReference-period-end.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>SearchParameter: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/searchparameter.html">SearchParameter</a></li></ul>
-</div>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>SearchParameter</b></td><td><b>warning</b></td><td title=""><b>The expression 'DocumentReference.context.period.end' is not compatible with the expression 'DocumentReference.context.period' in the derivedFrom SearchParameter http://hl7.org/fhir/SearchParameter/DocumentReference-period, and this likely indicates that the derivation relationship is not valid</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_FIG-partage-de-documents-de-sante-fhir_FIG-partage-de-documents-de-sante-fhir_fsh-generated_resources_SearchParameter-PDSm-DocumentReference-period-start"> </a>
-<h2><a href="SearchParameter-PDSm-DocumentReference-period-start.html">fsh-generated/resources/SearchParameter-PDSm-DocumentReference-period-start.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>SearchParameter: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/searchparameter.html">SearchParameter</a></li></ul>
-</div>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>SearchParameter</b></td><td><b>warning</b></td><td title=""><b>The expression 'DocumentReference.context.period.start' is not compatible with the expression 'DocumentReference.context.period' in the derivedFrom SearchParameter http://hl7.org/fhir/SearchParameter/DocumentReference-period, and this likely indicates that the derivation relationship is not valid</b></td>
-   </tr>
-</table>
-<hr/>
 <a name="_home_runner_work_FIG-partage-de-documents-de-sante-fhir_FIG-partage-de-documents-de-sante-fhir_fsh-generated_resources_StructureDefinition-PDSmintendedrecipient"> </a>
-<h2><a href="StructureDefinition-PDSmintendedrecipient.html">fsh-generated/resources/StructureDefinition-PDSmintendedrecipient.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-PDSmintendedrecipient.html">fsh-generated/resources/StructureDefinition-PDSmintendedrecipient.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -1156,8 +1124,8 @@
 </table>
 <hr/>
 <a name="_home_runner_work_FIG-partage-de-documents-de-sante-fhir_FIG-partage-de-documents-de-sante-fhir_fsh-generated_resources_StructureDefinition-pdsm-comprehensive-document-reference"> </a>
-<h2><a href="StructureDefinition-pdsm-comprehensive-document-reference.html">fsh-generated/resources/StructureDefinition-pdsm-comprehensive-document-reference.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-pdsm-comprehensive-document-reference.html">fsh-generated/resources/StructureDefinition-pdsm-comprehensive-document-reference.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -1289,8 +1257,8 @@
 </table>
 <hr/>
 <a name="_home_runner_work_FIG-partage-de-documents-de-sante-fhir_FIG-partage-de-documents-de-sante-fhir_fsh-generated_resources_StructureDefinition-pdsm-comprehensive-provide-document-bundle"> </a>
-<h2><a href="StructureDefinition-pdsm-comprehensive-provide-document-bundle.html">fsh-generated/resources/StructureDefinition-pdsm-comprehensive-provide-document-bundle.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-pdsm-comprehensive-provide-document-bundle.html">fsh-generated/resources/StructureDefinition-pdsm-comprehensive-provide-document-bundle.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -1302,8 +1270,8 @@
 </table>
 <hr/>
 <a name="_home_runner_work_FIG-partage-de-documents-de-sante-fhir_FIG-partage-de-documents-de-sante-fhir_fsh-generated_resources_StructureDefinition-pdsm-find-documentreferences-comprehensive-response"> </a>
-<h2><a href="StructureDefinition-pdsm-find-documentreferences-comprehensive-response.html">fsh-generated/resources/StructureDefinition-pdsm-find-documentreferences-comprehensive-response.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-pdsm-find-documentreferences-comprehensive-response.html">fsh-generated/resources/StructureDefinition-pdsm-find-documentreferences-comprehensive-response.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -1315,8 +1283,8 @@
 </table>
 <hr/>
 <a name="_home_runner_work_FIG-partage-de-documents-de-sante-fhir_FIG-partage-de-documents-de-sante-fhir_fsh-generated_resources_StructureDefinition-pdsm-find-lists-response"> </a>
-<h2><a href="StructureDefinition-pdsm-find-lists-response.html">fsh-generated/resources/StructureDefinition-pdsm-find-lists-response.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-pdsm-find-lists-response.html">fsh-generated/resources/StructureDefinition-pdsm-find-lists-response.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -1328,8 +1296,8 @@
 </table>
 <hr/>
 <a name="_home_runner_work_FIG-partage-de-documents-de-sante-fhir_FIG-partage-de-documents-de-sante-fhir_fsh-generated_resources_StructureDefinition-pdsm-folder-comprehensive"> </a>
-<h2><a href="StructureDefinition-pdsm-folder-comprehensive.html">fsh-generated/resources/StructureDefinition-pdsm-folder-comprehensive.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-pdsm-folder-comprehensive.html">fsh-generated/resources/StructureDefinition-pdsm-folder-comprehensive.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -1341,8 +1309,8 @@
 </table>
 <hr/>
 <a name="_home_runner_work_FIG-partage-de-documents-de-sante-fhir_FIG-partage-de-documents-de-sante-fhir_fsh-generated_resources_StructureDefinition-pdsm-is-archived"> </a>
-<h2><a href="StructureDefinition-pdsm-is-archived.html">fsh-generated/resources/StructureDefinition-pdsm-is-archived.json</a> <span id="svi9" class="toggle" onclick="toggle('vi9')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi9')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi9"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-pdsm-is-archived.html">fsh-generated/resources/StructureDefinition-pdsm-is-archived.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -1354,8 +1322,8 @@
 </table>
 <hr/>
 <a name="_home_runner_work_FIG-partage-de-documents-de-sante-fhir_FIG-partage-de-documents-de-sante-fhir_fsh-generated_resources_StructureDefinition-pdsm-simplified-publish"> </a>
-<h2><a href="StructureDefinition-pdsm-simplified-publish.html">fsh-generated/resources/StructureDefinition-pdsm-simplified-publish.json</a> <span id="svi10" class="toggle" onclick="toggle('vi10')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi10')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi10"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-pdsm-simplified-publish.html">fsh-generated/resources/StructureDefinition-pdsm-simplified-publish.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -1457,8 +1425,8 @@
 </table>
 <hr/>
 <a name="_home_runner_work_FIG-partage-de-documents-de-sante-fhir_FIG-partage-de-documents-de-sante-fhir_fsh-generated_resources_StructureDefinition-pdsm-submissionset-comprehensive"> </a>
-<h2><a href="StructureDefinition-pdsm-submissionset-comprehensive.html">fsh-generated/resources/StructureDefinition-pdsm-submissionset-comprehensive.json</a> <span id="svi11" class="toggle" onclick="toggle('vi11')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi11')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi11"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-pdsm-submissionset-comprehensive.html">fsh-generated/resources/StructureDefinition-pdsm-submissionset-comprehensive.json</a> <span id="svi9" class="toggle" onclick="toggle('vi9')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi9')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi9"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>

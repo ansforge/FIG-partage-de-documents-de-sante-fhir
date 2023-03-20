@@ -9,7 +9,6 @@
   <url value="https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSm-DocumentReference-period-end"/>
   <version value="3.0.0"/>
   <name value="PDSmDocumentReferencePeriodEnd"/>
-  <derivedFrom value="http://hl7.org/fhir/SearchParameter/DocumentReference-period"/>
   <status value="active"/>
   <date value="2021-10-21T14:09:31.7181197+00:00"/>
   <publisher value="ANS"/>

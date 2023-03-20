@@ -1,9 +1,9 @@
 ﻿PDSm : Validation Results
 =========================================
 
-err = 1, warn = 98, info = 0
+err = 1, warn = 96, info = 0
 IG Publisher Version: 1.2.53
-Generated Mon Mar 20 10:38:42 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.pdsm#3.0.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/pdsm)
+Generated Mon Mar 20 10:39:42 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.pdsm#3.0.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/pdsm)
  Build Errors : 329 / 5 / 0
  /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/Bundle-a9c10f8a-882d-4000-a280-7150e0aeb478 : 0 / 0 / 1
  /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/CapabilityStatement-PDSm-ConsommateurDeDocuments : 0 / 0 / 1
@@ -12,8 +12,8 @@ Generated Mon Mar 20 10:38:42 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.pdsm#
  /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.pdsm : 0 / 0 / 1
  /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/SearchParameter-PDSm-DocumentReference-PatientAsSubject : 0 / 0 / 1
  /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/SearchParameter-PDSm-DocumentReference-PractitionerRoleAsAuthor : 0 / 0 / 1
- /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/SearchParameter-PDSm-DocumentReference-period-end : 0 / 1 / 1
- /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/SearchParameter-PDSm-DocumentReference-period-start : 0 / 1 / 1
+ /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/SearchParameter-PDSm-DocumentReference-period-end : 0 / 0 / 1
+ /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/SearchParameter-PDSm-DocumentReference-period-start : 0 / 0 / 1
  /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/SearchParameter-PDSm-List-PatientAsSource : 0 / 0 / 1
  /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/SearchParameter-PDSm-List-PatientAsSubject : 0 / 0 / 1
  /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/SearchParameter-PDSm-List-PractitionerRoleAsSource : 0 / 0 / 1
@@ -375,9 +375,7 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 == fsh-generated/resources/SearchParameter-PDSm-DocumentReference-PatientAsSubject.json ==
 == fsh-generated/resources/SearchParameter-PDSm-DocumentReference-PractitionerRoleAsAuthor.json ==
 == fsh-generated/resources/SearchParameter-PDSm-DocumentReference-period-end.json ==
-WARNING: SearchParameter/PDSm-DocumentReference-period-end: SearchParameter: The expression 'DocumentReference.context.period.end' is not compatible with the expression 'DocumentReference.context.period' in the derivedFrom SearchParameter http://hl7.org/fhir/SearchParameter/DocumentReference-period, and this likely indicates that the derivation relationship is not valid
 == fsh-generated/resources/SearchParameter-PDSm-DocumentReference-period-start.json ==
-WARNING: SearchParameter/PDSm-DocumentReference-period-start: SearchParameter: The expression 'DocumentReference.context.period.start' is not compatible with the expression 'DocumentReference.context.period' in the derivedFrom SearchParameter http://hl7.org/fhir/SearchParameter/DocumentReference-period, and this likely indicates that the derivation relationship is not valid
 == fsh-generated/resources/SearchParameter-PDSm-List-PatientAsSource.json ==
 == fsh-generated/resources/SearchParameter-PDSm-List-PatientAsSubject.json ==
 == fsh-generated/resources/SearchParameter-PDSm-List-PractitionerRoleAsSource.json ==
