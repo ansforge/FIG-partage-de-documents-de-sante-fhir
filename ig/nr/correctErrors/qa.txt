@@ -1,13 +1,13 @@
 ﻿PDSm : Validation Results
 =========================================
 
-err = 1, warn = 50, info = 0
+err = 3, warn = 36, info = 0
 IG Publisher Version: 1.2.53
-Generated Mon Mar 20 10:44:07 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.pdsm#3.0.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/pdsm)
+Generated Mon Mar 20 10:50:31 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.pdsm#3.0.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/pdsm)
  Build Errors : 329 / 5 / 0
  /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/Bundle-a9c10f8a-882d-4000-a280-7150e0aeb478 : 0 / 0 / 1
- /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/CapabilityStatement-PDSm-ConsommateurDeDocuments : 0 / 0 / 1
- /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/CapabilityStatement-PDSm-GestionnaireDePartageDeDocuments : 0 / 0 / 1
+ /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/CapabilityStatement-PDSm-ConsommateurDeDocuments : 1 / 0 / 1
+ /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/CapabilityStatement-PDSm-GestionnaireDePartageDeDocuments : 1 / 0 / 1
  /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/CapabilityStatement-PDSm-ProducteurDeDocuments : 0 / 0 / 1
  /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.pdsm : 0 / 0 / 1
  /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/SearchParameter-PDSm-DocumentReference-PatientAsSubject : 0 / 0 / 1
@@ -29,8 +29,8 @@ Generated Mon Mar 20 10:44:07 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.pdsm#
  /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/StructureDefinition-pdsm-find-lists-response : 0 / 1 / 1
  /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/StructureDefinition-pdsm-folder-comprehensive : 0 / 1 / 1
  /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/StructureDefinition-pdsm-is-archived : 0 / 1 / 1
- /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/StructureDefinition-pdsm-simplified-publish : 0 / 15 / 1
- /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/StructureDefinition-pdsm-submissionset-comprehensive : 0 / 13 / 1
+ /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/StructureDefinition-pdsm-simplified-publish : 0 / 11 / 1
+ /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/StructureDefinition-pdsm-submissionset-comprehensive : 0 / 3 / 1
 </table>
 == n/a ==
 ERROR: ImplementationGuide.definition.parameter[24].value: Supressed messages file not found
@@ -369,7 +369,9 @@ WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-ta
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/Bundle-a9c10f8a-882d-4000-a280-7150e0aeb478.json ==
 == fsh-generated/resources/CapabilityStatement-PDSm-ConsommateurDeDocuments.json ==
+ERROR: CapabilityStatement/PDSm-ConsommateurDeDocuments: CapabilityStatement.rest[0].resource[0].searchParam[6]: Type mismatch - SearchParameter 'https://profiles.ihe.net/ITI/MHD/SearchParameter/List-SourceId|4.2.0' type is token, but type here is reference
 == fsh-generated/resources/CapabilityStatement-PDSm-GestionnaireDePartageDeDocuments.json ==
+ERROR: CapabilityStatement/PDSm-GestionnaireDePartageDeDocuments: CapabilityStatement.rest[0].resource[0].searchParam[6]: Type mismatch - SearchParameter 'https://profiles.ihe.net/ITI/MHD/SearchParameter/List-SourceId|4.2.0' type is token, but type here is reference
 == fsh-generated/resources/CapabilityStatement-PDSm-ProducteurDeDocuments.json ==
 == fsh-generated/resources/ImplementationGuide-ans.fhir.fr.pdsm.json ==
 == fsh-generated/resources/SearchParameter-PDSm-DocumentReference-PatientAsSubject.json ==
@@ -409,10 +411,6 @@ WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir
 == fsh-generated/resources/StructureDefinition-pdsm-is-archived.json ==
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-is-archived'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-pdsm-simplified-publish.json ==
-WARNING: StructureDefinition/pdsm-simplified-publish: StructureDefinition.snapshot.element[59].constraint[1]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
-WARNING: StructureDefinition/pdsm-simplified-publish: StructureDefinition.snapshot.element[60].constraint[1]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
-WARNING: StructureDefinition/pdsm-simplified-publish: StructureDefinition.differential.element[23].constraint[0]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
-WARNING: StructureDefinition/pdsm-simplified-publish: StructureDefinition.differential.element[24].constraint[0]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
 WARNING: StructureDefinition/pdsm-simplified-publish: StructureDefinition.differential.element[5].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS on element DocumentReference.type could not be resolved
 WARNING: StructureDefinition/pdsm-simplified-publish: StructureDefinition.differential.element[6].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J06-XdsClassCode-CISIS/FHIR/JDV-J06-XdsClassCode-CISIS on element DocumentReference.category could not be resolved
 WARNING: StructureDefinition/pdsm-simplified-publish: StructureDefinition.differential.element[20].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J10-XdsFormatCode-CISIS/FHIR/JDV-J10-XdsFormatCode-CISIS on element DocumentReference.content.format could not be resolved
@@ -425,16 +423,6 @@ WARNING: StructureDefinition/pdsm-simplified-publish: StructureDefinition.snapsh
 WARNING: StructureDefinition/pdsm-simplified-publish: StructureDefinition.snapshot.element[60].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J04-XdsPracticeSettingCode-CISIS/FHIR/JDV-J04-XdsPracticeSettingCode-CISIS on element DocumentReference.context.practiceSetting could not be resolved
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-pdsm-submissionset-comprehensive.json ==
-WARNING: StructureDefinition/pdsm-submissionset-comprehensive: StructureDefinition.snapshot.element[16].constraint[2]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
-WARNING: StructureDefinition/pdsm-submissionset-comprehensive: StructureDefinition.snapshot.element[24].short: value should not start or finish with whitespace 'Extension définie par ce volet pour distinguer les lots de soumission archivés des actives. '
-WARNING: StructureDefinition/pdsm-submissionset-comprehensive: StructureDefinition.snapshot.element[38].short: value should not start or finish with whitespace 'Référence vers la ressource Patient contained titulaire du dossier. '
-WARNING: StructureDefinition/pdsm-submissionset-comprehensive: StructureDefinition.snapshot.element[41].constraint[1]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
-WARNING: StructureDefinition/pdsm-submissionset-comprehensive: StructureDefinition.snapshot.element[44].constraint[2]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
-WARNING: StructureDefinition/pdsm-submissionset-comprehensive: StructureDefinition.differential.element[2].constraint[0]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
-WARNING: StructureDefinition/pdsm-submissionset-comprehensive: StructureDefinition.differential.element[6].short: value should not start or finish with whitespace 'Extension définie par ce volet pour distinguer les lots de soumission archivés des actives. '
-WARNING: StructureDefinition/pdsm-submissionset-comprehensive: StructureDefinition.differential.element[15].short: value should not start or finish with whitespace 'Référence vers la ressource Patient contained titulaire du dossier. '
-WARNING: StructureDefinition/pdsm-submissionset-comprehensive: StructureDefinition.differential.element[17].constraint[0]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
-WARNING: StructureDefinition/pdsm-submissionset-comprehensive: StructureDefinition.differential.element[18].constraint[0]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
 WARNING: StructureDefinition/pdsm-submissionset-comprehensive: StructureDefinition.differential.element[3].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J03-XdsContentTypeCode-CISIS/FHIR/JDV-J03-XdsContentTypeCode-CISIS on element List.extension.value[x] could not be resolved
 WARNING: StructureDefinition/pdsm-submissionset-comprehensive: StructureDefinition.snapshot.element[20].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J03-XdsContentTypeCode-CISIS/FHIR/JDV-J03-XdsContentTypeCode-CISIS on element List.extension.value[x] could not be resolved
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-submissionset-comprehensive'): The Implementation Guide contains no examples for this profile

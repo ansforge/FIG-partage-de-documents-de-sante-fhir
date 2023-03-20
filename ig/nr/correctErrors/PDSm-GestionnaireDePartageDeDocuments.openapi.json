@@ -135,7 +135,7 @@
           {
             "name": "DesignationType",
             "in": "query",
-            "description": "Représente le type d’activité associé à l’événement clinique ayant abouti à la constitution du lot de soumission.",
+            "description": "This SearchParameter enables finding Lists by the designationType code in a submissionSet or folder.",
             "schema": {
               "type": "string"
             }
@@ -175,7 +175,7 @@
           {
             "name": "SourceId",
             "in": "query",
-            "description": "Représente l’identifiant unique global du système émetteur du lot de soumission.",
+            "description": "This SearchParameter enables finding Lists by the SourceId of a submissionSet.",
             "schema": {
               "type": "string"
             }
@@ -374,7 +374,7 @@
           {
             "name": "creation",
             "in": "query",
-            "description": "Représente la date et l\u0027heure de la création du document.",
+            "description": "This SearchParameter enables finding DocumentReference by the creation dateTime.",
             "schema": {
               "type": "string",
               "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"

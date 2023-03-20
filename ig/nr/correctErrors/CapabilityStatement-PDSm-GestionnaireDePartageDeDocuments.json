@@ -50,7 +50,7 @@
       },
       {
         "name" : "DesignationType",
-        "definition" : "http://profiles.ihe.net/ITI/MHD/SearchParameter/List-DesignationType",
+        "definition" : "https://profiles.ihe.net/ITI/MHD/SearchParameter/List-DesignationType",
         "type" : "token",
         "documentation" : "Représente le type d’activité associé à l’événement clinique ayant abouti à la constitution du lot de soumission."
       },
@@ -80,7 +80,7 @@
       },
       {
         "name" : "SourceId",
-        "definition" : "http://profiles.ihe.net/ITI/MHD/SearchParameter/List-SourceId",
+        "definition" : "https://profiles.ihe.net/ITI/MHD/SearchParameter/List-SourceId",
         "type" : "reference",
         "documentation" : "Représente l’identifiant unique global du système émetteur du lot de soumission."
       },
@@ -154,7 +154,7 @@
       },
       {
         "name" : "creation",
-        "definition" : "http://profiles.ihe.net/ITI/MHD/SearchParameter/DocumentReference-Creation",
+        "definition" : "https://profiles.ihe.net/ITI/MHD/SearchParameter/DocumentReference-Creation",
         "type" : "date",
         "documentation" : "Représente la date et l'heure de la création du document."
       },

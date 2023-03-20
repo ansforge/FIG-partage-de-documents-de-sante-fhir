@@ -1162,7 +1162,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
 <tr><td>constr-bind-ProducteurDoc-simplified</td><td>error</td><td>DocumentReference.context.facilityType, DocumentReference.context.practiceSetting</td><td>L’utilisation de cette nomenclature est recommandée mais non obligatoire (prefered) :
 -	TRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 (lorsque l’auteur du document est un professionnel ou un équipement sous sa responsabilité)
 Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J61-HealthcareFacilityTypeCode-DMP).
-En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-XdsHealthcareFacilityTypeCode-CISIS peut être utilisé.<br/>: </td><td></td></tr>
+En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-XdsHealthcareFacilityTypeCode-CISIS peut être utilisé.<br/>: f:context/f:practiceSetting or f:context/f:facilityType</td><td></td></tr>
 <tr><td>constr-bind-authenticator</td><td>error</td><td>DocumentReference.authenticator</td><td>Cardinalité contrainte à [1..1]
 Référence contrainte au profil 
 - PractitionerRole : Dans le cas d’un authentificateur professionnel, c’est le profil PractitionerRoleOrganizationalRoleRASS représentant la situation d’exercice qui doit être référencé. Lui-même fera le lien avec le profil PractitionerRoleProfessionalRoleRASS représentant l’exercice professionnel et avec FrPractitioner.
@@ -1281,7 +1281,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J07-Xd
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.pdsm#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 20, 2023 10:43+0000">2023-03-20</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.pdsm#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 20, 2023 10:49+0000">2023-03-20</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -52,7 +52,7 @@
       </searchParam>
       <searchParam>
         <name value="DesignationType"/>
-        <definition value="http://profiles.ihe.net/ITI/MHD/SearchParameter/List-DesignationType"/>
+        <definition value="https://profiles.ihe.net/ITI/MHD/SearchParameter/List-DesignationType"/>
         <type value="token"/>
         <documentation value="Représente le type d’activité associé à l’événement clinique ayant abouti à la constitution du lot de soumission."/>
       </searchParam>
@@ -82,7 +82,7 @@
       </searchParam>
       <searchParam>
         <name value="SourceId"/>
-        <definition value="http://profiles.ihe.net/ITI/MHD/SearchParameter/List-SourceId"/>
+        <definition value="https://profiles.ihe.net/ITI/MHD/SearchParameter/List-SourceId"/>
         <type value="reference"/>
         <documentation value="Représente l’identifiant unique global du système émetteur du lot de soumission."/>
       </searchParam>
@@ -156,7 +156,7 @@
       </searchParam>
       <searchParam>
         <name value="creation"/>
-        <definition value="http://profiles.ihe.net/ITI/MHD/SearchParameter/DocumentReference-Creation"/>
+        <definition value="https://profiles.ihe.net/ITI/MHD/SearchParameter/DocumentReference-Creation"/>
         <type value="date"/>
         <documentation value="Représente la date et l'heure de la création du document."/>
       </searchParam>

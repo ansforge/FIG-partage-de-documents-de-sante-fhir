@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "PDSm_SimplifiedPublish"] ; # 
   fhir:title [ fhir:v "PDSm Simplified Publish"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-03-20T10:43:12+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-03-20T10:49:37+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -2798,7 +2798,7 @@
          fhir:key [ fhir:v "constr-bind-ProducteurDoc-simplified" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "L’utilisation de cette nomenclature est recommandée mais non obligatoire (prefered) :\n-	TRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 (lorsque l’auteur du document est un professionnel ou un équipement sous sa responsabilité)\nLes valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J61-HealthcareFacilityTypeCode-DMP).\nEn l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-XdsHealthcareFacilityTypeCode-CISIS peut être utilisé." ] ;
-         fhir:xpath [ fhir:v "f:context/f:practiceSetting or f:context/f:facilityType" ] ;
+         fhir:expression [ fhir:v "f:context/f:practiceSetting or f:context/f:facilityType" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish>
@@ -2859,7 +2859,7 @@
          fhir:key [ fhir:v "constr-bind-ProducteurDoc-simplified" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "L’utilisation de cette nomenclature est recommandée mais non obligatoire (prefered) :\n-	TRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 (lorsque l’auteur du document est un professionnel ou un équipement sous sa responsabilité)\nLes valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J61-HealthcareFacilityTypeCode-DMP).\nEn l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-XdsHealthcareFacilityTypeCode-CISIS peut être utilisé." ] ;
-         fhir:xpath [ fhir:v "f:context/f:practiceSetting or f:context/f:facilityType" ] ;
+         fhir:expression [ fhir:v "f:context/f:practiceSetting or f:context/f:facilityType" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish>
@@ -3234,7 +3234,7 @@
          fhir:key [ fhir:v "constr-bind-ProducteurDoc-simplified" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "L’utilisation de cette nomenclature est recommandée mais non obligatoire (prefered) :\n-	TRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 (lorsque l’auteur du document est un professionnel ou un équipement sous sa responsabilité)\nLes valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J61-HealthcareFacilityTypeCode-DMP).\nEn l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-XdsHealthcareFacilityTypeCode-CISIS peut être utilisé." ] ;
-         fhir:xpath [ fhir:v "f:context/f:practiceSetting or f:context/f:facilityType" ] ;
+         fhir:expression [ fhir:v "f:context/f:practiceSetting or f:context/f:facilityType" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish>
@@ -3256,7 +3256,7 @@
          fhir:key [ fhir:v "constr-bind-ProducteurDoc-simplified" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "L’utilisation de cette nomenclature est recommandée mais non obligatoire (prefered) :\n-	TRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 (lorsque l’auteur du document est un professionnel ou un équipement sous sa responsabilité)\nLes valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J61-HealthcareFacilityTypeCode-DMP).\nEn l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-XdsHealthcareFacilityTypeCode-CISIS peut être utilisé." ] ;
-         fhir:xpath [ fhir:v "f:context/f:practiceSetting or f:context/f:facilityType" ] ;
+         fhir:expression [ fhir:v "f:context/f:practiceSetting or f:context/f:facilityType" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish>

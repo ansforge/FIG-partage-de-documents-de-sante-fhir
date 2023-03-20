@@ -64,8 +64,8 @@
        ] [
          fhir:name [ fhir:v "DesignationType" ] ;
          fhir:definition [
-           fhir:v "http://profiles.ihe.net/ITI/MHD/SearchParameter/List-DesignationType"^^xsd:anyURI ;
-           fhir:link <http://profiles.ihe.net/ITI/MHD/SearchParameter/List-DesignationType>
+           fhir:v "https://profiles.ihe.net/ITI/MHD/SearchParameter/List-DesignationType"^^xsd:anyURI ;
+           fhir:link <https://profiles.ihe.net/ITI/MHD/SearchParameter/List-DesignationType>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "Représente le type d’activité associé à l’événement clinique ayant abouti à la constitution du lot de soumission." ]
@@ -104,8 +104,8 @@
        ] [
          fhir:name [ fhir:v "SourceId" ] ;
          fhir:definition [
-           fhir:v "http://profiles.ihe.net/ITI/MHD/SearchParameter/List-SourceId"^^xsd:anyURI ;
-           fhir:link <http://profiles.ihe.net/ITI/MHD/SearchParameter/List-SourceId>
+           fhir:v "https://profiles.ihe.net/ITI/MHD/SearchParameter/List-SourceId"^^xsd:anyURI ;
+           fhir:link <https://profiles.ihe.net/ITI/MHD/SearchParameter/List-SourceId>
          ] ;
          fhir:type [ fhir:v "reference" ] ;
          fhir:documentation [ fhir:v "Représente l’identifiant unique global du système émetteur du lot de soumission." ]
@@ -199,8 +199,8 @@
        ] [
          fhir:name [ fhir:v "creation" ] ;
          fhir:definition [
-           fhir:v "http://profiles.ihe.net/ITI/MHD/SearchParameter/DocumentReference-Creation"^^xsd:anyURI ;
-           fhir:link <http://profiles.ihe.net/ITI/MHD/SearchParameter/DocumentReference-Creation>
+           fhir:v "https://profiles.ihe.net/ITI/MHD/SearchParameter/DocumentReference-Creation"^^xsd:anyURI ;
+           fhir:link <https://profiles.ihe.net/ITI/MHD/SearchParameter/DocumentReference-Creation>
          ] ;
          fhir:type [ fhir:v "date" ] ;
          fhir:documentation [ fhir:v "Représente la date et l'heure de la création du document." ]
