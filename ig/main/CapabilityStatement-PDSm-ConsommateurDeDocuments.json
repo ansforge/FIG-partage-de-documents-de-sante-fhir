@@ -3,11 +3,11 @@
   "id" : "PDSm-ConsommateurDeDocuments",
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>PDSm_ConsommateurDeDocuments</h2><div><p>Il s’agit d’un système d’information ou d’un composant de système d’information qui recherche des documents selon certains critères, et qui peut consulter les documents qui l’intéressent.</p>\n</div><table><tr><td>Mode</td><td>CLIENT</td></tr><tr><td>Description</td><td><div><p>Recherche de documents de santé et consultation de documents d'intérêt</p>\n</div></td></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title=\"GET a resource (read interaction)\">Read</b></th><th><b title=\"GET all set of resources of the type (search interaction)\">Search</b></th><th><b title=\"PUT a new resource version (update interaction)\">Update</b></th><th><b title=\"POST a new resource (create interaction)\">Create</b></th></tr><tr><td>List</td><td><a href=\"http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/PDSm_SubmissionSetComprehensive\">http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/PDSm_SubmissionSetComprehensive</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>DocumentReference</td><td><a href=\"http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/PDSm_ComprehensiveDocumentReference\">http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/PDSm_ComprehensiveDocumentReference</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Binary</td><td><a href=\"http://hl7.org/fhir/StructureDefinition/Binary\">http://hl7.org/fhir/StructureDefinition/Binary</a></td><td>y</td><td></td><td></td><td></td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>PDSmConsommateurDeDocuments</h2><div><p>Il s’agit d’un système d’information ou d’un composant de système d’information qui recherche des documents selon certains critères, et qui peut consulter les documents qui l’intéressent.</p>\n</div><table><tr><td>Mode</td><td>CLIENT</td></tr><tr><td>Description</td><td><div><p>Recherche de documents de santé et consultation de documents d'intérêt</p>\n</div></td></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title=\"GET a resource (read interaction)\">Read</b></th><th><b title=\"GET all set of resources of the type (search interaction)\">Search</b></th><th><b title=\"PUT a new resource version (update interaction)\">Update</b></th><th><b title=\"POST a new resource (create interaction)\">Create</b></th></tr><tr><td>List</td><td><a href=\"https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-submissionset-comprehensive\">https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-submissionset-comprehensive</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>DocumentReference</td><td><a href=\"https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference\">https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Binary</td><td><a href=\"http://hl7.org/fhir/StructureDefinition/Binary\">http://hl7.org/fhir/StructureDefinition/Binary</a></td><td>y</td><td></td><td></td><td></td></tr></table></div>"
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/CapabilityStatement/PDSm-ConsommateurDeDocuments",
-  "version" : "3.0.0",
-  "name" : "PDSm_ConsommateurDeDocuments",
+  "version" : "3.0.1",
+  "name" : "PDSmConsommateurDeDocuments",
   "title" : "CI-SIS Partage-De-Documents-De-Sante - ConsommateurDeDocuments",
   "status" : "active",
   "experimental" : false,
@@ -25,7 +25,7 @@
   "fhirVersion" : "4.0.0",
   "format" : ["xml",
   "json"],
-  "implementationGuide" : ["http://esante.gouv.fr/ci-sis/fhir/ImplementationGuides/CI-SIS.PartageDeDocumentsDeSante"],
+  "implementationGuide" : ["https://interop.esante.gouv.fr/ig/fhir/pdsm/ImplementationGuide/ans.fhir.fr.pdsm"],
   "rest" : [{
     "mode" : "client",
     "documentation" : "Recherche de documents de santé et consultation de documents d'intérêt",
@@ -35,7 +35,7 @@
     },
     "resource" : [{
       "type" : "List",
-      "profile" : "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/PDSm_SubmissionSetComprehensive",
+      "profile" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-submissionset-comprehensive",
       "interaction" : [{
         "code" : "read"
       },
@@ -50,7 +50,7 @@
       },
       {
         "name" : "DesignationType",
-        "definition" : "http://profiles.ihe.net/ITI/MHD/SearchParameter/List-DesignationType",
+        "definition" : "https://profiles.ihe.net/ITI/MHD/SearchParameter/List-DesignationType",
         "type" : "token",
         "documentation" : "Représente le type d’activité associé à l’événement clinique ayant abouti à la constitution du lot de soumission."
       },
@@ -68,7 +68,7 @@
       },
       {
         "name" : "PDSm_isArchived",
-        "definition" : "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/PDSm_isArchived",
+        "definition" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmIsArchived",
         "type" : "token",
         "documentation" : "permet distinguer les lots de soumission et les fiches archivés des actifs."
       },
@@ -80,8 +80,8 @@
       },
       {
         "name" : "SourceId",
-        "definition" : "http://profiles.ihe.net/ITI/MHD/SearchParameter/List-SourceId",
-        "type" : "reference",
+        "definition" : "https://profiles.ihe.net/ITI/MHD/SearchParameter/List-SourceId",
+        "type" : "token",
         "documentation" : "Représente l’identifiant unique global du système émetteur du lot de soumission."
       },
       {
@@ -92,7 +92,7 @@
       },
       {
         "name" : "PDSm_authorOrg",
-        "definition" : "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/PDSm_authorOrg",
+        "definition" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmAuthorOrg",
         "type" : "reference",
         "documentation" : "Représente l’auteur du lot de soumission, quand l'auteur est de type organization."
       },
@@ -104,26 +104,26 @@
       },
       {
         "name" : "PDSm_List_PatientAsSource",
-        "definition" : "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/PDSm_List_PatientAsSource",
+        "definition" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmListPatientAsSource",
         "type" : "reference",
         "documentation" : "Recherche sur les éléments source:Patient.given et source:Patient.family."
       },
       {
         "name" : "PDSm_List_PatientAsSubject",
-        "definition" : "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/PDSm_List_PatientAsSubject",
+        "definition" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmListPatientAsSubject",
         "type" : "reference",
         "documentation" : "Recherche sur l'élément subject:Patient.identifier."
       },
       {
         "name" : "PDSm_List_PractitionerRoleAsSource",
-        "definition" : "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/PDSm_List_PractitionerRoleAsSource",
+        "definition" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmListPractitionerRoleAsSource",
         "type" : "reference",
         "documentation" : "Recherche sur les éléments source:PractitionerRole.practitioner:Practitioner.given et source:PractitionerRole.practitioner:Practitioner.family."
       }]
     },
     {
       "type" : "DocumentReference",
-      "profile" : "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/PDSm_ComprehensiveDocumentReference",
+      "profile" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference",
       "interaction" : [{
         "code" : "read"
       },
@@ -150,7 +150,7 @@
       },
       {
         "name" : "creation",
-        "definition" : "http://profiles.ihe.net/ITI/MHD/SearchParameter/DocumentReference-Creation",
+        "definition" : "https://profiles.ihe.net/ITI/MHD/SearchParameter/DocumentReference-Creation",
         "type" : "date",
         "documentation" : "Représente la date et l'heure de la création du document."
       },
@@ -168,19 +168,19 @@
       },
       {
         "name" : "PDSm_isArchived",
-        "definition" : "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/PDSm_isArchived",
+        "definition" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmIsArchived",
         "type" : "token",
         "documentation" : "permet distinguer les lots de soumission et les fiches archivés des actifs."
       },
       {
         "name" : "PDSm_DocumentReference_period-start",
-        "definition" : "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/PDSm_DocumentReference_period-start",
+        "definition" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmDocumentReferencePeriodStart",
         "type" : "date",
         "documentation" : "Représente la date de début de l’acte de référence."
       },
       {
         "name" : "PDSm_DocumentReference_period-end",
-        "definition" : "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/PDSm_DocumentReference_period-end",
+        "definition" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmDocumentReferencePeriodEnd",
         "type" : "date",
         "documentation" : "Représente la date de fin de l’acte de référence."
       },
@@ -216,25 +216,25 @@
       },
       {
         "name" : "PDSm_DocumentReference_PatientAsSubject",
-        "definition" : "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/PDSm_DocumentReference_PatientAsSubject",
+        "definition" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmDocumentReferencePatientAsSubject",
         "type" : "reference",
         "documentation" : "Représente l'identifiant du patient qui est le sujet du document."
       },
       {
         "name" : "PDSm_DocumentReference_DeviceAsAuthor",
-        "definition" : "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/PDSm_DocumentReference_DeviceAsAuthor",
+        "definition" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmDocumentReferenceDeviceAsAuthor",
         "type" : "reference",
         "documentation" : "Représente l'identifiant du dispositif médical qui est l'auteur du document."
       },
       {
         "name" : "PDSm_DocumentReference_PatientAsAuthor",
-        "definition" : "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/PDSm_DocumentReference_PatientAsAuthor",
+        "definition" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmDocumentReferencePatientAsAuthor",
         "type" : "reference",
         "documentation" : "Représente l'identifiant, le nom, le prénom du patient qui est l'auteur du document."
       },
       {
         "name" : "PDSm_DocumentReference_PractitionerRoleAsAuthor",
-        "definition" : "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/PDSm_DocumentReference_PractitionerRoleAsAuthor",
+        "definition" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmDocumentReferencePractitionerRoleAsAuthor",
         "type" : "reference",
         "documentation" : "Représente l'identifiant, le nom, le prénom du praticien dans sa situation d'exercice qui est l'auteur du document."
       }]

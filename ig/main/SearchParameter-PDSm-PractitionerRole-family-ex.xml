@@ -3,12 +3,12 @@
 <SearchParameter xmlns="http://hl7.org/fhir">
   <id value="PDSm-PractitionerRole-family-ex"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>PractitionerRole_family-ex</h2><p>Parameter <code>family-ex</code>:<code>string</code></p><div><p>Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'extension PractitionerRoleName qui permet de préciser le nom d'exercice d'un professionnel (family)</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>PractitionerRoleFamilyEx</h2><p>Parameter <code>family-ex</code>:<code>string</code></p><div><p>Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'extension PractitionerRoleName qui permet de préciser le nom d'exercice d'un professionnel (family)</p>
 </div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a></td></tr><tr><td>Expression</td><td><code>(extension('https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-name').valueHumanName.family as String)</code></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>
   </text>
   <url value="https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSm-PractitionerRole-family-ex"/>
-  <version value="3.0.0"/>
-  <name value="PractitionerRole_family-ex"/>
+  <version value="3.0.1"/>
+  <name value="PractitionerRoleFamilyEx"/>
   <status value="active"/>
   <date value="2021-12-01"/>
   <publisher value="ANS"/>

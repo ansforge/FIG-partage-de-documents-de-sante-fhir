@@ -3,13 +3,13 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
   <id value="PDSm-ProducteurDeDocuments"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>PDSm-ProducteurDeDocuments</h2><div><p>Il s’agit d’un système d’information ou d’un composant de système d’information qui envoie au gestionnaire de partage de documents une  demande d’ajout de nouveaux documents et/ou des nouvelles versions de documents. Ce système fournit également les modifications des  métadonnées du document.</p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>PDSmProducteurDeDocuments</h2><div><p>Il s’agit d’un système d’information ou d’un composant de système d’information qui envoie au gestionnaire de partage de documents une  demande d’ajout de nouveaux documents et/ou des nouvelles versions de documents. Ce système fournit également les modifications des  métadonnées du document.</p>
 </div><table><tr><td>Mode</td><td>CLIENT</td></tr><tr><td>Description</td><td><div><p>Ajout d’un lot de documents et Demande de mise à jour des métadonnées de la fiche</p>
-</div></td></tr><tr><td>Transaction</td><td>y</td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title="GET a resource (read interaction)">Read</b></th><th><b title="GET all set of resources of the type (search interaction)">Search</b></th><th><b title="PUT a new resource version (update interaction)">Update</b></th><th><b title="PATCH a new resource version (patch interaction)">Patch</b></th><th><b title="POST a new resource (create interaction)">Create</b></th></tr><tr><td>DocumentReference</td><td><a href="http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/PDSm_ComprehensiveDocumentReference">http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/PDSm_ComprehensiveDocumentReference</a></td><td></td><td></td><td></td><td>y</td><td></td></tr></table></div>
+</div></td></tr><tr><td>Transaction</td><td>y</td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title="GET a resource (read interaction)">Read</b></th><th><b title="GET all set of resources of the type (search interaction)">Search</b></th><th><b title="PUT a new resource version (update interaction)">Update</b></th><th><b title="PATCH a new resource version (patch interaction)">Patch</b></th><th><b title="POST a new resource (create interaction)">Create</b></th></tr><tr><td>DocumentReference</td><td><a href="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference">https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference</a></td><td></td><td></td><td></td><td>y</td><td></td></tr></table></div>
   </text>
   <url value="https://interop.esante.gouv.fr/ig/fhir/pdsm/CapabilityStatement/PDSm-ProducteurDeDocuments"/>
-  <version value="3.0.0"/>
-  <name value="PDSm-ProducteurDeDocuments"/>
+  <version value="3.0.1"/>
+  <name value="PDSmProducteurDeDocuments"/>
   <title value="CI-SIS Partage-De-Documents-De-Sante - ProducteurDeDocuments"/>
   <status value="active"/>
   <experimental value="false"/>
@@ -27,6 +27,7 @@
   <fhirVersion value="4.0.0"/>
   <format value="xml"/>
   <format value="json"/>
+  <implementationGuide value="https://interop.esante.gouv.fr/ig/fhir/pdsm/ImplementationGuide/ans.fhir.fr.pdsm"/>
   <rest>
     <mode value="client"/>
     <documentation value="Ajout d’un lot de documents et Demande de mise à jour des métadonnées de la fiche"/>
@@ -36,7 +37,7 @@
     </security>
     <resource>
       <type value="DocumentReference"/>
-      <profile value="http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/PDSm_ComprehensiveDocumentReference"/>
+      <profile value="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"/>
       <interaction>
         <code value="patch"/>
       </interaction>
@@ -44,7 +45,7 @@
     </resource>
     <interaction>
       <code value="transaction"/>
-      <documentation value="http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/PDSm_ComprehensiveProvideDocumentBundle"/>
+      <documentation value="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-provide-document-bundle"/>
     </interaction>
   </rest>
 </CapabilityStatement>

@@ -3,12 +3,12 @@
 <SearchParameter xmlns="http://hl7.org/fhir">
   <id value="PDSm-List-PatientAsSource"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>PDSm_List_PatientAsSource</h2><p>Parameter <code>source</code>:<code>reference</code></p><div><p>Paramètre de recherche chaîné créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'élément source:Patient.given et source:Patient.family</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>PDSmListPatientAsSource</h2><p>Parameter <code>source</code>:<code>reference</code></p><div><p>Paramètre de recherche chaîné créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'élément source:Patient.given et source:Patient.family</p>
 </div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R4/list.html">List</a></td></tr><tr><td>Expression</td><td><code>List.source</code></td></tr><tr><td>Processing Mode</td><td>Normal</td></tr><tr><td>Target Resources</td><td><a href="http://hl7.org/fhir/R4/patient.html">Patient</a></td></tr><tr><td>Multiples</td><td>The parameter can repeat (and) and can have repeating values (or)</td></tr><tr><td>Modifiers</td><td>Allowed: exact, contains</td></tr><tr><td>Chains</td><td>Allowed: given, family</td></tr></table></div>
   </text>
   <url value="https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSm-List-PatientAsSource"/>
-  <version value="3.0.0"/>
-  <name value="PDSm_List_PatientAsSource"/>
+  <version value="3.0.1"/>
+  <name value="PDSmListPatientAsSource"/>
   <derivedFrom value="http://hl7.org/fhir/SearchParameter/List-source"/>
   <status value="active"/>
   <date value="2021-07-30"/>

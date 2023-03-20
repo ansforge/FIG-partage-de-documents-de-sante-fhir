@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>PDSm</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/fhir/pdsm/ImplementationGuide/ans.fhir.fr.pdsm</pre></div>"
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/ImplementationGuide/ans.fhir.fr.pdsm",
-  "version" : "3.0.0",
+  "version" : "3.0.1",
   "name" : "PDSm",
   "title" : "Partage de Documents de Santé en mobilité (PDSm)",
   "status" : "draft",
-  "date" : "2023-03-19T16:05:57+00:00",
+  "date" : "2023-03-20T11:16:14+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -691,7 +691,7 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/PDSmIsArchived"
+        "reference" : "StructureDefinition/pdsm-is-archived"
       },
       "name" : "PDSm_isArchived",
       "description" : "Extension définie par le volet ANS \"Volet Partage de documents de santé en mobilité\" sur les ressources List et DocumentReference pour distinguer les lots de soumission et les fiches archivés des actives.",
@@ -886,7 +886,7 @@
         "reference" : "SearchParameter/PDSm-isArchived"
       },
       "name" : "PDSm-isArchived",
-      "description" : "Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère derecherche l'élément isARchived qui permet distinguer les lots de soumission et les fiches archivés des actives.",
+      "description" : "Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère derecherche l'élément isArchived qui permet distinguer les lots de soumission et les fiches archivés des actives.",
       "exampleBoolean" : false
     },
     {

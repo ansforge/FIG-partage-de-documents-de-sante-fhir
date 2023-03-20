@@ -3,13 +3,13 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
   <id value="PDSm-ConsommateurDeDocuments"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>PDSm_ConsommateurDeDocuments</h2><div><p>Il s’agit d’un système d’information ou d’un composant de système d’information qui recherche des documents selon certains critères, et qui peut consulter les documents qui l’intéressent.</p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>PDSmConsommateurDeDocuments</h2><div><p>Il s’agit d’un système d’information ou d’un composant de système d’information qui recherche des documents selon certains critères, et qui peut consulter les documents qui l’intéressent.</p>
 </div><table><tr><td>Mode</td><td>CLIENT</td></tr><tr><td>Description</td><td><div><p>Recherche de documents de santé et consultation de documents d'intérêt</p>
-</div></td></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title="GET a resource (read interaction)">Read</b></th><th><b title="GET all set of resources of the type (search interaction)">Search</b></th><th><b title="PUT a new resource version (update interaction)">Update</b></th><th><b title="POST a new resource (create interaction)">Create</b></th></tr><tr><td>List</td><td><a href="http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/PDSm_SubmissionSetComprehensive">http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/PDSm_SubmissionSetComprehensive</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>DocumentReference</td><td><a href="http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/PDSm_ComprehensiveDocumentReference">http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/PDSm_ComprehensiveDocumentReference</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Binary</td><td><a href="http://hl7.org/fhir/StructureDefinition/Binary">http://hl7.org/fhir/StructureDefinition/Binary</a></td><td>y</td><td></td><td></td><td></td></tr></table></div>
+</div></td></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title="GET a resource (read interaction)">Read</b></th><th><b title="GET all set of resources of the type (search interaction)">Search</b></th><th><b title="PUT a new resource version (update interaction)">Update</b></th><th><b title="POST a new resource (create interaction)">Create</b></th></tr><tr><td>List</td><td><a href="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-submissionset-comprehensive">https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-submissionset-comprehensive</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>DocumentReference</td><td><a href="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference">https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Binary</td><td><a href="http://hl7.org/fhir/StructureDefinition/Binary">http://hl7.org/fhir/StructureDefinition/Binary</a></td><td>y</td><td></td><td></td><td></td></tr></table></div>
   </text>
   <url value="https://interop.esante.gouv.fr/ig/fhir/pdsm/CapabilityStatement/PDSm-ConsommateurDeDocuments"/>
-  <version value="3.0.0"/>
-  <name value="PDSm_ConsommateurDeDocuments"/>
+  <version value="3.0.1"/>
+  <name value="PDSmConsommateurDeDocuments"/>
   <title value="CI-SIS Partage-De-Documents-De-Sante - ConsommateurDeDocuments"/>
   <status value="active"/>
   <experimental value="false"/>
@@ -27,7 +27,7 @@
   <fhirVersion value="4.0.0"/>
   <format value="xml"/>
   <format value="json"/>
-  <implementationGuide value="http://esante.gouv.fr/ci-sis/fhir/ImplementationGuides/CI-SIS.PartageDeDocumentsDeSante"/>
+  <implementationGuide value="https://interop.esante.gouv.fr/ig/fhir/pdsm/ImplementationGuide/ans.fhir.fr.pdsm"/>
   <rest>
     <mode value="client"/>
     <documentation value="Recherche de documents de santé et consultation de documents d'intérêt"/>
@@ -37,7 +37,7 @@
     </security>
     <resource>
       <type value="List"/>
-      <profile value="http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/PDSm_SubmissionSetComprehensive"/>
+      <profile value="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-submissionset-comprehensive"/>
       <interaction>
         <code value="read"/>
       </interaction>
@@ -52,7 +52,7 @@
       </searchParam>
       <searchParam>
         <name value="DesignationType"/>
-        <definition value="http://profiles.ihe.net/ITI/MHD/SearchParameter/List-DesignationType"/>
+        <definition value="https://profiles.ihe.net/ITI/MHD/SearchParameter/List-DesignationType"/>
         <type value="token"/>
         <documentation value="Représente le type d’activité associé à l’événement clinique ayant abouti à la constitution du lot de soumission."/>
       </searchParam>
@@ -70,7 +70,7 @@
       </searchParam>
       <searchParam>
         <name value="PDSm_isArchived"/>
-        <definition value="http://esante.gouv.fr/ci-sis/fhir/SearchParameter/PDSm_isArchived"/>
+        <definition value="https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmIsArchived"/>
         <type value="token"/>
         <documentation value="permet distinguer les lots de soumission et les fiches archivés des actifs."/>
       </searchParam>
@@ -82,8 +82,8 @@
       </searchParam>
       <searchParam>
         <name value="SourceId"/>
-        <definition value="http://profiles.ihe.net/ITI/MHD/SearchParameter/List-SourceId"/>
-        <type value="reference"/>
+        <definition value="https://profiles.ihe.net/ITI/MHD/SearchParameter/List-SourceId"/>
+        <type value="token"/>
         <documentation value="Représente l’identifiant unique global du système émetteur du lot de soumission."/>
       </searchParam>
       <searchParam>
@@ -94,7 +94,7 @@
       </searchParam>
       <searchParam>
         <name value="PDSm_authorOrg"/>
-        <definition value="http://esante.gouv.fr/ci-sis/fhir/SearchParameter/PDSm_authorOrg"/>
+        <definition value="https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmAuthorOrg"/>
         <type value="reference"/>
         <documentation value="Représente l’auteur du lot de soumission, quand l'auteur est de type organization."/>
       </searchParam>
@@ -106,26 +106,26 @@
       </searchParam>
       <searchParam>
         <name value="PDSm_List_PatientAsSource"/>
-        <definition value="http://esante.gouv.fr/ci-sis/fhir/SearchParameter/PDSm_List_PatientAsSource"/>
+        <definition value="https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmListPatientAsSource"/>
         <type value="reference"/>
         <documentation value="Recherche sur les éléments source:Patient.given et source:Patient.family."/>
       </searchParam>
       <searchParam>
         <name value="PDSm_List_PatientAsSubject"/>
-        <definition value="http://esante.gouv.fr/ci-sis/fhir/SearchParameter/PDSm_List_PatientAsSubject"/>
+        <definition value="https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmListPatientAsSubject"/>
         <type value="reference"/>
         <documentation value="Recherche sur l'élément subject:Patient.identifier."/>
       </searchParam>
       <searchParam>
         <name value="PDSm_List_PractitionerRoleAsSource"/>
-        <definition value="http://esante.gouv.fr/ci-sis/fhir/SearchParameter/PDSm_List_PractitionerRoleAsSource"/>
+        <definition value="https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmListPractitionerRoleAsSource"/>
         <type value="reference"/>
         <documentation value="Recherche sur les éléments source:PractitionerRole.practitioner:Practitioner.given et source:PractitionerRole.practitioner:Practitioner.family."/>
       </searchParam>
     </resource>
     <resource>
       <type value="DocumentReference"/>
-      <profile value="http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/PDSm_ComprehensiveDocumentReference"/>
+      <profile value="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"/>
       <interaction>
         <code value="read"/>
       </interaction>
@@ -152,7 +152,7 @@
       </searchParam>
       <searchParam>
         <name value="creation"/>
-        <definition value="http://profiles.ihe.net/ITI/MHD/SearchParameter/DocumentReference-Creation"/>
+        <definition value="https://profiles.ihe.net/ITI/MHD/SearchParameter/DocumentReference-Creation"/>
         <type value="date"/>
         <documentation value="Représente la date et l'heure de la création du document."/>
       </searchParam>
@@ -170,19 +170,19 @@
       </searchParam>
       <searchParam>
         <name value="PDSm_isArchived"/>
-        <definition value="http://esante.gouv.fr/ci-sis/fhir/SearchParameter/PDSm_isArchived"/>
+        <definition value="https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmIsArchived"/>
         <type value="token"/>
         <documentation value="permet distinguer les lots de soumission et les fiches archivés des actifs."/>
       </searchParam>
       <searchParam>
         <name value="PDSm_DocumentReference_period-start"/>
-        <definition value="http://esante.gouv.fr/ci-sis/fhir/SearchParameter/PDSm_DocumentReference_period-start"/>
+        <definition value="https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmDocumentReferencePeriodStart"/>
         <type value="date"/>
         <documentation value="Représente la date de début de l’acte de référence."/>
       </searchParam>
       <searchParam>
         <name value="PDSm_DocumentReference_period-end"/>
-        <definition value="http://esante.gouv.fr/ci-sis/fhir/SearchParameter/PDSm_DocumentReference_period-end"/>
+        <definition value="https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmDocumentReferencePeriodEnd"/>
         <type value="date"/>
         <documentation value="Représente la date de fin de l’acte de référence."/>
       </searchParam>
@@ -218,25 +218,25 @@
       </searchParam>
       <searchParam>
         <name value="PDSm_DocumentReference_PatientAsSubject"/>
-        <definition value="http://esante.gouv.fr/ci-sis/fhir/SearchParameter/PDSm_DocumentReference_PatientAsSubject"/>
+        <definition value="https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmDocumentReferencePatientAsSubject"/>
         <type value="reference"/>
         <documentation value="Représente l'identifiant du patient qui est le sujet du document."/>
       </searchParam>
       <searchParam>
         <name value="PDSm_DocumentReference_DeviceAsAuthor"/>
-        <definition value="http://esante.gouv.fr/ci-sis/fhir/SearchParameter/PDSm_DocumentReference_DeviceAsAuthor"/>
+        <definition value="https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmDocumentReferenceDeviceAsAuthor"/>
         <type value="reference"/>
         <documentation value="Représente l'identifiant du dispositif médical qui est l'auteur du document."/>
       </searchParam>
       <searchParam>
         <name value="PDSm_DocumentReference_PatientAsAuthor"/>
-        <definition value="http://esante.gouv.fr/ci-sis/fhir/SearchParameter/PDSm_DocumentReference_PatientAsAuthor"/>
+        <definition value="https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmDocumentReferencePatientAsAuthor"/>
         <type value="reference"/>
         <documentation value="Représente l'identifiant, le nom, le prénom du patient qui est l'auteur du document."/>
       </searchParam>
       <searchParam>
         <name value="PDSm_DocumentReference_PractitionerRoleAsAuthor"/>
-        <definition value="http://esante.gouv.fr/ci-sis/fhir/SearchParameter/PDSm_DocumentReference_PractitionerRoleAsAuthor"/>
+        <definition value="https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmDocumentReferencePractitionerRoleAsAuthor"/>
         <type value="reference"/>
         <documentation value="Représente l'identifiant, le nom, le prénom du praticien dans sa situation d'exercice qui est l'auteur du document."/>
       </searchParam>

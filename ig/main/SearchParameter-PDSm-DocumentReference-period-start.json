@@ -3,12 +3,11 @@
   "id" : "PDSm-DocumentReference-period-start",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>PDSm_DocumentReference_period-start</h2><p>Parameter <code>period-start</code>:<code>date</code></p><div><p>Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'élément context.period.start correspondant à lobjet dateDebutActe</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/documentreference.html\">DocumentReference</a></td></tr><tr><td>Expression</td><td><code>DocumentReference.context.period.start</code></td></tr><tr><td>Multiples</td><td>The parameter can repeat (and) and can have repeating values (or)</td></tr><tr><td>Comparators</td><td>Allowed: eq, ne, gt, lt, ge, le, sa, eb, ap</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>PDSmDocumentReferencePeriodStart</h2><p>Parameter <code>period-start</code>:<code>date</code></p><div><p>Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'élément context.period.start correspondant à lobjet dateDebutActe</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/documentreference.html\">DocumentReference</a></td></tr><tr><td>Expression</td><td><code>DocumentReference.context.period.start</code></td></tr><tr><td>Multiples</td><td>The parameter can repeat (and) and can have repeating values (or)</td></tr><tr><td>Comparators</td><td>Allowed: eq, ne, gt, lt, ge, le, sa, eb, ap</td></tr></table></div>"
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSm-DocumentReference-period-start",
-  "version" : "3.0.0",
-  "name" : "PDSm_DocumentReference_period-start",
-  "derivedFrom" : "http://hl7.org/fhir/SearchParameter/DocumentReference-period",
+  "version" : "3.0.1",
+  "name" : "PDSmDocumentReferencePeriodStart",
   "status" : "active",
   "date" : "2021-10-21T14:10:19.3001986+00:00",
   "publisher" : "ANS",

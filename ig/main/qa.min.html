@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 328, errors = 1, warn = 108, info = 0-->
+<!-- broken links = 328, errors = 1, warn = 36, info = 0-->
 <head>
   <title>PDSm : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,18 +36,30 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for PDSm</h1>
- <p>Generated Sun Mar 19 16:06:49 UTC 2023, FHIR version 4.0.1 for ans.fhir.fr.pdsm#3.0.0 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/pdsm">https://interop.esante.gouv.fr/ig/fhir/pdsm</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/pdsm/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
+ <p>Generated Mon Mar 20 11:17:16 UTC 2023, FHIR version 4.0.1 for ans.fhir.fr.pdsm#3.0.1 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/pdsm">https://interop.esante.gouv.fr/ig/fhir/pdsm</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/pdsm/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
- <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.2.52</span></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.2.53</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ans.fhir.fr.pdsm, Canonical = https://interop.esante.gouv.fr/ig/fhir/pdsm</td></tr>
  <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
- <tr><td>Publication Request:</td><td><ul><li>Version 3.0.0 has already been published <img src="icon-warning.png" height="16px" width="16px"/></li>
-<li>Publication Requet is for version v3.0.0 which is already published <img src="icon-error.gif" height="16px" width="16px"/></li>
+ <tr><td>Publication Request:</td><td><table class="grid">
+ <tr><td>package-id</d><td>ans.fhir.fr.pdsm</td></tr>
+ <tr><td>version</d><td>3.0.1</td></tr>
+ <tr><td>path</d><td>https://interop.esante.gouv.fr/ig/fhir/pdsm/3.0.1</td></tr>
+ <tr><td>status</d><td>release</td></tr>
+ <tr><td>sequence</d><td>Releases</td></tr>
+ <tr><td>desc</d><td>Correction des erreurs du FHIR validator : ajout SearchParam expression, suppression des espaces début/fin des string, correction des SearchParam.name qui n'avaient pas le bon format, changement des urls et des noms des ressources des CapabilityStatement, correction des url des SearchParam IHE</td></tr>
+</table>
+<ul><li>This release is not labelled as a milestone, so should have a patch version (3.0.1) <img src="icon-warning.png" height="16px" width="16px"/></li>
+<li>This publication will finish the sequence 'STU1' and start a new sequence 'Releases' <img src="information.png" height="16px" width="16px"/></li>
+<li>Publication request category found (not allowed after first publication <img src="icon-error.gif" height="16px" width="16px"/></li>
+<li>Publication request title found (not allowed after first publication) <img src="icon-error.gif" height="16px" width="16px"/></li>
+<li>Publication request introduction found (not allowed after first publication) <img src="icon-error.gif" height="16px" width="16px"/></li>
+<li>Publication request ci-build found (not allowed after first publication) <img src="icon-error.gif" height="16px" width="16px"/></li>
 </ul>
 </td></tr>
  <tr><td>Supressed Messages:</td><td>No Suppressed Issues
 </td></tr>
- <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> ans.fhir.fr.pdsm</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">3.0.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://interop.esante.gouv.fr/ig/fhir/pdsm</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> ans.fhir.fr.pdsm</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">3.0.1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://interop.esante.gouv.fr/ig/fhir/pdsm</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r4</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.0.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Outdated Release">O</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/5.0.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Latest Release is 5.1.0</td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> ihe.iti.mhd</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.2.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://profiles.ihe.net/ITI/MHD</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://profiles.ihe.net/ITI/MHD/4.2.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAMUlEQVR4Xu3LMQoAIBADwftr/v8GtdbqEAthAtMspJJUx9rYW8ftHwAA+NcRAAAAXplLq0BWj/rZigAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzMPbYccAgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAMElEQVQ4y+3OQREAIBDDwAv+PQcFFN5MIyCzqHMKUGVCpMFLK97heq+gggoq+EiwAVjvMhFGmlEUAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r4</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.0.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Outdated Release">O</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/5.0.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">see above. Latest Release is 5.1.0</td></tr>
@@ -62,9 +74,9 @@
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
  <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
- <tr><td>Previous Version Comparison:</td><td> </td></tr>
+ <tr><td>Previous Version Comparison:</td><td> <a href="comparison-v3.0.0/index.html">Comparison with version 3.0.0</a></td></tr>
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
- <tr><td>Summary:</td><td> errors = 1, warn = 108, info = 0, broken links = 328</td></tr>
+ <tr><td>Summary:</td><td> errors = 1, warn = 36, info = 0, broken links = 328</td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -74,31 +86,10 @@
      <td><a href="#internal"><b>Build Errors</b></a></td><td><b>329</b></td><td><b>5</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_FIG-partage-de-documents-de-sante-fhir_FIG-partage-de-documents-de-sante-fhir_fsh-generated_resources_CapabilityStatement-PDSm-ProducteurDeDocuments"><b>/home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/CapabilityStatement-PDSm-ProducteurDeDocuments</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_FIG-partage-de-documents-de-sante-fhir_FIG-partage-de-documents-de-sante-fhir_fsh-generated_resources_SearchParameter-PDSm-DocumentReference-PatientAsSubject"><b>/home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/SearchParameter-PDSm-DocumentReference-PatientAsSubject</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_FIG-partage-de-documents-de-sante-fhir_FIG-partage-de-documents-de-sante-fhir_fsh-generated_resources_SearchParameter-PDSm-DocumentReference-period-end"><b>/home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/SearchParameter-PDSm-DocumentReference-period-end</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_FIG-partage-de-documents-de-sante-fhir_FIG-partage-de-documents-de-sante-fhir_fsh-generated_resources_SearchParameter-PDSm-DocumentReference-period-start"><b>/home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/SearchParameter-PDSm-DocumentReference-period-start</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_FIG-partage-de-documents-de-sante-fhir_FIG-partage-de-documents-de-sante-fhir_fsh-generated_resources_SearchParameter-PDSm-PractitionerRole-family-ex"><b>/home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/SearchParameter-PDSm-PractitionerRole-family-ex</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_FIG-partage-de-documents-de-sante-fhir_FIG-partage-de-documents-de-sante-fhir_fsh-generated_resources_SearchParameter-PDSm-PractitionerRole-given-ex"><b>/home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/SearchParameter-PDSm-PractitionerRole-given-ex</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_FIG-partage-de-documents-de-sante-fhir_FIG-partage-de-documents-de-sante-fhir_fsh-generated_resources_StructureDefinition-PDSmIsArchived"><b>/home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/StructureDefinition-PDSmIsArchived</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_FIG-partage-de-documents-de-sante-fhir_FIG-partage-de-documents-de-sante-fhir_fsh-generated_resources_StructureDefinition-PDSmintendedrecipient"><b>/home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/StructureDefinition-PDSmintendedrecipient</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_FIG-partage-de-documents-de-sante-fhir_FIG-partage-de-documents-de-sante-fhir_fsh-generated_resources_StructureDefinition-pdsm-comprehensive-document-reference"><b>/home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/StructureDefinition-pdsm-comprehensive-document-reference</b></a></td><td><b>0</b></td><td><b>41</b></td><td><b>0</b></td>
+     <td><a href="#_home_runner_work_FIG-partage-de-documents-de-sante-fhir_FIG-partage-de-documents-de-sante-fhir_fsh-generated_resources_StructureDefinition-pdsm-comprehensive-document-reference"><b>/home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/StructureDefinition-pdsm-comprehensive-document-reference</b></a></td><td><b>0</b></td><td><b>11</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_FIG-partage-de-documents-de-sante-fhir_FIG-partage-de-documents-de-sante-fhir_fsh-generated_resources_StructureDefinition-pdsm-comprehensive-provide-document-bundle"><b>/home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/StructureDefinition-pdsm-comprehensive-provide-document-bundle</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
@@ -113,10 +104,13 @@
      <td><a href="#_home_runner_work_FIG-partage-de-documents-de-sante-fhir_FIG-partage-de-documents-de-sante-fhir_fsh-generated_resources_StructureDefinition-pdsm-folder-comprehensive"><b>/home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/StructureDefinition-pdsm-folder-comprehensive</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_FIG-partage-de-documents-de-sante-fhir_FIG-partage-de-documents-de-sante-fhir_fsh-generated_resources_StructureDefinition-pdsm-simplified-publish"><b>/home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/StructureDefinition-pdsm-simplified-publish</b></a></td><td><b>0</b></td><td><b>35</b></td><td><b>0</b></td>
+     <td><a href="#_home_runner_work_FIG-partage-de-documents-de-sante-fhir_FIG-partage-de-documents-de-sante-fhir_fsh-generated_resources_StructureDefinition-pdsm-is-archived"><b>/home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/StructureDefinition-pdsm-is-archived</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_FIG-partage-de-documents-de-sante-fhir_FIG-partage-de-documents-de-sante-fhir_fsh-generated_resources_StructureDefinition-pdsm-submissionset-comprehensive"><b>/home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/StructureDefinition-pdsm-submissionset-comprehensive</b></a></td><td><b>0</b></td><td><b>13</b></td><td><b>0</b></td>
+     <td><a href="#_home_runner_work_FIG-partage-de-documents-de-sante-fhir_FIG-partage-de-documents-de-sante-fhir_fsh-generated_resources_StructureDefinition-pdsm-simplified-publish"><b>/home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/StructureDefinition-pdsm-simplified-publish</b></a></td><td><b>0</b></td><td><b>11</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_FIG-partage-de-documents-de-sante-fhir_FIG-partage-de-documents-de-sante-fhir_fsh-generated_resources_StructureDefinition-pdsm-submissionset-comprehensive"><b>/home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/StructureDefinition-pdsm-submissionset-comprehensive</b></a></td><td><b>0</b></td><td><b>3</b></td><td><b>0</b></td>
    </tr>
 </table>
 <hr/>
@@ -129,24 +123,6 @@
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/a9c10f8a-882d-4000-a280-7150e0aeb478.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-PDSmIsArchived.html#l583">output/StructureDefinition-PDSmIsArchived.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 367, column 2580</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-PDSmIsArchived-definitions.html#diff_Extension' for &quot;Extension&quot; cannot be resolved (valid targets: [ans-nav, segment-header, Extension.extension, publish-box, Extension.value[x]:valueBoolean, bottom, hl7-logo, segment-post-footer, Extension.value[x], Extension.valueBoolean, hl7-search-lnk, Extension.id, family-nav, Extension, ig-status, extension-pdsm_isarchived-detailed-descriptions, top, root, stripe, segment-footer, segment-navbar, segment-content, Extension.url, segment-breadcrumb])</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-PDSmIsArchived.html#l628">output/StructureDefinition-PDSmIsArchived.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 369, column 617</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-PDSmIsArchived-definitions.html#diff_Extension.url' for &quot;url&quot; cannot be resolved (valid targets: [ans-nav, segment-header, Extension.extension, publish-box, Extension.value[x]:valueBoolean, bottom, hl7-logo, segment-post-footer, Extension.value[x], Extension.valueBoolean, hl7-search-lnk, Extension.id, family-nav, Extension, ig-status, extension-pdsm_isarchived-detailed-descriptions, top, root, stripe, segment-footer, segment-navbar, segment-content, Extension.url, segment-breadcrumb])</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-PDSmIsArchived.html#l653">output/StructureDefinition-PDSmIsArchived.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 370, column 641</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-PDSmIsArchived-definitions.html#diff_Extension.value[x]' for &quot;value[x]&quot; cannot be resolved (valid targets: [ans-nav, segment-header, Extension.extension, publish-box, Extension.value[x]:valueBoolean, bottom, hl7-logo, segment-post-footer, Extension.value[x], Extension.valueBoolean, hl7-search-lnk, Extension.id, family-nav, Extension, ig-status, extension-pdsm_isarchived-detailed-descriptions, top, root, stripe, segment-footer, segment-navbar, segment-content, Extension.url, segment-breadcrumb])</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-PDSmIsArchived.html#l886">output/StructureDefinition-PDSmIsArchived.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 446, column 2580</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-PDSmIsArchived-definitions.html#diff_Extension' for &quot;Extension&quot; cannot be resolved (valid targets: [ans-nav, segment-header, Extension.extension, publish-box, Extension.value[x]:valueBoolean, bottom, hl7-logo, segment-post-footer, Extension.value[x], Extension.valueBoolean, hl7-search-lnk, Extension.id, family-nav, Extension, ig-status, extension-pdsm_isarchived-detailed-descriptions, top, root, stripe, segment-footer, segment-navbar, segment-content, Extension.url, segment-breadcrumb])</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-PDSmIsArchived.html#l931">output/StructureDefinition-PDSmIsArchived.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 448, column 617</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-PDSmIsArchived-definitions.html#diff_Extension.url' for &quot;url&quot; cannot be resolved (valid targets: [ans-nav, segment-header, Extension.extension, publish-box, Extension.value[x]:valueBoolean, bottom, hl7-logo, segment-post-footer, Extension.value[x], Extension.valueBoolean, hl7-search-lnk, Extension.id, family-nav, Extension, ig-status, extension-pdsm_isarchived-detailed-descriptions, top, root, stripe, segment-footer, segment-navbar, segment-content, Extension.url, segment-breadcrumb])</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-PDSmIsArchived.html#l956">output/StructureDefinition-PDSmIsArchived.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 449, column 641</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-PDSmIsArchived-definitions.html#diff_Extension.value[x]' for &quot;value[x]&quot; cannot be resolved (valid targets: [ans-nav, segment-header, Extension.extension, publish-box, Extension.value[x]:valueBoolean, bottom, hl7-logo, segment-post-footer, Extension.value[x], Extension.valueBoolean, hl7-search-lnk, Extension.id, family-nav, Extension, ig-status, extension-pdsm_isarchived-detailed-descriptions, top, root, stripe, segment-footer, segment-navbar, segment-content, Extension.url, segment-breadcrumb])</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="StructureDefinition-PDSmintendedrecipient.html#l577">output/StructureDefinition-PDSmintendedrecipient.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 365, column 2587</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-PDSmintendedrecipient-definitions.html#diff_Extension' for &quot;Extension&quot; cannot be resolved (valid targets: [ans-nav, segment-header, Extension.extension, publish-box, bottom, hl7-logo, segment-post-footer, Extension.value[x], hl7-search-lnk, Extension.id, Extension.valueReference, family-nav, Extension, ig-status, top, root, stripe, segment-footer, segment-navbar, segment-content, extension-pdsm_intendedrecipient-detailed-descriptions, Extension.url, segment-breadcrumb, Extension.value[x]:valueReference])</b></td>
@@ -680,6 +656,24 @@
      <td><b><a href="StructureDefinition-pdsm-folder-comprehensive.html#l2670">output/StructureDefinition-pdsm-folder-comprehensive.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 586, column 739</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-folder-comprehensive-definitions.html#diff_List.entry.item' for &quot;item&quot; cannot be resolved (valid targets: 57 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pdsm-is-archived.html#l583">output/StructureDefinition-pdsm-is-archived.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 367, column 2582</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-is-archived-definitions.html#diff_Extension' for &quot;Extension&quot; cannot be resolved (valid targets: [ans-nav, segment-header, Extension.extension, publish-box, Extension.value[x]:valueBoolean, bottom, hl7-logo, segment-post-footer, Extension.value[x], Extension.valueBoolean, hl7-search-lnk, Extension.id, family-nav, Extension, ig-status, extension-pdsm_isarchived-detailed-descriptions, top, root, stripe, segment-footer, segment-navbar, segment-content, Extension.url, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pdsm-is-archived.html#l628">output/StructureDefinition-pdsm-is-archived.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 369, column 617</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-is-archived-definitions.html#diff_Extension.url' for &quot;url&quot; cannot be resolved (valid targets: [ans-nav, segment-header, Extension.extension, publish-box, Extension.value[x]:valueBoolean, bottom, hl7-logo, segment-post-footer, Extension.value[x], Extension.valueBoolean, hl7-search-lnk, Extension.id, family-nav, Extension, ig-status, extension-pdsm_isarchived-detailed-descriptions, top, root, stripe, segment-footer, segment-navbar, segment-content, Extension.url, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pdsm-is-archived.html#l653">output/StructureDefinition-pdsm-is-archived.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 370, column 641</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-is-archived-definitions.html#diff_Extension.value[x]' for &quot;value[x]&quot; cannot be resolved (valid targets: [ans-nav, segment-header, Extension.extension, publish-box, Extension.value[x]:valueBoolean, bottom, hl7-logo, segment-post-footer, Extension.value[x], Extension.valueBoolean, hl7-search-lnk, Extension.id, family-nav, Extension, ig-status, extension-pdsm_isarchived-detailed-descriptions, top, root, stripe, segment-footer, segment-navbar, segment-content, Extension.url, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pdsm-is-archived.html#l886">output/StructureDefinition-pdsm-is-archived.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 446, column 2582</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-is-archived-definitions.html#diff_Extension' for &quot;Extension&quot; cannot be resolved (valid targets: [ans-nav, segment-header, Extension.extension, publish-box, Extension.value[x]:valueBoolean, bottom, hl7-logo, segment-post-footer, Extension.value[x], Extension.valueBoolean, hl7-search-lnk, Extension.id, family-nav, Extension, ig-status, extension-pdsm_isarchived-detailed-descriptions, top, root, stripe, segment-footer, segment-navbar, segment-content, Extension.url, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pdsm-is-archived.html#l931">output/StructureDefinition-pdsm-is-archived.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 448, column 617</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-is-archived-definitions.html#diff_Extension.url' for &quot;url&quot; cannot be resolved (valid targets: [ans-nav, segment-header, Extension.extension, publish-box, Extension.value[x]:valueBoolean, bottom, hl7-logo, segment-post-footer, Extension.value[x], Extension.valueBoolean, hl7-search-lnk, Extension.id, family-nav, Extension, ig-status, extension-pdsm_isarchived-detailed-descriptions, top, root, stripe, segment-footer, segment-navbar, segment-content, Extension.url, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pdsm-is-archived.html#l956">output/StructureDefinition-pdsm-is-archived.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 449, column 641</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-is-archived-definitions.html#diff_Extension.value[x]' for &quot;value[x]&quot; cannot be resolved (valid targets: [ans-nav, segment-header, Extension.extension, publish-box, Extension.value[x]:valueBoolean, bottom, hl7-logo, segment-post-footer, Extension.value[x], Extension.valueBoolean, hl7-search-lnk, Extension.id, family-nav, Extension, ig-status, extension-pdsm_isarchived-detailed-descriptions, top, root, stripe, segment-footer, segment-navbar, segment-content, Extension.url, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
      <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l621">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 390, column 2591</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference' for &quot;DocumentReference&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -755,160 +749,160 @@
      <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l1341">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 444, column 711</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.context.facilityType' for &quot;facilityType&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l1383">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 449, column 705</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.context.practiceSetting' for &quot;practiceSetting&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l1383">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 448, column 705</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.context.practiceSetting' for &quot;practiceSetting&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l1425">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 454, column 739</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.context.sourcePatientInfo' for &quot;sourcePatientInfo&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l1425">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 452, column 739</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.context.sourcePatientInfo' for &quot;sourcePatientInfo&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l3196">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 707, column 2591</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#ms_DocumentReference' for &quot;DocumentReference&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l3196">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 701, column 2591</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#ms_DocumentReference' for &quot;DocumentReference&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l3215">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 708, column 676</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#ms_DocumentReference.meta' for &quot;meta&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l3215">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 702, column 676</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#ms_DocumentReference.meta' for &quot;meta&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l3236">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 709, column 723</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#ms_DocumentReference.meta.versionId' for &quot;versionId&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l3236">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 703, column 723</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#ms_DocumentReference.meta.versionId' for &quot;versionId&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l3264">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 710, column 626</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#ms_DocumentReference.masterIdentifier' for &quot;masterIdentifier&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l3264">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 704, column 626</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#ms_DocumentReference.masterIdentifier' for &quot;masterIdentifier&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l3285">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 711, column 631</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#ms_DocumentReference.status' for &quot;status&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l3285">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 705, column 631</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#ms_DocumentReference.status' for &quot;status&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l3324">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 712, column 626</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#ms_DocumentReference.type' for &quot;type&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l3324">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 706, column 626</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#ms_DocumentReference.type' for &quot;type&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l3362">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 722, column 620</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#ms_DocumentReference.category' for &quot;category&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l3362">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 716, column 620</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#ms_DocumentReference.category' for &quot;category&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l3401">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 727, column 637</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#ms_DocumentReference.date' for &quot;date&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l3401">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 721, column 637</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#ms_DocumentReference.date' for &quot;date&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l3422">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 728, column 641</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#ms_DocumentReference.author' for &quot;author&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l3422">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 722, column 641</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#ms_DocumentReference.author' for &quot;author&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l3469">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 733, column 647</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#ms_DocumentReference.authenticator' for &quot;authenticator&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l3469">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 727, column 647</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#ms_DocumentReference.authenticator' for &quot;authenticator&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l3501">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 737, column 620</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#ms_DocumentReference.relatesTo' for &quot;relatesTo&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l3501">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 731, column 620</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#ms_DocumentReference.relatesTo' for &quot;relatesTo&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l3523">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 738, column 637</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#ms_DocumentReference.description' for &quot;description&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l3523">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 732, column 637</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#ms_DocumentReference.description' for &quot;description&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l3544">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 739, column 620</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#ms_DocumentReference.securityLabel' for &quot;securityLabel&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l3544">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 733, column 620</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#ms_DocumentReference.securityLabel' for &quot;securityLabel&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l3583">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 740, column 662</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#ms_DocumentReference.content' for &quot;content&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l3583">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 734, column 662</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#ms_DocumentReference.content' for &quot;content&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l3605">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 741, column 758</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#ms_DocumentReference.content.attachment' for &quot;attachment&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l3605">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 735, column 758</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#ms_DocumentReference.content.attachment' for &quot;attachment&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l3627">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 742, column 813</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#ms_DocumentReference.content.attachment.language' for &quot;language&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l3627">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 736, column 813</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#ms_DocumentReference.content.attachment.language' for &quot;language&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l3675">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 743, column 811</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#ms_DocumentReference.content.attachment.creation' for &quot;creation&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l3675">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 737, column 811</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#ms_DocumentReference.content.attachment.creation' for &quot;creation&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l3698">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 744, column 718</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#ms_DocumentReference.content.format' for &quot;format&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l3698">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 738, column 718</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#ms_DocumentReference.content.format' for &quot;format&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l3737">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 751, column 660</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#ms_DocumentReference.context' for &quot;context&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l3737">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 745, column 660</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#ms_DocumentReference.context' for &quot;context&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l3758">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 752, column 714</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#ms_DocumentReference.context.period' for &quot;period&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l3758">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 746, column 714</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#ms_DocumentReference.context.period' for &quot;period&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l3780">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 753, column 708</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#ms_DocumentReference.context.facilityType' for &quot;facilityType&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l3780">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 747, column 708</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#ms_DocumentReference.context.facilityType' for &quot;facilityType&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l3817">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 758, column 714</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#ms_DocumentReference.context.practiceSetting' for &quot;practiceSetting&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l3817">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 751, column 714</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#ms_DocumentReference.context.practiceSetting' for &quot;practiceSetting&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l3854">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 763, column 733</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#ms_DocumentReference.context.sourcePatientInfo' for &quot;sourcePatientInfo&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l3854">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 755, column 733</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#ms_DocumentReference.context.sourcePatientInfo' for &quot;sourcePatientInfo&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4004">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 800, column 2591</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference' for &quot;DocumentReference&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4004">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 792, column 2591</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference' for &quot;DocumentReference&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4028">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 801, column 659</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.meta' for &quot;meta&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4028">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 793, column 659</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.meta' for &quot;meta&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4043">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 802, column 709</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.meta.versionId' for &quot;versionId&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4043">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 794, column 709</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.meta.versionId' for &quot;versionId&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4076">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 803, column 623</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.masterIdentifier' for &quot;masterIdentifier&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4076">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 795, column 623</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.masterIdentifier' for &quot;masterIdentifier&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4128">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 805, column 623</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.status' for &quot;status&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4128">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 797, column 623</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.status' for &quot;status&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4155">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 806, column 617</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.type' for &quot;type&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4155">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 798, column 617</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.type' for &quot;type&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4197">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 816, column 623</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.category' for &quot;category&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4197">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 808, column 623</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.category' for &quot;category&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4238">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 821, column 641</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.subject' for &quot;subject&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4238">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 813, column 641</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.subject' for &quot;subject&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4266">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 822, column 623</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.date' for &quot;date&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4266">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 814, column 623</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.date' for &quot;date&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4290">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 823, column 641</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.author' for &quot;author&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4290">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 815, column 641</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.author' for &quot;author&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4336">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 828, column 647</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.authenticator' for &quot;authenticator&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4336">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 820, column 647</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.authenticator' for &quot;authenticator&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4375">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 832, column 617</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.description' for &quot;description&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4375">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 824, column 617</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.description' for &quot;description&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4401">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 833, column 623</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.securityLabel' for &quot;securityLabel&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4401">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 825, column 623</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.securityLabel' for &quot;securityLabel&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4431">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 834, column 653</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.content' for &quot;content&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4431">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 826, column 653</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.content' for &quot;content&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4457">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 835, column 747</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.content.attachment' for &quot;attachment&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4457">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 827, column 747</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.content.attachment' for &quot;attachment&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4473">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 836, column 793</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.content.attachment.language' for &quot;language&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4473">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 828, column 793</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.content.attachment.language' for &quot;language&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4499">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 837, column 799</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.content.attachment.data' for &quot;data&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4499">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 829, column 799</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.content.attachment.data' for &quot;data&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4525">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 838, column 793</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.content.attachment.size' for &quot;size&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4525">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 830, column 793</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.content.attachment.size' for &quot;size&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4551">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 839, column 799</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.content.attachment.hash' for &quot;hash&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4551">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 831, column 799</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.content.attachment.hash' for &quot;hash&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4577">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 840, column 793</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.content.attachment.title' for &quot;title&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4577">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 832, column 793</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.content.attachment.title' for &quot;title&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4601">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 841, column 803</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.content.attachment.creation' for &quot;creation&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4601">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 833, column 803</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.content.attachment.creation' for &quot;creation&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4627">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 842, column 709</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.content.format' for &quot;format&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4627">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 834, column 709</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.content.format' for &quot;format&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4669">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 849, column 663</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.context' for &quot;context&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4669">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 841, column 663</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.context' for &quot;context&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4696">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 850, column 705</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.context.event' for &quot;event&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4696">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 842, column 705</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.context.event' for &quot;event&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4724">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 854, column 711</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.context.facilityType' for &quot;facilityType&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4724">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 846, column 711</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.context.facilityType' for &quot;facilityType&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4766">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 859, column 705</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.context.practiceSetting' for &quot;practiceSetting&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4766">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 850, column 705</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.context.practiceSetting' for &quot;practiceSetting&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4808">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 864, column 739</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.context.sourcePatientInfo' for &quot;sourcePatientInfo&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="StructureDefinition-pdsm-simplified-publish.html#l4808">output/StructureDefinition-pdsm-simplified-publish.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 854, column 739</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-simplified-publish-definitions.html#diff_DocumentReference.context.sourcePatientInfo' for &quot;sourcePatientInfo&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="StructureDefinition-pdsm-submissionset-comprehensive.html#l640">output/StructureDefinition-pdsm-submissionset-comprehensive.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 393, column 2600</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-pdsm-submissionset-comprehensive-definitions.html#diff_List' for &quot;List&quot; cannot be resolved (valid targets: 86 targets)</b></td>
@@ -1128,106 +1122,9 @@
    </tr>
 </table>
 <hr/>
-<a name="_home_runner_work_FIG-partage-de-documents-de-sante-fhir_FIG-partage-de-documents-de-sante-fhir_fsh-generated_resources_CapabilityStatement-PDSm-ProducteurDeDocuments"> </a>
-<h2><a href="CapabilityStatement-PDSm-ProducteurDeDocuments.html">fsh-generated/resources/CapabilityStatement-PDSm-ProducteurDeDocuments.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>CapabilityStatement: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/capabilitystatement.html">CapabilityStatement</a></li></ul>
-</div>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CapabilityStatement (l1/c3113)</b></td><td><b>warning</b></td><td title="Rule cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed"><b>Rule cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_FIG-partage-de-documents-de-sante-fhir_FIG-partage-de-documents-de-sante-fhir_fsh-generated_resources_SearchParameter-PDSm-DocumentReference-PatientAsSubject"> </a>
-<h2><a href="SearchParameter-PDSm-DocumentReference-PatientAsSubject.html">fsh-generated/resources/SearchParameter-PDSm-DocumentReference-PatientAsSubject.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>SearchParameter: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/searchparameter.html">SearchParameter</a></li></ul>
-</div>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>SearchParameter</b></td><td><b>warning</b></td><td title=""><b>The expression 'DocumentReference.patient' is not compatible with the expression 'AllergyIntolerance.patient | CarePlan.subject.where(resolve() is Patient) | CareTeam.subject.where(resolve() is Patient) | ClinicalImpression.subject.where(resolve() is Patient) | Composition.subject.where(resolve() is Patient) | Condition.subject.where(resolve() is Patient) | Consent.patient | DetectedIssue.patient | DeviceRequest.subject.where(resolve() is Patient) | DeviceUseStatement.subject | DiagnosticReport.subject.where(resolve() is Patient) | DocumentManifest.subject.where(resolve() is Patient) | DocumentReference.subject.where(resolve() is Patient) | Encounter.subject.where(resolve() is Patient) | EpisodeOfCare.patient | FamilyMemberHistory.patient | Flag.subject.where(resolve() is Patient) | Goal.subject.where(resolve() is Patient) | ImagingStudy.subject.where(resolve() is Patient) | Immunization.patient | List.subject.where(resolve() is Patient) | MedicationAdministration.subject.where(resolve() is Patient) | MedicationDispense.subject.where(resolve() is Patient) | MedicationRequest.subject.where(resolve() is Patient) | MedicationStatement.subject.where(resolve() is Patient) | NutritionOrder.patient | Observation.subject.where(resolve() is Patient) | Procedure.subject.where(resolve() is Patient) | RiskAssessment.subject.where(resolve() is Patient) | ServiceRequest.subject.where(resolve() is Patient) | SupplyDelivery.patient | VisionPrescription.patient' in the derivedFrom SearchParameter http://hl7.org/fhir/SearchParameter/clinical-patient, and this likely indicates that the derivation relationship is not valid</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_FIG-partage-de-documents-de-sante-fhir_FIG-partage-de-documents-de-sante-fhir_fsh-generated_resources_SearchParameter-PDSm-DocumentReference-period-end"> </a>
-<h2><a href="SearchParameter-PDSm-DocumentReference-period-end.html">fsh-generated/resources/SearchParameter-PDSm-DocumentReference-period-end.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>SearchParameter: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/searchparameter.html">SearchParameter</a></li></ul>
-</div>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>SearchParameter (l1/c1668)</b></td><td><b>warning</b></td><td title="Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed"><b>Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>SearchParameter</b></td><td><b>warning</b></td><td title=""><b>The expression 'DocumentReference.context.period.end' is not compatible with the expression 'DocumentReference.context.period' in the derivedFrom SearchParameter http://hl7.org/fhir/SearchParameter/DocumentReference-period, and this likely indicates that the derivation relationship is not valid</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_FIG-partage-de-documents-de-sante-fhir_FIG-partage-de-documents-de-sante-fhir_fsh-generated_resources_SearchParameter-PDSm-DocumentReference-period-start"> </a>
-<h2><a href="SearchParameter-PDSm-DocumentReference-period-start.html">fsh-generated/resources/SearchParameter-PDSm-DocumentReference-period-start.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>SearchParameter: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/searchparameter.html">SearchParameter</a></li></ul>
-</div>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>SearchParameter (l1/c1692)</b></td><td><b>warning</b></td><td title="Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed"><b>Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>SearchParameter</b></td><td><b>warning</b></td><td title=""><b>The expression 'DocumentReference.context.period.start' is not compatible with the expression 'DocumentReference.context.period' in the derivedFrom SearchParameter http://hl7.org/fhir/SearchParameter/DocumentReference-period, and this likely indicates that the derivation relationship is not valid</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_FIG-partage-de-documents-de-sante-fhir_FIG-partage-de-documents-de-sante-fhir_fsh-generated_resources_SearchParameter-PDSm-PractitionerRole-family-ex"> </a>
-<h2><a href="SearchParameter-PDSm-PractitionerRole-family-ex.html">fsh-generated/resources/SearchParameter-PDSm-PractitionerRole-family-ex.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>SearchParameter: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/searchparameter.html">SearchParameter</a></li></ul>
-</div>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>SearchParameter (l1/c1637)</b></td><td><b>warning</b></td><td title="Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed"><b>Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_FIG-partage-de-documents-de-sante-fhir_FIG-partage-de-documents-de-sante-fhir_fsh-generated_resources_SearchParameter-PDSm-PractitionerRole-given-ex"> </a>
-<h2><a href="SearchParameter-PDSm-PractitionerRole-given-ex.html">fsh-generated/resources/SearchParameter-PDSm-PractitionerRole-given-ex.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>SearchParameter: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/searchparameter.html">SearchParameter</a></li></ul>
-</div>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>SearchParameter (l1/c1627)</b></td><td><b>warning</b></td><td title="Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed"><b>Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_FIG-partage-de-documents-de-sante-fhir_FIG-partage-de-documents-de-sante-fhir_fsh-generated_resources_StructureDefinition-PDSmIsArchived"> </a>
-<h2><a href="StructureDefinition-PDSmIsArchived.html">fsh-generated/resources/StructureDefinition-PDSmIsArchived.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-</div>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/PDSmIsArchived')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
-   </tr>
-</table>
-<hr/>
 <a name="_home_runner_work_FIG-partage-de-documents-de-sante-fhir_FIG-partage-de-documents-de-sante-fhir_fsh-generated_resources_StructureDefinition-PDSmintendedrecipient"> </a>
-<h2><a href="StructureDefinition-PDSmintendedrecipient.html">fsh-generated/resources/StructureDefinition-PDSmintendedrecipient.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-PDSmintendedrecipient.html">fsh-generated/resources/StructureDefinition-PDSmintendedrecipient.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -1239,102 +1136,12 @@
 </table>
 <hr/>
 <a name="_home_runner_work_FIG-partage-de-documents-de-sante-fhir_FIG-partage-de-documents-de-sante-fhir_fsh-generated_resources_StructureDefinition-pdsm-comprehensive-document-reference"> </a>
-<h2><a href="StructureDefinition-pdsm-comprehensive-document-reference.html">fsh-generated/resources/StructureDefinition-pdsm-comprehensive-document-reference.json</a> <span id="svi9" class="toggle" onclick="toggle('vi9')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi9')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi9"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-pdsm-comprehensive-document-reference.html">fsh-generated/resources/StructureDefinition-pdsm-comprehensive-document-reference.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.snapshot.element[5].constraint[1] (l1/c105621)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.snapshot.element[23].constraint[1] (l1/c130565)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.snapshot.element[24].constraint[1] (l1/c133166)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.snapshot.element[25].constraint[1] (l1/c135441)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.snapshot.element[27].constraint[1] (l1/c138716)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.snapshot.element[28].constraint[1] (l1/c141480)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.snapshot.element[30].constraint[1] (l1/c144538)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.snapshot.element[30].constraint[2] (l1/c144809)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.snapshot.element[35].constraint[1] (l1/c152420)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.snapshot.element[37].constraint[1] (l1/c156304)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.snapshot.element[48].constraint[1] (l1/c172079)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.snapshot.element[53].constraint[1] (l1/c178677)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.snapshot.element[59].constraint[1] (l1/c187990)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.snapshot.element[65].constraint[1] (l1/c195961)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.snapshot.element[66].constraint[1] (l1/c198787)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.differential.element[1].constraint[0] (l1/c212753)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.differential.element[8].constraint[0] (l1/c215837)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.differential.element[9].constraint[0] (l1/c216964)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.differential.element[10].constraint[0] (l1/c217889)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.differential.element[12].constraint[0] (l1/c219225)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.differential.element[13].constraint[0] (l1/c220828)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.differential.element[14].constraint[0] (l1/c221458)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.differential.element[14].constraint[1] (l1/c221729)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.differential.element[16].constraint[0] (l1/c222407)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.differential.element[18].constraint[0] (l1/c223417)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.differential.element[21].constraint[0] (l1/c224565)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.differential.element[26].constraint[0] (l1/c226435)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.differential.element[28].constraint[0] (l1/c227440)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.differential.element[32].constraint[0] (l1/c229169)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.differential.element[33].constraint[0] (l1/c230584)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition.differential.element[8].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS on element DocumentReference.type could not be resolved</b></td>
@@ -1372,8 +1179,8 @@
 </table>
 <hr/>
 <a name="_home_runner_work_FIG-partage-de-documents-de-sante-fhir_FIG-partage-de-documents-de-sante-fhir_fsh-generated_resources_StructureDefinition-pdsm-comprehensive-provide-document-bundle"> </a>
-<h2><a href="StructureDefinition-pdsm-comprehensive-provide-document-bundle.html">fsh-generated/resources/StructureDefinition-pdsm-comprehensive-provide-document-bundle.json</a> <span id="svi10" class="toggle" onclick="toggle('vi10')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi10')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi10"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-pdsm-comprehensive-provide-document-bundle.html">fsh-generated/resources/StructureDefinition-pdsm-comprehensive-provide-document-bundle.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -1385,8 +1192,8 @@
 </table>
 <hr/>
 <a name="_home_runner_work_FIG-partage-de-documents-de-sante-fhir_FIG-partage-de-documents-de-sante-fhir_fsh-generated_resources_StructureDefinition-pdsm-find-documentreferences-comprehensive-response"> </a>
-<h2><a href="StructureDefinition-pdsm-find-documentreferences-comprehensive-response.html">fsh-generated/resources/StructureDefinition-pdsm-find-documentreferences-comprehensive-response.json</a> <span id="svi11" class="toggle" onclick="toggle('vi11')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi11')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi11"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-pdsm-find-documentreferences-comprehensive-response.html">fsh-generated/resources/StructureDefinition-pdsm-find-documentreferences-comprehensive-response.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -1398,8 +1205,8 @@
 </table>
 <hr/>
 <a name="_home_runner_work_FIG-partage-de-documents-de-sante-fhir_FIG-partage-de-documents-de-sante-fhir_fsh-generated_resources_StructureDefinition-pdsm-find-lists-response"> </a>
-<h2><a href="StructureDefinition-pdsm-find-lists-response.html">fsh-generated/resources/StructureDefinition-pdsm-find-lists-response.json</a> <span id="svi12" class="toggle" onclick="toggle('vi12')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi12')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi12"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-pdsm-find-lists-response.html">fsh-generated/resources/StructureDefinition-pdsm-find-lists-response.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -1411,8 +1218,8 @@
 </table>
 <hr/>
 <a name="_home_runner_work_FIG-partage-de-documents-de-sante-fhir_FIG-partage-de-documents-de-sante-fhir_fsh-generated_resources_StructureDefinition-pdsm-folder-comprehensive"> </a>
-<h2><a href="StructureDefinition-pdsm-folder-comprehensive.html">fsh-generated/resources/StructureDefinition-pdsm-folder-comprehensive.json</a> <span id="svi13" class="toggle" onclick="toggle('vi13')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi13')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi13"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-pdsm-folder-comprehensive.html">fsh-generated/resources/StructureDefinition-pdsm-folder-comprehensive.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -1423,85 +1230,26 @@
    </tr>
 </table>
 <hr/>
-<a name="_home_runner_work_FIG-partage-de-documents-de-sante-fhir_FIG-partage-de-documents-de-sante-fhir_fsh-generated_resources_StructureDefinition-pdsm-simplified-publish"> </a>
-<h2><a href="StructureDefinition-pdsm-simplified-publish.html">fsh-generated/resources/StructureDefinition-pdsm-simplified-publish.json</a> <span id="svi14" class="toggle" onclick="toggle('vi14')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi14')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi14"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<a name="_home_runner_work_FIG-partage-de-documents-de-sante-fhir_FIG-partage-de-documents-de-sante-fhir_fsh-generated_resources_StructureDefinition-pdsm-is-archived"> </a>
+<h2><a href="StructureDefinition-pdsm-is-archived.html">fsh-generated/resources/StructureDefinition-pdsm-is-archived.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.snapshot.element[5].constraint[1] (l1/c76425)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
+     <td><b>StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-is-archived')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
    </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.snapshot.element[21].constraint[1] (l1/c100090)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.snapshot.element[22].constraint[1] (l1/c102510)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.snapshot.element[25].constraint[1] (l1/c107571)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.snapshot.element[26].constraint[1] (l1/c110031)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.snapshot.element[35].constraint[1] (l1/c123170)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.snapshot.element[51].constraint[1] (l1/c144049)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.snapshot.element[57].constraint[1] (l1/c153047)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.snapshot.element[59].constraint[1] (l1/c155973)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.snapshot.element[59].constraint[1].human (l1/c155873)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'L’utilisation de cette nomenclature est recommandée mais non obligatoire (prefered) :\n-\tTRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 (lorsque l’auteur du document est un professionnel ou un équipement sous sa responsabilité)\nLes valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J61-HealthcareFacilityTypeCode-DMP).\nEn l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-XdsHealthcareFacilityTypeCode-CISIS peut être utilisé.\n'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.snapshot.element[60].constraint[1] (l1/c158445)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.snapshot.element[60].constraint[1].human (l1/c158345)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'L’utilisation de cette nomenclature est recommandée mais non obligatoire (prefered) :\n-\tTRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 (lorsque l’auteur du document est un professionnel ou un équipement sous sa responsabilité)\nLes valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J61-HealthcareFacilityTypeCode-DMP).\nEn l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-XdsHealthcareFacilityTypeCode-CISIS peut être utilisé.\n'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.differential.element[1].constraint[0] (l1/c161912)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.differential.element[5].constraint[0] (l1/c163212)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.differential.element[6].constraint[0] (l1/c164214)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.differential.element[9].constraint[0] (l1/c166104)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.differential.element[10].constraint[0] (l1/c167449)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.differential.element[12].constraint[0] (l1/c168229)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.differential.element[20].constraint[0] (l1/c170237)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.differential.element[22].constraint[0] (l1/c171115)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.differential.element[23].constraint[0] (l1/c172045)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.differential.element[23].constraint[0].human (l1/c171945)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'L’utilisation de cette nomenclature est recommandée mais non obligatoire (prefered) :\n-\tTRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 (lorsque l’auteur du document est un professionnel ou un équipement sous sa responsabilité)\nLes valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J61-HealthcareFacilityTypeCode-DMP).\nEn l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-XdsHealthcareFacilityTypeCode-CISIS peut être utilisé.\n'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.differential.element[24].constraint[0] (l1/c173180)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.differential.element[24].constraint[0].human (l1/c173080)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'L’utilisation de cette nomenclature est recommandée mais non obligatoire (prefered) :\n-\tTRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 (lorsque l’auteur du document est un professionnel ou un équipement sous sa responsabilité)\nLes valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J61-HealthcareFacilityTypeCode-DMP).\nEn l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-XdsHealthcareFacilityTypeCode-CISIS peut être utilisé.\n'</b></td>
+</table>
+<hr/>
+<a name="_home_runner_work_FIG-partage-de-documents-de-sante-fhir_FIG-partage-de-documents-de-sante-fhir_fsh-generated_resources_StructureDefinition-pdsm-simplified-publish"> </a>
+<h2><a href="StructureDefinition-pdsm-simplified-publish.html">fsh-generated/resources/StructureDefinition-pdsm-simplified-publish.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition.differential.element[5].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS on element DocumentReference.type could not be resolved</b></td>
@@ -1539,42 +1287,12 @@
 </table>
 <hr/>
 <a name="_home_runner_work_FIG-partage-de-documents-de-sante-fhir_FIG-partage-de-documents-de-sante-fhir_fsh-generated_resources_StructureDefinition-pdsm-submissionset-comprehensive"> </a>
-<h2><a href="StructureDefinition-pdsm-submissionset-comprehensive.html">fsh-generated/resources/StructureDefinition-pdsm-submissionset-comprehensive.json</a> <span id="svi15" class="toggle" onclick="toggle('vi15')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi15')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi15"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-pdsm-submissionset-comprehensive.html">fsh-generated/resources/StructureDefinition-pdsm-submissionset-comprehensive.json</a> <span id="svi9" class="toggle" onclick="toggle('vi9')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi9')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi9"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.snapshot.element[16].constraint[2] (l1/c83915)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.snapshot.element[24].short (l1/c91077)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Extension définie par ce volet pour distinguer les lots de soumission archivés des actives. '</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.snapshot.element[38].short (l1/c107127)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Référence vers la ressource Patient contained titulaire du dossier. '</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.snapshot.element[41].constraint[1] (l1/c111731)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.snapshot.element[44].constraint[2] (l1/c115962)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.differential.element[2].constraint[0] (l1/c143634)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.differential.element[6].short (l1/c144593)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Extension définie par ce volet pour distinguer les lots de soumission archivés des actives. '</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.differential.element[15].short (l1/c147626)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Référence vers la ressource Patient contained titulaire du dossier. '</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.differential.element[17].constraint[0] (l1/c148922)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.differential.element[18].constraint[0] (l1/c149730)</b></td><td><b>warning</b></td><td title="Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed"><b>Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition.differential.element[3].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J03-XdsContentTypeCode-CISIS/FHIR/JDV-J03-XdsContentTypeCode-CISIS on element List.extension.value[x] could not be resolved</b></td>
@@ -1590,34 +1308,5 @@
 <p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
 <p>No suppressed messsages</p><a name="sorted"> </a>
 <p><b>Errors sorted by type</b></p>
-<hr/>
-<a name="Type_Specific_Checks_DT_String_WS"> </a>
-<h2>Type_Specific_Checks_DT_String_WS</h2>
- <table class="grid">
-   <tr style="background-color: #fff4ee">
-     <td><a href="StructureDefinition-pdsm-simplified-publish.html">fsh-generated/resources/StructureDefinition-pdsm-simplified-publish.json</a></td><td><b>value should not start or finish with whitespace 'L’utilisation de cette nomenclature est recommandée mais non obligatoire (prefered) :\n-\tTRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 (lorsque l’auteur du document est un professionnel ou un équipement sous sa responsabilité)\nLes valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J61-HealthcareFacilityTypeCode-DMP).\nEn l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-XdsHealthcareFacilityTypeCode-CISIS peut être utilisé.\n'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="StructureDefinition-pdsm-simplified-publish.html">fsh-generated/resources/StructureDefinition-pdsm-simplified-publish.json</a></td><td><b>value should not start or finish with whitespace 'L’utilisation de cette nomenclature est recommandée mais non obligatoire (prefered) :\n-\tTRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 (lorsque l’auteur du document est un professionnel ou un équipement sous sa responsabilité)\nLes valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J61-HealthcareFacilityTypeCode-DMP).\nEn l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-XdsHealthcareFacilityTypeCode-CISIS peut être utilisé.\n'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="StructureDefinition-pdsm-simplified-publish.html">fsh-generated/resources/StructureDefinition-pdsm-simplified-publish.json</a></td><td><b>value should not start or finish with whitespace 'L’utilisation de cette nomenclature est recommandée mais non obligatoire (prefered) :\n-\tTRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 (lorsque l’auteur du document est un professionnel ou un équipement sous sa responsabilité)\nLes valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J61-HealthcareFacilityTypeCode-DMP).\nEn l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-XdsHealthcareFacilityTypeCode-CISIS peut être utilisé.\n'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="StructureDefinition-pdsm-simplified-publish.html">fsh-generated/resources/StructureDefinition-pdsm-simplified-publish.json</a></td><td><b>value should not start or finish with whitespace 'L’utilisation de cette nomenclature est recommandée mais non obligatoire (prefered) :\n-\tTRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 (lorsque l’auteur du document est un professionnel ou un équipement sous sa responsabilité)\nLes valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J61-HealthcareFacilityTypeCode-DMP).\nEn l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-XdsHealthcareFacilityTypeCode-CISIS peut être utilisé.\n'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="StructureDefinition-pdsm-submissionset-comprehensive.html">fsh-generated/resources/StructureDefinition-pdsm-submissionset-comprehensive.json</a></td><td><b>value should not start or finish with whitespace 'Extension définie par ce volet pour distinguer les lots de soumission archivés des actives. '</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="StructureDefinition-pdsm-submissionset-comprehensive.html">fsh-generated/resources/StructureDefinition-pdsm-submissionset-comprehensive.json</a></td><td><b>value should not start or finish with whitespace 'Référence vers la ressource Patient contained titulaire du dossier. '</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="StructureDefinition-pdsm-submissionset-comprehensive.html">fsh-generated/resources/StructureDefinition-pdsm-submissionset-comprehensive.json</a></td><td><b>value should not start or finish with whitespace 'Extension définie par ce volet pour distinguer les lots de soumission archivés des actives. '</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="StructureDefinition-pdsm-submissionset-comprehensive.html">fsh-generated/resources/StructureDefinition-pdsm-submissionset-comprehensive.json</a></td><td><b>value should not start or finish with whitespace 'Référence vers la ressource Patient contained titulaire du dossier. '</b></td>
-   </tr>
-</table>
 </body>
 </html>

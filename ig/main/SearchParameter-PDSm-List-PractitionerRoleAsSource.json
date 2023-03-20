@@ -3,11 +3,11 @@
   "id" : "PDSm-List-PractitionerRoleAsSource",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>PDSm_List_PractitionerRoleAsSource</h2><p>Parameter <code>source</code>:<code>reference</code></p><div><p>Paramètre de recherche chaîné créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'élément source:PractitionerRole.practitioner:Practitioner.given et source:PractitionerRole.practitioner:Practitioner.family</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/list.html\">List</a></td></tr><tr><td>Expression</td><td><code>List.source</code></td></tr><tr><td>Processing Mode</td><td>Normal</td></tr><tr><td>Target Resources</td><td><a href=\"http://hl7.org/fhir/R4/practitionerrole.html\">PractitionerRole</a></td></tr><tr><td>Multiples</td><td>The parameter can repeat (and) and can have repeating values (or)</td></tr><tr><td>Modifiers</td><td>Allowed: exact, contains</td></tr><tr><td>Chains</td><td>Allowed: partOf.practitioner.given, partOf.practitioner.family, partOf.givenEx, partOf.familyEx</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>PDSmListPractitionerRoleAsSource</h2><p>Parameter <code>source</code>:<code>reference</code></p><div><p>Paramètre de recherche chaîné créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'élément source:PractitionerRole.practitioner:Practitioner.given et source:PractitionerRole.practitioner:Practitioner.family</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/list.html\">List</a></td></tr><tr><td>Expression</td><td><code>List.source</code></td></tr><tr><td>Processing Mode</td><td>Normal</td></tr><tr><td>Target Resources</td><td><a href=\"http://hl7.org/fhir/R4/practitionerrole.html\">PractitionerRole</a></td></tr><tr><td>Multiples</td><td>The parameter can repeat (and) and can have repeating values (or)</td></tr><tr><td>Modifiers</td><td>Allowed: exact, contains</td></tr><tr><td>Chains</td><td>Allowed: partOf.practitioner.given, partOf.practitioner.family, partOf.givenEx, partOf.familyEx</td></tr></table></div>"
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSm-List-PractitionerRoleAsSource",
-  "version" : "3.0.0",
-  "name" : "PDSm_List_PractitionerRoleAsSource",
+  "version" : "3.0.1",
+  "name" : "PDSmListPractitionerRoleAsSource",
   "derivedFrom" : "http://hl7.org/fhir/SearchParameter/List-source",
   "status" : "active",
   "date" : "2021-07-30",

@@ -299,6 +299,22 @@ This outcome is not used for error responses in batch/transaction, only for hint
 "pdsm-find-documentreferences-comprehensive-response","Bundle.signature","Bundle.signature","","","",0,1,"","","Y","Signature {[]} {[]}
 ","Digital Signature","Digital Signature - base64 encoded. XML-DSig or a JWT.","The signature could be created by the ""author"" of the bundle or by the originating device.   Requirements around inclusion of a signature, verification of signatures and treatment of signed/non-signed bundles is implementation-environment specific.","A Signature holds an electronic representation of a signature and its supporting context in a FHIR accessible form. The signature may either be a cryptographic type (XML DigSig or a JWS), which is able to provide non-repudiation proof, or it may be a graphical image that represents a signature or a signature process. This element allows capturing signatures on documents, messages, transactions or even search responses, to support content-authentication, non-repudiation or other business cases. This is primarily relevant where the bundle may travel through multiple hops or via other mechanisms where HTTPS non-repudiation is insufficient.","","","","","","","",,,,,"",,,,"Bundle.signature",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
+"pdsm-is-archived","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","PDSm_isArchived","Extension définie par le volet ANS ""Volet Partage de documents de santé en mobilité"" sur les ressources List et DocumentReference pour distinguer les lots de soumission et les fiches archivés des actives.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+",""
+"pdsm-is-archived","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"pdsm-is-archived","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"pdsm-is-archived","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-is-archived""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"pdsm-is-archived","Extension.value[x]","Extension.value[x]","","","",1,1,"","","","boolean {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
 "pdsm-find-lists-response","Bundle","Bundle","","","",0,*,"","","","null {[]} {[]}
 ","Contains a collection of resources","A container for a collection of resources.","","","","","","","","","",,,,,"",,,,"Bundle",0,*,"",""
 "pdsm-find-lists-response","Bundle.id","Bundle.id","","","",0,1,"","","Y","id {[]} {[]}
@@ -777,7 +793,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 - TRE_A00-ProducteurDocNonPS, OID : 1.2.250.1.213.1.1.4.6 
 - TRE_R209-TypeActivite, OID : 1.2.250.1.213.2.2 
 - TRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J59-ContentTypeCode-DMP). 
-En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J03-XdsContentTypeCode-CISIS peut être utilisé. {null}"
+En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J03-XdsContentTypeCode-CISIS peut être utilisé. {f:extension[designationType]}"
 "pdsm-submissionset-comprehensive","List.extension:designationType.id","List.extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
 "pdsm-submissionset-comprehensive","List.extension:designationType.extension","List.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
@@ -799,8 +815,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "pdsm-submissionset-comprehensive","List.extension:intendedRecipient","List.extension","intendedRecipient","","",0,0,"","","","Extension {[CanonicalType[https://profiles.ihe.net/ITI/MHD/StructureDefinition/ihe-intendedRecipient]]} {[]}
 ","Intended recipient of the SubmissionSet","holds the identity of the organization or person the SubmissionSet is intended. For XDR and eMail (e.g. Direct) this tends to be a Practitioner or Patient with a telecom holding an email, but this is not strictly required.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"pdsm-submissionset-comprehensive","List.extension:isArchived","List.extension","isArchived","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/PDSmIsArchived]]} {[]}
-","Extension définie par ce volet pour distinguer les lots de soumission archivés des actives. ","Extension définie par le volet ANS ""Volet Partage de documents de santé en mobilité"" sur les ressources List et DocumentReference pour distinguer les lots de soumission et les fiches archivés des actives.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"pdsm-submissionset-comprehensive","List.extension:isArchived","List.extension","isArchived","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-is-archived]]} {[]}
+","Extension définie par ce volet pour distinguer les lots de soumission archivés des actives.","Extension définie par le volet ANS ""Volet Partage de documents de santé en mobilité"" sur les ressources List et DocumentReference pour distinguer les lots de soumission et les fiches archivés des actives.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "pdsm-submissionset-comprehensive","List.extension:PDSm_intendedRecipient","List.extension","PDSm_intendedRecipient","","",0,*,"Y","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/PDSmintendedrecipient]]} {[]}
 ","Représente le destinataire du lot de soumission","Les ressources référencées sont : - PractitionerRole : Dans le cas d’un destinaire professionnel, c’est le profil PractitionerRoleOrgani zationalRoleRASS représentant la situation d’exercice qui doit être référencé. Lui-même fera le lien avec le profil PractitionerRoleProfes sionalRoleRASS représentant l’exercice professionnel et avec FrPractitioner. - Organization contrainte au profil FrOrganization","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -853,7 +869,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "pdsm-submissionset-comprehensive","List.subject","List.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://interopsante.org/fhir/StructureDefinition/FrPatient]]} (contained
 )
-","Référence vers la ressource Patient contained titulaire du dossier. ","The common subject (or patient) of the resources that are in the list if there is one.","Some purely arbitrary lists do not have a common subject, so this is optional.","The primary purpose of listing the subject explicitly is to help with finding the right list.","","","","","","","",,,,,"",,,,"List.subject",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Référence vers la ressource Patient contained titulaire du dossier.","The common subject (or patient) of the resources that are in the list if there is one.","Some purely arbitrary lists do not have a common subject, so this is optional.","The primary purpose of listing the subject explicitly is to help with finding the right list.","","","","","","","",,,,,"",,,,"List.subject",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "pdsm-submissionset-comprehensive","List.encounter","List.encounter","","","",0,0,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Encounter]]}
 ","Context in which list created","The encounter that is the context in which this list was created.","","","","","","","","","",,,,,"",,,,"List.encounter",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -865,7 +881,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass], CanonicalType[http://hl7.org/fhir/StructureDefinition/Device], CanonicalType[http://interopsante.org/fhir/StructureDefinition/FrPatient]]} (contained
 )
 ","Représente les personnes physiques ou morales et/ou les dispositifs auteurs d’un lot de soumission.","The entity responsible for deciding what the contents of the list were. Where the list was created by a human, this is the same as the author of the list.","The primary source is the entity that made the decisions what items are in the list. This may be software or user.","Allows follow-up as well as context.","","","","","","","",,,,,"",,,,"List.source",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-constr-bind-source:Un lot de soumission est obligatoirement associé à un auteur. Si l’attribut ""ihe-authorOrg"" n’est pas renseigné, autrement dit si l’auteur est une personne physique ou un dispositif. {null}"
+constr-bind-source:Un lot de soumission est obligatoirement associé à un auteur. Si l’attribut ""ihe-authorOrg"" n’est pas renseigné, autrement dit si l’auteur est une personne physique ou un dispositif. {f:source}"
 "pdsm-submissionset-comprehensive","List.source.id","List.source.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
 "pdsm-submissionset-comprehensive","List.source.extension","List.source.extension","","extensions
@@ -876,7 +892,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "pdsm-submissionset-comprehensive","List.source.extension:authorOrg","List.source.extension","authorOrg","","",0,1,"","","","Extension {[CanonicalType[https://profiles.ihe.net/ITI/MHD/StructureDefinition/ihe-authorOrg]]} {[]}
 ","Organisation auteur du document","Un lot de soumission est obligatoirement associé à un auteur. Si l’attribut “source” n’est pas renseigné, autrement dit si l’auteur est une personne morale, la cardinalité est contrainte à [1..1].","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}constr-bind-authororg:Un lot de soumission est obligatoirement associé à un auteur. Si l’attribut ""source"" n’est pas renseigné, autrement dit si l’auteur est une personne morale, la cardinalité est contrainte à [1..1].
-La ressource référencée doit être présente sous l’élément List.contained. {null}"
+La ressource référencée doit être présente sous l’élément List.contained. {f:source/f:extension[authorOrg]}"
 "pdsm-submissionset-comprehensive","List.source.extension:authorOrg.id","List.source.extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
 "pdsm-submissionset-comprehensive","List.source.extension:authorOrg.extension","List.source.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
@@ -1114,7 +1130,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "pdsm-simplified-publish","DocumentReference.meta.versionId","DocumentReference.meta.versionId","","","",0,1,"Y","","Y","id {[]} {[]}
 ","Numéro de version de la fiche d’un document attribués par le système cible. La valeur de la métadonnée version est égale à 1 pour la première version de la fiche.","The version specific identifier, as it appears in the version portion of the URL. This value changes when the resource is created, updated, or deleted.","The server assigns this value, and ignores what the client specifies, except in the case that the server is imposing version integrity on updates/deletes.","","","","","","","","",,,,,"",,,,"Meta.versionId",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-constr-cdr-maj:Elément requis lorsque le flux envoyé correspond à une mise à jour des données d’une fiche {null}"
+constr-cdr-maj:Elément requis lorsque le flux envoyé correspond à une mise à jour des données d’une fiche {f:meta/f:versionId}"
 "pdsm-simplified-publish","DocumentReference.meta.lastUpdated","DocumentReference.meta.lastUpdated","","","",0,1,"","","Y","instant {[]} {[]}
 ","When the resource version last changed","When the resource last changed - e.g. when the version changed.","This value is always populated except when the resource is first being created. The server / resource manager sets this value; what a client provides is irrelevant. This is equivalent to the HTTP Last-Modified and SHOULD have the same value on a [read](http://hl7.org/fhir/R4/http.html#read) interaction.","","","","","","","","",,,,,"",,,,"Meta.lastUpdated",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -1182,7 +1198,7 @@ constr-bind-type:Les valeurs possibles pour cet élément doivent provenir d’u
  TRE_A12-NomenclatureASTM, OID : ASTM
 
 Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J66-TypeCode-DMP).
-En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J07-XdsTypeCode-CISIS peut être utilisé. {null}"
+En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J07-XdsTypeCode-CISIS peut être utilisé. {f:type}"
 "pdsm-simplified-publish","DocumentReference.category","DocumentReference.category","","claxs
 ","",0,1,"Y","","Y","CodeableConcept {[]} {[]}
 ","Représente la classe du document (compte rendu, imagerie médicale, traitement, certificat,...).","A categorization for the type of document referenced - helps for indexing and searching. This may be implied by or derived from the code specified in the DocumentReference.type.","Key metadata element describing the the category or classification of the document. This is a broader perspective that groups similar documents based on how they would be used. This is a primary key used in searching.","","","","","","","","",,"preferred","XDS classCode CI-SIS","https://mos.esante.gouv.fr/NOS/JDV_J06-XdsClassCode-CISIS/FHIR/JDV-J06-XdsClassCode-CISIS","",,,,"DocumentReference.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -1190,7 +1206,7 @@ constr-bind-category:Les valeurs possibles pour cet élément doivent provenir d
 -	TRE_A03-ClasseDocument-CISIS, OID : 1.2.250.1.213.1.1.4.1
 -	TRE_A10-NomenclatureURN, OID : URN
 Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J57-ClassCode-DMP).
-En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J06-XdsClassCode-CISIS peut être utilisé. {null}"
+En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J06-XdsClassCode-CISIS peut être utilisé. {f:category}"
 "pdsm-simplified-publish","DocumentReference.subject","DocumentReference.subject","","","",1,1,"","","Y","Reference {[]} {[CanonicalType[http://interopsante.org/fhir/StructureDefinition/FrPatient]]}
 ","Patient concerné par ce document. La ressource référencée peut être présente sous l’élément DocumentReference.contained ou via le champ identifier.","Who or what the document is about. The document can be about a person, (patient or healthcare practitioner), a device (e.g. a machine) or even a group of subjects (such as a document about a herd of farm animals, or a set of patients that share a common exposure).","","","","","","","","","",,,,,"",,,,"DocumentReference.subject",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -1204,13 +1220,13 @@ constr-bind-author:Cardinalité contrainte à [1..*]
 Reference contrainte à :
 - PractitionerRole : Dans le cas d’un auteur professionnel, c’est le profil PractitionerRoleOrganizationalRoleRASSreprésentant la situation d’exercice qui doit être référencé. Lui-même fera le lien avec le profil PractitionerRoleProfessionalRoleRASS représentant l’exercice professionnel et avec FrPractitioner.
 - Device,
-- Patient contrainte au profil FrPatient. {null}"
+- Patient contrainte au profil FrPatient. {f:author}"
 "pdsm-simplified-publish","DocumentReference.authenticator","DocumentReference.authenticator","","","",0,1,"Y","","","Reference {[]} {[CanonicalType[https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass], CanonicalType[https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/organization-rass]]}
 ","Cet attribut représente l’acteur validant le document et prenant la responsabilité du contenu médical de celui-ci. Il peut s’agir de l’auteur du document si celui-ci est une personne et s’il endosse la responsabilité du contenu médical de ses documents. Si l’auteur est un dispositif, cet attribut doit représenter la personne responsable de l’action effectuée par le dispositif.","Which person or organization authenticates that this document is valid.","Represents a participant within the author institution who has legally authenticated or attested the document. Legal authentication implies that a document has been signed manually or electronically by the legal Authenticator.","","","","","","","","",,,,,"",,,,"DocumentReference.authenticator",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 constr-bind-authenticator:Cardinalité contrainte à [1..1]
 Référence contrainte au profil 
 - PractitionerRole : Dans le cas d’un authentificateur professionnel, c’est le profil PractitionerRoleOrganizationalRoleRASS représentant la situation d’exercice qui doit être référencé. Lui-même fera le lien avec le profil PractitionerRoleProfessionalRoleRASS représentant l’exercice professionnel et avec FrPractitioner.
--  Organization contrainte au profil FrOrganization. {null}"
+-  Organization contrainte au profil FrOrganization. {f:authenticator}"
 "pdsm-simplified-publish","DocumentReference.custodian","DocumentReference.custodian","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
 ","Organization which maintains the document","Identifies the organization or group who is responsible for ongoing maintenance of and access to the document.","Identifies the logical organization (software system, vendor, or department) to go to find the current version, where to report issues, etc. This is different from the physical location (URL, disk drive, or server) of the document, which is the technical location of the document, which host may be delegated to the management of some other organization.","","","","","","","","",,,,,"",,,,"DocumentReference.custodian",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -1242,7 +1258,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Contient les informations définissant le niveau de confidentialité d'un document.","A set of Security-Tag codes specifying the level of privacy/security of the Document. Note that DocumentReference.meta.security contains the security labels of the ""reference"" to the document, while DocumentReference.securityLabel contains a snapshot of the security labels on the document the reference refers to.","The confidentiality codes can carry multiple vocabulary items. HL7 has developed an understanding of security and privacy tags that might be desirable in a Document Sharing environment, called HL7 Healthcare Privacy and Security Classification System (HCS). The following specification is recommended but not mandated, as the vocabulary bindings are an administrative domain responsibility. The use of this method is up to the policy domain such as the XDS Affinity Domain or other Trust Domain where all parties including sender and recipients are trusted to appropriately tag and enforce.   
 
 In the HL7 Healthcare Privacy and Security Classification (HCS) there are code systems specific to Confidentiality, Sensitivity, Integrity, and Handling Caveats. Some values would come from a local vocabulary as they are related to workflow roles and special projects.","Use of the Health Care Privacy/Security Classification (HCS) system of security-tag use is recommended.","","","","","","","",,"extensible","Security Labels from the Healthcare Privacy and Security Classification System.","http://hl7.org/fhir/ValueSet/security-labels","",,,,"DocumentReference.securityLabel",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-constr-bind-securityLabel:Les codes pour cet élément doivent provenir du ValueSet spécifié par le standard. Lorsqu’aucun code ne correspond au concept recherché, un code provenant de la terminologie de référence TRE_A07-StatusVisibiliteDocument, OID : 1.2.250.1.213.1.1.4.13 peut être utilisé. {null}"
+constr-bind-securityLabel:Les codes pour cet élément doivent provenir du ValueSet spécifié par le standard. Lorsqu’aucun code ne correspond au concept recherché, un code provenant de la terminologie de référence TRE_A07-StatusVisibiliteDocument, OID : 1.2.250.1.213.1.1.4.13 peut être utilisé. {f:securityLabel}"
 "pdsm-simplified-publish","DocumentReference.content","DocumentReference.content","","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Document contenu.","The document and format referenced.","","","","","","","","","",,,,,"",,,,"DocumentReference.content",1,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -1299,7 +1315,7 @@ constr-bind-format:Les valeurs possibles pour cet élément doivent provenir d�
 - TRE_A09-DICOMuidRegistry, OID : 1.2.840.10008.2.6.1
 - TRE_A10-NomenclatureURN, OID : URN
 Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J60-FormatCode-DMP).
-En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J10-XdsFormatCode-CISIS peut être utilisé. {null}"
+En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J10-XdsFormatCode-CISIS peut être utilisé. {f:content/f:format}"
 "pdsm-simplified-publish","DocumentReference.context","DocumentReference.context","","","",0,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Clinical context of document","The clinical context in which the document was prepared.","These values are primarily added to help with searching for interesting/relevant documents.","","","","","","","","",,,,,"",,,,"DocumentReference.context",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -1323,7 +1339,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 constr-bind-context-event:Nomenclatures utilisées :
 - CCAM pour les actes médicaux (OID=""1.2.250.1.213.2.5"");
 - CIM-10 pour les diagnostics de pathologie (OID=""2.16.840.1.113883.6.3"").
-- TRE_A00-ProducteurDocNonPS pour les documents d'expression personnelle du patient. {null}"
+- TRE_A00-ProducteurDocNonPS pour les documents d'expression personnelle du patient. {f:context/f:event}"
 "pdsm-simplified-publish","DocumentReference.context.period","DocumentReference.context.period","","","",0,1,"Y","","Y","Period {[]} {[]}
 ","Time of service that is being documented","The time period over which the service that is described by the document was provided.","","","","","","","","","",,,,,"",,,,"DocumentReference.context.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -1332,15 +1348,13 @@ constr-bind-context-event:Nomenclatures utilisées :
 constr-bind-ProducteurDoc-simplified:L’utilisation de cette nomenclature est recommandée mais non obligatoire (prefered) :
 -	TRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 (lorsque l’auteur du document est un professionnel ou un équipement sous sa responsabilité)
 Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J61-HealthcareFacilityTypeCode-DMP).
-En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-XdsHealthcareFacilityTypeCode-CISIS peut être utilisé.
- {null}"
+En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-XdsHealthcareFacilityTypeCode-CISIS peut être utilisé. {f:context/f:practiceSetting or f:context/f:facilityType}"
 "pdsm-simplified-publish","DocumentReference.context.practiceSetting","DocumentReference.context.practiceSetting","","","",0,1,"Y","","","CodeableConcept {[]} {[]}
 ","Cadre d’exercice de l’acte qui a engendré la création du document.","This property may convey specifics about the practice setting where the content was created, often reflecting the clinical specialty.","This element should be based on a coarse classification system for the class of specialty practice. Recommend the use of the classification system for Practice Setting, such as that described by the Subject Matter Domain in LOINC.","This is an important piece of metadata that providers often rely upon to quickly sort and/or filter out to find specific content.","","","","","","","",,"preferred","XDS practiceSettingCode CI-SIS","https://mos.esante.gouv.fr/NOS/JDV_J04-XdsPracticeSettingCode-CISIS/FHIR/JDV-J04-XdsPracticeSettingCode-CISIS","",,,,"DocumentReference.context.practiceSetting",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 constr-bind-ProducteurDoc-simplified:L’utilisation de cette nomenclature est recommandée mais non obligatoire (prefered) :
 -	TRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 (lorsque l’auteur du document est un professionnel ou un équipement sous sa responsabilité)
 Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J61-HealthcareFacilityTypeCode-DMP).
-En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-XdsHealthcareFacilityTypeCode-CISIS peut être utilisé.
- {null}"
+En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-XdsHealthcareFacilityTypeCode-CISIS peut être utilisé. {f:context/f:practiceSetting or f:context/f:facilityType}"
 "pdsm-simplified-publish","DocumentReference.context.sourcePatientInfo","DocumentReference.context.sourcePatientInfo","","","",0,1,"Y","","","Reference {[]} {[CanonicalType[http://interopsante.org/fhir/StructureDefinition/FrPatient]]} (contained
 )
 ","Référence vers la ressource Patient titulaire du dossier.","The Patient Information as known when the document was published. May be a reference to a version specific, or contained.","","","","","","","","","",,,,,"",,,,"DocumentReference.context.sourcePatientInfo",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -2387,22 +2401,6 @@ This outcome is not used for error responses in batch/transaction, only for hint
 "pdsm-comprehensive-provide-document-bundle","Bundle.signature","Bundle.signature","","","",0,1,"","","Y","Signature {[]} {[]}
 ","Digital Signature","Digital Signature - base64 encoded. XML-DSig or a JWT.","The signature could be created by the ""author"" of the bundle or by the originating device.   Requirements around inclusion of a signature, verification of signatures and treatment of signed/non-signed bundles is implementation-environment specific.","A Signature holds an electronic representation of a signature and its supporting context in a FHIR accessible form. The signature may either be a cryptographic type (XML DigSig or a JWS), which is able to provide non-repudiation proof, or it may be a graphical image that represents a signature or a signature process. This element allows capturing signatures on documents, messages, transactions or even search responses, to support content-authentication, non-repudiation or other business cases. This is primarily relevant where the bundle may travel through multiple hops or via other mechanisms where HTTPS non-repudiation is insufficient.","","","","","","","",,,,,"",,,,"Bundle.signature",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"PDSmIsArchived","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","PDSm_isArchived","Extension définie par le volet ANS ""Volet Partage de documents de santé en mobilité"" sur les ressources List et DocumentReference pour distinguer les lots de soumission et les fiches archivés des actives.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
-",""
-"PDSmIsArchived","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
-","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
-"PDSmIsArchived","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
-","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
-","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"PDSmIsArchived","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
-","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/PDSmIsArchived""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
-"PDSmIsArchived","Extension.value[x]","Extension.value[x]","","","",1,1,"","","","boolean {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
 "PDSmintendedrecipient","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
 ","Représente le destinataire du lot de soumission","Représente le destinataire du lot de soumission","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ",""
@@ -2434,7 +2432,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "pdsm-comprehensive-document-reference","DocumentReference.meta.versionId","DocumentReference.meta.versionId","","","",0,1,"Y","","Y","id {[]} {[]}
 ","Numéro de version de la fiche d’un document attribués par le système cible. La valeur de la métadonnée version est égale à 1 pour la première version de la fiche.","The version specific identifier, as it appears in the version portion of the URL. This value changes when the resource is created, updated, or deleted.","The server assigns this value, and ignores what the client specifies, except in the case that the server is imposing version integrity on updates/deletes.","","","","","","","","",,,,,"",,,,"Meta.versionId",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-constr-cdr-maj:Elément requis lorsque le flux envoyé correspond à une mise à jour des données d’une fiche {null}"
+constr-cdr-maj:Elément requis lorsque le flux envoyé correspond à une mise à jour des données d’une fiche {f:meta/f:versionId}"
 "pdsm-comprehensive-document-reference","DocumentReference.meta.lastUpdated","DocumentReference.meta.lastUpdated","","","",0,1,"","","Y","instant {[]} {[]}
 ","When the resource version last changed","When the resource last changed - e.g. when the version changed.","This value is always populated except when the resource is first being created. The server / resource manager sets this value; what a client provides is irrelevant. This is equivalent to the HTTP Last-Modified and SHOULD have the same value on a [read](http://hl7.org/fhir/R4/http.html#read) interaction.","","","","","","","","",,,,,"",,,,"Meta.lastUpdated",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -2469,7 +2467,7 @@ Device {[]} {[]}PractitionerRole {[CanonicalType[https://apifhir.annuaire.sante.
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"pdsm-comprehensive-document-reference","DocumentReference.extension:isArchived","DocumentReference.extension","isArchived","","",0,1,"Y","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/PDSmIsArchived]]} {[]}
+"pdsm-comprehensive-document-reference","DocumentReference.extension:isArchived","DocumentReference.extension","isArchived","","",0,1,"Y","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-is-archived]]} {[]}
 ","Extension définie par ce volet pour distinguer les fiches archivées des actives.","Extension définie par le volet ANS ""Volet Partage de documents de santé en mobilité"" sur les ressources List et DocumentReference pour distinguer les lots de soumission et les fiches archivés des actives.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -2507,7 +2505,7 @@ constr-bind-type:Les valeurs possibles pour cet élément doivent provenir d’u
  TRE_A12-NomenclatureASTM, OID : ASTM
 
 Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J66-TypeCode-DMP).
-En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J07-XdsTypeCode-CISIS peut être utilisé. {null}"
+En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J07-XdsTypeCode-CISIS peut être utilisé. {f:type}"
 "pdsm-comprehensive-document-reference","DocumentReference.category","DocumentReference.category","","claxs
 ","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
 ","Représente la classe du document (compte rendu, imagerie médicale, traitement, certificat,...).","A categorization for the type of document referenced - helps for indexing and searching. This may be implied by or derived from the code specified in the DocumentReference.type.","Key metadata element describing the the category or classification of the document. This is a broader perspective that groups similar documents based on how they would be used. This is a primary key used in searching.","","","","","","","","",,"preferred","XDS classCode CI-SIS","https://mos.esante.gouv.fr/NOS/JDV_J06-XdsClassCode-CISIS/FHIR/JDV-J06-XdsClassCode-CISIS","",,,,"DocumentReference.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -2515,13 +2513,13 @@ constr-bind-category:Les valeurs possibles pour cet élément doivent provenir d
 -	TRE_A03-ClasseDocument-CISIS, OID : 1.2.250.1.213.1.1.4.1
 -	TRE_A10-NomenclatureURN, OID : URN
 Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J57-ClassCode-DMP).
-En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J06-XdsClassCode-CISIS peut être utilisé. {null}"
+En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J06-XdsClassCode-CISIS peut être utilisé. {f:category}"
 "pdsm-comprehensive-document-reference","DocumentReference.subject","DocumentReference.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://interopsante.org/fhir/StructureDefinition/FrPatient]]} (contained
 )
 ","Représente l'identifiant du patient.","Who or what the document is about. The document can be about a person, (patient or healthcare practitioner), a device (e.g. a machine) or even a group of subjects (such as a document about a herd of farm animals, or a set of patients that share a common exposure).","","","","","","","","","",,,,,"",,,,"DocumentReference.subject",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 constr-subj-ref:La ressource référencée doit être présente sous l’élément DocumentReference.contained.
 Référence contrainte au profil FrPatient
-Cette même ressource est référencée depuis context.sourcePatientInfo. {null}"
+Cette même ressource est référencée depuis context.sourcePatientInfo. {f:subject}"
 "pdsm-comprehensive-document-reference","DocumentReference.date","DocumentReference.date","","indexed
 ","",0,1,"Y","","Y","instant {[]} {[]}
 ","Représente la date de création de la ressource DocumentReference dans FHIR","When the document reference was created.","Referencing/indexing time is used for tracking, organizing versions and searching.","","","","","","","","",,,,,"",,,,"DocumentReference.date",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -2533,20 +2531,20 @@ constr-bind-author:Cardinalité contrainte à [1..*]
 Reference contrainte à :
 - PractitionerRole : Dans le cas d’un auteur professionnel, c’est le profil PractitionerRoleOrganizationalRoleRASSreprésentant la situation d’exercice qui doit être référencé. Lui-même fera le lien avec le profil PractitionerRoleProfessionalRoleRASS représentant l’exercice professionnel et avec FrPractitioner.
 - Device,
-- Patient contrainte au profil FrPatient. {null}"
+- Patient contrainte au profil FrPatient. {f:author}"
 "pdsm-comprehensive-document-reference","DocumentReference.authenticator","DocumentReference.authenticator","","","",1,1,"Y","","","Reference {[]} {[CanonicalType[https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass], CanonicalType[https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/organization-rass]]} (contained
 )
 ","Cet attribut représente l’acteur validant le document et prenant la responsabilité du contenu médical de celui-ci. Il peut s’agir de l’auteur du document si celui-ci est une personne et s’il endosse la responsabilité du contenu médical de ses documents. Si l’auteur est un dispositif, cet attribut doit représenter la personne responsable de l’action effectuée par le dispositif. Pour les documents d’expression personnelle du patient, cet attribut fait référence au patient.","Which person or organization authenticates that this document is valid.","Represents a participant within the author institution who has legally authenticated or attested the document. Legal authentication implies that a document has been signed manually or electronically by the legal Authenticator.","","","","","","","","",,,,,"",,,,"DocumentReference.authenticator",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 constr-bind-authenticator:Cardinalité contrainte à [1..1]
 Référence contrainte au profil 
 - PractitionerRole : Dans le cas d’un authentificateur professionnel, c’est le profil PractitionerRoleOrganizationalRoleRASS représentant la situation d’exercice qui doit être référencé. Lui-même fera le lien avec le profil PractitionerRoleProfessionalRoleRASS représentant l’exercice professionnel et avec FrPractitioner.
--  Organization contrainte au profil FrOrganization. {null}"
+-  Organization contrainte au profil FrOrganization. {f:authenticator}"
 "pdsm-comprehensive-document-reference","DocumentReference.custodian","DocumentReference.custodian","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
 ","Organization which maintains the document","Identifies the organization or group who is responsible for ongoing maintenance of and access to the document.","Identifies the logical organization (software system, vendor, or department) to go to find the current version, where to report issues, etc. This is different from the physical location (URL, disk drive, or server) of the document, which is the technical location of the document, which host may be delegated to the management of some other organization.","","","","","","","","",,,,,"",,,,"DocumentReference.custodian",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "pdsm-comprehensive-document-reference","DocumentReference.relatesTo","DocumentReference.relatesTo","","","",0,*,"Y","","Y","BackboneElement {[]} {[]}
 ","Relation avec d'autres fiches","Cardinalité contrainte à [1..1] lorsque le flux envoyé correspond au remplacement d’un document.","This element is labeled as a modifier because documents that append to other documents are incomplete on their own.","","","","","","","","",,,,,"",,,,"DocumentReference.relatesTo",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-constr-cdr-rempl:Elément requis lorsque le flux envoyé correspond au remplacement d'un document {null}constr-bind-relatesTo:Cardinalité contrainte à [1..1] lorsque le flux envoyé correspond au remplacement d’un document. {null}"
+constr-cdr-rempl:Elément requis lorsque le flux envoyé correspond au remplacement d'un document {f:relatesTo}constr-bind-relatesTo:Cardinalité contrainte à [1..1] lorsque le flux envoyé correspond au remplacement d’un document. {f:relatesTo}"
 "pdsm-comprehensive-document-reference","DocumentReference.relatesTo.id","DocumentReference.relatesTo.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
 "pdsm-comprehensive-document-reference","DocumentReference.relatesTo.extension","DocumentReference.relatesTo.extension","","extensions
@@ -2564,7 +2562,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "pdsm-comprehensive-document-reference","DocumentReference.relatesTo.target","DocumentReference.relatesTo.target","","","",1,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/DocumentReference]]}
 ","Représente l'identifiant d'une association entre deux fiches.","The target document of this relationship.","","","","","","","","","",,,,,"",,,,"DocumentReference.relatesTo.target",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-constr-bind-relatesToTarget:Référence contrainte au profil PDSm_ComprehensiveDocumentReference {null}"
+constr-bind-relatesToTarget:Référence contrainte au profil PDSm_ComprehensiveDocumentReference {f:relatesTo/f:target}"
 "pdsm-comprehensive-document-reference","DocumentReference.description","DocumentReference.description","","","",0,1,"Y","","Y","string {[]} {[]}
 ","Commentaire associé au document.","Human-readable description of the source document.","What the document is about,  a terse summary of the document.","Helps humans to assess whether the document is of interest.","","","","","","","",,,,,"",,,,"DocumentReference.description",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -2572,7 +2570,7 @@ constr-bind-relatesToTarget:Référence contrainte au profil PDSm_ComprehensiveD
 ","Contient les informations définissant le niveau de confidentialité d'un document.","A set of Security-Tag codes specifying the level of privacy/security of the Document. Note that DocumentReference.meta.security contains the security labels of the ""reference"" to the document, while DocumentReference.securityLabel contains a snapshot of the security labels on the document the reference refers to.","The confidentiality codes can carry multiple vocabulary items. HL7 has developed an understanding of security and privacy tags that might be desirable in a Document Sharing environment, called HL7 Healthcare Privacy and Security Classification System (HCS). The following specification is recommended but not mandated, as the vocabulary bindings are an administrative domain responsibility. The use of this method is up to the policy domain such as the XDS Affinity Domain or other Trust Domain where all parties including sender and recipients are trusted to appropriately tag and enforce.   
 
 In the HL7 Healthcare Privacy and Security Classification (HCS) there are code systems specific to Confidentiality, Sensitivity, Integrity, and Handling Caveats. Some values would come from a local vocabulary as they are related to workflow roles and special projects.","Use of the Health Care Privacy/Security Classification (HCS) system of security-tag use is recommended.","","","","","","","",,"extensible","Security Labels from the Healthcare Privacy and Security Classification System.","http://hl7.org/fhir/ValueSet/security-labels","",,,,"DocumentReference.securityLabel",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-constr-bind-securityLabel:Les codes pour cet élément doivent provenir du ValueSet spécifié par le standard. Lorsqu’aucun code ne correspond au concept recherché, un code provenant de la terminologie de référence TRE_A07-StatusVisibiliteDocument, OID : 1.2.250.1.213.1.1.4.13 peut être utilisé. {null}"
+constr-bind-securityLabel:Les codes pour cet élément doivent provenir du ValueSet spécifié par le standard. Lorsqu’aucun code ne correspond au concept recherché, un code provenant de la terminologie de référence TRE_A07-StatusVisibiliteDocument, OID : 1.2.250.1.213.1.1.4.13 peut être utilisé. {f:securityLabel}"
 "pdsm-comprehensive-document-reference","DocumentReference.content","DocumentReference.content","","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Document référencé.","The document and format referenced.","","","","","","","","","",,,,,"",,,,"DocumentReference.content",1,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -2609,7 +2607,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "pdsm-comprehensive-document-reference","DocumentReference.content.attachment.url","DocumentReference.content.attachment.url","","","",1,1,"","","Y","url {[]} {[]}
 ","Représente la référence vers une ressource Binary où se trouvent les données du document référencé","A location where the data can be accessed.","If both data and url are provided, the url SHALL point to the same content as the data contains. Urls may be relative references or may reference transient locations such as a wrapping envelope using cid: though this has ramifications for using signatures. Relative URLs are interpreted relative to the service url, like a resource reference, rather than relative to the resource itself. If a URL is provided, it SHALL resolve to actual data.","The data needs to be transmitted by reference.","","","","","<valueUrl xmlns=""http://hl7.org/fhir"" value=""http://www.acme.com/logo-small.png""/>","","",,,,,"",,,,"Attachment.url",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 constr-bind-attachmenturl:Dans le cas de l’ajout de document, l’url fait référence à la ressource Binary (« Binary/[id] »).
-Dans le cas de la recherche, il s’agit de l’URL permettant d’accéder au document {null}"
+Dans le cas de la recherche, il s’agit de l’URL permettant d’accéder au document {f:content/f:attachment/f:url}"
 "pdsm-comprehensive-document-reference","DocumentReference.content.attachment.size","DocumentReference.content.attachment.size","","","",1,1,"","","Y","unsignedInt {[]} {[]}
 ","Représente la taille du document.","The number of bytes of data that make up this attachment (before base64 encoding, if that is done).","The number of bytes is redundant if the data is provided as a base64binary, but is useful if the data is provided as a url reference.","Representing the size allows applications to determine whether they should fetch the content automatically in advance, or refuse to fetch it at all.","","","","","","","",,,,,"",,,,"Attachment.size",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -2630,7 +2628,7 @@ constr-bind-format:Les valeurs possibles pour cet élément doivent provenir d�
 - TRE_A09-DICOMuidRegistry, OID : 1.2.840.10008.2.6.1
 - TRE_A10-NomenclatureURN, OID : URN
 Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J60-FormatCode-DMP).
-En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J10-XdsFormatCode-CISIS peut être utilisé. {null}"
+En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J10-XdsFormatCode-CISIS peut être utilisé. {f:content/f:format}"
 "pdsm-comprehensive-document-reference","DocumentReference.context","DocumentReference.context","","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Clinical context of document","The clinical context in which the document was prepared.","These values are primarily added to help with searching for interesting/relevant documents.","","","","","","","","",,,,,"",,,,"DocumentReference.context",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -2654,7 +2652,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 constr-bind-context-event:Nomenclatures utilisées :
 - CCAM pour les actes médicaux (OID=""1.2.250.1.213.2.5"");
 - CIM-10 pour les diagnostics de pathologie (OID=""2.16.840.1.113883.6.3"").
-- TRE_A00-ProducteurDocNonPS pour les documents d'expression personnelle du patient. {null}"
+- TRE_A00-ProducteurDocNonPS pour les documents d'expression personnelle du patient. {f:context/f:event}"
 "pdsm-comprehensive-document-reference","DocumentReference.context.period","DocumentReference.context.period","","","",1,1,"Y","","Y","Period {[]} {[]}
 ","Time of service that is being documented","The time period over which the service that is described by the document was provided.","","","","","","","","","",,,,,"",,,,"DocumentReference.context.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -2679,14 +2677,14 @@ constr-bind-ProducteurDoc:Les valeurs possibles pour cet élément doivent prove
 -	TRE_A00-ProducteurDocNonPS, OID : 1.2.250.1.213.1.1.4.6 (lorsque l’auteur du document est un patient ou un équipement sous sa responsabilité)
 -	TRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 (lorsque l’auteur du document est un professionnel ou un équipement sous sa responsabilité)
 Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J61-HealthcareFacilityTypeCode-DMP).
-En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-XdsHealthcareFacilityTypeCode-CISIS peut être utilisé. {null}"
+En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-XdsHealthcareFacilityTypeCode-CISIS peut être utilisé. {f:context/f:facilityType or f:context/f:practiceSetting}"
 "pdsm-comprehensive-document-reference","DocumentReference.context.practiceSetting","DocumentReference.context.practiceSetting","","","",1,1,"Y","","","CodeableConcept {[]} {[]}
 ","Cadre d’exercice de l’acte qui a engendré la création du document.","This property may convey specifics about the practice setting where the content was created, often reflecting the clinical specialty.","This element should be based on a coarse classification system for the class of specialty practice. Recommend the use of the classification system for Practice Setting, such as that described by the Subject Matter Domain in LOINC.","This is an important piece of metadata that providers often rely upon to quickly sort and/or filter out to find specific content.","","","","","","","",,"preferred","XDS practiceSettingCode CI-SIS","https://mos.esante.gouv.fr/NOS/JDV_J04-XdsPracticeSettingCode-CISIS/FHIR/JDV-J04-XdsPracticeSettingCode-CISIS","",,,,"DocumentReference.context.practiceSetting",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 constr-bind-ProducteurDoc:Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :
 -	TRE_A00-ProducteurDocNonPS, OID : 1.2.250.1.213.1.1.4.6 (lorsque l’auteur du document est un patient ou un équipement sous sa responsabilité)
 -	TRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 (lorsque l’auteur du document est un professionnel ou un équipement sous sa responsabilité)
 Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J61-HealthcareFacilityTypeCode-DMP).
-En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-XdsHealthcareFacilityTypeCode-CISIS peut être utilisé. {null}"
+En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-XdsHealthcareFacilityTypeCode-CISIS peut être utilisé. {f:context/f:facilityType or f:context/f:practiceSetting}"
 "pdsm-comprehensive-document-reference","DocumentReference.context.sourcePatientInfo","DocumentReference.context.sourcePatientInfo","","","",1,1,"Y","","","Reference {[]} {[CanonicalType[http://interopsante.org/fhir/StructureDefinition/FrPatient]]} (contained
 )
 ","Référence vers la ressource Patient titulaire du dossier.","The Patient Information as known when the document was published. May be a reference to a version specific, or contained.","","","","","","","","","",,,,,"",,,,"DocumentReference.context.sourcePatientInfo",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

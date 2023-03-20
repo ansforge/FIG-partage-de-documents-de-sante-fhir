@@ -13,7 +13,7 @@
     <sch:title>f:DocumentReference</sch:title>
     <sch:rule context="f:DocumentReference">
       <sch:assert test="count(f:contained) &gt;= 1">contained: minimum cardinality of 'contained' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/PDSmIsArchived']) &lt;= 1">extension with URL = 'https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/PDSmIsArchived': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-is-archived']) &lt;= 1">extension with URL = 'https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-is-archived': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:author) &gt;= 1">author: minimum cardinality of 'author' is 1</sch:assert>
       <sch:assert test="count(f:authenticator) &gt;= 1">authenticator: minimum cardinality of 'authenticator' is 1</sch:assert>
     </sch:rule>
