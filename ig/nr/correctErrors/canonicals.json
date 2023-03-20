@@ -4,14 +4,14 @@
     "type" : "CapabilityStatement",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/CapabilityStatement/PDSm-ConsommateurDeDocuments",
     "version" : "3.0.0",
-    "name" : "PDSm_ConsommateurDeDocuments"
+    "name" : "PDSm-ConsommateurDeDocuments"
   },
   {
     "id" : "PDSm-GestionnaireDePartageDeDocuments",
     "type" : "CapabilityStatement",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/CapabilityStatement/PDSm-GestionnaireDePartageDeDocuments",
     "version" : "3.0.0",
-    "name" : "PDSm_GestionnaireDePartageDeDocuments"
+    "name" : "PDSm-GestionnaireDePartageDeDocuments"
   },
   {
     "id" : "PDSm-ProducteurDeDocuments",
