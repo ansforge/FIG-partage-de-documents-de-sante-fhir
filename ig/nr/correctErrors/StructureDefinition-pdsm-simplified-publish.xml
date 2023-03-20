@@ -73,7 +73,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
   <name value="PDSm_SimplifiedPublish"/>
   <title value="PDSm Simplified Publish"/>
   <status value="active"/>
-  <date value="2023-03-19T16:22:10+00:00"/>
+  <date value="2023-03-20T09:04:21+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -360,6 +360,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <key value="constr-cdr-maj"/>
         <severity value="error"/>
         <human value="Elément requis lorsque le flux envoyé correspond à une mise à jour des données d’une fiche"/>
+        <xpath value="f:meta/f:versionId"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish"/>
       </constraint>
       <mustSupport value="true"/>
@@ -1032,6 +1033,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <key value="constr-bind-type"/>
         <severity value="error"/>
         <human value="Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :&#xA;&#xD;&#xA; TRE_A05-TypeDocComplementaireCISIS, OID : 1.2.250.1.213.1.1.4.12&#xA;&#xD;&#xA; TRE_A04-TypeDocument-LOINC, OID : 2.16.840.1.113883.6.1&#xA;&#xD;&#xA; TRE_A12-NomenclatureASTM, OID : ASTM&#xA;&#xD;&#xA;Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J66-TypeCode-DMP).&#xD;&#xA;En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J07-XdsTypeCode-CISIS peut être utilisé."/>
+        <xpath value="f:type"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish"/>
       </constraint>
       <mustSupport value="true"/>
@@ -1099,6 +1101,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <key value="constr-bind-category"/>
         <severity value="error"/>
         <human value="Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :&#xA;-&#x9;TRE_A03-ClasseDocument-CISIS, OID : 1.2.250.1.213.1.1.4.1&#xA;-&#x9;TRE_A10-NomenclatureURN, OID : URN&#xA;Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J57-ClassCode-DMP).&#xA;En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J06-XdsClassCode-CISIS peut être utilisé."/>
+        <xpath value="f:category"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish"/>
       </constraint>
       <mustSupport value="true"/>
@@ -1265,6 +1268,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <key value="constr-bind-author"/>
         <severity value="error"/>
         <human value="Cardinalité contrainte à [1..*]&#xA;Reference contrainte à :&#xA;- PractitionerRole : Dans le cas d’un auteur professionnel, c’est le profil PractitionerRoleOrganizationalRoleRASSreprésentant la situation d’exercice qui doit être référencé. Lui-même fera le lien avec le profil PractitionerRoleProfessionalRoleRASS représentant l’exercice professionnel et avec FrPractitioner.&#xA;- Device,&#xA;- Patient contrainte au profil FrPatient."/>
+        <xpath value="f:author"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish"/>
       </constraint>
       <mustSupport value="true"/>
@@ -1324,6 +1328,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <key value="constr-bind-authenticator"/>
         <severity value="error"/>
         <human value="Cardinalité contrainte à [1..1]&#xA;Référence contrainte au profil &#xA;- PractitionerRole : Dans le cas d’un authentificateur professionnel, c’est le profil PractitionerRoleOrganizationalRoleRASS représentant la situation d’exercice qui doit être référencé. Lui-même fera le lien avec le profil PractitionerRoleProfessionalRoleRASS représentant l’exercice professionnel et avec FrPractitioner.&#xA;-  Organization contrainte au profil FrOrganization."/>
+        <xpath value="f:authenticator"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish"/>
       </constraint>
       <mustSupport value="true"/>
@@ -1696,6 +1701,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <key value="constr-bind-securityLabel"/>
         <severity value="error"/>
         <human value="Les codes pour cet élément doivent provenir du ValueSet spécifié par le standard. Lorsqu’aucun code ne correspond au concept recherché, un code provenant de la terminologie de référence TRE_A07-StatusVisibiliteDocument, OID : 1.2.250.1.213.1.1.4.13 peut être utilisé."/>
+        <xpath value="f:securityLabel"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish"/>
       </constraint>
       <mustSupport value="true"/>
@@ -2322,6 +2328,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <key value="constr-bind-format"/>
         <severity value="error"/>
         <human value="Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :&#xA;- TRE_A06-FormatCodeComplementaire, OID : 1.2.250.1.213.1.1.4.2.282&#xA;- TRE_A11-IheFormatCode, OID : 1.3.6.1.4.1.19376.1.2.3&#xA;- TRE_A09-DICOMuidRegistry, OID : 1.2.840.10008.2.6.1&#xA;- TRE_A10-NomenclatureURN, OID : URN&#xA;Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J60-FormatCode-DMP).&#xA;En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J10-XdsFormatCode-CISIS peut être utilisé."/>
+        <xpath value="f:content/f:format"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish"/>
       </constraint>
       <mustSupport value="true"/>
@@ -2558,6 +2565,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <key value="constr-bind-context-event"/>
         <severity value="error"/>
         <human value="Nomenclatures utilisées :&#xA;- CCAM pour les actes médicaux (OID=&quot;1.2.250.1.213.2.5&quot;);&#xA;- CIM-10 pour les diagnostics de pathologie (OID=&quot;2.16.840.1.113883.6.3&quot;).&#xA;- TRE_A00-ProducteurDocNonPS pour les documents d'expression personnelle du patient."/>
+        <xpath value="f:context/f:event"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish"/>
       </constraint>
       <isModifier value="false"/>
@@ -2834,6 +2842,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <key value="constr-cdr-maj"/>
         <severity value="error"/>
         <human value="Elément requis lorsque le flux envoyé correspond à une mise à jour des données d’une fiche"/>
+        <xpath value="f:meta/f:versionId"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish"/>
       </constraint>
       <mustSupport value="true"/>
@@ -2858,6 +2867,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <key value="constr-bind-type"/>
         <severity value="error"/>
         <human value="Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :&#xA;&#xD;&#xA; TRE_A05-TypeDocComplementaireCISIS, OID : 1.2.250.1.213.1.1.4.12&#xA;&#xD;&#xA; TRE_A04-TypeDocument-LOINC, OID : 2.16.840.1.113883.6.1&#xA;&#xD;&#xA; TRE_A12-NomenclatureASTM, OID : ASTM&#xA;&#xD;&#xA;Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J66-TypeCode-DMP).&#xD;&#xA;En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J07-XdsTypeCode-CISIS peut être utilisé."/>
+        <xpath value="f:type"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish"/>
       </constraint>
       <binding>
@@ -2873,6 +2883,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <key value="constr-bind-category"/>
         <severity value="error"/>
         <human value="Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :&#xA;-&#x9;TRE_A03-ClasseDocument-CISIS, OID : 1.2.250.1.213.1.1.4.1&#xA;-&#x9;TRE_A10-NomenclatureURN, OID : URN&#xA;Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J57-ClassCode-DMP).&#xA;En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J06-XdsClassCode-CISIS peut être utilisé."/>
+        <xpath value="f:category"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish"/>
       </constraint>
       <binding>
@@ -2910,6 +2921,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <key value="constr-bind-author"/>
         <severity value="error"/>
         <human value="Cardinalité contrainte à [1..*]&#xA;Reference contrainte à :&#xA;- PractitionerRole : Dans le cas d’un auteur professionnel, c’est le profil PractitionerRoleOrganizationalRoleRASSreprésentant la situation d’exercice qui doit être référencé. Lui-même fera le lien avec le profil PractitionerRoleProfessionalRoleRASS représentant l’exercice professionnel et avec FrPractitioner.&#xA;- Device,&#xA;- Patient contrainte au profil FrPatient."/>
+        <xpath value="f:author"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish"/>
       </constraint>
     </element>
@@ -2925,6 +2937,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <key value="constr-bind-authenticator"/>
         <severity value="error"/>
         <human value="Cardinalité contrainte à [1..1]&#xA;Référence contrainte au profil &#xA;- PractitionerRole : Dans le cas d’un authentificateur professionnel, c’est le profil PractitionerRoleOrganizationalRoleRASS représentant la situation d’exercice qui doit être référencé. Lui-même fera le lien avec le profil PractitionerRoleProfessionalRoleRASS représentant l’exercice professionnel et avec FrPractitioner.&#xA;-  Organization contrainte au profil FrOrganization."/>
+        <xpath value="f:authenticator"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish"/>
       </constraint>
       <mustSupport value="true"/>
@@ -2941,6 +2954,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <key value="constr-bind-securityLabel"/>
         <severity value="error"/>
         <human value="Les codes pour cet élément doivent provenir du ValueSet spécifié par le standard. Lorsqu’aucun code ne correspond au concept recherché, un code provenant de la terminologie de référence TRE_A07-StatusVisibiliteDocument, OID : 1.2.250.1.213.1.1.4.13 peut être utilisé."/>
+        <xpath value="f:securityLabel"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish"/>
       </constraint>
     </element>
@@ -2980,6 +2994,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <key value="constr-bind-format"/>
         <severity value="error"/>
         <human value="Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :&#xA;- TRE_A06-FormatCodeComplementaire, OID : 1.2.250.1.213.1.1.4.2.282&#xA;- TRE_A11-IheFormatCode, OID : 1.3.6.1.4.1.19376.1.2.3&#xA;- TRE_A09-DICOMuidRegistry, OID : 1.2.840.10008.2.6.1&#xA;- TRE_A10-NomenclatureURN, OID : URN&#xA;Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J60-FormatCode-DMP).&#xA;En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J10-XdsFormatCode-CISIS peut être utilisé."/>
+        <xpath value="f:content/f:format"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish"/>
       </constraint>
       <binding>
@@ -3000,6 +3015,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <key value="constr-bind-context-event"/>
         <severity value="error"/>
         <human value="Nomenclatures utilisées :&#xA;- CCAM pour les actes médicaux (OID=&quot;1.2.250.1.213.2.5&quot;);&#xA;- CIM-10 pour les diagnostics de pathologie (OID=&quot;2.16.840.1.113883.6.3&quot;).&#xA;- TRE_A00-ProducteurDocNonPS pour les documents d'expression personnelle du patient."/>
+        <xpath value="f:context/f:event"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish"/>
       </constraint>
     </element>
