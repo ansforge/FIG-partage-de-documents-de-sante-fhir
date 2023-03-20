@@ -83,7 +83,7 @@
       <searchParam>
         <name value="SourceId"/>
         <definition value="https://profiles.ihe.net/ITI/MHD/SearchParameter/List-SourceId"/>
-        <type value="reference"/>
+        <type value="token"/>
         <documentation value="Représente l’identifiant unique global du système émetteur du lot de soumission."/>
       </searchParam>
       <searchParam>

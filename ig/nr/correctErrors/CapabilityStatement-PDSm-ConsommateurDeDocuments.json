@@ -81,7 +81,7 @@
       {
         "name" : "SourceId",
         "definition" : "https://profiles.ihe.net/ITI/MHD/SearchParameter/List-SourceId",
-        "type" : "reference",
+        "type" : "token",
         "documentation" : "Représente l’identifiant unique global du système émetteur du lot de soumission."
       },
       {

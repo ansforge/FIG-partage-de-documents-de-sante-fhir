@@ -1,13 +1,13 @@
 ﻿PDSm : Validation Results
 =========================================
 
-err = 3, warn = 36, info = 0
+err = 1, warn = 36, info = 0
 IG Publisher Version: 1.2.53
-Generated Mon Mar 20 10:54:07 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.pdsm#3.0.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/pdsm)
+Generated Mon Mar 20 10:59:48 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.pdsm#3.0.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/pdsm)
  Build Errors : 329 / 5 / 0
  /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/Bundle-a9c10f8a-882d-4000-a280-7150e0aeb478 : 0 / 0 / 1
- /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/CapabilityStatement-PDSm-ConsommateurDeDocuments : 1 / 0 / 1
- /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/CapabilityStatement-PDSm-GestionnaireDePartageDeDocuments : 1 / 0 / 1
+ /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/CapabilityStatement-PDSm-ConsommateurDeDocuments : 0 / 0 / 1
+ /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/CapabilityStatement-PDSm-GestionnaireDePartageDeDocuments : 0 / 0 / 1
  /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/CapabilityStatement-PDSm-ProducteurDeDocuments : 0 / 0 / 1
  /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.pdsm : 0 / 0 / 1
  /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/SearchParameter-PDSm-DocumentReference-PatientAsSubject : 0 / 0 / 1
@@ -369,9 +369,7 @@ WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-ta
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/Bundle-a9c10f8a-882d-4000-a280-7150e0aeb478.json ==
 == fsh-generated/resources/CapabilityStatement-PDSm-ConsommateurDeDocuments.json ==
-ERROR: CapabilityStatement/PDSm-ConsommateurDeDocuments: CapabilityStatement.rest[0].resource[0].searchParam[6]: Type mismatch - SearchParameter 'https://profiles.ihe.net/ITI/MHD/SearchParameter/List-SourceId|4.2.0' type is token, but type here is reference
 == fsh-generated/resources/CapabilityStatement-PDSm-GestionnaireDePartageDeDocuments.json ==
-ERROR: CapabilityStatement/PDSm-GestionnaireDePartageDeDocuments: CapabilityStatement.rest[0].resource[0].searchParam[6]: Type mismatch - SearchParameter 'https://profiles.ihe.net/ITI/MHD/SearchParameter/List-SourceId|4.2.0' type is token, but type here is reference
 == fsh-generated/resources/CapabilityStatement-PDSm-ProducteurDeDocuments.json ==
 == fsh-generated/resources/ImplementationGuide-ans.fhir.fr.pdsm.json ==
 == fsh-generated/resources/SearchParameter-PDSm-DocumentReference-PatientAsSubject.json ==

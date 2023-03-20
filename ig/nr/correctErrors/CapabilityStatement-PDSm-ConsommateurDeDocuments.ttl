@@ -107,7 +107,7 @@
            fhir:v "https://profiles.ihe.net/ITI/MHD/SearchParameter/List-SourceId"^^xsd:anyURI ;
            fhir:link <https://profiles.ihe.net/ITI/MHD/SearchParameter/List-SourceId>
          ] ;
-         fhir:type [ fhir:v "reference" ] ;
+         fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "Représente l’identifiant unique global du système émetteur du lot de soumission." ]
        ] [
          fhir:name [ fhir:v "source" ] ;
