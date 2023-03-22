@@ -1,15 +1,15 @@
 ﻿PDSm : Validation Results
 =========================================
 
-err = 66, warn = 36, info = 0
+err = 1, warn = 36, info = 0
 IG Publisher Version: 1.2.54
-Generated Tue Mar 21 16:59:27 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.pdsm#3.0.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/pdsm)
+Generated Wed Mar 22 10:53:37 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.pdsm#3.0.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/pdsm)
  Build Errors : 329 / 5 / 0
  /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/Bundle-a9c10f8a-882d-4000-a280-7150e0aeb478 : 0 / 0 / 1
  /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/CapabilityStatement-PDSm-ConsommateurDeDocuments : 0 / 0 / 1
  /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/CapabilityStatement-PDSm-GestionnaireDePartageDeDocuments : 0 / 0 / 1
  /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/CapabilityStatement-PDSm-ProducteurDeDocuments : 0 / 0 / 1
- /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.pdsm : 65 / 0 / 1
+ /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.pdsm : 0 / 0 / 1
  /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/SearchParameter-PDSm-DocumentReference-PatientAsSubject : 0 / 0 / 1
  /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/SearchParameter-PDSm-DocumentReference-PractitionerRoleAsAuthor : 0 / 0 / 1
  /home/runner/work/FIG-partage-de-documents-de-sante-fhir/FIG-partage-de-documents-de-sante-fhir/fsh-generated/resources/SearchParameter-PDSm-DocumentReference-period-end : 0 / 0 / 1
@@ -372,71 +372,6 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 == fsh-generated/resources/CapabilityStatement-PDSm-GestionnaireDePartageDeDocuments.json ==
 == fsh-generated/resources/CapabilityStatement-PDSm-ProducteurDeDocuments.json ==
 == fsh-generated/resources/ImplementationGuide-ans.fhir.fr.pdsm.json ==
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.extension[0].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-parameter' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.extension[1].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-parameter' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.extension[2].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-parameter' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.extension[3].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-parameter' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.extension[4].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-parameter' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.extension[5].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-parameter' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.extension[6].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-parameter' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.extension[7].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-parameter' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.extension[8].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-parameter' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.extension[9].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-parameter' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.extension[10].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-parameter' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.extension[11].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-parameter' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.extension[12].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-parameter' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.extension[13].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-parameter' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.extension[14].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-parameter' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.extension[15].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-parameter' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.extension[16].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-parameter' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.extension[17].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-parameter' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.extension[18].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-parameter' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.extension[19].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-parameter' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.extension[20].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-parameter' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.extension[21].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-parameter' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.extension[22].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-parameter' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.extension[23].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-parameter' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.extension[24].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-parameter' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.extension[25].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-parameter' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.extension[26].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-parameter' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.extension[27].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-parameter' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.extension[28].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-parameter' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.extension[29].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-parameter' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.extension[30].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-parameter' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.extension[31].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-parameter' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.extension[32].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-parameter' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.extension[33].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-parameter' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.extension[34].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-parameter' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.extension[35].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-parameter' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.extension[36].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-parameter' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.extension[37].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-parameter' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.extension[38].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-parameter' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.extension[39].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-parameter' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.extension[40].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-parameter' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.extension[41].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-parameter' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.extension[42].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-parameter' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.extension[43].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-parameter' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.extension[44].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-parameter' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.extension[45].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-parameter' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.extension[46].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-parameter' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.extension[47].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-parameter' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.extension[48].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-parameter' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.extension[49].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-parameter' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.page.extension[0].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-page-name' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.page.page[0].extension[0].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-page-name' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.page.page[1].extension[0].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-page-name' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.page.page[1].page[0].extension[0].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-page-name' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.page.page[1].page[1].extension[0].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-page-name' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.page.page[1].page[2].extension[0].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-page-name' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.page.page[1].page[3].extension[0].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-page-name' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.page.page[1].page[4].extension[0].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-page-name' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.page.page[1].page[5].extension[0].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-page-name' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.page.page[1].page[6].extension[0].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-page-name' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.page.page[2].extension[0].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-page-name' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.page.page[2].page[0].extension[0].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-page-name' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.page.page[2].page[1].extension[0].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-page-name' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.page.page[2].page[2].extension[0].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-page-name' does not resolve
-ERROR: ImplementationGuide/ans.fhir.fr.pdsm: ImplementationGuide.definition.page.page[3].extension[0].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-page-name' does not resolve
 == fsh-generated/resources/SearchParameter-PDSm-DocumentReference-PatientAsSubject.json ==
 == fsh-generated/resources/SearchParameter-PDSm-DocumentReference-PractitionerRoleAsAuthor.json ==
 == fsh-generated/resources/SearchParameter-PDSm-DocumentReference-period-end.json ==
