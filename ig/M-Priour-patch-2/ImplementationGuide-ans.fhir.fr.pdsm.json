@@ -10,7 +10,7 @@
   "name" : "PDSm",
   "title" : "Partage de Documents de Santé en mobilité (PDSm)",
   "status" : "draft",
-  "date" : "2023-03-23T17:13:08+00:00",
+  "date" : "2023-03-23T17:14:59+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -69,7 +69,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "Trial-Implementation"
+        "valueString" : "release"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -344,7 +344,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "Trial-Implementation"
+        "valueString" : "release"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
