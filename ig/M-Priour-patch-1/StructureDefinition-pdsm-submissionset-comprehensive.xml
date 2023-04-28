@@ -43,7 +43,7 @@ La ressource référencée doit être présente sous l’élément List.containe
   <name value="PDSm_SubmissionSetComprehensive"/>
   <title value="PDSm SubmissionSet Comprehensive"/>
   <status value="active"/>
-  <date value="2023-03-23T15:17:15+00:00"/>
+  <date value="2023-04-28T06:41:14+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -1088,7 +1088,7 @@ La ressource référencée doit être présente sous l’élément List.containe
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
       </constraint>
     </element>
     <element id="List.extension:PDSm_intendedRecipient.url">
