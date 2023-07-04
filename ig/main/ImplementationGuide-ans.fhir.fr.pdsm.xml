@@ -10,7 +10,7 @@
   <name value="PDSm"/>
   <title value="Partage de Documents de Santé en mobilité (PDSm)"/>
   <status value="draft"/>
-  <date value="2023-03-25T16:57:01+00:00"/>
+  <date value="2023-07-04T15:54:52+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -29,6 +29,14 @@
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
     <version value="5.0.0"/>
+  </dependsOn>
+  <dependsOn id="hl7ext">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"/>
+    </extension>
+    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+    <packageId value="hl7.fhir.uv.extensions.r4"/>
+    <version value="1.0.0"/>
   </dependsOn>
   <dependsOn id="ihe_iti_mhd">
     <uri value="https://profiles.ihe.net/ITI/MHD/ImplementationGuide/ihe.iti.mhd"/>
@@ -246,6 +254,9 @@
         <valueString value="true"/>
       </extension>
     </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
+      <valueCode value="hl7.fhir.uv.tools#current"/>
+    </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
         <valueCode value="copyrightyear"/>
@@ -448,6 +459,16 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/a9c10f8a-882d-4000-a280-7150e0aeb478"/>
+      </reference>
+      <name value="Exemple de bundle de type transaction-response du flux 2"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -466,17 +487,6 @@
       </reference>
       <name value="PDSm Comprehensive Provide Document Bundle"/>
       <description value="Profil basé sur la transaction IHE &quot;Provide Document Bundle [ITI-65]&quot; du profil MHD ; le bundle est de type transaction et contient : &#xA;- une ressource de type « List » représentant le lot de soumission,&#xA;- une à plusieurs ressources de type « DocumentReference », représentant les fiches de documents,&#xA;- zero à plusieurs ressources « Binary » représentant les documents envoyés dans le flux,&#xA;- zero à plusieurs ressources de type « List » représentant les classeurs.&#xA;Dans le cas d’un dépôt d’un nouveau document, l’élément DocumentReference.content.attachment.url doit pointer vers une ressource Binary, représentant le document, présente dans le bundle.&#xA;Dans le cas d’une demande de mise à jour d’un document par remplacement, l’élément DocumentReference.relatesTo doit être renseigné afin d’indiquer le lien avec un DocumentReference existant et de préciser la nature de la mise à jour. L’élément DocumentReference.content.attachment.url doit pointer vers une ressource Binary, représentant le document qui remplace l’ancien, présente dans le bundle.&#xA;Dans le cas d’une mise à jour d’un classeur, comme List.status ou List.entry pour reclasser des documents, une nouvelle version de la ressource List est envoyée."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/pdsm-find-documentreferences-comprehensive-response"/>
-      </reference>
-      <name value="PDSm_FindDocumentReferencesComprehensiveResponse"/>
-      <description value="Réponse de la transaction IHE &quot;Find Document References [ITI-67]&quot; basée sur le bundle MHD http://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.FindDocumentReferencesComprehensiveResponseMessage et profilé pour le volet PDSm"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -525,28 +535,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/pdsm-is-archived"/>
-      </reference>
-      <name value="PDSm_isArchived"/>
-      <description value="Extension définie par le volet ANS &quot;Volet Partage de documents de santé en mobilité&quot; sur les ressources List et DocumentReference pour distinguer les lots de soumission et les fiches archivés des actives."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/PDSmintendedrecipient"/>
-      </reference>
-      <name value="PDSm_intendedRecipient"/>
-      <description value="Représente le destinataire du lot de soumission"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CapabilityStatement"/>
       </extension>
       <reference>
@@ -565,17 +553,6 @@
       </reference>
       <name value="PDSm-DocumentReference-PatientAsSubject"/>
       <description value="Paramètre de recherche chaîné créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'élément patient.identifier"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/PDSm-DocumentReference-PractitionerRoleAsAuthor"/>
-      </reference>
-      <name value="PDSm-DocumentReference-PractitionerRoleAsAuthor"/>
-      <description value="Paramètre de recherche chaîné créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'élément author:PractitionerRole.practitioner:Practitioner.identifier, author:PractitionerRole.practitioner:Practitioner.given et author:PractitionerRole.practitioner:Practitioner.family"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -602,6 +579,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/PDSm-DocumentReference-PractitionerRoleAsAuthor"/>
+      </reference>
+      <name value="PDSm-DocumentReference-PractitionerRoleAsAuthor"/>
+      <description value="Paramètre de recherche chaîné créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'élément author:PractitionerRole.practitioner:Practitioner.identifier, author:PractitionerRole.practitioner:Practitioner.given et author:PractitionerRole.practitioner:Practitioner.family"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CapabilityStatement"/>
       </extension>
       <reference>
@@ -609,6 +597,28 @@
       </reference>
       <name value="PDSm-GestionnaireDePartageDeDocuments"/>
       <description value="Il s’agit d’un système d’information ou d’un composant d'un système d’information qui stocke, classe et archive les documents d’un dossier patient."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/PDSm-isArchived"/>
+      </reference>
+      <name value="PDSm-isArchived"/>
+      <description value="Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère derecherche l'élément isArchived qui permet distinguer les lots de soumission et les fiches archivés des actives."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/PDSm-List-authorOrg"/>
+      </reference>
+      <name value="PDSm-List-authorOrg"/>
+      <description value="Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'élément sourceId"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -642,17 +652,6 @@
       </reference>
       <name value="PDSm-List-PractitionerRoleAsSource"/>
       <description value="Paramètre de recherche chaîné créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'élément source:PractitionerRole.practitioner:Practitioner.given et source:PractitionerRole.practitioner:Practitioner.family"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/PDSm-List-authorOrg"/>
-      </reference>
-      <name value="PDSm-List-authorOrg"/>
-      <description value="Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'élément sourceId"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -701,24 +700,36 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
+        <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/PDSm-isArchived"/>
+        <reference value="StructureDefinition/pdsm-find-documentreferences-comprehensive-response"/>
       </reference>
-      <name value="PDSm-isArchived"/>
-      <description value="Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère derecherche l'élément isArchived qui permet distinguer les lots de soumission et les fiches archivés des actives."/>
+      <name value="PDSm_FindDocumentReferencesComprehensiveResponse"/>
+      <description value="Réponse de la transaction IHE &quot;Find Document References [ITI-67]&quot; basée sur le bundle MHD http://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.FindDocumentReferencesComprehensiveResponseMessage et profilé pour le volet PDSm"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
+        <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="Bundle/a9c10f8a-882d-4000-a280-7150e0aeb478"/>
+        <reference value="StructureDefinition/PDSmintendedrecipient"/>
       </reference>
-      <name value="Exemple de bundle de type transaction-response du flux 2"/>
-      <exampleBoolean value="true"/>
+      <name value="PDSm_intendedRecipient"/>
+      <description value="Représente le destinataire du lot de soumission"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/pdsm-is-archived"/>
+      </reference>
+      <name value="PDSm_isArchived"/>
+      <description value="Extension définie par le volet ANS &quot;Volet Partage de documents de santé en mobilité&quot; sur les ressources List et DocumentReference pour distinguer les lots de soumission et les fiches archivés des actives."/>
+      <exampleBoolean value="false"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">

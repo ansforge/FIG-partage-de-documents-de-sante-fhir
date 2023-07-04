@@ -276,15 +276,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-PDSm-DocumentReference-PractitionerRoleAsAuthor.html"
-                     title="SearchParameter/PDSm-DocumentReference-PractitionerRoleAsAuthor">PDSm-DocumentReference-PractitionerRoleAsAuthor</a>
-               </td>
-               <td>
-<p>Paramètre de recherche chaîné créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l’élément author:PractitionerRole.practitioner:Practitioner.identifier, author:PractitionerRole.practitioner:Practitioner.given et author:PractitionerRole.practitioner:Practitioner.family</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="SearchParameter-PDSm-DocumentReference-period-end.html"
                      title="SearchParameter/PDSm-DocumentReference-period-end">PDSm-DocumentReference-period-end</a>
                </td>
@@ -299,6 +290,33 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l’élément context.period.start correspondant à lobjet dateDebutActe</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-PDSm-DocumentReference-PractitionerRoleAsAuthor.html"
+                     title="SearchParameter/PDSm-DocumentReference-PractitionerRoleAsAuthor">PDSm-DocumentReference-PractitionerRoleAsAuthor</a>
+               </td>
+               <td>
+<p>Paramètre de recherche chaîné créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l’élément author:PractitionerRole.practitioner:Practitioner.identifier, author:PractitionerRole.practitioner:Practitioner.given et author:PractitionerRole.practitioner:Practitioner.family</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-PDSm-isArchived.html"
+                     title="SearchParameter/PDSm-isArchived">PDSm-isArchived</a>
+               </td>
+               <td>
+<p>Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère derecherche l’élément isArchived qui permet distinguer les lots de soumission et les fiches archivés des actives.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-PDSm-List-authorOrg.html"
+                     title="SearchParameter/PDSm-List-authorOrg">PDSm-List-authorOrg</a>
+               </td>
+               <td>
+<p>Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l’élément sourceId</p>
 </td>
             </tr>
             <tr>
@@ -330,15 +348,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-PDSm-List-authorOrg.html"
-                     title="SearchParameter/PDSm-List-authorOrg">PDSm-List-authorOrg</a>
-               </td>
-               <td>
-<p>Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l’élément sourceId</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="SearchParameter-PDSm-PractitionerRole-family-ex.html"
                      title="SearchParameter/PDSm-PractitionerRole-family-ex">PDSm-PractitionerRole-family-ex</a>
                </td>
@@ -362,15 +371,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l’extension partof qui permet de faire référence à l’exercice professionnel depuis la situation d’exercice</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-PDSm-isArchived.html"
-                     title="SearchParameter/PDSm-isArchived">PDSm-isArchived</a>
-               </td>
-               <td>
-<p>Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère derecherche l’élément isArchived qui permet distinguer les lots de soumission et les fiches archivés des actives.</p>
 </td>
             </tr>
          </tbody>
@@ -414,15 +414,6 @@ Dans le cas d’une mise à jour d’un classeur, comme List.status ou List.entr
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-pdsm-find-documentreferences-comprehensive-response.html"
-                     title="StructureDefinition/pdsm-find-documentreferences-comprehensive-response">PDSm_FindDocumentReferencesComprehensiveResponse</a>
-               </td>
-               <td>
-<p>Réponse de la transaction IHE “Find Document References [ITI-67]” basée sur le bundle MHD http://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.FindDocumentReferencesComprehensiveResponseMessage et profilé pour le volet PDSm</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="StructureDefinition-pdsm-find-lists-response.html"
                      title="StructureDefinition/pdsm-find-lists-response">PDSm Find Lists Response</a>
                </td>
@@ -462,6 +453,15 @@ Contrairement au profil PDSm_ComprehensiveDocumentReference, le document est dir
 <p>Profil spécifique dérivé du profil IHE MHD v4.0.1 « ComprehensiveSubmissionSet  » créé pour le volet ANS “Partage de documents de santé en mobilité” ; ce profil concerne le lot de soumission.</p>
 </td>
             </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-pdsm-find-documentreferences-comprehensive-response.html"
+                     title="StructureDefinition/pdsm-find-documentreferences-comprehensive-response">PDSm_FindDocumentReferencesComprehensiveResponse</a>
+               </td>
+               <td>
+<p>Réponse de la transaction IHE “Find Document References [ITI-67]” basée sur le bundle MHD http://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.FindDocumentReferencesComprehensiveResponseMessage et profilé pour le volet PDSm</p>
+</td>
+            </tr>
          </tbody>
       </table>
    </p>
@@ -476,20 +476,20 @@ Contrairement au profil PDSm_ComprehensiveDocumentReference, le document est dir
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-pdsm-is-archived.html"
-                     title="StructureDefinition/pdsm-is-archived">PDSm_isArchived</a>
-               </td>
-               <td>
-<p>Extension définie par le volet ANS “Volet Partage de documents de santé en mobilité” sur les ressources List et DocumentReference pour distinguer les lots de soumission et les fiches archivés des actives.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="StructureDefinition-PDSmintendedrecipient.html"
                      title="StructureDefinition/PDSmintendedrecipient">PDSm_intendedRecipient</a>
                </td>
                <td>
 <p>Représente le destinataire du lot de soumission</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-pdsm-is-archived.html"
+                     title="StructureDefinition/pdsm-is-archived">PDSm_isArchived</a>
+               </td>
+               <td>
+<p>Extension définie par le volet ANS “Volet Partage de documents de santé en mobilité” sur les ressources List et DocumentReference pour distinguer les lots de soumission et les fiches archivés des actives.</p>
 </td>
             </tr>
          </tbody>
@@ -559,7 +559,7 @@ Contrairement au profil PDSm_ComprehensiveDocumentReference, le document est dir
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.pdsm#3.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Mar 25, 2023 16:57+0000">2023-03-25</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.pdsm#3.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 4, 2023 15:54+0000">2023-07-04</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

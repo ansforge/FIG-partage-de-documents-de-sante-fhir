@@ -42,8 +42,8 @@ La ressource référencée doit être présente sous l’élément List.containe
   <version value="3.0.1"/>
   <name value="PDSm_SubmissionSetComprehensive"/>
   <title value="PDSm SubmissionSet Comprehensive"/>
-  <status value="active"/>
-  <date value="2023-03-25T16:57:01+00:00"/>
+  <status value="draft"/>
+  <date value="2023-07-04T15:54:52+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>

@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "PDSm"] ; # 
   fhir:title [ fhir:v "Partage de Documents de Santé en mobilité (PDSm)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-03-25T16:57:01+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-07-04T15:54:52+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -41,6 +41,18 @@
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
      fhir:version [ fhir:v "5.0.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7ext" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack" ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
+     fhir:version [ fhir:v "1.0.0" ]
   ] [
      fhir:id [ fhir:v "ihe_iti_mhd" ] ;
      fhir:uri [
@@ -293,6 +305,9 @@
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "hl7.fhir.uv.tools#current" ]
+     ] [
        fhir:extension ( [
          fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "copyrightyear" ]
@@ -521,6 +536,17 @@
      fhir:resource ( [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/Bundle/a9c10f8a-882d-4000-a280-7150e0aeb478> ;
+         fhir:reference [ fhir:v "Bundle/a9c10f8a-882d-4000-a280-7150e0aeb478" ]
+       ] ;
+       fhir:name [ fhir:v "Exemple de bundle de type transaction-response du flux 2" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
@@ -541,18 +567,6 @@
        ] ;
        fhir:name [ fhir:v "PDSm Comprehensive Provide Document Bundle" ] ;
        fhir:description [ fhir:v "Profil basé sur la transaction IHE \"Provide Document Bundle [ITI-65]\" du profil MHD ; le bundle est de type transaction et contient : \n- une ressource de type « List » représentant le lot de soumission,\n- une à plusieurs ressources de type « DocumentReference », représentant les fiches de documents,\n- zero à plusieurs ressources « Binary » représentant les documents envoyés dans le flux,\n- zero à plusieurs ressources de type « List » représentant les classeurs.\nDans le cas d’un dépôt d’un nouveau document, l’élément DocumentReference.content.attachment.url doit pointer vers une ressource Binary, représentant le document, présente dans le bundle.\nDans le cas d’une demande de mise à jour d’un document par remplacement, l’élément DocumentReference.relatesTo doit être renseigné afin d’indiquer le lien avec un DocumentReference existant et de préciser la nature de la mise à jour. L’élément DocumentReference.content.attachment.url doit pointer vers une ressource Binary, représentant le document qui remplace l’ancien, présente dans le bundle.\nDans le cas d’une mise à jour d’un classeur, comme List.status ou List.entry pour reclasser des documents, une nouvelle version de la ressource List est envoyée." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-find-documentreferences-comprehensive-response> ;
-         fhir:reference [ fhir:v "StructureDefinition/pdsm-find-documentreferences-comprehensive-response" ]
-       ] ;
-       fhir:name [ fhir:v "PDSm_FindDocumentReferencesComprehensiveResponse" ] ;
-       fhir:description [ fhir:v "Réponse de la transaction IHE \"Find Document References [ITI-67]\" basée sur le bundle MHD http://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.FindDocumentReferencesComprehensiveResponseMessage et profilé pour le volet PDSm" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -605,30 +619,6 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-is-archived> ;
-         fhir:reference [ fhir:v "StructureDefinition/pdsm-is-archived" ]
-       ] ;
-       fhir:name [ fhir:v "PDSm_isArchived" ] ;
-       fhir:description [ fhir:v "Extension définie par le volet ANS \"Volet Partage de documents de santé en mobilité\" sur les ressources List et DocumentReference pour distinguer les lots de soumission et les fiches archivés des actives." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/PDSmintendedrecipient> ;
-         fhir:reference [ fhir:v "StructureDefinition/PDSmintendedrecipient" ]
-       ] ;
-       fhir:name [ fhir:v "PDSm_intendedRecipient" ] ;
-       fhir:description [ fhir:v "Représente le destinataire du lot de soumission" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "CapabilityStatement" ]
        ] ) ;
        fhir:reference [
@@ -649,18 +639,6 @@
        ] ;
        fhir:name [ fhir:v "PDSm-DocumentReference-PatientAsSubject" ] ;
        fhir:description [ fhir:v "Paramètre de recherche chaîné créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'élément patient.identifier" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "SearchParameter" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSm-DocumentReference-PractitionerRoleAsAuthor> ;
-         fhir:reference [ fhir:v "SearchParameter/PDSm-DocumentReference-PractitionerRoleAsAuthor" ]
-       ] ;
-       fhir:name [ fhir:v "PDSm-DocumentReference-PractitionerRoleAsAuthor" ] ;
-       fhir:description [ fhir:v "Paramètre de recherche chaîné créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'élément author:PractitionerRole.practitioner:Practitioner.identifier, author:PractitionerRole.practitioner:Practitioner.given et author:PractitionerRole.practitioner:Practitioner.family" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -689,6 +667,18 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSm-DocumentReference-PractitionerRoleAsAuthor> ;
+         fhir:reference [ fhir:v "SearchParameter/PDSm-DocumentReference-PractitionerRoleAsAuthor" ]
+       ] ;
+       fhir:name [ fhir:v "PDSm-DocumentReference-PractitionerRoleAsAuthor" ] ;
+       fhir:description [ fhir:v "Paramètre de recherche chaîné créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'élément author:PractitionerRole.practitioner:Practitioner.identifier, author:PractitionerRole.practitioner:Practitioner.given et author:PractitionerRole.practitioner:Practitioner.family" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "CapabilityStatement" ]
        ] ) ;
        fhir:reference [
@@ -697,6 +687,30 @@
        ] ;
        fhir:name [ fhir:v "PDSm-GestionnaireDePartageDeDocuments" ] ;
        fhir:description [ fhir:v "Il s’agit d’un système d’information ou d’un composant d'un système d’information qui stocke, classe et archive les documents d’un dossier patient." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSm-isArchived> ;
+         fhir:reference [ fhir:v "SearchParameter/PDSm-isArchived" ]
+       ] ;
+       fhir:name [ fhir:v "PDSm-isArchived" ] ;
+       fhir:description [ fhir:v "Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère derecherche l'élément isArchived qui permet distinguer les lots de soumission et les fiches archivés des actives." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSm-List-authorOrg> ;
+         fhir:reference [ fhir:v "SearchParameter/PDSm-List-authorOrg" ]
+       ] ;
+       fhir:name [ fhir:v "PDSm-List-authorOrg" ] ;
+       fhir:description [ fhir:v "Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'élément sourceId" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -733,18 +747,6 @@
        ] ;
        fhir:name [ fhir:v "PDSm-List-PractitionerRoleAsSource" ] ;
        fhir:description [ fhir:v "Paramètre de recherche chaîné créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'élément source:PractitionerRole.practitioner:Practitioner.given et source:PractitionerRole.practitioner:Practitioner.family" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "SearchParameter" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSm-List-authorOrg> ;
-         fhir:reference [ fhir:v "SearchParameter/PDSm-List-authorOrg" ]
-       ] ;
-       fhir:name [ fhir:v "PDSm-List-authorOrg" ] ;
-       fhir:description [ fhir:v "Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'élément sourceId" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -797,26 +799,39 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "SearchParameter" ]
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSm-isArchived> ;
-         fhir:reference [ fhir:v "SearchParameter/PDSm-isArchived" ]
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-find-documentreferences-comprehensive-response> ;
+         fhir:reference [ fhir:v "StructureDefinition/pdsm-find-documentreferences-comprehensive-response" ]
        ] ;
-       fhir:name [ fhir:v "PDSm-isArchived" ] ;
-       fhir:description [ fhir:v "Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère derecherche l'élément isArchived qui permet distinguer les lots de soumission et les fiches archivés des actives." ] ;
+       fhir:name [ fhir:v "PDSm_FindDocumentReferencesComprehensiveResponse" ] ;
+       fhir:description [ fhir:v "Réponse de la transaction IHE \"Find Document References [ITI-67]\" basée sur le bundle MHD http://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.FindDocumentReferencesComprehensiveResponseMessage et profilé pour le volet PDSm" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Bundle" ]
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/Bundle/a9c10f8a-882d-4000-a280-7150e0aeb478> ;
-         fhir:reference [ fhir:v "Bundle/a9c10f8a-882d-4000-a280-7150e0aeb478" ]
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/PDSmintendedrecipient> ;
+         fhir:reference [ fhir:v "StructureDefinition/PDSmintendedrecipient" ]
        ] ;
-       fhir:name [ fhir:v "Exemple de bundle de type transaction-response du flux 2" ] ;
-       fhir:example [ fhir:v "true"^^xsd:boolean ]
+       fhir:name [ fhir:v "PDSm_intendedRecipient" ] ;
+       fhir:description [ fhir:v "Représente le destinataire du lot de soumission" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-is-archived> ;
+         fhir:reference [ fhir:v "StructureDefinition/pdsm-is-archived" ]
+       ] ;
+       fhir:name [ fhir:v "PDSm_isArchived" ] ;
+       fhir:description [ fhir:v "Extension définie par le volet ANS \"Volet Partage de documents de santé en mobilité\" sur les ressources List et DocumentReference pour distinguer les lots de soumission et les fiches archivés des actives." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] ) ;
      fhir:page [
        fhir:extension ( [
