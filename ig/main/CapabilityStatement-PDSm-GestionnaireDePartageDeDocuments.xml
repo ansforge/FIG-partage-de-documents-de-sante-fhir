@@ -24,7 +24,7 @@
   </contact>
   <description value="Il s’agit d’un système d’information ou d’un composant d'un système d’information qui stocke, classe et archive les documents d’un dossier patient."/>
   <kind value="requirements"/>
-  <fhirVersion value="4.0.0"/>
+  <fhirVersion value="4.0.1"/>
   <format value="xml"/>
   <format value="json"/>
   <implementationGuide value="https://interop.esante.gouv.fr/ig/fhir/pdsm/ImplementationGuide/ans.fhir.fr.pdsm"/>

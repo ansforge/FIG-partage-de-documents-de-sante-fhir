@@ -29,7 +29,7 @@
   ] ) ; # 
   fhir:description [ fhir:v "Il s’agit d’un système d’information ou d’un composant de système d’information qui recherche des documents selon certains critères, et qui peut consulter les documents qui l’intéressent."] ; # 
   fhir:kind [ fhir:v "requirements"] ; # 
-  fhir:fhirVersion [ fhir:v "4.0.0"] ; # 
+  fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
   fhir:format ( [ fhir:v "xml"] [ fhir:v "json"] ) ; # 
   fhir:implementationGuide ( [
      fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/ImplementationGuide/ans.fhir.fr.pdsm"^^xsd:anyURI ;
