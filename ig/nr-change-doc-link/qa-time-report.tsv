@@ -1,0 +1,27 @@
+Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.pdsm.json	12573	-	0	0	0	0	0	0	9	80	0	0	0	0	0	0	0	1	0	0	145	73	0	0	0	4	0	1
+fsh-generated/resources/SearchParameter-PDSm-List-PractitionerRoleAsSource.json	1065	15	1	0	0	0	0	0	0	37	0	0	0	0	0	0	0	0	0	0	21	16	0	0	0	0	0	0
+fsh-generated/resources/SearchParameter-PDSm-DocumentReference-period-end.json	839	11	0	0	0	0	0	0	0	13	0	0	0	0	0	0	0	0	0	0	7	25	0	0	0	1	0	0
+fsh-generated/resources/SearchParameter-PDSm-PractitionerRole-given-ex.json	761	10	0	0	0	0	0	0	0	14	0	0	0	0	0	0	0	0	0	0	9	23	0	0	0	0	0	0
+fsh-generated/resources/CapabilityStatement-PDSm-ConsommateurDeDocuments.json	11854	21	0	0	0	0	0	0	0	24	0	0	0	0	0	0	0	0	0	0	34	35	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-pdsm-comprehensive-provide-document-bundle.json	3915	18	0	0	0	0	0	775	1	524	0	0	1	0	0	0	0	3	0	0	1001	6967	0	0	0	27	1	3
+fsh-generated/resources/StructureDefinition-PDSmintendedrecipient.json	1719	14	1	0	0	0	0	30	0	25	0	0	0	0	0	0	0	0	0	0	41	209	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-pdsm-find-lists-response.json	2152	15	0	0	0	0	0	262	0	197	0	0	0	0	0	0	0	0	0	0	390	1809	0	0	0	11	0	1
+fsh-generated/resources/SearchParameter-PDSm-DocumentReference-PatientAsSubject.json	914	10	0	0	0	0	0	0	0	12	0	0	0	0	0	0	0	0	0	0	7	10	0	0	0	0	0	0
+fsh-generated/resources/SearchParameter-PDSm-DocumentReference-period-start.json	833	10	0	0	0	0	0	0	0	13	0	0	0	0	0	0	0	0	0	0	5	8	0	0	0	1	0	0
+fsh-generated/resources/SearchParameter-PDSm-PractitionerRole-partOf.json	743	10	0	0	0	0	0	0	0	11	0	0	0	0	0	0	0	0	0	0	6	8	0	0	0	0	0	0
+fsh-generated/resources/SearchParameter-PDSm-DocumentReference-PractitionerRoleAsAuthor.json	1230	10	0	0	0	0	0	0	0	13	0	0	0	0	0	0	0	0	0	0	7	8	0	0	0	0	0	0
+fsh-generated/resources/SearchParameter-PDSm-List-PatientAsSource.json	874	9	0	0	0	0	0	0	0	12	0	0	0	0	0	0	0	0	0	0	6	8	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-pdsm-find-documentreferences-comprehensive-response.json	1819	12	0	0	0	0	0	207	0	140	0	0	0	0	0	0	0	1	0	0	268	1240	0	0	0	7	0	1
+fsh-generated/resources/StructureDefinition-pdsm-folder-comprehensive.json	6140	21	0	0	0	0	0	138	0	150	0	0	0	0	0	0	0	1	0	0	206	786	0	0	0	7	1	0
+fsh-generated/resources/StructureDefinition-pdsm-comprehensive-document-reference.json	28336	43	1	0	0	0	0	237	0	215	0	0	0	0	0	0	0	1	0	0	524	1849	0	0	0	15	0	1
+fsh-generated/resources/SearchParameter-PDSm-List-authorOrg.json	648	10	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	5	9	0	0	0	1	0	0
+fsh-generated/resources/CapabilityStatement-PDSm-GestionnaireDePartageDeDocuments.json	12253	19	0	0	0	0	0	0	1	15	0	0	0	0	0	0	0	0	0	0	28	16	0	1	0	1	0	0
+fsh-generated/resources/SearchParameter-PDSm-PractitionerRole-family-ex.json	767	10	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	6	8	0	0	0	0	0	0
+fsh-generated/resources/CapabilityStatement-PDSm-ProducteurDeDocuments.json	2020	11	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	10	6	0	0	0	0	0	0
+fsh-generated/resources/SearchParameter-PDSm-isArchived.json	701	9	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	5	9	0	0	0	1	0	0
+fsh-generated/resources/Bundle-a9c10f8a-882d-4000-a280-7150e0aeb478.json	851	11	0	0	0	0	13	0	0	0	0	0	0	0	0	0	0	0	0	0	5	6	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-pdsm-simplified-publish.json	17912	30	0	0	0	0	0	270	0	164	0	0	1	0	0	0	0	0	0	0	393	1729	0	0	0	11	0	0
+fsh-generated/resources/StructureDefinition-pdsm-submissionset-comprehensive.json	14377	28	1	0	0	0	0	171	0	150	0	0	0	0	0	0	0	1	0	0	342	1271	0	0	0	11	0	1
+fsh-generated/resources/SearchParameter-PDSm-List-PatientAsSubject.json	811	10	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	6	9	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-pdsm-is-archived.json	1834	13	0	0	0	0	0	28	0	16	0	0	0	0	0	0	0	0	0	0	38	107	0	0	0	1	0	0

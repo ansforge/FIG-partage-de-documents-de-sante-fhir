@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="a9c10f8a-882d-4000-a280-7150e0aeb478"/>
+  <meta>
+    <profile value="https://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.ProvideDocumentBundleResponse"/>
+  </meta>
+  <type value="transaction-response"/>
+  <link>
+    <relation value="self"/>
+    <url value="http://exemple.com/fhir"/>
+  </link>
+  <entry>
+    <response id="urn:uuid:a9a16511-43ad-11e8-afb2-4107535a99ef">
+      <status value="201"/>
+      <location value="List/1"/>
+    </response>
+  </entry>
+  <entry>
+    <response id="urn:uuid:a9a16512-43ad-11e8-afb2-4107535a99ef">
+      <status value="201"/>
+      <location value="DocumentReference/1"/>
+    </response>
+  </entry>
+  <entry>
+    <response id="urn:uuid:8da1cfcc-05db-4aca-86ad82aa756a64bb">
+      <status value="201"/>
+      <location value="Binary/1"/>
+    </response>
+  </entry>
+</Bundle>
