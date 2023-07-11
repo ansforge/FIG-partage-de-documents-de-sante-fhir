@@ -1,0 +1,660 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>ANS.FHIR.FR.PDSM\Accueil - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+    <link rel="stylesheet" href="assets/css/style-ans.css"/>
+    <link rel="stylesheet" href="assets/css/style-add-ans.css"/>
+      <!-- CSS only -->
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"1"}
+    h3,h4,h5,h6{--heading-prefix:"1"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+<div id="family-nav">
+    <a no-external="true" id="hl7-search-lnk" href="http://hl7.org/fhir"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="50"/> </a>
+  </div>
+  <div id="ans-nav">
+    <a no-external="true" id="hl7-logo" href="https://esante.gouv.fr/"><img src="assets/images/logo-ANS.svg" alt="ANS Logo" height="50"/></a>
+  </div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Partage de Documents de Santé en mobilité (PDSm)</span>
+            <br/>
+            <span style="display:inline-block;">3.0.1 - Trial-Implementation
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Accueil</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Description des flux
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="construction_des_flux.html">Vue d'ensemble</a>
+      </li>
+      <li>
+        <a href="st_ajout.html">Ajout d'un lot de documents</a>
+      </li>
+      <li>
+        <a href="st_maj.html">Mise à jour de documents</a>
+      </li>
+      <li>
+        <a href="st_recherche_lot.html">Recherche de lot de documents</a>
+      </li>
+      <li>
+        <a href="st_recherche_fiche.html">Recherche de fiche</a>
+      </li>
+      <li>
+        <a href="st_consultation.html">Consultation de documents</a>
+      </li>
+      <li>
+        <a href="st_ajout_simplifie.html">Ajout simplifié d'un document</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Ressources de conformité</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Autres ressources
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="securite.html">Sécurité</a>
+      </li>
+      <li>
+        <a href="equivalences.html">Equivalences</a>
+      </li>
+      <li>
+        <a href="downloads.html">Téléchargements et usage</a>
+      </li>
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html" target="_blank">Spécifications FHIR </a>
+      </li>
+      <li>
+        <a href="https://esante.gouv.fr/" target="_blank">Site de l'ANS </a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="about.html">A propos de ce guide</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Accueil</b></li>
+
+          <span style="float:right;">
+
+            <a href="toc.html">&lt;prev</a> | 
+
+            <a href="#bottom">bottom</a>
+
+          | <a href="specifications_techniques.html">next&gt;</a>
+
+          </span>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">Publication Build: This will be filled in by the publication tooling</p>  <!-- EndReleaseHeader -->
+  <h2>Accueil</h2>
+  
+
+
+
+
+
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://interop.esante.gouv.fr/ig/fhir/pdsm/ImplementationGuide/ans.fhir.fr.pdsm<button data-clipboard-text="https://interop.esante.gouv.fr/ig/fhir/pdsm/ImplementationGuide/ans.fhir.fr.pdsm" title="Click to copy URL" class="btn-copy"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">3.0.1<button data-clipboard-text="https://interop.esante.gouv.fr/ig/fhir/pdsm/ImplementationGuide/ans.fhir.fr.pdsm|3.0.1" title="Click to copy versioned URL" class="btn-copy"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2023-07-11
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">PDSm</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="#lectorat-cible" id="markdown-toc-lectorat-cible">Lectorat cible</a></li>
+  <li><a href="#standards-utilisés" id="markdown-toc-standards-utilisés">Standards utilisés</a></li>
+  <li><a href="#les-flux" id="markdown-toc-les-flux">Les flux</a></li>
+</ul>
+
+</div>
+<h3 id="introduction">Introduction</h3>
+<p>Ce document présente les spécifications techniques du volet “Partage de documents de santé en mobilité”. Sa production est basée sur les <a href="https://esante.gouv.fr/volet-partage-de-documents-de-sante">Spécifications Fonctionnelles des Echanges du volet Partage de Documents de Santé</a> (SFE-PDS) et le profil <a href="https://profiles.ihe.net/ITI/MHD/index.html">MHD</a> (Mobile access to Health Documents) défini par IHE (Integrating the Healthcare Entreprise).</p>
+
+<p>Il s’agit d’un volet de la couche service spécifiant les modalités de partage de documents sans contraindre ces derniers. Les spécifications liées aux documents de santé constituent les volets de la couche métier du CI-SIS.</p>
+
+<p>A noter que la dénomination du volet « Partage de documents de santé en mobilité » n’est pas restrictive. En effet, les standards sous-jacents aux spécifications techniques, par opposition au volet historique « Partage de documents de santé », permettent le déploiement de cas d’usage en mobilité mais ces spécifications peuvent également être mises en œuvre dans d’autres cas d’usage.</p>
+
+<h3 id="lectorat-cible">Lectorat cible</h3>
+
+<p>Ce document s’adresse aux développeurs des interfaces interopérables des systèmes implémentant le partage de documents de santé ou à toute autre personne intervenant dans le processus de mise en place de ces interfaces.</p>
+
+<h3 id="standards-utilisés">Standards utilisés</h3>
+
+<p>Ces spécifications techniques se basent sur le standard HL7 FHIR Release 4, et plus particulièrement sur les contraintes spécifiées par le profil MHD version 4.0.1. Elles font référence à un certain nombre de ressources du standard ainsi qu’aux spécifications de l’API REST FHIR, basées sur le protocole HTTP. Les syntaxes retenues sont la syntaxe XML et JSON.</p>
+
+<p>Une <a href="equivalences.html">mise en équivalence</a> entre les acteurs et les flux identifiés dans les SFE-PDS et ceux présentés dans le profil MHD est disponible.
+Ce volet met en place l’option du profil MHD « Comprehensive Metadata » qui permet aux acteurs d’échanger des métadonnées complètes répondant aux exigences définies dans le profil XDS.</p>
+
+<h4 id="ressources-fhir-utilisées">Ressources FHIR utilisées</h4>
+
+<p>Les ressources utilisées et les niveaux de maturité sont les suivants :</p>
+
+<ul>
+  <li>DocumentReference (NM 3)</li>
+  <li>List (NM 1)</li>
+  <li>Patient (NM N)</li>
+  <li>Practitioner (NM 3)</li>
+  <li>PractitionerRole (NM 2)</li>
+  <li>Organization (NM 3)</li>
+  <li>Device (NM 2)</li>
+  <li>Binary (NM N)</li>
+  <li>Bundle (NM N)</li>
+</ul>
+
+<h4 id="profils-utilisés">Profils utilisés</h4>
+
+<p>Des ressources FHIR ont été profilées pour le contexte français et sont utilisés dans le cadre des spécifications techniques du volet « Partage de documents de santé en mobilité ».</p>
+
+<p>Deux sources seront utilisées dans le cadre de ce volet :</p>
+<ul>
+  <li>
+    <p>Les profils FHIR « FrPatient », « FrPractitioner » et « FrOrganization » publiés par HL7 France sont utilisés dans ce volet. Les présentes spécifications se basent sur les profils du package hl7.fhir.fr.core 1.1.0.</p>
+  </li>
+  <li>
+    <p>Dans le cadre de l’annuaire santé, l’ANS met à disposition un service national de publication des données des professionnels et des structures au format FHIR5; deux profils de l’annuaire santé, à savoir « PractitionerRoleProfessionalRoleRASS », « PractitionerRoleOrganizationalRoleRASS » sont utilisés pour le cas d’usage cahier de liaison. Les présentes spécifications se basent sur les profils du package ANS.annuaire.fhir.r4 0.2.0.</p>
+  </li>
+</ul>
+
+<p>Ces spécifications s’appuient également sur les profils définis dans le profil IHE MHD v4.0.1 relatifs à l’option « Comprehensive Metadata ».</p>
+
+<p>Le tableau ci-après spécifie les profils utilisés pour les ressources et types de données mentionnés dans ce document. Les présentes spécifications définissent également des profils propres au présent volet (préfixe PDSm).
+Pour les ressources et types de données non mentionnés dans ce tableau, le profil à utiliser est celui défini par HL7 FHIR.</p>
+
+<p>Cet Implementation Guide contient 7 profils :</p>
+<ul>
+  <li>3 profils pour le flux d’alimentation :
+    <ul>
+      <li>1) la fiche document <a href="StructureDefinition-pdsm-comprehensive-document-reference.html">PDSm_ComprehensiveDocumentReference</a>,</li>
+      <li>2) le classeur <a href="StructureDefinition-pdsm-folder-comprehensive.html">PDSm_FolderComprehensive</a>,</li>
+      <li>3) le Lot de soumission <a href="StructureDefinition-pdsm-submissionset-comprehensive.html">PDSm_SubmissionSetComprehensive</a></li>
+    </ul>
+  </li>
+  <li>1 profil pour le flux d’alimentation simplifié :
+    <ul>
+      <li>1) la fiche document <a href="StructureDefinition-pdsm-simplified-publish.html">PDSm_SimplifiedPublish</a>,</li>
+    </ul>
+  </li>
+  <li>1 profil Bundle pour encapsuler l’envoi des documents :
+    <ul>
+      <li><a href="StructureDefinition-pdsm-comprehensive-provide-document-bundle.html">PDSm_ComprehensiveProvideDocumentBundle</a></li>
+    </ul>
+  </li>
+  <li>2 profils Bundle pour encapsuler les résultats de recherche :
+    <ul>
+      <li>1) par fiche <a href="StructureDefinition-pdsm-find-documentreferences-comprehensive-response.html">PDSm_FindDocumentReferencesComprehensiveResponse</a>,</li>
+      <li>2) par lot de soumission <a href="StructureDefinition-pdsm-find-lists-response.html">PDSm_FindListsResponse</a></li>
+    </ul>
+  </li>
+</ul>
+
+<p>Au total, les ressources à utiliser dans le cadre de cet Implementation Guide sont :</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th><strong>Ressource</strong></th>
+      <th><strong>Profil</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bundle</td>
+      <td>PDSm_ComprehensiveProvideDocumentBundle</td>
+      <td><a name="l612">​</a>Profil défini dans ce volet et héritant de <a href="https://profiles.ihe.net/ITI/MHD/4.0.1/StructureDefinition-IHE.MHD.Comprehensive.ProvideBundle.html">ComprehensiveProvideDocumentBundle</a> défini dans le profil MHD</td>
+    </tr>
+    <tr>
+      <td>Bundle</td>
+      <td>PDSm_FindDocumentReferencesComprehensiveResponse</td>
+      <td><a name="l627">​</a>Profil défini dans ce volet et héritant de <a href="https://profiles.ihe.net/ITI/MHD/4.0.1/StructureDefinition-IHE.MHD.FindDocumentReferencesComprehensiveResponseMessage.html">FindDocumentReferencesComprehensiveResponse</a> défini dans le profil MHD</td>
+    </tr>
+    <tr>
+      <td>Bundle</td>
+      <td>PDSm_FindListsResponse</td>
+      <td><a name="l642">​</a>Profil défini dans ce volet et héritant de <a href="https://profiles.ihe.net/ITI/MHD/4.0.1/StructureDefinition-IHE.MHD.FindDocumentListsResponseMessage.html">FindListsResponse</a> défini dans le profil MHD</td>
+    </tr>
+    <tr>
+      <td>Bundle</td>
+      <td><a name="l654">​</a><a href="https://profiles.ihe.net/ITI/MHD/4.0.1/StructureDefinition-IHE.MHD.ProvideDocumentBundleResponse.html">ProvideDocumentBundleResponse</a></td>
+      <td>Profil défini dans le profil MHD Version 4.0.1</td>
+    </tr>
+    <tr>
+      <td>DocumentReference</td>
+      <td>PDSm_ComprehensiveDocumentReference</td>
+      <td>Profil défini dans ce volet et héritant de <a href="https://profiles.ihe.net/ITI/MHD/StructureDefinition-IHE.MHD.Comprehensive.DocumentReference.html">ComprehensiveDocumentReference</a> défini dans le profil MHD</td>
+    </tr>
+    <tr>
+      <td>DocumentReference</td>
+      <td>PDSm_SimplifiedPublish</td>
+      <td>Profil défini dans ce volet en s’inspirant du flux simplifié défini dans le profil MHD</td>
+    </tr>
+    <tr>
+      <td>List</td>
+      <td>PDSm_SubmissionSetComprehensive</td>
+      <td>Profil défini dans ce volet et héritant de <a href="https://profiles.ihe.net/ITI/MHD/StructureDefinition-IHE.MHD.Comprehensive.SubmissionSet.html">SubmissionSetComprehensive</a> défini dans le profil MHD</td>
+    </tr>
+    <tr>
+      <td>List</td>
+      <td>PDSm_FolderComprehensive</td>
+      <td>Profil défini dans ce volet et héritant de <a href="https://profiles.ihe.net/ITI/MHD/StructureDefinition-IHE.MHD.Comprehensive.Folder.html">FolderComprehensive</a> défini dans le profil MHD</td>
+    </tr>
+    <tr>
+      <td>Patient</td>
+      <td><a href="https://simplifier.net/packages/hl7-france-fhir.administrative/10.2021.1/files/424014">FrPatient</a></td>
+      <td>Profil français publié par Interop’Santé, spécifiant les identifiants de patient utilisés en France</td>
+    </tr>
+    <tr>
+      <td>Practitioner</td>
+      <td><a href="https://simplifier.net/packages/hl7-france-fhir.administrative/10.2021.1/files/424009">FrPractitioner</a></td>
+      <td>Profil français publié par Interop’Santé, représentant un professionnel. Il contraint les types d’identifiants du professionnel en France.&nbsp;</td>
+    </tr>
+    <tr>
+      <td>PractitionerRole <br/> PractitionerRole</td>
+      <td><a href="https://simplifier.net/packages/ans.annuaire.fhir.r4/0.2.0/files/421732">PractitionerRoleOrganizationalRoleRASS</a> <br/> <a href="https://simplifier.net/packages/ans.annuaire.fhir.r4/0.2.0/files/421688">PractitionerRoleProfessionalRoleRASS</a></td>
+      <td>Profil de l’annuaire santé représentant la situation d’exercice et l’exercice professionnel</td>
+    </tr>
+    <tr>
+      <td>Organization</td>
+      <td><a href="https://simplifier.net/packages/hl7-france-fhir.administrative/10.2021.1/files/424025">FrOrganization</a></td>
+      <td>Profil français publié par Interop’Santé représentant une personne morale. Ce profil spécifie les types d’identifiants pour l’organisation en France, et ajoute des extensions françaises.</td>
+    </tr>
+    <tr>
+      <td>Device</td>
+      <td>-</td>
+      <td>La ressource du standard est utilisée. Pas de profil spécifique.</td>
+    </tr>
+    <tr>
+      <td>Binary</td>
+      <td>-</td>
+      <td>La ressource du standard est utilisée. Pas de profil spécifique.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="utilisation-de-lig">Utilisation de l’IG</h4>
+
+<p>Les spécifications d’interopérabilité présentées dans ce volet ne présagent pas des conditions de leur mise en œuvre dans le cadre d’un système d’information partagé. Il appartient à tout responsable de traitement de s’assurer que les services utilisant ces spécifications respectent les cadres et bonnes pratiques applicables à ce genre de service (ex.: cadre juridique, bonnes pratiques de sécurité, ergonomie, accessibilité …).</p>
+
+<h3 id="les-flux">Les flux</h3>
+<p>Un flux est un échange entre deux systèmes. Des flux ont été identifiés lors d’études métiers et définis, avec partage de ressources FHIR. Pour en savoir davantage, rendez-vous sur la page  <a href="construction_des_flux.html">construction des flux</a>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>&nbsp;</th>
+      <th>Nom des flux métiers</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="st_ajout.html">Les flux 01 et 02 </a></td>
+      <td>AjoutLotDocument et ResultatAjoutLotDocument</td>
+      <td>Pour la demande d’ajout ou de remplacement d’un document au gestionnaire de partage de documents ainsi que le résultat de la demande</td>
+    </tr>
+    <tr>
+      <td><a href="st_maj.html">Les flux 03 et 04</a></td>
+      <td>MiseAJourMetadonneeFiche et ResultatMAJMetadonneeFiche</td>
+      <td>Pour la modification de certaines métadonnées du document comme le statut ou le niveau de confidentialité ainsi que le résultat de la demande</td>
+    </tr>
+    <tr>
+      <td><a href="st_recherche_lot.html">Les flux 05a et 06a</a></td>
+      <td>RechercheDocument et ResultatRechercheDocument</td>
+      <td>Pour la recherche de lot de documents à l’aide de critères de recherche ainsi que le résultat de la demande</td>
+    </tr>
+    <tr>
+      <td><a href="st_recherche_fiche.html">Les flux 05b et 06b</a></td>
+      <td>RechercheDocument et ResultatRechercheDocument</td>
+      <td>Pour la recherche de fiches à l’aide de critères de recherche ainsi que le résultat de la demande</td>
+    </tr>
+    <tr>
+      <td><a href="st_consultation.html">Les flux 07 et 08</a></td>
+      <td>DemandeConsultationDocument et ResultatDemandeConsultationDocument</td>
+      <td>Pour demander la consultation d’un ou de plusieurs document ainsi que le résultat de la demande</td>
+    </tr>
+    <tr>
+      <td><a href="st_ajout_simplifie.html">Les flux 09 et 10</a></td>
+      <td>AjoutSimplifieDocument et ResultatAjoutSimplifieDocument</td>
+      <td>Pour publier un document de manière simplifiée ainsi que le résultat de la demande</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div style="background-color:var(--footer-nav-bg-color)">
+        <table style="width:100%">
+          <tbody>
+            <tr>
+              <td style="text-align:left">&nbsp;
+
+                <a href="toc.html">&lt;prev</a>
+
+              </td>
+              <td style="text-align:center">
+                <a href="#top">top</a>
+              </td>
+              <td style="text-align:right">&nbsp;
+
+                <a href="specifications_techniques.html">next&gt;</a>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.pdsm#3.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 11, 2023 08:12+0000">2023-07-11</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                  | <a style="color: #81BEF7" href="https://interop.esante.gouv.fr/ig/fhir/pdsm/history.html" target="_blank">Version History</a> | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/ansforge/FIG-partage-de-documents-de-sante-fhir/issues/new" target="_blank">New Issue</a>
+                
+
+          
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+
+    <!-- Ajout ANS -->
+  <script src="assets/js/app.js" type="text/javascript"> </script>
+  <script src="assets/js/vendor.js" type="text/javascript"> </script>
+    <!-- Fin ajout ANS -->
+
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+  
+    
+  
+
+
+
+  <!-- / feedback form -->
+
+    <!-- Analytics Below
+  ================================================== -->
+
+
+    <!-- AJOUT ANS -->
+
+<footer role="contentinfo" class="footer footer-principal">
+  <div class="footer__region1">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <div class="logos">        
+            <div class="logo logo--0">
+              <a rel="nofollow" href="https://solidarites-sante.gouv.fr" title="Ministère des Solidarités et de la Santé (nouvelle fenêtre)" target="_blank">
+                
+                <img src="assets/images/logo-ministere.svg" alt="Ministère des Solidarités et de la Santé" width="133" loading="lazy" height="77"/>
+                
+              </a>
+            </div>
+        
+            <div class="logo logo--1">
+              <a rel="nofollow" href="https://esante.gouv.fr/" title="Agence du numérique en santé (nouvelle fenêtre)" target="_blank">
+                
+                <img src="assets/images/logo-ANS-footer.svg" alt="Agence du numérique en santé" width="106" loading="lazy" height="74"/>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <p class="footer__title">Agence du Numérique en Santé</p>
+          <p>2-10 Rue d'Oradour-sur-Glane 75015 Paris</p>
+
+            <!-- <div class="m-social">
+            <ul class="m-social__list">        
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.linkedin.com/company/agence-du-numerique-en-sante/" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-linkedin" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#linkedin"></use></svg>
+                  </div>
+                  <span class="sr-only">linkedin</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://twitter.com/esante_gouv_fr" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-twitter" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#twitter"></use></svg>
+                  </div>
+                  <span class="sr-only">twitter</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.youtube.com/channel/UCd1zuSaU5cE1lRCpwv_HSMA" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-youtube" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#youtube"></use></svg>
+                  </div>
+                  <span class="sr-only">youtube</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://esante.gouv.fr/rss.xml" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-rss" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#rss"></use></svg>
+                  </div>
+                  <span class="sr-only">rss</span>
+                </a>
+              </li>
+            </ul>
+          </div> -->
+        </div>
+        
+        <div class="col-6 col-lg-4">
+          <ul class="footer-list">
+            <li class="footer-list__item footer-list__item--hasIcon">
+              <a href="mailto:ci-sis@esante.gouv.fr" class="mailto-link">
+                <svg aria-hidden="true" focusable="false" class="svg-icon svg-angle-right"><use href="assets/images/icon-sprite.svg#angle-right"></use></svg>Contact</a>
+              </li>
+                <!-- <li class="footer-list__item">
+                <a href="https://interop-pprod.esante.gouv.fr/ci-sis-specifications/wp-content/uploads/CGU_espace_de_tests_v1.1.pdf" class="file-link">Mentions légales</a>
+              </li> -->
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+      <!-- <div class="footer__region2">
+      <div class="container">
+        <div class="footer-contentinfo">
+          <ul class="footer-list footer-list--inline">
+
+          </ul>
+        </div>
+      </div>
+    </div> -->
+  </footer>
+  </body>
+</html>
