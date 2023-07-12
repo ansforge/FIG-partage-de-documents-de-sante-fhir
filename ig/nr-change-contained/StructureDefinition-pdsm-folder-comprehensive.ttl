@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "PDSm_FolderComprehensive"] ; # 
   fhir:title [ fhir:v "PDSm Folder Comprehensive"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-07-12T08:12:47+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-07-12T08:15:17+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
