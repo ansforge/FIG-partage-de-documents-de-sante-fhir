@@ -1,0 +1,27 @@
+Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.pdsm.json	12573	-	0	0	0	0	0	0	5	126	0	0	0	0	0	0	0	1	0	0	157	194	0	0	0	8	0	1
+fsh-generated/resources/SearchParameter-PDSm-List-PractitionerRoleAsSource.json	1065	17	1	0	1	0	0	0	0	43	0	0	0	0	0	0	0	0	1	0	11	47	0	1	0	0	0	0
+fsh-generated/resources/SearchParameter-PDSm-DocumentReference-period-end.json	839	25	0	0	0	0	0	0	0	18	0	0	0	0	0	0	0	0	0	0	8	40	0	0	0	1	0	0
+fsh-generated/resources/SearchParameter-PDSm-PractitionerRole-given-ex.json	761	15	0	0	0	0	0	0	0	15	0	0	0	0	0	0	0	0	0	0	8	49	0	0	0	0	0	0
+fsh-generated/resources/CapabilityStatement-PDSm-ConsommateurDeDocuments.json	11854	35	0	0	0	0	0	0	1	37	0	0	0	0	0	0	0	0	0	0	47	88	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-pdsm-comprehensive-provide-document-bundle.json	3915	23	0	0	0	0	0	1276	0	885	0	0	1	0	0	0	0	4	0	0	1272	8667	0	0	1	40	1	3
+fsh-generated/resources/StructureDefinition-PDSmintendedrecipient.json	1719	21	1	0	0	0	0	51	0	41	0	0	0	0	0	0	0	0	0	0	54	200	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-pdsm-find-lists-response.json	2152	20	0	0	0	0	0	461	0	401	0	0	1	0	0	0	0	1	0	0	512	2413	0	0	0	14	0	2
+fsh-generated/resources/SearchParameter-PDSm-DocumentReference-PatientAsSubject.json	914	16	0	0	0	0	0	0	0	19	0	0	0	0	0	0	0	0	0	0	9	12	0	0	0	1	0	0
+fsh-generated/resources/SearchParameter-PDSm-DocumentReference-period-start.json	833	14	0	0	0	0	0	0	1	18	0	0	0	0	0	0	0	0	0	0	7	10	0	0	0	1	0	0
+fsh-generated/resources/SearchParameter-PDSm-PractitionerRole-partOf.json	743	15	0	0	0	0	0	0	0	18	0	0	0	0	0	0	0	0	0	0	7	10	0	0	0	0	0	0
+fsh-generated/resources/SearchParameter-PDSm-DocumentReference-PractitionerRoleAsAuthor.json	1230	13	0	0	0	0	0	0	0	16	0	0	0	0	0	0	0	0	0	0	9	11	0	0	0	0	0	0
+fsh-generated/resources/SearchParameter-PDSm-List-PatientAsSource.json	874	15	1	0	0	0	0	0	0	18	0	0	0	0	0	0	0	0	0	0	8	11	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-pdsm-find-documentreferences-comprehensive-response.json	1819	17	0	0	0	0	0	280	0	249	0	0	0	0	0	0	0	1	0	0	360	1674	0	0	0	10	0	0
+fsh-generated/resources/StructureDefinition-pdsm-folder-comprehensive.json	6140	33	0	0	0	0	0	294	0	170	0	0	0	0	0	0	0	1	0	0	284	1153	0	0	0	8	1	1
+fsh-generated/resources/StructureDefinition-pdsm-comprehensive-document-reference.json	28336	60	0	0	0	0	0	422	0	450	0	0	0	0	0	0	0	1	0	0	717	2461	0	0	0	23	0	1
+fsh-generated/resources/SearchParameter-PDSm-List-authorOrg.json	648	4	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	8	12	0	0	0	1	0	0
+fsh-generated/resources/CapabilityStatement-PDSm-GestionnaireDePartageDeDocuments.json	12253	36	0	0	0	0	0	0	1	26	0	0	0	0	0	0	0	0	0	0	49	23	0	0	0	1	0	0
+fsh-generated/resources/SearchParameter-PDSm-PractitionerRole-family-ex.json	767	3	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	7	11	0	0	0	1	0	0
+fsh-generated/resources/CapabilityStatement-PDSm-ProducteurDeDocuments.json	2020	4	1	0	0	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	12	8	0	0	0	1	0	0
+fsh-generated/resources/SearchParameter-PDSm-isArchived.json	701	4	0	0	0	0	0	0	0	11	0	0	0	0	0	0	0	0	0	0	6	10	0	0	0	0	0	0
+fsh-generated/resources/Bundle-a9c10f8a-882d-4000-a280-7150e0aeb478.json	851	5	0	0	0	0	12	0	0	0	0	0	0	0	0	0	0	0	0	0	6	9	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-pdsm-simplified-publish.json	17912	37	0	0	0	0	0	368	0	321	0	0	0	0	0	0	0	1	0	0	547	1779	0	0	0	26	4	1
+fsh-generated/resources/StructureDefinition-pdsm-submissionset-comprehensive.json	14377	36	0	0	0	0	0	297	1	283	0	0	1	0	0	0	0	2	0	0	481	1664	0	0	0	23	0	0
+fsh-generated/resources/SearchParameter-PDSm-List-PatientAsSubject.json	811	4	1	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	7	11	0	0	0	5	0	0
+fsh-generated/resources/StructureDefinition-pdsm-is-archived.json	1834	8	0	0	0	0	0	43	0	29	0	0	0	0	0	0	0	0	0	0	47	137	0	0	0	3	0	0
