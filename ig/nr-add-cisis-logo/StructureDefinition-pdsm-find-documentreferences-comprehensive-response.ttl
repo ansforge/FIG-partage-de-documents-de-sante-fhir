@@ -16,7 +16,7 @@
   fhir:version [ fhir:v "3.0.1"] ; # 
   fhir:name [ fhir:v "PDSm_FindDocumentReferencesComprehensiveResponse"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-07-12T10:26:51+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-07-21T12:14:05+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
