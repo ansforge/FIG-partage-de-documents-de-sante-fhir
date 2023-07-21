@@ -10,7 +10,7 @@
   <name value="PDSm"/>
   <title value="Partage de Documents de Santé en mobilité (PDSm)"/>
   <status value="active"/>
-  <date value="2023-07-21T12:08:41+00:00"/>
+  <date value="2023-07-21T15:47:29+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -807,6 +807,46 @@
           </extension>
           <nameUrl value="st_ajout_simplifie.html"/>
           <title value="Ajout simplifié d'un document"/>
+          <generation value="markdown"/>
+        </page>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="specifications_fonctionnelles.html"/>
+        </extension>
+        <nameUrl value="specifications_fonctionnelles.html"/>
+        <title value="Specifications Fonctionnelles"/>
+        <generation value="markdown"/>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="sf_ajout.html"/>
+          </extension>
+          <nameUrl value="sf_ajout.html"/>
+          <title value="Ajout d'un lot de documents"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="sf_maj.html"/>
+          </extension>
+          <nameUrl value="sf_maj.html"/>
+          <title value="Mise à jour de documents"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="sf_recherche.html"/>
+          </extension>
+          <nameUrl value="sf_recherche.html"/>
+          <title value="Recherche de documents"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="sf_consultation.html"/>
+          </extension>
+          <nameUrl value="sf_consultation.html"/>
+          <title value="Consultation de documents"/>
           <generation value="markdown"/>
         </page>
       </page>

@@ -10,7 +10,7 @@
   "name" : "PDSm",
   "title" : "Partage de Documents de Santé en mobilité (PDSm)",
   "status" : "active",
-  "date" : "2023-07-21T12:08:41+00:00",
+  "date" : "2023-07-21T15:47:29+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -1000,6 +1000,51 @@
           }],
           "nameUrl" : "st_ajout_simplifie.html",
           "title" : "Ajout simplifié d'un document",
+          "generation" : "markdown"
+        }]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "specifications_fonctionnelles.html"
+        }],
+        "nameUrl" : "specifications_fonctionnelles.html",
+        "title" : "Specifications Fonctionnelles",
+        "generation" : "markdown",
+        "page" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "sf_ajout.html"
+          }],
+          "nameUrl" : "sf_ajout.html",
+          "title" : "Ajout d'un lot de documents",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "sf_maj.html"
+          }],
+          "nameUrl" : "sf_maj.html",
+          "title" : "Mise à jour de documents",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "sf_recherche.html"
+          }],
+          "nameUrl" : "sf_recherche.html",
+          "title" : "Recherche de documents",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "sf_consultation.html"
+          }],
+          "nameUrl" : "sf_consultation.html",
+          "title" : "Consultation de documents",
           "generation" : "markdown"
         }]
       },
