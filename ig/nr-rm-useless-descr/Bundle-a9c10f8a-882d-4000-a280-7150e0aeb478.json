@@ -1,0 +1,33 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "a9c10f8a-882d-4000-a280-7150e0aeb478",
+  "meta" : {
+    "profile" : ["https://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.ProvideDocumentBundleResponse"]
+  },
+  "type" : "transaction-response",
+  "link" : [{
+    "relation" : "self",
+    "url" : "http://exemple.com/fhir"
+  }],
+  "entry" : [{
+    "response" : {
+      "id" : "urn:uuid:a9a16511-43ad-11e8-afb2-4107535a99ef",
+      "status" : "201",
+      "location" : "List/1"
+    }
+  },
+  {
+    "response" : {
+      "id" : "urn:uuid:a9a16512-43ad-11e8-afb2-4107535a99ef",
+      "status" : "201",
+      "location" : "DocumentReference/1"
+    }
+  },
+  {
+    "response" : {
+      "id" : "urn:uuid:8da1cfcc-05db-4aca-86ad82aa756a64bb",
+      "status" : "201",
+      "location" : "Binary/1"
+    }
+  }]
+}
