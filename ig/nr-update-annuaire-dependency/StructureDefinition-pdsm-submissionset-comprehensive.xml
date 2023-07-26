@@ -37,7 +37,7 @@ La ressource référencée doit être présente sous l’élément List.containe
   <name value="PDSm_SubmissionSetComprehensive"/>
   <title value="PDSm SubmissionSet Comprehensive"/>
   <status value="active"/>
-  <date value="2023-07-26T14:54:45+00:00"/>
+  <date value="2023-07-26T15:00:21+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -46,7 +46,7 @@ La ressource référencée doit être présente sous l’élément List.containe
       <value value="https://esante.gouv.fr"/>
     </telecom>
   </contact>
-  <description value="Profil spécifique dérivé du profil IHE MHD v4.0.1 « ComprehensiveSubmissionSet  » créé pour le volet ANS &quot;Partage de documents de santé en mobilité&quot; ; ce profil concerne le lot de soumission."/>
+  <description value="Profil spécifique dérivé du profil IHE MHD « ComprehensiveSubmissionSet » créé pour le volet ANS &quot;Partage de documents de santé en mobilité&quot; ; ce profil concerne le lot de soumission."/>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="rim"/>

@@ -10,7 +10,7 @@
   "name" : "PDSm_SubmissionSetComprehensive",
   "title" : "PDSm SubmissionSet Comprehensive",
   "status" : "active",
-  "date" : "2023-07-26T14:54:45+00:00",
+  "date" : "2023-07-26T15:00:21+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -19,7 +19,7 @@
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Profil spécifique dérivé du profil IHE MHD v4.0.1 « ComprehensiveSubmissionSet  » créé pour le volet ANS \"Partage de documents de santé en mobilité\" ; ce profil concerne le lot de soumission.",
+  "description" : "Profil spécifique dérivé du profil IHE MHD « ComprehensiveSubmissionSet » créé pour le volet ANS \"Partage de documents de santé en mobilité\" ; ce profil concerne le lot de soumission.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "rim",

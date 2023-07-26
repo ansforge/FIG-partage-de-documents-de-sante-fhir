@@ -53,9 +53,7 @@ dom-4:If a resource is contained in another resource, it SHALL NOT have a meta.v
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "List.extension:designationType","List.extension","designationType","","",1,1,"Y","","","Extension {[CanonicalType[https://profiles.ihe.net/ITI/MHD/StructureDefinition/ihe-designationType]]} {[]}
-","Représente les codes spécifiant le type d’activité de l’événement clinique ayant abouti au regroupement de la fiche d’un document dans ce classeur.","Expresses contentType of submissionSet or the codeList of a Folder. Usually expressed in LOINC or SNOMED.","Le jeu de valeurs est à définir par le système cible.
-
-There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Représente les codes spécifiant le type d’activité de l’événement clinique ayant abouti au regroupement de la fiche d’un document dans ce classeur. Le jeu de valeurs est à définir par le système cible.","Expresses contentType of submissionSet or the codeList of a Folder. Usually expressed in LOINC or SNOMED.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","typeActivite : [0..1] Code"
 "List.modifierExtension","List.modifierExtension","","","",0,0,"","Y","","Extension {[]} {[]}

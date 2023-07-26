@@ -1827,9 +1827,7 @@ dom-4:If a resource is contained in another resource, it SHALL NOT have a meta.v
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "pdsm-folder-comprehensive","List.extension:designationType","List.extension","designationType","","",1,1,"Y","","","Extension {[CanonicalType[https://profiles.ihe.net/ITI/MHD/StructureDefinition/ihe-designationType]]} {[]}
-","Représente les codes spécifiant le type d’activité de l’événement clinique ayant abouti au regroupement de la fiche d’un document dans ce classeur.","Expresses contentType of submissionSet or the codeList of a Folder. Usually expressed in LOINC or SNOMED.","Le jeu de valeurs est à définir par le système cible.
-
-There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Représente les codes spécifiant le type d’activité de l’événement clinique ayant abouti au regroupement de la fiche d’un document dans ce classeur. Le jeu de valeurs est à définir par le système cible.","Expresses contentType of submissionSet or the codeList of a Folder. Usually expressed in LOINC or SNOMED.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "pdsm-folder-comprehensive","List.modifierExtension","List.modifierExtension","","","",0,0,"","Y","","Extension {[]} {[]}
@@ -2014,10 +2012,8 @@ constr-bind-category:Les valeurs possibles pour cet élément doivent provenir d
 Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J57-ClassCode-DMP).
 En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J06-XdsClassCode-CISIS peut être utilisé. {f:category}"
 "pdsm-comprehensive-document-reference","DocumentReference.subject","DocumentReference.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://interopsante.org/fhir/StructureDefinition/FrPatient]]}
-","Référence vers le patient concerné par le document.","Who or what the document is about. The document can be about a person, (patient or healthcare practitioner), a device (e.g. a machine) or even a group of subjects (such as a document about a herd of farm animals, or a set of patients that share a common exposure).","","","","","","","","","",,,,,"",,,,"DocumentReference.subject",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-constr-subj-ref:La ressource référencée doit être présente sous l’élément DocumentReference.contained.
-Référence contrainte au profil FrPatient
-Cette même ressource est référencée depuis context.sourcePatientInfo. {f:subject}"
+","Référence vers le patient concerné par le document. Cette même ressource est référencée depuis context.sourcePatientInfo.","Who or what the document is about. The document can be about a person, (patient or healthcare practitioner), a device (e.g. a machine) or even a group of subjects (such as a document about a herd of farm animals, or a set of patients that share a common exposure).","","","","","","","","","",,,,,"",,,,"DocumentReference.subject",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
 "pdsm-comprehensive-document-reference","DocumentReference.date","DocumentReference.date","","indexed
 ","",0,1,"Y","","Y","instant {[]} {[]}
 ","Représente la date de création de la ressource DocumentReference dans FHIR","When the document reference was created.","Referencing/indexing time is used for tracking, organizing versions and searching.","","","","","","","","",,,,,"",,,,"DocumentReference.date",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -2446,8 +2442,7 @@ constr-bind-ProducteurDoc-simplified:L’utilisation de cette nomenclature est r
 -	TRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 (lorsque l’auteur du document est un professionnel ou un équipement sous sa responsabilité)
 Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J61-HealthcareFacilityTypeCode-DMP).
 En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-XdsHealthcareFacilityTypeCode-CISIS peut être utilisé. {f:context/f:practiceSetting or f:context/f:facilityType}"
-"pdsm-simplified-publish","DocumentReference.context.sourcePatientInfo","DocumentReference.context.sourcePatientInfo","","","",0,1,"Y","","","Reference {[]} {[CanonicalType[http://interopsante.org/fhir/StructureDefinition/FrPatient]]} (contained
-)
+"pdsm-simplified-publish","DocumentReference.context.sourcePatientInfo","DocumentReference.context.sourcePatientInfo","","","",0,1,"Y","","","Reference {[]} {[CanonicalType[http://interopsante.org/fhir/StructureDefinition/FrPatient]]}
 ","Référence vers la ressource Patient titulaire du dossier.","The Patient Information as known when the document was published. May be a reference to a version specific, or contained.","","","","","","","","","",,,,,"",,,,"DocumentReference.context.sourcePatientInfo",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "pdsm-simplified-publish","DocumentReference.context.related","DocumentReference.context.related","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]}
