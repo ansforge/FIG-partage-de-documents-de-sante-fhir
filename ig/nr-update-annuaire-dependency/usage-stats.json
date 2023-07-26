@@ -91,9 +91,6 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
-    "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/PDSmintendedrecipient": [
-      "List"
-    ],
     "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-is-archived": [
       "DocumentReference",
       "List"

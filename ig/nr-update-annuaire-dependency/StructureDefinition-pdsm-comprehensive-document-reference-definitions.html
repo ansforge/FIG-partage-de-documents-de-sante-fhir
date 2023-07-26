@@ -46,8 +46,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"5.16"}
-    h3,h4,h5,h6{--heading-prefix:"5.16"}</style>
+    <style type="text/css">h2{--heading-prefix:"6.16"}
+    h3,h4,h5,h6{--heading-prefix:"6.16"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -116,6 +116,28 @@
       </li>
       <li>
         <a href="st_ajout_simplifie.html">Ajout simplifié d&apos;un document</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Spécifications fonctionnelles
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="specifications_fonctionnelles.html">Spécifications fonctionnelles</a>
+      </li>
+      <li>
+        <a href="sf_ajout.html">Ajout d&apos;un lot de documents</a>
+      </li>
+      <li>
+        <a href="sf_maj.html">Mise à jour de documents</a>
+      </li>
+      <li>
+        <a href="sf_recherche.html">Recherche de documents</a>
+      </li>
+      <li>
+        <a href="sf_consultation.html">Consultation de documents</a>
       </li>
     </ul>
   </li>
@@ -246,14 +268,14 @@
 
 <a name="root"> </a>
 <h2 id="root">Resource Profile: PDSm_ComprehensiveDocumentReference - Detailed Descriptions</h2>
-  <table class="colsd">
+  <table class="colsi">
     <tr>
 
       <td colspan="2">
         
-          Draft
+          Active
           
-            as of 2023-07-11
+            as of 2023-07-26
           
         
       </td>
@@ -322,7 +344,7 @@
   <tr><td>Comments</td><td><p>The server assigns this value, and ignores what the client specifies, except in the case that the server is imposing version integrity on updates/deletes.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">constr-cdr-maj</b>: Elément requis lorsque le flux envoyé correspond à une mise à jour des données d’une fiche (: f:meta/f:versionId)<br/><b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
+<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="DocumentReference.meta.lastUpdated"> </a><span style="color: grey">7.</span> <b>DocumentReference.meta.lastUpdated</b><a href="#DocumentReference.meta.lastUpdated" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
   <tr><td>Definition</td><td><p>When the resource last changed - e.g. when the version changed.</p>
 </td></tr>
@@ -424,9 +446,8 @@ A human language
   <tr><td>Definition</td><td><p>These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..*</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td>Choice of: <a href="http://hl7.org/fhir/R4/patient.html">Patient</a>(<a href="https://simplifier.net/resolve?scope=hl7.fhir.fr.core@1.1.0&amp;canonical=http://interopsante.org/fhir/StructureDefinition/FrPatient" title="http://interopsante.org/fhir/StructureDefinition/FrPatient">FrPatient</a>), <a href="http://hl7.org/fhir/R4/device.html">Device</a>, <a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a>(<a href="https://interop.esante.gouv.fr/ig/fhir/annuaire/1.0.0-ballot/StructureDefinition-as-practitionerrole.html" title="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole">AsPractitionerRoleProfile</a>), <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>(<a href="https://interop.esante.gouv.fr/ig/fhir/annuaire/1.0.0-ballot/StructureDefinition-as-organization.html" title="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization">AsOrganizationProfile</a>), <a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a>(<a href="https://interop.esante.gouv.fr/ig/fhir/annuaire/1.0.0-ballot/StructureDefinition-as-practitioner.html" title="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner">ASPractitionerProfile</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/resource.html">Resource</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Must Support Types</a></td><td>No must-support rules about the choice of types/profiles</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>inline resources, anonymous resources, contained resources</td></tr>
   <tr><td>Comments</td><td><p>This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again. Contained resources may have profiles and tags In their meta elements, but SHALL NOT have security labels.</p>
@@ -523,9 +544,7 @@ Status of the underlying document
   <tr><td>Definition</td><td><p>Specifies the particular kind of document referenced  (e.g. History and Physical, Discharge Summary, Progress Note). This usually equates to the purpose of making the document referenced.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHOULD be taken from <a href="https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS">https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS</a>
-XDS typeCode CI-SI
-</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHOULD be taken from <a href="https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS">https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
@@ -565,7 +584,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J06-Xd
   <tr><td>Definition</td><td><p>Who or what the document is about. The document can be about a person, (patient or healthcare practitioner), a device (e.g. a machine) or even a group of subjects (such as a document about a herd of farm animals, or a set of patients that share a common exposure).</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="https://simplifier.net/resolve?scope=hl7.fhir.fr.core@1.1.0&amp;canonical=http://interopsante.org/fhir/StructureDefinition/FrPatient" title="http://interopsante.org/fhir/StructureDefinition/FrPatient">FrPatient</a>) :  <a href="http://hl7.org/fhir/R4/codesystem-resource-aggregation-mode.html#content" title="The reference is a local reference to a contained resource.">{c}</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="https://simplifier.net/resolve?scope=hl7.fhir.fr.core@1.1.0&amp;canonical=http://interopsante.org/fhir/StructureDefinition/FrPatient" title="http://interopsante.org/fhir/StructureDefinition/FrPatient">FrPatient</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -589,33 +608,26 @@ Cette même ressource est référencée depuis context.sourcePatientInfo. (: f:s
   <tr><td>Definition</td><td><p>Identifies who is responsible for adding the information to the document.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..*</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="https://interop.esante.gouv.fr/ig/fhir/annuaire/1.0.0-ballot/StructureDefinition-as-practitionerrole.html" title="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole">AsPractitionerRoleProfile</a>|<a href="http://hl7.org/fhir/R4/device.html" title="http://hl7.org/fhir/StructureDefinition/Device">Device</a>|<a href="https://simplifier.net/resolve?scope=hl7.fhir.fr.core@1.1.0&amp;canonical=http://interopsante.org/fhir/StructureDefinition/FrPatient" title="http://interopsante.org/fhir/StructureDefinition/FrPatient">FrPatient</a>) :  <a href="http://hl7.org/fhir/R4/codesystem-resource-aggregation-mode.html#content" title="The reference is a local reference to a contained resource.">{c}</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="https://interop.esante.gouv.fr/ig/fhir/annuaire/1.0.0-ballot-2/StructureDefinition-as-practitionerrole.html" title="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole">AsPractitionerRoleProfile</a>|<a href="http://hl7.org/fhir/R4/device.html" title="http://hl7.org/fhir/StructureDefinition/Device">Device</a>|<a href="https://simplifier.net/resolve?scope=hl7.fhir.fr.core@1.1.0&amp;canonical=http://interopsante.org/fhir/StructureDefinition/FrPatient" title="http://interopsante.org/fhir/StructureDefinition/FrPatient">FrPatient</a>) :  <a href="http://hl7.org/fhir/R4/codesystem-resource-aggregation-mode.html#content" title="The reference is a local reference to a contained resource.">{c}</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Must Support Types</a></td><td>No must-support rules about the choice of types/profiles</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>Not necessarily who did the actual data entry (i.e. typist) or who was the source (informant).</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">constr-bind-author</b>: Cardinalité contrainte à [1..*]
-Reference contrainte à :
-- PractitionerRole : Dans le cas d’un auteur professionnel, c’est le profil PractitionerRoleOrganizationalRoleRASSreprésentant la situation d’exercice qui doit être référencé. Lui-même fera le lien avec le profil PractitionerRoleProfessionalRoleRASS représentant l’exercice professionnel et avec FrPractitioner.
-- Device,
-- Patient contrainte au profil FrPatient. (: f:author)<br/><b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
+<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="DocumentReference.authenticator"> </a><span style="color: grey">29.</span> <b>DocumentReference.authenticator</b><a href="#DocumentReference.authenticator" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
   <tr><td>Definition</td><td><p>Which person or organization authenticates that this document is valid.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="https://interop.esante.gouv.fr/ig/fhir/annuaire/1.0.0-ballot/StructureDefinition-as-practitionerrole.html" title="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole">AsPractitionerRoleProfile</a>|<a href="https://interop.esante.gouv.fr/ig/fhir/annuaire/1.0.0-ballot/StructureDefinition-as-organization.html" title="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization">AsOrganizationProfile</a>) :  <a href="http://hl7.org/fhir/R4/codesystem-resource-aggregation-mode.html#content" title="The reference is a local reference to a contained resource.">{c}</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="https://interop.esante.gouv.fr/ig/fhir/annuaire/1.0.0-ballot-2/StructureDefinition-as-practitionerrole.html" title="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole">AsPractitionerRoleProfile</a>|<a href="https://interop.esante.gouv.fr/ig/fhir/annuaire/1.0.0-ballot-2/StructureDefinition-as-organization.html" title="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization">AsOrganizationProfile</a>) :  <a href="http://hl7.org/fhir/R4/codesystem-resource-aggregation-mode.html#content" title="The reference is a local reference to a contained resource.">{c}</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Must Support Types</a></td><td>No must-support rules about the choice of types/profiles</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Comments</td><td><p>Represents a participant within the author institution who has legally authenticated or attested the document. Legal authentication implies that a document has been signed manually or electronically by the legal Authenticator.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">constr-bind-authenticator</b>: Cardinalité contrainte à [1..1]
-Référence contrainte au profil 
-- PractitionerRole : Dans le cas d’un authentificateur professionnel, c’est le profil PractitionerRoleOrganizationalRoleRASS représentant la situation d’exercice qui doit être référencé. Lui-même fera le lien avec le profil PractitionerRoleProfessionalRoleRASS représentant l’exercice professionnel et avec FrPractitioner.
--  Organization contrainte au profil FrOrganization. (: f:authenticator)<br/><b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
+<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="DocumentReference.custodian"> </a><span style="color: grey">30.</span> <b>DocumentReference.custodian</b><a href="#DocumentReference.custodian" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
   <tr><td>Definition</td><td><p>Identifies the organization or group who is responsible for ongoing maintenance of and access to the document.</p>
 </td></tr>
@@ -884,7 +896,6 @@ Dans le cas de la recherche, il s’agit de l’URL permettant d’accéder au d
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
-  <tr><td>Obligations</td><td><table class="grid"><tr><td style="font-size: 11px"><b>Obligations</b></td></tr><tr><td style="font-size: 11px"><span title="No Obligation Code?">??</span></td></tr></table></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Applications need a label to display to a human user in place of the actual data if the data cannot be rendered or perceived by the viewer.</p>
 </td></tr>
@@ -1153,7 +1164,6 @@ Aa resource (or, for logical models, the URI of the logical model)
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
-  <tr><td>Obligations</td><td><table class="grid"><tr><td style="font-size: 11px"><b>Obligations</b></td></tr><tr><td style="font-size: 11px"><span title="No Obligation Code?">??</span></td></tr></table></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.</p>
 </td></tr>
@@ -1245,7 +1255,7 @@ Aa resource (or, for logical models, the URI of the logical model)
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.pdsm#3.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 11, 2023 09:02+0000">2023-07-11</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.pdsm#3.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jul 26, 2023 14:54+0000">2023-07-26</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
