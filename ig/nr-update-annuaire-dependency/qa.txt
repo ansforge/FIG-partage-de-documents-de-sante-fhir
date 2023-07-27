@@ -1,10 +1,10 @@
 ﻿PDSm : Validation Results
 =========================================
 
-err = 20, warn = 36, info = 0
+err = 20, warn = 35, info = 0
 IG Publisher Version: 1.3.24
-Generated Wed Jul 26 15:47:39 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.pdsm#3.0.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/pdsm)
- Build Errors : 326 / 5 / 0
+Generated Thu Jul 27 13:04:28 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.pdsm#3.0.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/pdsm)
+ Build Errors : 322 / 4 / 0
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/Bundle-a9c10f8a-882d-4000-a280-7150e0aeb478 : 0 / 0 / 1
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/CapabilityStatement-PDSm-ConsommateurDeDocuments : 0 / 0 / 1
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/CapabilityStatement-PDSm-GestionnaireDePartageDeDocuments : 0 / 0 / 1
@@ -354,15 +354,10 @@ ERROR: /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-d
 ERROR: /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/output/construction_des_flux.html#/html/body/div/div/div/div/div/ul/li/a at Line 262, column 11: The link 'st_flux4.html' for "flux 04" cannot be resolved
 ERROR: /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/output/equivalences.html#/html/body/div/div/div/div/div/h4/a at Line 526, column 119: The link 'StructureDefinition-PDSmSubmissionSetComprehensive.html' for "PDSmSubmissionSetComprehensive" cannot be resolved
 ERROR: /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/output/equivalences.html#/html/body/div/div/div/div/div/h4/a at Line 587, column 99: The link 'StructureDefinition-PDSmComprehensiveDocumentReference.html' for "PDSmComprehensiveDocumentReference" cannot be resolved
-ERROR: /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/output/index.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 368, column 55: The link 'https://profiles.ihe.net/ITI/MHD/4.0.1/StructureDefinition-IHE.MHD.Comprehensive.ProvideBundle.html' for "ComprehensiveProvideDocumentBundle" cannot be resolved
-ERROR: /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/output/index.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 373, column 55: The link 'https://profiles.ihe.net/ITI/MHD/4.0.1/StructureDefinition-IHE.MHD.FindDocumentReferencesComprehensiveResponseMessage.html' for "FindDocumentReferencesComprehensiveResponse" cannot be resolved
-ERROR: /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/output/index.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 378, column 55: The link 'https://profiles.ihe.net/ITI/MHD/4.0.1/StructureDefinition-IHE.MHD.FindDocumentListsResponseMessage.html' for "FindListsResponse" cannot be resolved
-ERROR: /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/output/index.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 382, column 12: The link 'https://profiles.ihe.net/ITI/MHD/4.0.1/StructureDefinition-IHE.MHD.ProvideDocumentBundleResponse.html' for "ProvideDocumentBundleResponse" cannot be resolved
-ERROR: /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/output/st_recherche_fiche.html#/html/body/div/div/div/div/div/p/a at Line 423, column 138: The link 'StructureDefinition-pdsmfinddocumentreferencescomprehensiveresponse.html' for "PDSm_FindDocumentReferencesComprehensiveResponse" cannot be resolved
+ERROR: /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/output/st_recherche_fiche.html#/html/body/div/div/div/div/div/p/a at Line 424, column 138: The link 'StructureDefinition-pdsmfinddocumentreferencescomprehensiveresponse.html' for "PDSm_FindDocumentReferencesComprehensiveResponse" cannot be resolved
 ERROR: /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/output/st_recherche_lot.html#/html/body/div/div/div/div/div/p/a at Line 401, column 112: The link 'StructureDefinition-PDSmFindListsResponse.html' for "PDSm_FindListsResponse" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
-WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/Bundle-a9c10f8a-882d-4000-a280-7150e0aeb478.json ==
 == fsh-generated/resources/CapabilityStatement-PDSm-ConsommateurDeDocuments.json ==

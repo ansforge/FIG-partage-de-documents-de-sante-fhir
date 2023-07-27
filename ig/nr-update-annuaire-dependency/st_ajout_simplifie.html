@@ -239,6 +239,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Concrètement, c’est une interaction « CREATE »  de l’API REST FHIR où le créateur de document va émettre une requête HTTP POST dont le corps contient une ressource de type DocumentReference. Un profil spécifique inspiré du profil IHE MHD en version build au 03.10.22 « SimplifiedPublish.DocumentReference » est créé pour ce volet et nommé PDSm_SimplifiedDocumentReference.</p>
 
 <p>Les ressources référencées à partir de ce profil (ex : Patient, via l’attribut PDSm_SimplifiedDocumentReference.subject) peuvent être  :</p>
+
 <ul>
   <li>Logiques, via le champ identifier</li>
   <li>Littérales,
@@ -253,12 +254,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Le résultat de l’ajout simplifié d’un document doit être conforme au résultat de l’interaction HTTP « CREATE » de FHIR .
 En cas de succès, le serveur retourne :</p>
+
 <ul>
   <li>Le HTTP Code 201 Created</li>
   <li>Un body contenant la ressource créée avec les attributs ; id, lastUpdated et versionId mis à jour</li>
 </ul>
 
 <p>En cas d’erreur, le serveur retourne :</p>
+
 <ul>
   <li>un HTTP Code statut (400 Bad Request, 404 Not Found, 422 Unprocessable Entity, …)</li>
   <li>En cas d’erreur 422, le corps de la réponse devrait contenir la ressource OperationOutcome détaillant l’erreur.</li>
@@ -311,7 +314,7 @@ En cas de succès, le serveur retourne :</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.pdsm#3.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jul 26, 2023 15:44+0000">2023-07-26</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.pdsm#3.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 27, 2023 13:02+0000">2023-07-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
