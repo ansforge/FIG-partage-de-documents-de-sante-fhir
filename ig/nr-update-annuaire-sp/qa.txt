@@ -3,7 +3,7 @@
 
 err = 27, warn = 36, info = 0
 IG Publisher Version: 1.3.25
-Generated Wed Aug 02 09:01:27 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.pdsm#3.0.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/pdsm)
+Generated Wed Aug 02 09:06:57 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.pdsm#3.0.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/pdsm)
  Build Errors : 327 / 5 / 0
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/Bundle-a9c10f8a-882d-4000-a280-7150e0aeb478 : 0 / 0 / 1
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/CapabilityStatement-PDSm-ConsommateurDeDocuments : 0 / 0 / 1
@@ -18,8 +18,6 @@ Generated Wed Aug 02 09:01:27 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.pdsm#
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/SearchParameter-PDSm-List-PatientAsSubject : 0 / 0 / 1
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/SearchParameter-PDSm-List-PractitionerRoleAsSource : 0 / 0 / 1
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/SearchParameter-PDSm-List-authorOrg : 0 / 0 / 1
- /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/SearchParameter-PDSm-PractitionerRole-family-ex : 0 / 0 / 1
- /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/SearchParameter-PDSm-PractitionerRole-given-ex : 0 / 0 / 1
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/SearchParameter-PDSm-isArchived : 0 / 0 / 1
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/StructureDefinition-PDSmintendedrecipient : 0 / 1 / 1
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/StructureDefinition-pdsm-comprehensive-document-reference : 14 / 11 / 1
@@ -359,7 +357,7 @@ ERROR: /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-d
 ERROR: /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/output/index.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 378, column 55: The link 'https://profiles.ihe.net/ITI/MHD/4.0.1/StructureDefinition-IHE.MHD.FindDocumentReferencesComprehensiveResponseMessage.html' for "FindDocumentReferencesComprehensiveResponse" cannot be resolved
 ERROR: /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/output/index.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 383, column 55: The link 'https://profiles.ihe.net/ITI/MHD/4.0.1/StructureDefinition-IHE.MHD.FindDocumentListsResponseMessage.html' for "FindListsResponse" cannot be resolved
 ERROR: /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/output/index.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 387, column 12: The link 'https://profiles.ihe.net/ITI/MHD/4.0.1/StructureDefinition-IHE.MHD.ProvideDocumentBundleResponse.html' for "ProvideDocumentBundleResponse" cannot be resolved
-ERROR: /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/output/st_recherche_lot.html#/html/body/div/div/div/div/div/p/a at Line 401, column 112: The link 'StructureDefinition-PDSmFindListsResponse.html' for "PDSm_FindListsResponse" cannot be resolved
+ERROR: /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/output/st_recherche_lot.html#/html/body/div/div/div/div/div/p/a at Line 396, column 112: The link 'StructureDefinition-PDSmFindListsResponse.html' for "PDSm_FindListsResponse" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
@@ -377,8 +375,6 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 == fsh-generated/resources/SearchParameter-PDSm-List-PatientAsSubject.json ==
 == fsh-generated/resources/SearchParameter-PDSm-List-PractitionerRoleAsSource.json ==
 == fsh-generated/resources/SearchParameter-PDSm-List-authorOrg.json ==
-== fsh-generated/resources/SearchParameter-PDSm-PractitionerRole-family-ex.json ==
-== fsh-generated/resources/SearchParameter-PDSm-PractitionerRole-given-ex.json ==
 == fsh-generated/resources/SearchParameter-PDSm-isArchived.json ==
 == fsh-generated/resources/StructureDefinition-PDSmintendedrecipient.json ==
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/PDSmintendedrecipient'): The Implementation Guide contains no examples for this extension

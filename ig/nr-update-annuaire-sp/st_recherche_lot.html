@@ -315,12 +315,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Recherche sur le cas d’utilisation de la ressource List</td>
     </tr>
     <tr>
-      <td>source:Patient.given <br/> source:PractitionerRole.partOf.<a href="SearchParameter-PDSm-PractitionerRole-given-ex.html">given-ex</a></td>
+      <td>source:Patient.given <br/> source:PractitionerRole.name</td>
       <td>string</td>
       <td>Recherche sur le prénom de la personne (praticien ou patient) à l’origine du document</td>
     </tr>
     <tr>
-      <td>source:Patient.family <br/> source:PractitionerRole.partOf.<a href="SearchParameter-PDSm-PractitionerRole-family-ex.html">family-ex</a></td>
+      <td>source:Patient.family <br/> source:PractitionerRole.name</td>
       <td>string</td>
       <td>Recherche sur le nom de famille de la personne (praticien ou patient) à l’origine du document</td>
     </tr>
@@ -368,14 +368,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </thead>
   <tbody>
     <tr>
-      <td><a href="SearchParameter-PDSm-PractitionerRole-given-ex.html">given-ex</a>*</td>
+      <td>name</td>
       <td>token</td>
-      <td>Recherche sur le prénom de l’auteur</td>
-    </tr>
-    <tr>
-      <td><a href="SearchParameter-PDSm-PractitionerRole-family-ex.html">family-ex</a>*</td>
-      <td>token</td>
-      <td>Recherche sur le nom de l’auteur</td>
+      <td>Recherche sur le nom ou prénom de l’auteur. SearchParameter défini dans le guide d’implémentation de l’annuaire</td>
     </tr>
   </tbody>
 </table>
@@ -386,7 +381,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <ul>
   <li>Rechercher les ressources de type List, correspondant à des lots de soumission, ayant été créées depuis le 01/01/2021 dont l’auteur est une professionnelle ayant pour nom de famille Dupont et prénom Emma.
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET http://targetsystem.com/API/List?code=http://profiles.ihe.net/ITI/MHD/CodeSystem/MHDlistTypes|submissionset&amp;date=ge2021-01-01&amp;source:PractitionerRole.partOf.family-ex =Dupont&amp; source:PractitionerRole.partOf.given-ex =Emma HTTP/1.1
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET http://targetsystem.com/API/List?code=http://profiles.ihe.net/ITI/MHD/CodeSystem/MHDlistTypes|submissionset&amp;date=ge2021-01-01&amp;source:PractitionerRole.partOf.family-ex =Dupont&amp; source:PractitionerRole.name =Emma HTTP/1.1
 </code></pre></div>    </div>
   </li>
   <li>Rechercher les ressource de type List, correspondant à des lots de soumission dont le patient a l’identifiant 156.
@@ -398,7 +393,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h3 id="flux-06-a--réponse-au-flux-05-a">Flux 06-a : réponse au flux 05-a</h3>
 <p>Il s’agit du résultat de la recherche de documents retourné par le gestionnaire de partage de documents. La recherche de Lots de Soumission retourne les ressources List qui correspondent aux critères de recherche fournis par le consommateur de documents. On retrouve les mêmes éléments qui constituent les lots de soumission que lors de la demande d’ajout d’un lot de documents.</p>
 
-<p><a name="l788">​</a>Un profil spécifique dérivé du profil IHE MHD v4.0.1 « FindListsResponse » est créé pour ce volet et nommé <a href="StructureDefinition-PDSmFindListsResponse.html">PDSm_FindListsResponse</a>. Il contient zéro ou plusieurs ressources DocumentReference répondants aux critères de la requête.</p>
+<p><a name="l768">​</a>Un profil spécifique dérivé du profil IHE MHD v4.0.1 « FindListsResponse » est créé pour ce volet et nommé <a href="StructureDefinition-PDSmFindListsResponse.html">PDSm_FindListsResponse</a>. Il contient zéro ou plusieurs ressources DocumentReference répondants aux critères de la requête.</p>
 
 <p>Ce flux correspond à la réponse à la requête reposant sur l’interaction « search » du flux précédent.
 En cas de succès, le gestionnaire de partage de documents retourne un code <code class="language-plaintext highlighter-rouge">HTTP 200 OK</code> ainsi qu’un Bundle de type searchset.</p>
@@ -452,7 +447,7 @@ Si le gestionnaire de partage de documents doit reporter une erreur, il doit uti
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.pdsm#3.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 2, 2023 08:59+0000">2023-08-02</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.pdsm#3.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 2, 2023 09:05+0000">2023-08-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
