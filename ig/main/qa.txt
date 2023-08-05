@@ -1,21 +1,21 @@
 ﻿PDSm : Validation Results
 =========================================
 
-err = 29, warn = 39, info = 0
-IG Publisher Version: 1.3.27
-Generated Fri Aug 04 14:44:02 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.pdsm#3.0.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/pdsm)
+err = 29, warn = 37, info = 0
+IG Publisher Version: 1.3.28
+Generated Sat Aug 05 17:37:01 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.pdsm#3.0.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/pdsm)
  Build Errors : 327 / 5 / 0
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/Bundle-a9c10f8a-882d-4000-a280-7150e0aeb478 : 0 / 0 / 1
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/CapabilityStatement-PDSm-ConsommateurDeDocuments : 0 / 0 / 1
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/CapabilityStatement-PDSm-GestionnaireDePartageDeDocuments : 0 / 0 / 1
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/CapabilityStatement-PDSm-ProducteurDeDocuments : 0 / 0 / 1
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.pdsm : 0 / 0 / 1
- /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/SearchParameter-PDSm-DocumentReference-PatientAsSubject : 0 / 1 / 1
+ /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/SearchParameter-PDSm-DocumentReference-PatientAsSubject : 0 / 0 / 1
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/SearchParameter-PDSm-DocumentReference-PractitionerRoleAsAuthor : 0 / 0 / 1
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/SearchParameter-PDSm-DocumentReference-period-end : 0 / 0 / 1
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/SearchParameter-PDSm-DocumentReference-period-start : 0 / 0 / 1
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/SearchParameter-PDSm-List-PatientAsSource : 0 / 0 / 1
- /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/SearchParameter-PDSm-List-PatientAsSubject : 0 / 1 / 1
+ /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/SearchParameter-PDSm-List-PatientAsSubject : 0 / 0 / 1
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/SearchParameter-PDSm-List-PractitionerRoleAsSource : 0 / 0 / 1
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/SearchParameter-PDSm-List-authorOrg : 0 / 0 / 1
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/SearchParameter-PDSm-PractitionerRole-family-ex : 1 / 0 / 1
@@ -371,13 +371,11 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 == fsh-generated/resources/CapabilityStatement-PDSm-ProducteurDeDocuments.json ==
 == fsh-generated/resources/ImplementationGuide-ans.fhir.fr.pdsm.json ==
 == fsh-generated/resources/SearchParameter-PDSm-DocumentReference-PatientAsSubject.json ==
-WARNING: SearchParameter/PDSm-DocumentReference-PatientAsSubject: SearchParameter.expression: The left side is inherently a collection, and so the expression 'resolve() is Patient' may fail or return false if there is more than one item in the content being evaluated
 == fsh-generated/resources/SearchParameter-PDSm-DocumentReference-PractitionerRoleAsAuthor.json ==
 == fsh-generated/resources/SearchParameter-PDSm-DocumentReference-period-end.json ==
 == fsh-generated/resources/SearchParameter-PDSm-DocumentReference-period-start.json ==
 == fsh-generated/resources/SearchParameter-PDSm-List-PatientAsSource.json ==
 == fsh-generated/resources/SearchParameter-PDSm-List-PatientAsSubject.json ==
-WARNING: SearchParameter/PDSm-List-PatientAsSubject: SearchParameter.expression: The left side is inherently a collection, and so the expression 'resolve() is Patient' may fail or return false if there is more than one item in the content being evaluated
 == fsh-generated/resources/SearchParameter-PDSm-List-PractitionerRoleAsSource.json ==
 == fsh-generated/resources/SearchParameter-PDSm-List-authorOrg.json ==
 == fsh-generated/resources/SearchParameter-PDSm-PractitionerRole-family-ex.json ==
