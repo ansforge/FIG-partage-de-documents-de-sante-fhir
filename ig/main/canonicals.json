@@ -84,27 +84,6 @@
     "name" : "PDSmAuthorOrg"
   },
   {
-    "id" : "PDSm-PractitionerRole-family-ex",
-    "type" : "SearchParameter",
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSm-PractitionerRole-family-ex",
-    "version" : "3.0.1",
-    "name" : "PractitionerRoleFamilyEx"
-  },
-  {
-    "id" : "PDSm-PractitionerRole-given-ex",
-    "type" : "SearchParameter",
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSm-PractitionerRole-given-ex",
-    "version" : "3.0.1",
-    "name" : "PractitionerRoleGivenEx"
-  },
-  {
-    "id" : "PDSm-PractitionerRole-partOf",
-    "type" : "SearchParameter",
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSm-PractitionerRole-partOf",
-    "version" : "3.0.1",
-    "name" : "PDSmPartOf"
-  },
-  {
     "id" : "PDSm-isArchived",
     "type" : "SearchParameter",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSm-isArchived",

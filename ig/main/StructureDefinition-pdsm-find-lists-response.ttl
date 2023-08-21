@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "PDSm_FindListsResponse"] ; # 
   fhir:title [ fhir:v "PDSm Find Lists Response"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-08-06T13:08:17+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-08-21T11:27:47+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
