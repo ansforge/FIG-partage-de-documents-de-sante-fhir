@@ -12,7 +12,6 @@
   <sch:pattern>
     <sch:title>f:List</sch:title>
     <sch:rule context="f:List">
-      <sch:assert test="count(f:contained) &gt;= 1">contained: minimum cardinality of 'contained' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'https://profiles.ihe.net/ITI/MHD/StructureDefinition/ihe-designationType']) &lt;= 1">extension with URL = 'https://profiles.ihe.net/ITI/MHD/StructureDefinition/ihe-designationType': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:date) &gt;= 1">date: minimum cardinality of 'date' is 1</sch:assert>
       <sch:assert test="count(f:entry) &gt;= 1">entry: minimum cardinality of 'entry' is 1</sch:assert>

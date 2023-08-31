@@ -310,7 +310,7 @@
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.name">name</a>" : "PDSm_SubmissionSetComprehensive",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.title">title</a>" : "PDSm SubmissionSet Comprehensive",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.status">status</a>" : "active",
-  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a>" : "2023-08-31T15:22:04+00:00",
+  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a>" : "2023-08-31T15:37:29+00:00",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.publisher">publisher</a>" : "ANS",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.contact">contact</a>" : [
     {
@@ -323,7 +323,7 @@
       ]
     }
   ],
-  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.description">description</a>" : "Profil spécifique dérivé du profil IHE MHD v4.0.1 « ComprehensiveSubmissionSet  » créé pour le volet ANS \&quot;Partage de documents de santé en mobilité\&quot; ; ce profil concerne le lot de soumission.",
+  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.description">description</a>" : "Profil spécifique dérivé du profil IHE MHD « ComprehensiveSubmissionSet » créé pour le volet ANS \&quot;Partage de documents de santé en mobilité\&quot; ; ce profil concerne le lot de soumission.",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.fhirVersion">fhirVersion</a>" : "4.0.1",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.mapping">mapping</a>" : [
     {
@@ -968,7 +968,7 @@
       {
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "List.contained",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "List.contained",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Contained, inline Resources",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Ressource contenue. Dans le cadre de ce profil, il est obligatoire qu'il y ait au moins une ressource contenue : source ou source.extension[authorOrg]",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>" : "This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again. Contained resources may have profiles and tags In their meta elements, but SHALL NOT have security labels.",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.alias">alias</a>" : [
@@ -1363,8 +1363,8 @@
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "List.extension:intendedRecipient",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "List.extension",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.sliceName">sliceName</a>" : "intendedRecipient",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Représente le destinataire du lot de soumission",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "Les ressources référencées sont : 1/ PractitionerRole : Dans le cas d’un destinaire professionnel, c’est le profil AsPractitionerRole représentant la situation d’exercice qui doit être référencé. Lui-même fera le lien avec le profil AsPractitionerRole représentant l’exercice professionnel et avec FrPractitioner. 2/ Organization contrainte au profil FrOrganization",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Représente le destinataire du lot de soumission. Il peut s'agir d'un AsPractitioner associé à un AsPractitionerRole ou bien d'une AsOrganization.",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "holds the identity of the organization or person the SubmissionSet is intended. For XDR and eMail (e.g. Direct) this tends to be a Practitioner or Patient with a telecom holding an email, but this is not strictly required.",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "*",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
@@ -2268,7 +2268,7 @@
       {
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "List.source",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "List.source",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Représente les personnes physiques ou morales et/ou les dispositifs auteurs d’un lot de soumission.",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Représente l'auteur du lot de soumission. Si l'auteur est une organisation, utiliser l'extension authorOrg. Si l’auteur est une personne physique ou un dispositif, utiliser l’attribut source.reference .",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "The entity responsible for deciding what the contents of the list were. Where the list was created by a human, this is the same as the author of the list.",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>" : "The primary source is the entity that made the decisions what items are in the list. This may be software or user.",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.requirements">requirements</a>" : "Allows follow-up as well as context.",
@@ -2286,7 +2286,7 @@
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Reference",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>" : [
-              "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass",
+              "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole",
               "http://hl7.org/fhir/StructureDefinition/Device",
               "http://interopsante.org/fhir/StructureDefinition/FrPatient"
             ],
@@ -2303,13 +2303,6 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "hasValue() or (children().count() &gt; id.count())",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "@value|f:*|h:div",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/Element"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "constr-bind-source",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "Un lot de soumission est obligatoirement associé à un auteur. Si l’attribut \&quot;ihe-authorOrg\&quot; n’est pas renseigné, autrement dit si l’auteur est une personne physique ou un dispositif.",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "f:source",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-submissionset-comprehensive"
           }
         ],
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : true,
@@ -2428,7 +2421,7 @@
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "List.source.extension:authorOrg",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "List.source.extension",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.sliceName">sliceName</a>" : "authorOrg",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Organisation auteur du document. Un lot de soumission est obligatoirement associé à un auteur. Si l’attribut “source” n’est pas renseigné, autrement dit si l’auteur est une personne morale, la cardinalité est contrainte à [1..1].",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Auteur organisationnel du document",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "When the author of the SubmissionSet is an Organization, this extension shall be used.",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
@@ -2461,13 +2454,6 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "extension.exists() != value.exists()",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \&quot;value\&quot;)])",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/Extension"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "constr-bind-authororg",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "Un lot de soumission est obligatoirement associé à un auteur. Si l’attribut \&quot;source\&quot; n’est pas renseigné, autrement dit si l’auteur est une personne morale, la cardinalité est contrainte à [1..1].\nLa ressource référencée doit être présente sous l’élément List.contained.",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "f:source/f:extension[authorOrg]",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-submissionset-comprehensive"
           }
         ],
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
@@ -2625,7 +2611,7 @@
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Reference",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>" : [
-              "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/organization-rass"
+              "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization"
             ],
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.aggregation">aggregation</a>" : [
               "contained"
@@ -3395,6 +3381,7 @@
       {
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "List.contained",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "List.contained",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Ressource contenue. Dans le cadre de ce profil, il est obligatoire qu'il y ait au moins une ressource contenue : source ou source.extension[authorOrg]",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 1,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : true
       },
@@ -3443,8 +3430,7 @@
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "List.extension:intendedRecipient",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "List.extension",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.sliceName">sliceName</a>" : "intendedRecipient",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Représente le destinataire du lot de soumission",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "Les ressources référencées sont : 1/ PractitionerRole : Dans le cas d’un destinaire professionnel, c’est le profil AsPractitionerRole représentant la situation d’exercice qui doit être référencé. Lui-même fera le lien avec le profil AsPractitionerRole représentant l’exercice professionnel et avec FrPractitioner. 2/ Organization contrainte au profil FrOrganization",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Représente le destinataire du lot de soumission. Il peut s'agir d'un AsPractitioner associé à un AsPractitionerRole ou bien d'une AsOrganization.",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : true
       },
       {
@@ -3586,13 +3572,13 @@
       {
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "List.source",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "List.source",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Représente les personnes physiques ou morales et/ou les dispositifs auteurs d’un lot de soumission.",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Représente l'auteur du lot de soumission. Si l'auteur est une organisation, utiliser l'extension authorOrg. Si l’auteur est une personne physique ou un dispositif, utiliser l’attribut source.reference .",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 1,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Reference",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>" : [
-              "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass",
+              "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole",
               "http://hl7.org/fhir/StructureDefinition/Device",
               "http://interopsante.org/fhir/StructureDefinition/FrPatient"
             ],
@@ -3600,31 +3586,13 @@
               "contained"
             ]
           }
-        ],
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "constr-bind-source",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "Un lot de soumission est obligatoirement associé à un auteur. Si l’attribut \&quot;ihe-authorOrg\&quot; n’est pas renseigné, autrement dit si l’auteur est une personne physique ou un dispositif.",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "f:source",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-submissionset-comprehensive"
-          }
         ]
       },
       {
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "List.source.extension:authorOrg",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "List.source.extension",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.sliceName">sliceName</a>" : "authorOrg",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Organisation auteur du document. Un lot de soumission est obligatoirement associé à un auteur. Si l’attribut “source” n’est pas renseigné, autrement dit si l’auteur est une personne morale, la cardinalité est contrainte à [1..1].",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "constr-bind-authororg",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "Un lot de soumission est obligatoirement associé à un auteur. Si l’attribut \&quot;source\&quot; n’est pas renseigné, autrement dit si l’auteur est une personne morale, la cardinalité est contrainte à [1..1].\nLa ressource référencée doit être présente sous l’élément List.contained.",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "f:source/f:extension[authorOrg]",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-submissionset-comprehensive"
-          }
-        ],
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Auteur organisationnel du document",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "specmetier-to-PDSmSubmissionSetComprehensive",
@@ -3639,7 +3607,7 @@
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Reference",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>" : [
-              "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/organization-rass"
+              "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization"
             ],
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.aggregation">aggregation</a>" : [
               "contained"
@@ -3760,7 +3728,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.pdsm#3.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 31, 2023 15:22+0000">2023-08-31</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.pdsm#3.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 31, 2023 15:37+0000">2023-08-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

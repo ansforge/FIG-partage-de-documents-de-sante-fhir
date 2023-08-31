@@ -310,7 +310,7 @@
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.name">name</a>" : "PDSm_SimplifiedPublish",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.title">title</a>" : "PDSm Simplified Publish",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.status">status</a>" : "active",
-  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a>" : "2023-08-31T15:22:04+00:00",
+  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a>" : "2023-08-31T15:37:29+00:00",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.publisher">publisher</a>" : "ANS",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.contact">contact</a>" : [
     {
@@ -1731,9 +1731,9 @@
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Reference",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>" : [
-              "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass",
-              "http://interopsante.org/fhir/StructureDefinition/FrPractitioner",
-              "http://interopsante.org/fhir/StructureDefinition/FrOrganization",
+              "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole",
+              "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner",
+              "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization",
               "http://hl7.org/fhir/StructureDefinition/Device",
               "http://interopsante.org/fhir/StructureDefinition/FrPatient",
               "http://interopsante.org/fhir/StructureDefinition/FrRelatedPerson"
@@ -1748,13 +1748,6 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "hasValue() or (children().count() &gt; id.count())",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "@value|f:*|h:div",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/Element"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "constr-bind-author",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "Cardinalité contrainte à [1..*]\nReference contrainte à :\n- PractitionerRole : Dans le cas d’un auteur professionnel, c’est le profil PractitionerRoleOrganizationalRoleRASSreprésentant la situation d’exercice qui doit être référencé. Lui-même fera le lien avec le profil PractitionerRoleProfessionalRoleRASS représentant l’exercice professionnel et avec FrPractitioner.\n- Device,\n- Patient contrainte au profil FrPatient.",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "f:author",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish"
           }
         ],
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : true,
@@ -1804,8 +1797,8 @@
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Reference",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>" : [
-              "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass",
-              "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/organization-rass"
+              "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole",
+              "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization"
             ]
           }
         ],
@@ -1817,13 +1810,6 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "hasValue() or (children().count() &gt; id.count())",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "@value|f:*|h:div",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/Element"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "constr-bind-authenticator",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "Cardinalité contrainte à [1..1]\nRéférence contrainte au profil \n- PractitionerRole : Dans le cas d’un authentificateur professionnel, c’est le profil PractitionerRoleOrganizationalRoleRASS représentant la situation d’exercice qui doit être référencé. Lui-même fera le lien avec le profil PractitionerRoleProfessionalRoleRASS représentant l’exercice professionnel et avec FrPractitioner.\n-  Organization contrainte au profil FrOrganization.",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "f:authenticator",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish"
           }
         ],
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : true,
@@ -3556,9 +3542,6 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Reference",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>" : [
               "http://interopsante.org/fhir/StructureDefinition/FrPatient"
-            ],
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.aggregation">aggregation</a>" : [
-              "contained"
             ]
           }
         ],
@@ -3739,22 +3722,13 @@
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Reference",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>" : [
-              "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass",
-              "http://interopsante.org/fhir/StructureDefinition/FrPractitioner",
-              "http://interopsante.org/fhir/StructureDefinition/FrOrganization",
+              "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole",
+              "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner",
+              "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization",
               "http://hl7.org/fhir/StructureDefinition/Device",
               "http://interopsante.org/fhir/StructureDefinition/FrPatient",
               "http://interopsante.org/fhir/StructureDefinition/FrRelatedPerson"
             ]
-          }
-        ],
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "constr-bind-author",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "Cardinalité contrainte à [1..*]\nReference contrainte à :\n- PractitionerRole : Dans le cas d’un auteur professionnel, c’est le profil PractitionerRoleOrganizationalRoleRASSreprésentant la situation d’exercice qui doit être référencé. Lui-même fera le lien avec le profil PractitionerRoleProfessionalRoleRASS représentant l’exercice professionnel et avec FrPractitioner.\n- Device,\n- Patient contrainte au profil FrPatient.",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "f:author",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish"
           }
         ]
       },
@@ -3766,18 +3740,9 @@
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Reference",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>" : [
-              "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass",
-              "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/organization-rass"
+              "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole",
+              "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization"
             ]
-          }
-        ],
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "constr-bind-authenticator",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "Cardinalité contrainte à [1..1]\nRéférence contrainte au profil \n- PractitionerRole : Dans le cas d’un authentificateur professionnel, c’est le profil PractitionerRoleOrganizationalRoleRASS représentant la situation d’exercice qui doit être référencé. Lui-même fera le lien avec le profil PractitionerRoleProfessionalRoleRASS représentant l’exercice professionnel et avec FrPractitioner.\n-  Organization contrainte au profil FrOrganization.",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "f:authenticator",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish"
           }
         ],
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : true
@@ -3921,9 +3886,6 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Reference",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>" : [
               "http://interopsante.org/fhir/StructureDefinition/FrPatient"
-            ],
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.aggregation">aggregation</a>" : [
-              "contained"
             ]
           }
         ]
@@ -4006,7 +3968,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.pdsm#3.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 31, 2023 15:22+0000">2023-08-31</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.pdsm#3.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 31, 2023 15:37+0000">2023-08-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

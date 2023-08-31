@@ -10,7 +10,7 @@
   <name value="PDSm_ComprehensiveDocumentReference"/>
   <title value="PDSm Comprehensive DocumentReference"/>
   <status value="active"/>
-  <date value="2023-08-31T15:22:04+00:00"/>
+  <date value="2023-08-31T15:37:29+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -575,7 +575,7 @@
     </element>
     <element id="DocumentReference.contained">
       <path value="DocumentReference.contained"/>
-      <short value="Contained, inline Resources"/>
+      <short value="Ressource contenue. Dans le cadre de ce profil, il est obligatoire qu'il y ait au moins une ressource contenue : la•les ressource•s référencée•s dans les attributs author et authenticator"/>
       <definition value="These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope."/>
       <comment value="This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again. Contained resources may have profiles and tags In their meta elements, but SHALL NOT have security labels."/>
       <alias value="inline resources"/>
@@ -642,7 +642,7 @@
     <element id="DocumentReference.extension:isArchived">
       <path value="DocumentReference.extension"/>
       <sliceName value="isArchived"/>
-      <short value="Extension définie par ce volet pour distinguer les fiches archivées des actives."/>
+      <short value="Extension définie pour distinguer les fiches archivées des actives."/>
       <definition value="Extension définie par le volet ANS &quot;Volet Partage de documents de santé en mobilité&quot; sur les ressources List et DocumentReference pour distinguer les lots de soumission et les fiches archivés des actives."/>
       <min value="0"/>
       <max value="1"/>
@@ -1122,7 +1122,7 @@
     </element>
     <element id="DocumentReference.subject">
       <path value="DocumentReference.subject"/>
-      <short value="Référence vers le patient concerné par le document."/>
+      <short value="Référence vers le patient concerné par le document. Cette même ressource est référencée depuis context.sourcePatientInfo."/>
       <definition value="Who or what the document is about. The document can be about a person, (patient or healthcare practitioner), a device (e.g. a machine) or even a group of subjects (such as a document about a herd of farm animals, or a set of patients that share a common exposure)."/>
       <min value="1"/>
       <max value="1"/>
@@ -1142,13 +1142,6 @@
         <expression value="hasValue() or (children().count() &gt; id.count())"/>
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
-      </constraint>
-      <constraint>
-        <key value="constr-subj-ref"/>
-        <severity value="error"/>
-        <human value="La ressource référencée doit être présente sous l’élément DocumentReference.contained.&#xA;Référence contrainte au profil FrPatient&#xA;Cette même ressource est référencée depuis context.sourcePatientInfo."/>
-        <expression value="f:subject"/>
-        <source value="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"/>
       </constraint>
       <mustSupport value="true"/>
       <isModifier value="false"/>
@@ -1252,7 +1245,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass"/>
+        <targetProfile value="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
         <targetProfile value="http://interopsante.org/fhir/StructureDefinition/FrPatient"/>
         <aggregation value="contained"/>
@@ -1264,13 +1257,6 @@
         <expression value="hasValue() or (children().count() &gt; id.count())"/>
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
-      </constraint>
-      <constraint>
-        <key value="constr-bind-author"/>
-        <severity value="error"/>
-        <human value="Cardinalité contrainte à [1..*]&#xA;Reference contrainte à :&#xA;- PractitionerRole : Dans le cas d’un auteur professionnel, c’est le profil PractitionerRoleOrganizationalRoleRASSreprésentant la situation d’exercice qui doit être référencé. Lui-même fera le lien avec le profil PractitionerRoleProfessionalRoleRASS représentant l’exercice professionnel et avec FrPractitioner.&#xA;- Device,&#xA;- Patient contrainte au profil FrPatient."/>
-        <expression value="f:author"/>
-        <source value="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"/>
       </constraint>
       <mustSupport value="true"/>
       <isModifier value="false"/>
@@ -1322,8 +1308,8 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass"/>
-        <targetProfile value="https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/organization-rass"/>
+        <targetProfile value="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole"/>
+        <targetProfile value="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization"/>
         <aggregation value="contained"/>
       </type>
       <constraint>
@@ -1333,13 +1319,6 @@
         <expression value="hasValue() or (children().count() &gt; id.count())"/>
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
-      </constraint>
-      <constraint>
-        <key value="constr-bind-authenticator"/>
-        <severity value="error"/>
-        <human value="Cardinalité contrainte à [1..1]&#xA;Référence contrainte au profil &#xA;- PractitionerRole : Dans le cas d’un authentificateur professionnel, c’est le profil PractitionerRoleOrganizationalRoleRASS représentant la situation d’exercice qui doit être référencé. Lui-même fera le lien avec le profil PractitionerRoleProfessionalRoleRASS représentant l’exercice professionnel et avec FrPractitioner.&#xA;-  Organization contrainte au profil FrOrganization."/>
-        <expression value="f:authenticator"/>
-        <source value="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"/>
       </constraint>
       <mustSupport value="true"/>
       <isModifier value="false"/>
@@ -3390,6 +3369,7 @@
     </element>
     <element id="DocumentReference.contained">
       <path value="DocumentReference.contained"/>
+      <short value="Ressource contenue. Dans le cadre de ce profil, il est obligatoire qu'il y ait au moins une ressource contenue : la•les ressource•s référencée•s dans les attributs author et authenticator"/>
       <min value="1"/>
       <mustSupport value="true"/>
     </element>
@@ -3406,7 +3386,7 @@
     <element id="DocumentReference.extension:isArchived">
       <path value="DocumentReference.extension"/>
       <sliceName value="isArchived"/>
-      <short value="Extension définie par ce volet pour distinguer les fiches archivées des actives."/>
+      <short value="Extension définie pour distinguer les fiches archivées des actives."/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -3483,18 +3463,11 @@
     </element>
     <element id="DocumentReference.subject">
       <path value="DocumentReference.subject"/>
-      <short value="Référence vers le patient concerné par le document."/>
+      <short value="Référence vers le patient concerné par le document. Cette même ressource est référencée depuis context.sourcePatientInfo."/>
       <type>
         <code value="Reference"/>
         <targetProfile value="http://interopsante.org/fhir/StructureDefinition/FrPatient"/>
       </type>
-      <constraint>
-        <key value="constr-subj-ref"/>
-        <severity value="error"/>
-        <human value="La ressource référencée doit être présente sous l’élément DocumentReference.contained.&#xA;Référence contrainte au profil FrPatient&#xA;Cette même ressource est référencée depuis context.sourcePatientInfo."/>
-        <expression value="f:subject"/>
-        <source value="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"/>
-      </constraint>
       <mapping>
         <identity value="specmetier-to-PDSmComprehensiveDocumentReference"/>
         <map value="idPatient : [0..1] Identifiant"/>
@@ -3510,18 +3483,11 @@
       <min value="1"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass"/>
+        <targetProfile value="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
         <targetProfile value="http://interopsante.org/fhir/StructureDefinition/FrPatient"/>
         <aggregation value="contained"/>
       </type>
-      <constraint>
-        <key value="constr-bind-author"/>
-        <severity value="error"/>
-        <human value="Cardinalité contrainte à [1..*]&#xA;Reference contrainte à :&#xA;- PractitionerRole : Dans le cas d’un auteur professionnel, c’est le profil PractitionerRoleOrganizationalRoleRASSreprésentant la situation d’exercice qui doit être référencé. Lui-même fera le lien avec le profil PractitionerRoleProfessionalRoleRASS représentant l’exercice professionnel et avec FrPractitioner.&#xA;- Device,&#xA;- Patient contrainte au profil FrPatient."/>
-        <expression value="f:author"/>
-        <source value="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"/>
-      </constraint>
       <mapping>
         <identity value="specmetier-to-PDSmComprehensiveDocumentReference"/>
         <map value="auteur : [1..*] Identifiant"/>
@@ -3533,17 +3499,10 @@
       <min value="1"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass"/>
-        <targetProfile value="https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/organization-rass"/>
+        <targetProfile value="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole"/>
+        <targetProfile value="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization"/>
         <aggregation value="contained"/>
       </type>
-      <constraint>
-        <key value="constr-bind-authenticator"/>
-        <severity value="error"/>
-        <human value="Cardinalité contrainte à [1..1]&#xA;Référence contrainte au profil &#xA;- PractitionerRole : Dans le cas d’un authentificateur professionnel, c’est le profil PractitionerRoleOrganizationalRoleRASS représentant la situation d’exercice qui doit être référencé. Lui-même fera le lien avec le profil PractitionerRoleProfessionalRoleRASS représentant l’exercice professionnel et avec FrPractitioner.&#xA;-  Organization contrainte au profil FrOrganization."/>
-        <expression value="f:authenticator"/>
-        <source value="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"/>
-      </constraint>
       <mustSupport value="true"/>
       <mapping>
         <identity value="specmetier-to-PDSmComprehensiveDocumentReference"/>

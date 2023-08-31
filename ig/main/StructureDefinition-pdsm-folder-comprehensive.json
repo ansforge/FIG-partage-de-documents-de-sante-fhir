@@ -10,7 +10,7 @@
   "name" : "PDSm_FolderComprehensive",
   "title" : "PDSm Folder Comprehensive",
   "status" : "active",
-  "date" : "2023-08-31T15:22:04+00:00",
+  "date" : "2023-08-31T15:37:29+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -19,7 +19,7 @@
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Profil spécifique dérivé du profil IHE MHD v4.0.1 « Comprehensive Folder  » créé pour le volet ANS \"Partage de documents de santé en mobilité\" ; ce profil concerne le classeur.",
+  "description" : "Profil spécifique dérivé du profil IHE MHD « Comprehensive Folder » créé pour le volet ANS \"Partage de documents de santé en mobilité\" ; ce profil concerne le classeur.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "rim",
@@ -577,11 +577,13 @@
     {
       "id" : "List.contained",
       "path" : "List.contained",
-      "short" : "Information about an individual or animal receiving health care services",
-      "definition" : "Demographics and other administrative information about an individual or animal receiving care or other health-related services.",
+      "short" : "Contained, inline Resources",
+      "definition" : "These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.",
       "comment" : "This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again. Contained resources may have profiles and tags In their meta elements, but SHALL NOT have security labels.",
-      "alias" : ["SubjectOfCare Client Resident"],
-      "min" : 1,
+      "alias" : ["inline resources",
+      "anonymous resources",
+      "contained resources"],
+      "min" : 0,
       "max" : "*",
       "base" : {
         "path" : "DomainResource.contained",
@@ -589,68 +591,13 @@
         "max" : "*"
       },
       "type" : [{
-        "code" : "Patient",
-        "profile" : ["http://interopsante.org/fhir/StructureDefinition/FrPatient"]
+        "code" : "Resource"
       }],
-      "constraint" : [{
-        "key" : "dom-2",
-        "severity" : "error",
-        "human" : "If the resource is contained in another resource, it SHALL NOT contain nested Resources",
-        "expression" : "contained.contained.empty()",
-        "xpath" : "not(parent::f:contained and f:contained)",
-        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
-      },
-      {
-        "key" : "dom-4",
-        "severity" : "error",
-        "human" : "If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated",
-        "expression" : "contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()",
-        "xpath" : "not(exists(f:contained/*/f:meta/f:versionId)) and not(exists(f:contained/*/f:meta/f:lastUpdated))",
-        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
-      },
-      {
-        "key" : "dom-3",
-        "severity" : "error",
-        "human" : "If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource",
-        "expression" : "contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()",
-        "xpath" : "not(exists(for $id in f:contained/*/f:id/@value return $contained[not(parent::*/descendant::f:reference/@value=concat('#', $contained/*/id/@value) or descendant::f:reference[@value='#'])]))",
-        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice",
-          "valueBoolean" : true
-        },
-        {
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation",
-          "valueMarkdown" : "When a resource has no narrative, only systems that fully understand the data can display the resource to a human safely. Including a human readable representation in the resource makes for a much more robust eco-system and cheaper handling of resources by intermediary systems. Some ecosystems restrict distribution of resources to only those systems that do fully understand the resources, and as a consequence implementers may believe that the narrative is superfluous. However experience shows that such eco-systems often open up to new participants over time."
-        }],
-        "key" : "dom-6",
-        "severity" : "warning",
-        "human" : "A resource should have narrative for robust management",
-        "expression" : "text.`div`.exists()",
-        "xpath" : "exists(f:text/h:div)",
-        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
-      },
-      {
-        "key" : "dom-5",
-        "severity" : "error",
-        "human" : "If a resource is contained in another resource, it SHALL NOT have a security label",
-        "expression" : "contained.meta.security.empty()",
-        "xpath" : "not(exists(f:contained/*/f:meta/f:security))",
-        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
-      }],
+      "isModifier" : false,
+      "isSummary" : false,
       "mapping" : [{
         "identity" : "rim",
-        "map" : "Entity. Role, or Act"
-      },
-      {
-        "identity" : "rim",
-        "map" : "Patient[classCode=PAT]"
-      },
-      {
-        "identity" : "cda",
-        "map" : "ClinicalDocument.recordTarget.patientRole"
+        "map" : "N/A"
       }]
     },
     {
@@ -699,9 +646,8 @@
       "id" : "List.extension:designationType",
       "path" : "List.extension",
       "sliceName" : "designationType",
-      "short" : "Représente les codes spécifiant le type d’activité de l’événement clinique ayant abouti au regroupement de la fiche d’un document dans ce classeur.",
+      "short" : "Représente les codes spécifiant le type d’activité de l’événement clinique ayant abouti au regroupement de la fiche d’un document dans ce classeur. Le jeu de valeurs est à définir par le système cible.",
       "definition" : "Expresses contentType of submissionSet or the codeList of a Folder. Usually expressed in LOINC or SNOMED.",
-      "comment" : "Le jeu de valeurs est à définir par le système cible.\r\n\r\nThere can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
       "min" : 1,
       "max" : "1",
       "base" : {
@@ -1726,20 +1672,10 @@
       }]
     },
     {
-      "id" : "List.contained",
-      "path" : "List.contained",
-      "min" : 1,
-      "type" : [{
-        "code" : "Patient",
-        "profile" : ["http://interopsante.org/fhir/StructureDefinition/FrPatient"]
-      }]
-    },
-    {
       "id" : "List.extension:designationType",
       "path" : "List.extension",
       "sliceName" : "designationType",
-      "short" : "Représente les codes spécifiant le type d’activité de l’événement clinique ayant abouti au regroupement de la fiche d’un document dans ce classeur.",
-      "comment" : "Le jeu de valeurs est à définir par le système cible.\r\n\r\nThere can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "short" : "Représente les codes spécifiant le type d’activité de l’événement clinique ayant abouti au regroupement de la fiche d’un document dans ce classeur. Le jeu de valeurs est à définir par le système cible.",
       "max" : "1",
       "mapping" : [{
         "identity" : "specmetier-to-PDSmFolderComprehensive",

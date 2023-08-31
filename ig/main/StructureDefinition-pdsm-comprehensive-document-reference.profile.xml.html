@@ -311,7 +311,7 @@
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;PDSm_ComprehensiveDocumentReference&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;PDSm Comprehensive DocumentReference&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2023-08-31T15:22:04+00:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2023-08-31T15:37:29+00:00&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ANS&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ANS&quot;/&gt;
@@ -954,7 +954,8 @@ This element can be used to indicate where the current master source of a resour
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">id</a>=&quot;DocumentReference.contained&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;DocumentReference.contained&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Contained, inline Resources&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Ressource contenue. Dans le cadre de ce profil, il est obligatoire qu'il y ait au moins une ressource contenue : la•les ressource•s référencée•s dans les attributs author et authenticator&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>
                   <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>
@@ -1026,7 +1027,7 @@ This element can be used to indicate where the current master source of a resour
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;DocumentReference.extension&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.sliceName">sliceName</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;isArchived&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Extension définie par ce volet pour distinguer les fiches archivées des actives.&quot;/&gt;
+             <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Extension définie pour distinguer les fiches archivées des actives.&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>
                   <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Extension définie par le volet ANS &amp;quot;Volet Partage de documents de santé en mobilité&amp;quot; sur les ressources List et DocumentReference pour distinguer les lots de soumission et les fiches archivés des actives.&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.min">min</a> <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">value</a>=&quot;0&quot;/&gt;
@@ -1569,7 +1570,8 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J06-Xd
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">id</a>=&quot;DocumentReference.subject&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;DocumentReference.subject&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Référence vers le patient concerné par le document.&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Référence vers le patient concerné par le document. Cette même ressource est référencée depuis context.sourcePatientInfo.&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>
                   <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Who or what the document is about. The document can be about a person, (patient or healthcare practitioner), a device (e.g. a machine) or even a group of subjects (such as a document about a herd of farm animals, or a set of patients that share a common exposure).&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.min">min</a> <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">value</a>=&quot;1&quot;/&gt;
@@ -1592,17 +1594,6 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J06-Xd
                     <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;hasValue() or (children().count() &amp;gt; id.count())&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;@value|f:*|h:div&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Element&quot;/&gt;
-      &lt;/constraint&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;constr-subj-ref&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;error&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>
-               <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;La ressource référencée doit être présente sous l’élément DocumentReference.contained.
-Référence contrainte au profil FrPatient
-Cette même ressource est référencée depuis context.sourcePatientInfo.&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;f:subject&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
-                <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference&quot;/&gt;
       &lt;/constraint&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
@@ -1715,7 +1706,7 @@ Cette même ressource est référencée depuis context.sourcePatientInfo.&quot;/
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Reference&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>
-                       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass&quot;/&gt;
+                       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>
                        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Device&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>
@@ -1730,19 +1721,6 @@ Cette même ressource est référencée depuis context.sourcePatientInfo.&quot;/
                     <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;hasValue() or (children().count() &amp;gt; id.count())&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;@value|f:*|h:div&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Element&quot;/&gt;
-      &lt;/constraint&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;constr-bind-author&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;error&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>
-               <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Cardinalité contrainte à [1..*]
-Reference contrainte à :
-- PractitionerRole : Dans le cas d’un auteur professionnel, c’est le profil PractitionerRoleOrganizationalRoleRASSreprésentant la situation d’exercice qui doit être référencé. Lui-même fera le lien avec le profil PractitionerRoleProfessionalRoleRASS représentant l’exercice professionnel et avec FrPractitioner.
-- Device,
-- Patient contrainte au profil FrPatient.&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;f:author&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
-                <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference&quot;/&gt;
       &lt;/constraint&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
@@ -1800,9 +1778,9 @@ Reference contrainte à :
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Reference&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>
-                       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass&quot;/&gt;
+                       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>
-                       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/organization-rass&quot;/&gt;
+                       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.aggregation">aggregation</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;contained&quot;/&gt;
       &lt;/type&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
@@ -1813,18 +1791,6 @@ Reference contrainte à :
                     <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;hasValue() or (children().count() &amp;gt; id.count())&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;@value|f:*|h:div&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Element&quot;/&gt;
-      &lt;/constraint&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;constr-bind-authenticator&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;error&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>
-               <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Cardinalité contrainte à [1..1]
-Référence contrainte au profil 
-- PractitionerRole : Dans le cas d’un authentificateur professionnel, c’est le profil PractitionerRoleOrganizationalRoleRASS représentant la situation d’exercice qui doit être référencé. Lui-même fera le lien avec le profil PractitionerRoleProfessionalRoleRASS représentant l’exercice professionnel et avec FrPractitioner.
--  Organization contrainte au profil FrOrganization.&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;f:authenticator&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
-                <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference&quot;/&gt;
       &lt;/constraint&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
@@ -4132,6 +4098,8 @@ Reference is intended to point to a structure that can potentially be expressed 
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.differential.element">element</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">id</a>=&quot;DocumentReference.contained&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;DocumentReference.contained&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Ressource contenue. Dans le cadre de ce profil, il est obligatoire qu'il y ait au moins une ressource contenue : la•les ressource•s référencée•s dans les attributs author et authenticator&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.min">min</a> <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">value</a>=&quot;1&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
     &lt;/element&gt;
@@ -4149,7 +4117,7 @@ Reference is intended to point to a structure that can potentially be expressed 
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;DocumentReference.extension&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.sliceName">sliceName</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;isArchived&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Extension définie par ce volet pour distinguer les fiches archivées des actives.&quot;/&gt;
+             <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Extension définie pour distinguer les fiches archivées des actives.&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.min">min</a> <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">value</a>=&quot;0&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.max">max</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
@@ -4248,23 +4216,13 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J06-Xd
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.differential.element">element</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">id</a>=&quot;DocumentReference.subject&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;DocumentReference.subject&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Référence vers le patient concerné par le document.&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Référence vers le patient concerné par le document. Cette même ressource est référencée depuis context.sourcePatientInfo.&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Reference&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>
                        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://interopsante.org/fhir/StructureDefinition/FrPatient&quot;/&gt;
       &lt;/type&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;constr-subj-ref&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;error&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>
-               <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;La ressource référencée doit être présente sous l’élément DocumentReference.contained.
-Référence contrainte au profil FrPatient
-Cette même ressource est référencée depuis context.sourcePatientInfo.&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;f:subject&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
-                <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference&quot;/&gt;
-      &lt;/constraint&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;specmetier-to-PDSmComprehensiveDocumentReference&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;idPatient : [0..1] Identifiant&quot;/&gt;
@@ -4283,26 +4241,13 @@ Cette même ressource est référencée depuis context.sourcePatientInfo.&quot;/
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Reference&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>
-                       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass&quot;/&gt;
+                       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>
                        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Device&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>
                        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://interopsante.org/fhir/StructureDefinition/FrPatient&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.aggregation">aggregation</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;contained&quot;/&gt;
       &lt;/type&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;constr-bind-author&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;error&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>
-               <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Cardinalité contrainte à [1..*]
-Reference contrainte à :
-- PractitionerRole : Dans le cas d’un auteur professionnel, c’est le profil PractitionerRoleOrganizationalRoleRASSreprésentant la situation d’exercice qui doit être référencé. Lui-même fera le lien avec le profil PractitionerRoleProfessionalRoleRASS représentant l’exercice professionnel et avec FrPractitioner.
-- Device,
-- Patient contrainte au profil FrPatient.&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;f:author&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
-                <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference&quot;/&gt;
-      &lt;/constraint&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;specmetier-to-PDSmComprehensiveDocumentReference&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;auteur : [1..*] Identifiant&quot;/&gt;
@@ -4316,23 +4261,11 @@ Reference contrainte à :
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Reference&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>
-                       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass&quot;/&gt;
+                       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>
-                       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/organization-rass&quot;/&gt;
+                       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.aggregation">aggregation</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;contained&quot;/&gt;
       &lt;/type&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;constr-bind-authenticator&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;error&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>
-               <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Cardinalité contrainte à [1..1]
-Référence contrainte au profil 
-- PractitionerRole : Dans le cas d’un authentificateur professionnel, c’est le profil PractitionerRoleOrganizationalRoleRASS représentant la situation d’exercice qui doit être référencé. Lui-même fera le lien avec le profil PractitionerRoleProfessionalRoleRASS représentant l’exercice professionnel et avec FrPractitioner.
--  Organization contrainte au profil FrOrganization.&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;f:authenticator&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
-                <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference&quot;/&gt;
-      &lt;/constraint&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;specmetier-to-PDSmComprehensiveDocumentReference&quot;/&gt;
@@ -4692,7 +4625,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.pdsm#3.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 31, 2023 15:22+0000">2023-08-31</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.pdsm#3.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 31, 2023 15:37+0000">2023-08-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

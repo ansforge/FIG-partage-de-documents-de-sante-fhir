@@ -10,7 +10,7 @@
   "name" : "PDSm_ComprehensiveDocumentReference",
   "title" : "PDSm Comprehensive DocumentReference",
   "status" : "active",
-  "date" : "2023-08-31T15:22:04+00:00",
+  "date" : "2023-08-31T15:37:29+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -600,7 +600,7 @@
     {
       "id" : "DocumentReference.contained",
       "path" : "DocumentReference.contained",
-      "short" : "Contained, inline Resources",
+      "short" : "Ressource contenue. Dans le cadre de ce profil, il est obligatoire qu'il y ait au moins une ressource contenue : la•les ressource•s référencée•s dans les attributs author et authenticator",
       "definition" : "These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.",
       "comment" : "This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again. Contained resources may have profiles and tags In their meta elements, but SHALL NOT have security labels.",
       "alias" : ["inline resources",
@@ -669,7 +669,7 @@
       "id" : "DocumentReference.extension:isArchived",
       "path" : "DocumentReference.extension",
       "sliceName" : "isArchived",
-      "short" : "Extension définie par ce volet pour distinguer les fiches archivées des actives.",
+      "short" : "Extension définie pour distinguer les fiches archivées des actives.",
       "definition" : "Extension définie par le volet ANS \"Volet Partage de documents de santé en mobilité\" sur les ressources List et DocumentReference pour distinguer les lots de soumission et les fiches archivés des actives.",
       "min" : 0,
       "max" : "1",
@@ -1159,7 +1159,7 @@
     {
       "id" : "DocumentReference.subject",
       "path" : "DocumentReference.subject",
-      "short" : "Référence vers le patient concerné par le document.",
+      "short" : "Référence vers le patient concerné par le document. Cette même ressource est référencée depuis context.sourcePatientInfo.",
       "definition" : "Who or what the document is about. The document can be about a person, (patient or healthcare practitioner), a device (e.g. a machine) or even a group of subjects (such as a document about a herd of farm animals, or a set of patients that share a common exposure).",
       "min" : 1,
       "max" : "1",
@@ -1179,13 +1179,6 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
-      },
-      {
-        "key" : "constr-subj-ref",
-        "severity" : "error",
-        "human" : "La ressource référencée doit être présente sous l’élément DocumentReference.contained.\nRéférence contrainte au profil FrPatient\nCette même ressource est référencée depuis context.sourcePatientInfo.",
-        "expression" : "f:subject",
-        "source" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"
       }],
       "mustSupport" : true,
       "isModifier" : false,
@@ -1291,7 +1284,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass",
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole",
         "http://hl7.org/fhir/StructureDefinition/Device",
         "http://interopsante.org/fhir/StructureDefinition/FrPatient"],
         "aggregation" : ["contained"]
@@ -1303,13 +1296,6 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
-      },
-      {
-        "key" : "constr-bind-author",
-        "severity" : "error",
-        "human" : "Cardinalité contrainte à [1..*]\nReference contrainte à :\n- PractitionerRole : Dans le cas d’un auteur professionnel, c’est le profil PractitionerRoleOrganizationalRoleRASSreprésentant la situation d’exercice qui doit être référencé. Lui-même fera le lien avec le profil PractitionerRoleProfessionalRoleRASS représentant l’exercice professionnel et avec FrPractitioner.\n- Device,\n- Patient contrainte au profil FrPatient.",
-        "expression" : "f:author",
-        "source" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"
       }],
       "mustSupport" : true,
       "isModifier" : false,
@@ -1362,8 +1348,8 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass",
-        "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/organization-rass"],
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole",
+        "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization"],
         "aggregation" : ["contained"]
       }],
       "constraint" : [{
@@ -1373,13 +1359,6 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
-      },
-      {
-        "key" : "constr-bind-authenticator",
-        "severity" : "error",
-        "human" : "Cardinalité contrainte à [1..1]\nRéférence contrainte au profil \n- PractitionerRole : Dans le cas d’un authentificateur professionnel, c’est le profil PractitionerRoleOrganizationalRoleRASS représentant la situation d’exercice qui doit être référencé. Lui-même fera le lien avec le profil PractitionerRoleProfessionalRoleRASS représentant l’exercice professionnel et avec FrPractitioner.\n-  Organization contrainte au profil FrOrganization.",
-        "expression" : "f:authenticator",
-        "source" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"
       }],
       "mustSupport" : true,
       "isModifier" : false,
@@ -3497,6 +3476,7 @@
     {
       "id" : "DocumentReference.contained",
       "path" : "DocumentReference.contained",
+      "short" : "Ressource contenue. Dans le cadre de ce profil, il est obligatoire qu'il y ait au moins une ressource contenue : la•les ressource•s référencée•s dans les attributs author et authenticator",
       "min" : 1,
       "mustSupport" : true
     },
@@ -3515,7 +3495,7 @@
       "id" : "DocumentReference.extension:isArchived",
       "path" : "DocumentReference.extension",
       "sliceName" : "isArchived",
-      "short" : "Extension définie par ce volet pour distinguer les fiches archivées des actives.",
+      "short" : "Extension définie pour distinguer les fiches archivées des actives.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -3598,17 +3578,10 @@
     {
       "id" : "DocumentReference.subject",
       "path" : "DocumentReference.subject",
-      "short" : "Référence vers le patient concerné par le document.",
+      "short" : "Référence vers le patient concerné par le document. Cette même ressource est référencée depuis context.sourcePatientInfo.",
       "type" : [{
         "code" : "Reference",
         "targetProfile" : ["http://interopsante.org/fhir/StructureDefinition/FrPatient"]
-      }],
-      "constraint" : [{
-        "key" : "constr-subj-ref",
-        "severity" : "error",
-        "human" : "La ressource référencée doit être présente sous l’élément DocumentReference.contained.\nRéférence contrainte au profil FrPatient\nCette même ressource est référencée depuis context.sourcePatientInfo.",
-        "expression" : "f:subject",
-        "source" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"
       }],
       "mapping" : [{
         "identity" : "specmetier-to-PDSmComprehensiveDocumentReference",
@@ -3627,17 +3600,10 @@
       "min" : 1,
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass",
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole",
         "http://hl7.org/fhir/StructureDefinition/Device",
         "http://interopsante.org/fhir/StructureDefinition/FrPatient"],
         "aggregation" : ["contained"]
-      }],
-      "constraint" : [{
-        "key" : "constr-bind-author",
-        "severity" : "error",
-        "human" : "Cardinalité contrainte à [1..*]\nReference contrainte à :\n- PractitionerRole : Dans le cas d’un auteur professionnel, c’est le profil PractitionerRoleOrganizationalRoleRASSreprésentant la situation d’exercice qui doit être référencé. Lui-même fera le lien avec le profil PractitionerRoleProfessionalRoleRASS représentant l’exercice professionnel et avec FrPractitioner.\n- Device,\n- Patient contrainte au profil FrPatient.",
-        "expression" : "f:author",
-        "source" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"
       }],
       "mapping" : [{
         "identity" : "specmetier-to-PDSmComprehensiveDocumentReference",
@@ -3651,16 +3617,9 @@
       "min" : 1,
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass",
-        "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/organization-rass"],
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole",
+        "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization"],
         "aggregation" : ["contained"]
-      }],
-      "constraint" : [{
-        "key" : "constr-bind-authenticator",
-        "severity" : "error",
-        "human" : "Cardinalité contrainte à [1..1]\nRéférence contrainte au profil \n- PractitionerRole : Dans le cas d’un authentificateur professionnel, c’est le profil PractitionerRoleOrganizationalRoleRASS représentant la situation d’exercice qui doit être référencé. Lui-même fera le lien avec le profil PractitionerRoleProfessionalRoleRASS représentant l’exercice professionnel et avec FrPractitioner.\n-  Organization contrainte au profil FrOrganization.",
-        "expression" : "f:authenticator",
-        "source" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"
       }],
       "mustSupport" : true,
       "mapping" : [{

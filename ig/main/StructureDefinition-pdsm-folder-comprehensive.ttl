@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "PDSm_FolderComprehensive"] ; # 
   fhir:title [ fhir:v "PDSm Folder Comprehensive"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-08-31T15:22:04+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-08-31T15:37:29+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -26,7 +26,7 @@
        fhir:value [ fhir:v "https://esante.gouv.fr" ]
      ] )
   ] ) ; # 
-  fhir:description [ fhir:v "Profil spécifique dérivé du profil IHE MHD v4.0.1 « Comprehensive Folder  » créé pour le volet ANS \"Partage de documents de santé en mobilité\" ; ce profil concerne le classeur."] ; # 
+  fhir:description [ fhir:v "Profil spécifique dérivé du profil IHE MHD « Comprehensive Folder » créé pour le volet ANS \"Partage de documents de santé en mobilité\" ; ce profil concerne le classeur."] ; # 
   fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
   fhir:mapping ( [
      fhir:identity [ fhir:v "rim" ] ;
@@ -624,11 +624,11 @@
      ] [
        fhir:id [ fhir:v "List.contained" ] ;
        fhir:path [ fhir:v "List.contained" ] ;
-       fhir:short [ fhir:v "Information about an individual or animal receiving health care services" ] ;
-       fhir:definition [ fhir:v "Demographics and other administrative information about an individual or animal receiving care or other health-related services." ] ;
+       fhir:short [ fhir:v "Contained, inline Resources" ] ;
+       fhir:definition [ fhir:v "These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope." ] ;
        fhir:comment [ fhir:v "This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again. Contained resources may have profiles and tags In their meta elements, but SHALL NOT have security labels." ] ;
-       fhir:alias ( [ fhir:v "SubjectOfCare Client Resident" ] ) ;
-       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:alias ( [ fhir:v "inline resources" ] [ fhir:v "anonymous resources" ] [ fhir:v "contained resources" ] ) ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "*" ] ;
        fhir:base [
          fhir:path [ fhir:v "DomainResource.contained" ] ;
@@ -636,79 +636,13 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Patient"^^xsd:anyURI ] ;
-         fhir:profile ( [
-           fhir:v "http://interopsante.org/fhir/StructureDefinition/FrPatient"^^xsd:anyURI ;
-           fhir:link <http://interopsante.org/fhir/StructureDefinition/FrPatient>
-         ] )
+         fhir:code [ fhir:v "Resource"^^xsd:anyURI ]
        ] ) ;
-       fhir:constraint ( [
-         fhir:key [ fhir:v "dom-2" ] ;
-         fhir:severity [ fhir:v "error" ] ;
-         fhir:human [ fhir:v "If the resource is contained in another resource, it SHALL NOT contain nested Resources" ] ;
-         fhir:expression [ fhir:v "contained.contained.empty()" ] ;
-         fhir:xpath [ fhir:v "not(parent::f:contained and f:contained)" ] ;
-         fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
-         ]
-       ] [
-         fhir:key [ fhir:v "dom-4" ] ;
-         fhir:severity [ fhir:v "error" ] ;
-         fhir:human [ fhir:v "If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated" ] ;
-         fhir:expression [ fhir:v "contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()" ] ;
-         fhir:xpath [ fhir:v "not(exists(f:contained/*/f:meta/f:versionId)) and not(exists(f:contained/*/f:meta/f:lastUpdated))" ] ;
-         fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
-         ]
-       ] [
-         fhir:key [ fhir:v "dom-3" ] ;
-         fhir:severity [ fhir:v "error" ] ;
-         fhir:human [ fhir:v "If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource" ] ;
-         fhir:expression [ fhir:v "contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()" ] ;
-         fhir:xpath [ fhir:v "not(exists(for $id in f:contained/*/f:id/@value return $contained[not(parent::*/descendant::f:reference/@value=concat('#', $contained/*/id/@value) or descendant::f:reference[@value='#'])]))" ] ;
-         fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
-         ]
-       ] [
-         fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "true"^^xsd:boolean ]
-         ] [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "When a resource has no narrative, only systems that fully understand the data can display the resource to a human safely. Including a human readable representation in the resource makes for a much more robust eco-system and cheaper handling of resources by intermediary systems. Some ecosystems restrict distribution of resources to only those systems that do fully understand the resources, and as a consequence implementers may believe that the narrative is superfluous. However experience shows that such eco-systems often open up to new participants over time." ]
-         ] ) ;
-         fhir:key [ fhir:v "dom-6" ] ;
-         fhir:severity [ fhir:v "warning" ] ;
-         fhir:human [ fhir:v "A resource should have narrative for robust management" ] ;
-         fhir:expression [ fhir:v "text.`div`.exists()" ] ;
-         fhir:xpath [ fhir:v "exists(f:text/h:div)" ] ;
-         fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
-         ]
-       ] [
-         fhir:key [ fhir:v "dom-5" ] ;
-         fhir:severity [ fhir:v "error" ] ;
-         fhir:human [ fhir:v "If a resource is contained in another resource, it SHALL NOT have a security label" ] ;
-         fhir:expression [ fhir:v "contained.meta.security.empty()" ] ;
-         fhir:xpath [ fhir:v "not(exists(f:contained/*/f:meta/f:security))" ] ;
-         fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
-         ]
-       ] ) ;
+       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "Entity. Role, or Act" ]
-       ] [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "Patient[classCode=PAT]" ]
-       ] [
-         fhir:identity [ fhir:v "cda" ] ;
-         fhir:map [ fhir:v "ClinicalDocument.recordTarget.patientRole" ]
+         fhir:map [ fhir:v "N/A" ]
        ] )
      ] [
        fhir:id [ fhir:v "List.extension" ] ;
@@ -760,9 +694,8 @@
        fhir:id [ fhir:v "List.extension:designationType" ] ;
        fhir:path [ fhir:v "List.extension" ] ;
        fhir:sliceName [ fhir:v "designationType" ] ;
-       fhir:short [ fhir:v "Représente les codes spécifiant le type d’activité de l’événement clinique ayant abouti au regroupement de la fiche d’un document dans ce classeur." ] ;
+       fhir:short [ fhir:v "Représente les codes spécifiant le type d’activité de l’événement clinique ayant abouti au regroupement de la fiche d’un document dans ce classeur. Le jeu de valeurs est à définir par le système cible." ] ;
        fhir:definition [ fhir:v "Expresses contentType of submissionSet or the codeList of a Folder. Usually expressed in LOINC or SNOMED." ] ;
-       fhir:comment [ fhir:v "Le jeu de valeurs est à définir par le système cible.\r\n\r\nThere can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
@@ -1846,22 +1779,10 @@
          fhir:map [ fhir:v "Classeur" ]
        ] )
      ] [
-       fhir:id [ fhir:v "List.contained" ] ;
-       fhir:path [ fhir:v "List.contained" ] ;
-       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:type ( [
-         fhir:code [ fhir:v "Patient"^^xsd:anyURI ] ;
-         fhir:profile ( [
-           fhir:v "http://interopsante.org/fhir/StructureDefinition/FrPatient"^^xsd:anyURI ;
-           fhir:link <http://interopsante.org/fhir/StructureDefinition/FrPatient>
-         ] )
-       ] )
-     ] [
        fhir:id [ fhir:v "List.extension:designationType" ] ;
        fhir:path [ fhir:v "List.extension" ] ;
        fhir:sliceName [ fhir:v "designationType" ] ;
-       fhir:short [ fhir:v "Représente les codes spécifiant le type d’activité de l’événement clinique ayant abouti au regroupement de la fiche d’un document dans ce classeur." ] ;
-       fhir:comment [ fhir:v "Le jeu de valeurs est à définir par le système cible.\r\n\r\nThere can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ] ;
+       fhir:short [ fhir:v "Représente les codes spécifiant le type d’activité de l’événement clinique ayant abouti au regroupement de la fiche d’un document dans ce classeur. Le jeu de valeurs est à définir par le système cible." ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "specmetier-to-PDSmFolderComprehensive" ] ;

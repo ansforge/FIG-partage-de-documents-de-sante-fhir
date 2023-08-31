@@ -9,7 +9,7 @@
   <version value="3.0.1"/>
   <name value="PDSm_intendedRecipient"/>
   <status value="active"/>
-  <date value="2023-08-31T15:22:04+00:00"/>
+  <date value="2023-08-31T15:37:29+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -165,8 +165,8 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass"/>
-        <targetProfile value="https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/organization-rass"/>
+        <targetProfile value="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole"/>
+        <targetProfile value="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -205,8 +205,8 @@
       <path value="Extension.value[x]"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass"/>
-        <targetProfile value="https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/organization-rass"/>
+        <targetProfile value="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole"/>
+        <targetProfile value="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization"/>
       </type>
     </element>
   </differential>

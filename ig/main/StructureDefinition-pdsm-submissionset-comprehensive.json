@@ -10,7 +10,7 @@
   "name" : "PDSm_SubmissionSetComprehensive",
   "title" : "PDSm SubmissionSet Comprehensive",
   "status" : "active",
-  "date" : "2023-08-31T15:22:04+00:00",
+  "date" : "2023-08-31T15:37:29+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -19,7 +19,7 @@
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Profil spécifique dérivé du profil IHE MHD v4.0.1 « ComprehensiveSubmissionSet  » créé pour le volet ANS \"Partage de documents de santé en mobilité\" ; ce profil concerne le lot de soumission.",
+  "description" : "Profil spécifique dérivé du profil IHE MHD « ComprehensiveSubmissionSet » créé pour le volet ANS \"Partage de documents de santé en mobilité\" ; ce profil concerne le lot de soumission.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "rim",
@@ -577,7 +577,7 @@
     {
       "id" : "List.contained",
       "path" : "List.contained",
-      "short" : "Contained, inline Resources",
+      "short" : "Ressource contenue. Dans le cadre de ce profil, il est obligatoire qu'il y ait au moins une ressource contenue : source ou source.extension[authorOrg]",
       "definition" : "These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.",
       "comment" : "This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again. Contained resources may have profiles and tags In their meta elements, but SHALL NOT have security labels.",
       "alias" : ["inline resources",
@@ -906,8 +906,8 @@
       "id" : "List.extension:intendedRecipient",
       "path" : "List.extension",
       "sliceName" : "intendedRecipient",
-      "short" : "Représente le destinataire du lot de soumission",
-      "definition" : "Les ressources référencées sont : 1/ PractitionerRole : Dans le cas d’un destinaire professionnel, c’est le profil AsPractitionerRole représentant la situation d’exercice qui doit être référencé. Lui-même fera le lien avec le profil AsPractitionerRole représentant l’exercice professionnel et avec FrPractitioner. 2/ Organization contrainte au profil FrOrganization",
+      "short" : "Représente le destinataire du lot de soumission. Il peut s'agir d'un AsPractitioner associé à un AsPractitionerRole ou bien d'une AsOrganization.",
+      "definition" : "holds the identity of the organization or person the SubmissionSet is intended. For XDR and eMail (e.g. Direct) this tends to be a Practitioner or Patient with a telecom holding an email, but this is not strictly required.",
       "min" : 0,
       "max" : "*",
       "base" : {
@@ -1671,7 +1671,7 @@
     {
       "id" : "List.source",
       "path" : "List.source",
-      "short" : "Représente les personnes physiques ou morales et/ou les dispositifs auteurs d’un lot de soumission.",
+      "short" : "Représente l'auteur du lot de soumission. Si l'auteur est une organisation, utiliser l'extension authorOrg. Si l’auteur est une personne physique ou un dispositif, utiliser l’attribut source.reference .",
       "definition" : "The entity responsible for deciding what the contents of the list were. Where the list was created by a human, this is the same as the author of the list.",
       "comment" : "The primary source is the entity that made the decisions what items are in the list. This may be software or user.",
       "requirements" : "Allows follow-up as well as context.",
@@ -1685,7 +1685,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass",
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole",
         "http://hl7.org/fhir/StructureDefinition/Device",
         "http://interopsante.org/fhir/StructureDefinition/FrPatient"],
         "aggregation" : ["contained"]
@@ -1697,13 +1697,6 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
-      },
-      {
-        "key" : "constr-bind-source",
-        "severity" : "error",
-        "human" : "Un lot de soumission est obligatoirement associé à un auteur. Si l’attribut \"ihe-authorOrg\" n’est pas renseigné, autrement dit si l’auteur est une personne physique ou un dispositif.",
-        "expression" : "f:source",
-        "source" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-submissionset-comprehensive"
       }],
       "mustSupport" : true,
       "isModifier" : false,
@@ -1801,7 +1794,7 @@
       "id" : "List.source.extension:authorOrg",
       "path" : "List.source.extension",
       "sliceName" : "authorOrg",
-      "short" : "Organisation auteur du document. Un lot de soumission est obligatoirement associé à un auteur. Si l’attribut “source” n’est pas renseigné, autrement dit si l’auteur est une personne morale, la cardinalité est contrainte à [1..1].",
+      "short" : "Auteur organisationnel du document",
       "definition" : "When the author of the SubmissionSet is an Organization, this extension shall be used.",
       "min" : 0,
       "max" : "1",
@@ -1829,13 +1822,6 @@
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
         "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
-      },
-      {
-        "key" : "constr-bind-authororg",
-        "severity" : "error",
-        "human" : "Un lot de soumission est obligatoirement associé à un auteur. Si l’attribut \"source\" n’est pas renseigné, autrement dit si l’auteur est une personne morale, la cardinalité est contrainte à [1..1].\nLa ressource référencée doit être présente sous l’élément List.contained.",
-        "expression" : "f:source/f:extension[authorOrg]",
-        "source" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-submissionset-comprehensive"
       }],
       "isModifier" : false,
       "isSummary" : false,
@@ -1964,7 +1950,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/organization-rass"],
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization"],
         "aggregation" : ["contained"]
       }],
       "constraint" : [{
@@ -2600,6 +2586,7 @@
     {
       "id" : "List.contained",
       "path" : "List.contained",
+      "short" : "Ressource contenue. Dans le cadre de ce profil, il est obligatoire qu'il y ait au moins une ressource contenue : source ou source.extension[authorOrg]",
       "min" : 1,
       "mustSupport" : true
     },
@@ -2642,8 +2629,7 @@
       "id" : "List.extension:intendedRecipient",
       "path" : "List.extension",
       "sliceName" : "intendedRecipient",
-      "short" : "Représente le destinataire du lot de soumission",
-      "definition" : "Les ressources référencées sont : 1/ PractitionerRole : Dans le cas d’un destinaire professionnel, c’est le profil AsPractitionerRole représentant la situation d’exercice qui doit être référencé. Lui-même fera le lien avec le profil AsPractitionerRole représentant l’exercice professionnel et avec FrPractitioner. 2/ Organization contrainte au profil FrOrganization",
+      "short" : "Représente le destinataire du lot de soumission. Il peut s'agir d'un AsPractitioner associé à un AsPractitionerRole ou bien d'une AsOrganization.",
       "mustSupport" : true
     },
     {
@@ -2757,35 +2743,21 @@
     {
       "id" : "List.source",
       "path" : "List.source",
-      "short" : "Représente les personnes physiques ou morales et/ou les dispositifs auteurs d’un lot de soumission.",
+      "short" : "Représente l'auteur du lot de soumission. Si l'auteur est une organisation, utiliser l'extension authorOrg. Si l’auteur est une personne physique ou un dispositif, utiliser l’attribut source.reference .",
       "min" : 1,
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass",
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole",
         "http://hl7.org/fhir/StructureDefinition/Device",
         "http://interopsante.org/fhir/StructureDefinition/FrPatient"],
         "aggregation" : ["contained"]
-      }],
-      "constraint" : [{
-        "key" : "constr-bind-source",
-        "severity" : "error",
-        "human" : "Un lot de soumission est obligatoirement associé à un auteur. Si l’attribut \"ihe-authorOrg\" n’est pas renseigné, autrement dit si l’auteur est une personne physique ou un dispositif.",
-        "expression" : "f:source",
-        "source" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-submissionset-comprehensive"
       }]
     },
     {
       "id" : "List.source.extension:authorOrg",
       "path" : "List.source.extension",
       "sliceName" : "authorOrg",
-      "short" : "Organisation auteur du document. Un lot de soumission est obligatoirement associé à un auteur. Si l’attribut “source” n’est pas renseigné, autrement dit si l’auteur est une personne morale, la cardinalité est contrainte à [1..1].",
-      "constraint" : [{
-        "key" : "constr-bind-authororg",
-        "severity" : "error",
-        "human" : "Un lot de soumission est obligatoirement associé à un auteur. Si l’attribut \"source\" n’est pas renseigné, autrement dit si l’auteur est une personne morale, la cardinalité est contrainte à [1..1].\nLa ressource référencée doit être présente sous l’élément List.contained.",
-        "expression" : "f:source/f:extension[authorOrg]",
-        "source" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-submissionset-comprehensive"
-      }],
+      "short" : "Auteur organisationnel du document",
       "mapping" : [{
         "identity" : "specmetier-to-PDSmSubmissionSetComprehensive",
         "map" : "auteur : [1..1] Identifiant"
@@ -2796,7 +2768,7 @@
       "path" : "List.source.extension.value[x]",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/organization-rass"],
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization"],
         "aggregation" : ["contained"]
       }]
     },

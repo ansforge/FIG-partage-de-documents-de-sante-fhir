@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "PDSm_SimplifiedPublish"] ; # 
   fhir:title [ fhir:v "PDSm Simplified Publish"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-08-31T15:22:04+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-08-31T15:37:29+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -1256,14 +1256,14 @@
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass"^^xsd:anyURI ;
-           fhir:link <https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass>
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole"^^xsd:anyURI ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole>
          ] [
-           fhir:v "http://interopsante.org/fhir/StructureDefinition/FrPractitioner"^^xsd:anyURI ;
-           fhir:link <http://interopsante.org/fhir/StructureDefinition/FrPractitioner>
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner"^^xsd:anyURI ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner>
          ] [
-           fhir:v "http://interopsante.org/fhir/StructureDefinition/FrOrganization"^^xsd:anyURI ;
-           fhir:link <http://interopsante.org/fhir/StructureDefinition/FrOrganization>
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization"^^xsd:anyURI ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization>
          ] [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Device"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Device>
@@ -1284,15 +1284,6 @@
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
-         ]
-       ] [
-         fhir:key [ fhir:v "constr-bind-author" ] ;
-         fhir:severity [ fhir:v "error" ] ;
-         fhir:human [ fhir:v "Cardinalité contrainte à [1..*]\nReference contrainte à :\n- PractitionerRole : Dans le cas d’un auteur professionnel, c’est le profil PractitionerRoleOrganizationalRoleRASSreprésentant la situation d’exercice qui doit être référencé. Lui-même fera le lien avec le profil PractitionerRoleProfessionalRoleRASS représentant l’exercice professionnel et avec FrPractitioner.\n- Device,\n- Patient contrainte au profil FrPatient." ] ;
-         fhir:expression [ fhir:v "f:author" ] ;
-         fhir:source [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish"^^xsd:anyURI ;
-           fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
@@ -1333,11 +1324,11 @@
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass"^^xsd:anyURI ;
-           fhir:link <https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass>
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole"^^xsd:anyURI ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole>
          ] [
-           fhir:v "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/organization-rass"^^xsd:anyURI ;
-           fhir:link <https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/organization-rass>
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization"^^xsd:anyURI ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -1349,15 +1340,6 @@
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
-         ]
-       ] [
-         fhir:key [ fhir:v "constr-bind-authenticator" ] ;
-         fhir:severity [ fhir:v "error" ] ;
-         fhir:human [ fhir:v "Cardinalité contrainte à [1..1]\nRéférence contrainte au profil \n- PractitionerRole : Dans le cas d’un authentificateur professionnel, c’est le profil PractitionerRoleOrganizationalRoleRASS représentant la situation d’exercice qui doit être référencé. Lui-même fera le lien avec le profil PractitionerRoleProfessionalRoleRASS représentant l’exercice professionnel et avec FrPractitioner.\n-  Organization contrainte au profil FrOrganization." ] ;
-         fhir:expression [ fhir:v "f:authenticator" ] ;
-         fhir:source [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish"^^xsd:anyURI ;
-           fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
@@ -2892,8 +2874,7 @@
          fhir:targetProfile ( [
            fhir:v "http://interopsante.org/fhir/StructureDefinition/FrPatient"^^xsd:anyURI ;
            fhir:link <http://interopsante.org/fhir/StructureDefinition/FrPatient>
-         ] ) ;
-         fhir:aggregation ( [ fhir:v "contained" ] )
+         ] )
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -3057,14 +3038,14 @@
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass"^^xsd:anyURI ;
-           fhir:link <https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass>
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole"^^xsd:anyURI ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole>
          ] [
-           fhir:v "http://interopsante.org/fhir/StructureDefinition/FrPractitioner"^^xsd:anyURI ;
-           fhir:link <http://interopsante.org/fhir/StructureDefinition/FrPractitioner>
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner"^^xsd:anyURI ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner>
          ] [
-           fhir:v "http://interopsante.org/fhir/StructureDefinition/FrOrganization"^^xsd:anyURI ;
-           fhir:link <http://interopsante.org/fhir/StructureDefinition/FrOrganization>
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization"^^xsd:anyURI ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization>
          ] [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Device"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Device>
@@ -3075,16 +3056,6 @@
            fhir:v "http://interopsante.org/fhir/StructureDefinition/FrRelatedPerson"^^xsd:anyURI ;
            fhir:link <http://interopsante.org/fhir/StructureDefinition/FrRelatedPerson>
          ] )
-       ] ) ;
-       fhir:constraint ( [
-         fhir:key [ fhir:v "constr-bind-author" ] ;
-         fhir:severity [ fhir:v "error" ] ;
-         fhir:human [ fhir:v "Cardinalité contrainte à [1..*]\nReference contrainte à :\n- PractitionerRole : Dans le cas d’un auteur professionnel, c’est le profil PractitionerRoleOrganizationalRoleRASSreprésentant la situation d’exercice qui doit être référencé. Lui-même fera le lien avec le profil PractitionerRoleProfessionalRoleRASS représentant l’exercice professionnel et avec FrPractitioner.\n- Device,\n- Patient contrainte au profil FrPatient." ] ;
-         fhir:expression [ fhir:v "f:author" ] ;
-         fhir:source [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish"^^xsd:anyURI ;
-           fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish>
-         ]
        ] )
      ] [
        fhir:id [ fhir:v "DocumentReference.authenticator" ] ;
@@ -3093,22 +3064,12 @@
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass"^^xsd:anyURI ;
-           fhir:link <https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass>
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole"^^xsd:anyURI ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole>
          ] [
-           fhir:v "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/organization-rass"^^xsd:anyURI ;
-           fhir:link <https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/organization-rass>
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization"^^xsd:anyURI ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization>
          ] )
-       ] ) ;
-       fhir:constraint ( [
-         fhir:key [ fhir:v "constr-bind-authenticator" ] ;
-         fhir:severity [ fhir:v "error" ] ;
-         fhir:human [ fhir:v "Cardinalité contrainte à [1..1]\nRéférence contrainte au profil \n- PractitionerRole : Dans le cas d’un authentificateur professionnel, c’est le profil PractitionerRoleOrganizationalRoleRASS représentant la situation d’exercice qui doit être référencé. Lui-même fera le lien avec le profil PractitionerRoleProfessionalRoleRASS représentant l’exercice professionnel et avec FrPractitioner.\n-  Organization contrainte au profil FrOrganization." ] ;
-         fhir:expression [ fhir:v "f:authenticator" ] ;
-         fhir:source [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish"^^xsd:anyURI ;
-           fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish>
-         ]
        ] ) ;
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ]
      ] [
@@ -3250,8 +3211,7 @@
          fhir:targetProfile ( [
            fhir:v "http://interopsante.org/fhir/StructureDefinition/FrPatient"^^xsd:anyURI ;
            fhir:link <http://interopsante.org/fhir/StructureDefinition/FrPatient>
-         ] ) ;
-         fhir:aggregation ( [ fhir:v "contained" ] )
+         ] )
        ] )
      ] )
   ] . # 

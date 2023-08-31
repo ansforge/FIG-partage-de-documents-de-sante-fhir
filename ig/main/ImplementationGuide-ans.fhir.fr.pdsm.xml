@@ -10,7 +10,7 @@
   <name value="PDSm"/>
   <title value="Partage de Documents de Santé en mobilité (PDSm)"/>
   <status value="active"/>
-  <date value="2023-08-31T15:22:04+00:00"/>
+  <date value="2023-08-31T15:37:29+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -43,10 +43,10 @@
     <packageId value="ihe.iti.mhd"/>
     <version value="4.2.0"/>
   </dependsOn>
-  <dependsOn id="ans_annuaire_fhir_r4">
-    <uri value="http://fhir.org/packages/ans.annuaire.fhir.r4/ImplementationGuide/ans.annuaire.fhir.r4"/>
-    <packageId value="ans.annuaire.fhir.r4"/>
-    <version value="0.2.0"/>
+  <dependsOn id="ans_fhir_fr_annuaire">
+    <uri value="https://interop.esante.gouv.fr/ig/fhir/annuaire/ImplementationGuide/ans.fhir.fr.annuaire"/>
+    <packageId value="ans.fhir.fr.annuaire"/>
+    <version value="1.0.0-ballot-2"/>
   </dependsOn>
   <dependsOn id="hl7_fhir_fr_core">
     <uri value="http://fhir.org/packages/hl7.fhir.fr.core/ImplementationGuide/hl7.fhir.fr.core"/>
@@ -508,7 +508,7 @@
         <reference value="StructureDefinition/pdsm-folder-comprehensive"/>
       </reference>
       <name value="PDSm Folder Comprehensive"/>
-      <description value="Profil spécifique dérivé du profil IHE MHD v4.0.1 « Comprehensive Folder  » créé pour le volet ANS &quot;Partage de documents de santé en mobilité&quot; ; ce profil concerne le classeur."/>
+      <description value="Profil spécifique dérivé du profil IHE MHD « Comprehensive Folder » créé pour le volet ANS &quot;Partage de documents de santé en mobilité&quot; ; ce profil concerne le classeur."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -530,7 +530,7 @@
         <reference value="StructureDefinition/pdsm-submissionset-comprehensive"/>
       </reference>
       <name value="PDSm SubmissionSet Comprehensive"/>
-      <description value="Profil spécifique dérivé du profil IHE MHD v4.0.1 « ComprehensiveSubmissionSet  » créé pour le volet ANS &quot;Partage de documents de santé en mobilité&quot; ; ce profil concerne le lot de soumission."/>
+      <description value="Profil spécifique dérivé du profil IHE MHD « ComprehensiveSubmissionSet » créé pour le volet ANS &quot;Partage de documents de santé en mobilité&quot; ; ce profil concerne le lot de soumission."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

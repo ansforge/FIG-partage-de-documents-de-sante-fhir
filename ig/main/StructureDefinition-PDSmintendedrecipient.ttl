@@ -16,7 +16,7 @@
   fhir:version [ fhir:v "3.0.1"] ; # 
   fhir:name [ fhir:v "PDSm_intendedRecipient"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-08-31T15:22:04+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-08-31T15:37:29+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -189,11 +189,11 @@
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass"^^xsd:anyURI ;
-           fhir:link <https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass>
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole"^^xsd:anyURI ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole>
          ] [
-           fhir:v "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/organization-rass"^^xsd:anyURI ;
-           fhir:link <https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/organization-rass>
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization"^^xsd:anyURI ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization>
          ] )
        ] ) ;
        fhir:condition ( [ fhir:v "ele-1" ] ) ;
@@ -237,11 +237,11 @@
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass"^^xsd:anyURI ;
-           fhir:link <https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass>
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole"^^xsd:anyURI ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole>
          ] [
-           fhir:v "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/organization-rass"^^xsd:anyURI ;
-           fhir:link <https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/organization-rass>
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization"^^xsd:anyURI ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization>
          ] )
        ] )
      ] )

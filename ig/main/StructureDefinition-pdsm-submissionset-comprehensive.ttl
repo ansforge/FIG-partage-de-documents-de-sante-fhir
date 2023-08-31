@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "PDSm_SubmissionSetComprehensive"] ; # 
   fhir:title [ fhir:v "PDSm SubmissionSet Comprehensive"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-08-31T15:22:04+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-08-31T15:37:29+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -26,7 +26,7 @@
        fhir:value [ fhir:v "https://esante.gouv.fr" ]
      ] )
   ] ) ; # 
-  fhir:description [ fhir:v "Profil spécifique dérivé du profil IHE MHD v4.0.1 « ComprehensiveSubmissionSet  » créé pour le volet ANS \"Partage de documents de santé en mobilité\" ; ce profil concerne le lot de soumission."] ; # 
+  fhir:description [ fhir:v "Profil spécifique dérivé du profil IHE MHD « ComprehensiveSubmissionSet » créé pour le volet ANS \"Partage de documents de santé en mobilité\" ; ce profil concerne le lot de soumission."] ; # 
   fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
   fhir:mapping ( [
      fhir:identity [ fhir:v "rim" ] ;
@@ -624,7 +624,7 @@
      ] [
        fhir:id [ fhir:v "List.contained" ] ;
        fhir:path [ fhir:v "List.contained" ] ;
-       fhir:short [ fhir:v "Contained, inline Resources" ] ;
+       fhir:short [ fhir:v "Ressource contenue. Dans le cadre de ce profil, il est obligatoire qu'il y ait au moins une ressource contenue : source ou source.extension[authorOrg]" ] ;
        fhir:definition [ fhir:v "These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope." ] ;
        fhir:comment [ fhir:v "This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again. Contained resources may have profiles and tags In their meta elements, but SHALL NOT have security labels." ] ;
        fhir:alias ( [ fhir:v "inline resources" ] [ fhir:v "anonymous resources" ] [ fhir:v "contained resources" ] ) ;
@@ -979,8 +979,8 @@
        fhir:id [ fhir:v "List.extension:intendedRecipient" ] ;
        fhir:path [ fhir:v "List.extension" ] ;
        fhir:sliceName [ fhir:v "intendedRecipient" ] ;
-       fhir:short [ fhir:v "Représente le destinataire du lot de soumission" ] ;
-       fhir:definition [ fhir:v "Les ressources référencées sont : 1/ PractitionerRole : Dans le cas d’un destinaire professionnel, c’est le profil AsPractitionerRole représentant la situation d’exercice qui doit être référencé. Lui-même fera le lien avec le profil AsPractitionerRole représentant l’exercice professionnel et avec FrPractitioner. 2/ Organization contrainte au profil FrOrganization" ] ;
+       fhir:short [ fhir:v "Représente le destinataire du lot de soumission. Il peut s'agir d'un AsPractitioner associé à un AsPractitionerRole ou bien d'une AsOrganization." ] ;
+       fhir:definition [ fhir:v "holds the identity of the organization or person the SubmissionSet is intended. For XDR and eMail (e.g. Direct) this tends to be a Practitioner or Patient with a telecom holding an email, but this is not strictly required." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "*" ] ;
        fhir:base [
@@ -1797,7 +1797,7 @@
      ] [
        fhir:id [ fhir:v "List.source" ] ;
        fhir:path [ fhir:v "List.source" ] ;
-       fhir:short [ fhir:v "Représente les personnes physiques ou morales et/ou les dispositifs auteurs d’un lot de soumission." ] ;
+       fhir:short [ fhir:v "Représente l'auteur du lot de soumission. Si l'auteur est une organisation, utiliser l'extension authorOrg. Si l’auteur est une personne physique ou un dispositif, utiliser l’attribut source.reference ." ] ;
        fhir:definition [ fhir:v "The entity responsible for deciding what the contents of the list were. Where the list was created by a human, this is the same as the author of the list." ] ;
        fhir:comment [ fhir:v "The primary source is the entity that made the decisions what items are in the list. This may be software or user." ] ;
        fhir:requirements [ fhir:v "Allows follow-up as well as context." ] ;
@@ -1812,8 +1812,8 @@
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass"^^xsd:anyURI ;
-           fhir:link <https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass>
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole"^^xsd:anyURI ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole>
          ] [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Device"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Device>
@@ -1832,15 +1832,6 @@
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
-         ]
-       ] [
-         fhir:key [ fhir:v "constr-bind-source" ] ;
-         fhir:severity [ fhir:v "error" ] ;
-         fhir:human [ fhir:v "Un lot de soumission est obligatoirement associé à un auteur. Si l’attribut \"ihe-authorOrg\" n’est pas renseigné, autrement dit si l’auteur est une personne physique ou un dispositif." ] ;
-         fhir:expression [ fhir:v "f:source" ] ;
-         fhir:source [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-submissionset-comprehensive"^^xsd:anyURI ;
-           fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-submissionset-comprehensive>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
@@ -1938,7 +1929,7 @@
        fhir:id [ fhir:v "List.source.extension:authorOrg" ] ;
        fhir:path [ fhir:v "List.source.extension" ] ;
        fhir:sliceName [ fhir:v "authorOrg" ] ;
-       fhir:short [ fhir:v "Organisation auteur du document. Un lot de soumission est obligatoirement associé à un auteur. Si l’attribut “source” n’est pas renseigné, autrement dit si l’auteur est une personne morale, la cardinalité est contrainte à [1..1]." ] ;
+       fhir:short [ fhir:v "Auteur organisationnel du document" ] ;
        fhir:definition [ fhir:v "When the author of the SubmissionSet is an Organization, this extension shall be used." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
@@ -1973,15 +1964,6 @@
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
-         ]
-       ] [
-         fhir:key [ fhir:v "constr-bind-authororg" ] ;
-         fhir:severity [ fhir:v "error" ] ;
-         fhir:human [ fhir:v "Un lot de soumission est obligatoirement associé à un auteur. Si l’attribut \"source\" n’est pas renseigné, autrement dit si l’auteur est une personne morale, la cardinalité est contrainte à [1..1].\nLa ressource référencée doit être présente sous l’élément List.contained." ] ;
-         fhir:expression [ fhir:v "f:source/f:extension[authorOrg]" ] ;
-         fhir:source [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-submissionset-comprehensive"^^xsd:anyURI ;
-           fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-submissionset-comprehensive>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
@@ -2113,8 +2095,8 @@
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/organization-rass"^^xsd:anyURI ;
-           fhir:link <https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/organization-rass>
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization"^^xsd:anyURI ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization>
          ] ) ;
          fhir:aggregation ( [ fhir:v "contained" ] )
        ] ) ;
@@ -2790,6 +2772,7 @@
      ] [
        fhir:id [ fhir:v "List.contained" ] ;
        fhir:path [ fhir:v "List.contained" ] ;
+       fhir:short [ fhir:v "Ressource contenue. Dans le cadre de ce profil, il est obligatoire qu'il y ait au moins une ressource contenue : source ou source.extension[authorOrg]" ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ]
      ] [
@@ -2834,8 +2817,7 @@
        fhir:id [ fhir:v "List.extension:intendedRecipient" ] ;
        fhir:path [ fhir:v "List.extension" ] ;
        fhir:sliceName [ fhir:v "intendedRecipient" ] ;
-       fhir:short [ fhir:v "Représente le destinataire du lot de soumission" ] ;
-       fhir:definition [ fhir:v "Les ressources référencées sont : 1/ PractitionerRole : Dans le cas d’un destinaire professionnel, c’est le profil AsPractitionerRole représentant la situation d’exercice qui doit être référencé. Lui-même fera le lien avec le profil AsPractitionerRole représentant l’exercice professionnel et avec FrPractitioner. 2/ Organization contrainte au profil FrOrganization" ] ;
+       fhir:short [ fhir:v "Représente le destinataire du lot de soumission. Il peut s'agir d'un AsPractitioner associé à un AsPractitionerRole ou bien d'une AsOrganization." ] ;
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:id [ fhir:v "List.extension:intendedRecipient.value[x]" ] ;
@@ -2959,13 +2941,13 @@
      ] [
        fhir:id [ fhir:v "List.source" ] ;
        fhir:path [ fhir:v "List.source" ] ;
-       fhir:short [ fhir:v "Représente les personnes physiques ou morales et/ou les dispositifs auteurs d’un lot de soumission." ] ;
+       fhir:short [ fhir:v "Représente l'auteur du lot de soumission. Si l'auteur est une organisation, utiliser l'extension authorOrg. Si l’auteur est une personne physique ou un dispositif, utiliser l’attribut source.reference ." ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass"^^xsd:anyURI ;
-           fhir:link <https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass>
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole"^^xsd:anyURI ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole>
          ] [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Device"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Device>
@@ -2974,32 +2956,12 @@
            fhir:link <http://interopsante.org/fhir/StructureDefinition/FrPatient>
          ] ) ;
          fhir:aggregation ( [ fhir:v "contained" ] )
-       ] ) ;
-       fhir:constraint ( [
-         fhir:key [ fhir:v "constr-bind-source" ] ;
-         fhir:severity [ fhir:v "error" ] ;
-         fhir:human [ fhir:v "Un lot de soumission est obligatoirement associé à un auteur. Si l’attribut \"ihe-authorOrg\" n’est pas renseigné, autrement dit si l’auteur est une personne physique ou un dispositif." ] ;
-         fhir:expression [ fhir:v "f:source" ] ;
-         fhir:source [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-submissionset-comprehensive"^^xsd:anyURI ;
-           fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-submissionset-comprehensive>
-         ]
        ] )
      ] [
        fhir:id [ fhir:v "List.source.extension:authorOrg" ] ;
        fhir:path [ fhir:v "List.source.extension" ] ;
        fhir:sliceName [ fhir:v "authorOrg" ] ;
-       fhir:short [ fhir:v "Organisation auteur du document. Un lot de soumission est obligatoirement associé à un auteur. Si l’attribut “source” n’est pas renseigné, autrement dit si l’auteur est une personne morale, la cardinalité est contrainte à [1..1]." ] ;
-       fhir:constraint ( [
-         fhir:key [ fhir:v "constr-bind-authororg" ] ;
-         fhir:severity [ fhir:v "error" ] ;
-         fhir:human [ fhir:v "Un lot de soumission est obligatoirement associé à un auteur. Si l’attribut \"source\" n’est pas renseigné, autrement dit si l’auteur est une personne morale, la cardinalité est contrainte à [1..1].\nLa ressource référencée doit être présente sous l’élément List.contained." ] ;
-         fhir:expression [ fhir:v "f:source/f:extension[authorOrg]" ] ;
-         fhir:source [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-submissionset-comprehensive"^^xsd:anyURI ;
-           fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-submissionset-comprehensive>
-         ]
-       ] ) ;
+       fhir:short [ fhir:v "Auteur organisationnel du document" ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "specmetier-to-PDSmSubmissionSetComprehensive" ] ;
          fhir:map [ fhir:v "auteur : [1..1] Identifiant" ]
@@ -3010,8 +2972,8 @@
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/organization-rass"^^xsd:anyURI ;
-           fhir:link <https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/organization-rass>
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization"^^xsd:anyURI ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization>
          ] ) ;
          fhir:aggregation ( [ fhir:v "contained" ] )
        ] )

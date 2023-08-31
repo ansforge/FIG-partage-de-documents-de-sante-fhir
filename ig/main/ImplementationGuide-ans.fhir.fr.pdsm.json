@@ -10,7 +10,7 @@
   "name" : "PDSm",
   "title" : "Partage de Documents de Santé en mobilité (PDSm)",
   "status" : "active",
-  "date" : "2023-08-31T15:22:04+00:00",
+  "date" : "2023-08-31T15:37:29+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -49,10 +49,10 @@
     "version" : "4.2.0"
   },
   {
-    "id" : "ans_annuaire_fhir_r4",
-    "uri" : "http://fhir.org/packages/ans.annuaire.fhir.r4/ImplementationGuide/ans.annuaire.fhir.r4",
-    "packageId" : "ans.annuaire.fhir.r4",
-    "version" : "0.2.0"
+    "id" : "ans_fhir_fr_annuaire",
+    "uri" : "https://interop.esante.gouv.fr/ig/fhir/annuaire/ImplementationGuide/ans.fhir.fr.annuaire",
+    "packageId" : "ans.fhir.fr.annuaire",
+    "version" : "1.0.0-ballot-2"
   },
   {
     "id" : "hl7_fhir_fr_core",
@@ -671,7 +671,7 @@
         "reference" : "StructureDefinition/pdsm-folder-comprehensive"
       },
       "name" : "PDSm Folder Comprehensive",
-      "description" : "Profil spécifique dérivé du profil IHE MHD v4.0.1 « Comprehensive Folder  » créé pour le volet ANS \"Partage de documents de santé en mobilité\" ; ce profil concerne le classeur.",
+      "description" : "Profil spécifique dérivé du profil IHE MHD « Comprehensive Folder » créé pour le volet ANS \"Partage de documents de santé en mobilité\" ; ce profil concerne le classeur.",
       "exampleBoolean" : false
     },
     {
@@ -695,7 +695,7 @@
         "reference" : "StructureDefinition/pdsm-submissionset-comprehensive"
       },
       "name" : "PDSm SubmissionSet Comprehensive",
-      "description" : "Profil spécifique dérivé du profil IHE MHD v4.0.1 « ComprehensiveSubmissionSet  » créé pour le volet ANS \"Partage de documents de santé en mobilité\" ; ce profil concerne le lot de soumission.",
+      "description" : "Profil spécifique dérivé du profil IHE MHD « ComprehensiveSubmissionSet » créé pour le volet ANS \"Partage de documents de santé en mobilité\" ; ce profil concerne le lot de soumission.",
       "exampleBoolean" : false
     },
     {

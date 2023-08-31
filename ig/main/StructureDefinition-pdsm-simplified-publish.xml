@@ -10,7 +10,7 @@
   <name value="PDSm_SimplifiedPublish"/>
   <title value="PDSm Simplified Publish"/>
   <status value="active"/>
-  <date value="2023-08-31T15:22:04+00:00"/>
+  <date value="2023-08-31T15:37:29+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -1177,9 +1177,9 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass"/>
-        <targetProfile value="http://interopsante.org/fhir/StructureDefinition/FrPractitioner"/>
-        <targetProfile value="http://interopsante.org/fhir/StructureDefinition/FrOrganization"/>
+        <targetProfile value="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole"/>
+        <targetProfile value="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner"/>
+        <targetProfile value="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
         <targetProfile value="http://interopsante.org/fhir/StructureDefinition/FrPatient"/>
         <targetProfile value="http://interopsante.org/fhir/StructureDefinition/FrRelatedPerson"/>
@@ -1191,13 +1191,6 @@
         <expression value="hasValue() or (children().count() &gt; id.count())"/>
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
-      </constraint>
-      <constraint>
-        <key value="constr-bind-author"/>
-        <severity value="error"/>
-        <human value="Cardinalité contrainte à [1..*]&#xA;Reference contrainte à :&#xA;- PractitionerRole : Dans le cas d’un auteur professionnel, c’est le profil PractitionerRoleOrganizationalRoleRASSreprésentant la situation d’exercice qui doit être référencé. Lui-même fera le lien avec le profil PractitionerRoleProfessionalRoleRASS représentant l’exercice professionnel et avec FrPractitioner.&#xA;- Device,&#xA;- Patient contrainte au profil FrPatient."/>
-        <expression value="f:author"/>
-        <source value="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish"/>
       </constraint>
       <mustSupport value="true"/>
       <isModifier value="false"/>
@@ -1241,8 +1234,8 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass"/>
-        <targetProfile value="https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/organization-rass"/>
+        <targetProfile value="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole"/>
+        <targetProfile value="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1251,13 +1244,6 @@
         <expression value="hasValue() or (children().count() &gt; id.count())"/>
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
-      </constraint>
-      <constraint>
-        <key value="constr-bind-authenticator"/>
-        <severity value="error"/>
-        <human value="Cardinalité contrainte à [1..1]&#xA;Référence contrainte au profil &#xA;- PractitionerRole : Dans le cas d’un authentificateur professionnel, c’est le profil PractitionerRoleOrganizationalRoleRASS représentant la situation d’exercice qui doit être référencé. Lui-même fera le lien avec le profil PractitionerRoleProfessionalRoleRASS représentant l’exercice professionnel et avec FrPractitioner.&#xA;-  Organization contrainte au profil FrOrganization."/>
-        <expression value="f:authenticator"/>
-        <source value="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish"/>
       </constraint>
       <mustSupport value="true"/>
       <isModifier value="false"/>
@@ -2682,7 +2668,6 @@
       <type>
         <code value="Reference"/>
         <targetProfile value="http://interopsante.org/fhir/StructureDefinition/FrPatient"/>
-        <aggregation value="contained"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -2826,36 +2811,22 @@
       <min value="1"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass"/>
-        <targetProfile value="http://interopsante.org/fhir/StructureDefinition/FrPractitioner"/>
-        <targetProfile value="http://interopsante.org/fhir/StructureDefinition/FrOrganization"/>
+        <targetProfile value="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole"/>
+        <targetProfile value="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner"/>
+        <targetProfile value="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
         <targetProfile value="http://interopsante.org/fhir/StructureDefinition/FrPatient"/>
         <targetProfile value="http://interopsante.org/fhir/StructureDefinition/FrRelatedPerson"/>
       </type>
-      <constraint>
-        <key value="constr-bind-author"/>
-        <severity value="error"/>
-        <human value="Cardinalité contrainte à [1..*]&#xA;Reference contrainte à :&#xA;- PractitionerRole : Dans le cas d’un auteur professionnel, c’est le profil PractitionerRoleOrganizationalRoleRASSreprésentant la situation d’exercice qui doit être référencé. Lui-même fera le lien avec le profil PractitionerRoleProfessionalRoleRASS représentant l’exercice professionnel et avec FrPractitioner.&#xA;- Device,&#xA;- Patient contrainte au profil FrPatient."/>
-        <expression value="f:author"/>
-        <source value="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish"/>
-      </constraint>
     </element>
     <element id="DocumentReference.authenticator">
       <path value="DocumentReference.authenticator"/>
       <short value="Cet attribut représente l’acteur validant le document et prenant la responsabilité du contenu médical de celui-ci. Il peut s’agir de l’auteur du document si celui-ci est une personne et s’il endosse la responsabilité du contenu médical de ses documents. Si l’auteur est un dispositif, cet attribut doit représenter la personne responsable de l’action effectuée par le dispositif."/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass"/>
-        <targetProfile value="https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/organization-rass"/>
+        <targetProfile value="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole"/>
+        <targetProfile value="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization"/>
       </type>
-      <constraint>
-        <key value="constr-bind-authenticator"/>
-        <severity value="error"/>
-        <human value="Cardinalité contrainte à [1..1]&#xA;Référence contrainte au profil &#xA;- PractitionerRole : Dans le cas d’un authentificateur professionnel, c’est le profil PractitionerRoleOrganizationalRoleRASS représentant la situation d’exercice qui doit être référencé. Lui-même fera le lien avec le profil PractitionerRoleProfessionalRoleRASS représentant l’exercice professionnel et avec FrPractitioner.&#xA;-  Organization contrainte au profil FrOrganization."/>
-        <expression value="f:authenticator"/>
-        <source value="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish"/>
-      </constraint>
       <mustSupport value="true"/>
     </element>
     <element id="DocumentReference.description">
@@ -2970,7 +2941,6 @@
       <type>
         <code value="Reference"/>
         <targetProfile value="http://interopsante.org/fhir/StructureDefinition/FrPatient"/>
-        <aggregation value="contained"/>
       </type>
     </element>
   </differential>
