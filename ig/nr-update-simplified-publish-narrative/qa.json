@@ -3,7 +3,7 @@
   "name" : "PDSm",
   "package-id" : "ans.fhir.fr.pdsm",
   "ig-ver" : "3.0.1",
-  "date" : "Mon, 21 Aug, 2023 11:48:15 +0000",
+  "date" : "Thu, 31 Aug, 2023 15:15:02 +0000",
   "errs" : 29,
   "warnings" : 37,
   "hints" : 0,
