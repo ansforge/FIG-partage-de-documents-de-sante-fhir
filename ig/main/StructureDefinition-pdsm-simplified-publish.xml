@@ -10,7 +10,7 @@
   <name value="PDSm_SimplifiedPublish"/>
   <title value="PDSm Simplified Publish"/>
   <status value="active"/>
-  <date value="2023-08-31T15:17:32+00:00"/>
+  <date value="2023-08-31T15:22:04+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -19,7 +19,7 @@
       <value value="https://esante.gouv.fr"/>
     </telecom>
   </contact>
-  <description value="Ce profil a été créé en s'inspirant du profil MHD Simplified. &#xA;Contrairement au profil PDSm_ComprehensiveDocumentReference, le document est directement inclus dans DocumentReference.attachment.data et non dans une ressource « Binary » externe.&#xA;&#xA;Ce profil est utilisé dans le cadre du flux 9. Le flux et le profil sont inspirés d’IHE MHD, version build au 03.10.22  : transaction ITI-105  et du profil SimplifiedPublish.DocumentReference.&#xA;&#xA;La publication simplifiée est un simple POST d'une ressource DocumentReference conforme à ce profil."/>
+  <description value="Ce profil est utilisé dans le cadre du flux 9 d'ajout simplifié de document. Le flux et le profil sont inspirés d’IHE MHD, transaction ITI-105.&#xA;&#xA;Contrairement au profil PDSm_ComprehensiveDocumentReference, le document est directement inclus dans DocumentReference.attachment.data et non dans une ressource « Binary » externe.&#xA;&#xA;La publication simplifiée est une simple requête HTTP POST d'une ressource DocumentReference conforme à ce profil."/>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="workflow"/>
@@ -971,7 +971,6 @@
       <isSummary value="true"/>
       <binding>
         <strength value="preferred"/>
-        <description value="XDS typeCode CI-SIS"/>
         <valueSet value="https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS"/>
       </binding>
       <mapping>
@@ -1039,7 +1038,6 @@
       <isSummary value="true"/>
       <binding>
         <strength value="preferred"/>
-        <description value="XDS classCode CI-SIS"/>
         <valueSet value="https://mos.esante.gouv.fr/NOS/JDV_J06-XdsClassCode-CISIS/FHIR/JDV-J06-XdsClassCode-CISIS"/>
       </binding>
       <mapping>
@@ -2266,7 +2264,6 @@
       <isSummary value="true"/>
       <binding>
         <strength value="preferred"/>
-        <description value="XDS formatCode documents CI-SIS"/>
         <valueSet value="https://mos.esante.gouv.fr/NOS/JDV_J10-XdsFormatCode-CISIS/FHIR/JDV-J10-XdsFormatCode-CISIS"/>
       </binding>
       <mapping>
@@ -2597,7 +2594,6 @@
       <isSummary value="false"/>
       <binding>
         <strength value="preferred"/>
-        <description value="XDS healthcareFacilityTypeCode CI-SIS"/>
         <valueSet value="https://mos.esante.gouv.fr/NOS/JDV_J02-XdsHealthcareFacilityTypeCode-CISIS/FHIR/JDV-J02-XdsHealthcareFacilityTypeCode-CISIS"/>
       </binding>
       <mapping>
@@ -2653,7 +2649,6 @@
       <isSummary value="false"/>
       <binding>
         <strength value="preferred"/>
-        <description value="XDS practiceSettingCode CI-SIS"/>
         <valueSet value="https://mos.esante.gouv.fr/NOS/JDV_J04-XdsPracticeSettingCode-CISIS/FHIR/JDV-J04-XdsPracticeSettingCode-CISIS"/>
       </binding>
       <mapping>
@@ -2795,7 +2790,6 @@
       </constraint>
       <binding>
         <strength value="preferred"/>
-        <description value="XDS typeCode CI-SIS"/>
         <valueSet value="https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS"/>
       </binding>
     </element>
@@ -2811,7 +2805,6 @@
       </constraint>
       <binding>
         <strength value="preferred"/>
-        <description value="XDS classCode CI-SIS"/>
         <valueSet value="https://mos.esante.gouv.fr/NOS/JDV_J06-XdsClassCode-CISIS/FHIR/JDV-J06-XdsClassCode-CISIS"/>
       </binding>
     </element>
@@ -2922,7 +2915,6 @@
       </constraint>
       <binding>
         <strength value="preferred"/>
-        <description value="XDS formatCode documents CI-SIS"/>
         <valueSet value="https://mos.esante.gouv.fr/NOS/JDV_J10-XdsFormatCode-CISIS/FHIR/JDV-J10-XdsFormatCode-CISIS"/>
       </binding>
     </element>
@@ -2954,7 +2946,6 @@
       </constraint>
       <binding>
         <strength value="preferred"/>
-        <description value="XDS healthcareFacilityTypeCode CI-SIS"/>
         <valueSet value="https://mos.esante.gouv.fr/NOS/JDV_J02-XdsHealthcareFacilityTypeCode-CISIS/FHIR/JDV-J02-XdsHealthcareFacilityTypeCode-CISIS"/>
       </binding>
     </element>
@@ -2970,7 +2961,6 @@
       </constraint>
       <binding>
         <strength value="preferred"/>
-        <description value="XDS practiceSettingCode CI-SIS"/>
         <valueSet value="https://mos.esante.gouv.fr/NOS/JDV_J04-XdsPracticeSettingCode-CISIS/FHIR/JDV-J04-XdsPracticeSettingCode-CISIS"/>
       </binding>
     </element>

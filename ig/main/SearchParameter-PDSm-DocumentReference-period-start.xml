@@ -25,13 +25,4 @@
   <expression value="DocumentReference.context.period.start"/>
   <multipleOr value="true"/>
   <multipleAnd value="true"/>
-  <comparator value="eq"/>
-  <comparator value="ne"/>
-  <comparator value="gt"/>
-  <comparator value="lt"/>
-  <comparator value="ge"/>
-  <comparator value="le"/>
-  <comparator value="sa"/>
-  <comparator value="eb"/>
-  <comparator value="ap"/>
 </SearchParameter>

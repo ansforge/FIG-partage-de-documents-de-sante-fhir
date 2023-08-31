@@ -24,14 +24,5 @@
   "type" : "date",
   "expression" : "DocumentReference.context.period.start",
   "multipleOr" : true,
-  "multipleAnd" : true,
-  "comparator" : ["eq",
-  "ne",
-  "gt",
-  "lt",
-  "ge",
-  "le",
-  "sa",
-  "eb",
-  "ap"]
+  "multipleAnd" : true
 }

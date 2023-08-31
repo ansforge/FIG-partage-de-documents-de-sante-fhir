@@ -31,8 +31,7 @@
   fhir:type [ fhir:v "date"] ; # 
   fhir:expression [ fhir:v "DocumentReference.context.period.end"] ; # 
   fhir:multipleOr [ fhir:v "true"^^xsd:boolean] ; # 
-  fhir:multipleAnd [ fhir:v "true"^^xsd:boolean] ; # 
-  fhir:comparator ( [ fhir:v "eq"] [ fhir:v "ne"] [ fhir:v "gt"] [ fhir:v "lt"] [ fhir:v "ge"] [ fhir:v "le"] [ fhir:v "sa"] [ fhir:v "eb"] [ fhir:v "ap"] ) . # 
+  fhir:multipleAnd [ fhir:v "true"^^xsd:boolean] . # 
 
 # -------------------------------------------------------------------------------------
 

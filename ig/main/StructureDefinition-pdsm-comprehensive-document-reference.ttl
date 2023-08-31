@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "PDSm_ComprehensiveDocumentReference"] ; # 
   fhir:title [ fhir:v "PDSm Comprehensive DocumentReference"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-08-31T15:17:32+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-08-31T15:22:04+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -1177,7 +1177,6 @@
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:binding [
          fhir:strength [ fhir:v "preferred" ] ;
-         fhir:description [ fhir:v "XDS classCode CI-SIS" ] ;
          fhir:valueSet [
            fhir:v "https://mos.esante.gouv.fr/NOS/JDV_J06-XdsClassCode-CISIS/FHIR/JDV-J06-XdsClassCode-CISIS"^^xsd:anyURI ;
            fhir:link <https://mos.esante.gouv.fr/NOS/JDV_J06-XdsClassCode-CISIS/FHIR/JDV-J06-XdsClassCode-CISIS>
@@ -2625,7 +2624,6 @@
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:binding [
          fhir:strength [ fhir:v "preferred" ] ;
-         fhir:description [ fhir:v "XDS formatCode documents CI-SIS" ] ;
          fhir:valueSet [
            fhir:v "https://mos.esante.gouv.fr/NOS/JDV_J10-XdsFormatCode-CISIS/FHIR/JDV-J10-XdsFormatCode-CISIS"^^xsd:anyURI ;
            fhir:link <https://mos.esante.gouv.fr/NOS/JDV_J10-XdsFormatCode-CISIS/FHIR/JDV-J10-XdsFormatCode-CISIS>
@@ -3164,7 +3162,6 @@
        fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
        fhir:binding [
          fhir:strength [ fhir:v "preferred" ] ;
-         fhir:description [ fhir:v "XDS healthcareFacilityTypeCode CI-SIS" ] ;
          fhir:valueSet [
            fhir:v "https://mos.esante.gouv.fr/NOS/JDV_J02-XdsHealthcareFacilityTypeCode-CISIS/FHIR/JDV-J02-XdsHealthcareFacilityTypeCode-CISIS"^^xsd:anyURI ;
            fhir:link <https://mos.esante.gouv.fr/NOS/JDV_J02-XdsHealthcareFacilityTypeCode-CISIS/FHIR/JDV-J02-XdsHealthcareFacilityTypeCode-CISIS>
@@ -3231,7 +3228,6 @@
        fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
        fhir:binding [
          fhir:strength [ fhir:v "preferred" ] ;
-         fhir:description [ fhir:v "XDS practiceSettingCode CI-SIS" ] ;
          fhir:valueSet [
            fhir:v "https://mos.esante.gouv.fr/NOS/JDV_J04-XdsPracticeSettingCode-CISIS/FHIR/JDV-J04-XdsPracticeSettingCode-CISIS"^^xsd:anyURI ;
            fhir:link <https://mos.esante.gouv.fr/NOS/JDV_J04-XdsPracticeSettingCode-CISIS/FHIR/JDV-J04-XdsPracticeSettingCode-CISIS>
@@ -3703,7 +3699,6 @@
        ] ) ;
        fhir:binding [
          fhir:strength [ fhir:v "preferred" ] ;
-         fhir:description [ fhir:v "XDS classCode CI-SIS" ] ;
          fhir:valueSet [
            fhir:v "https://mos.esante.gouv.fr/NOS/JDV_J06-XdsClassCode-CISIS/FHIR/JDV-J06-XdsClassCode-CISIS"^^xsd:anyURI ;
            fhir:link <https://mos.esante.gouv.fr/NOS/JDV_J06-XdsClassCode-CISIS/FHIR/JDV-J06-XdsClassCode-CISIS>
@@ -3956,7 +3951,6 @@
        ] ) ;
        fhir:binding [
          fhir:strength [ fhir:v "preferred" ] ;
-         fhir:description [ fhir:v "XDS formatCode documents CI-SIS" ] ;
          fhir:valueSet [
            fhir:v "https://mos.esante.gouv.fr/NOS/JDV_J10-XdsFormatCode-CISIS/FHIR/JDV-J10-XdsFormatCode-CISIS"^^xsd:anyURI ;
            fhir:link <https://mos.esante.gouv.fr/NOS/JDV_J10-XdsFormatCode-CISIS/FHIR/JDV-J10-XdsFormatCode-CISIS>
@@ -4024,7 +4018,6 @@
        ] ) ;
        fhir:binding [
          fhir:strength [ fhir:v "preferred" ] ;
-         fhir:description [ fhir:v "XDS healthcareFacilityTypeCode CI-SIS" ] ;
          fhir:valueSet [
            fhir:v "https://mos.esante.gouv.fr/NOS/JDV_J02-XdsHealthcareFacilityTypeCode-CISIS/FHIR/JDV-J02-XdsHealthcareFacilityTypeCode-CISIS"^^xsd:anyURI ;
            fhir:link <https://mos.esante.gouv.fr/NOS/JDV_J02-XdsHealthcareFacilityTypeCode-CISIS/FHIR/JDV-J02-XdsHealthcareFacilityTypeCode-CISIS>
@@ -4050,7 +4043,6 @@
        ] ) ;
        fhir:binding [
          fhir:strength [ fhir:v "preferred" ] ;
-         fhir:description [ fhir:v "XDS practiceSettingCode CI-SIS" ] ;
          fhir:valueSet [
            fhir:v "https://mos.esante.gouv.fr/NOS/JDV_J04-XdsPracticeSettingCode-CISIS/FHIR/JDV-J04-XdsPracticeSettingCode-CISIS"^^xsd:anyURI ;
            fhir:link <https://mos.esante.gouv.fr/NOS/JDV_J04-XdsPracticeSettingCode-CISIS/FHIR/JDV-J04-XdsPracticeSettingCode-CISIS>

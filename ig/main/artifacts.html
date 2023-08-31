@@ -431,12 +431,11 @@ Dans le cas d’une mise à jour d’un classeur, comme List.status ou List.entr
                      title="StructureDefinition/pdsm-simplified-publish">PDSm Simplified Publish</a>
                </td>
                <td>
-<p>Ce profil a été créé en s’inspirant du profil MHD Simplified. 
-Contrairement au profil PDSm_ComprehensiveDocumentReference, le document est directement inclus dans DocumentReference.attachment.data et non dans une ressource « Binary » externe.</p>
+<p>Ce profil est utilisé dans le cadre du flux 9 d’ajout simplifié de document. Le flux et le profil sont inspirés d’IHE MHD, transaction ITI-105.</p>
 
-<p>Ce profil est utilisé dans le cadre du flux 9. Le flux et le profil sont inspirés d’IHE MHD, version build au 03.10.22  : transaction ITI-105  et du profil SimplifiedPublish.DocumentReference.</p>
+<p>Contrairement au profil PDSm_ComprehensiveDocumentReference, le document est directement inclus dans DocumentReference.attachment.data et non dans une ressource « Binary » externe.</p>
 
-<p>La publication simplifiée est un simple POST d’une ressource DocumentReference conforme à ce profil.</p>
+<p>La publication simplifiée est une simple requête HTTP POST d’une ressource DocumentReference conforme à ce profil.</p>
 </td>
             </tr>
             <tr>
@@ -554,7 +553,7 @@ Contrairement au profil PDSm_ComprehensiveDocumentReference, le document est dir
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.pdsm#3.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 31, 2023 15:17+0000">2023-08-31</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.pdsm#3.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 31, 2023 15:22+0000">2023-08-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
