@@ -230,20 +230,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </ul>
 
 </div>
-<p>Ce flux permet l’ajout simplifié d’un document.</p>
-
-<p>Ces flux ont été modélisés en s’inspirant de la requête de la transaction IHE “Simplified Publish [ITI-105]” du profil MHD en développement au moment de la rédaction de cette spécification.</p>
+<p>Ce flux permet l’ajout simplifié d’un document en suivant la requête de la transaction IHE “Simplified Publish [ITI-105]” du profil MHD.</p>
 
 <h3 id="flux-09--ajout-simplifié-dun-document">Flux 09 : ajout simplifié d’un document</h3>
 
-<p>Concrètement, c’est une interaction « CREATE »  de l’API REST FHIR où le créateur de document va émettre une requête HTTP POST dont le corps contient une ressource de type DocumentReference. Un profil spécifique inspiré du profil IHE MHD en version build au 03.10.22 « SimplifiedPublish.DocumentReference » est créé pour ce volet et nommé PDSm_SimplifiedDocumentReference.</p>
+<p>Ce flux correspond à une interaction « CREATE » où le créateur de document va émettre une requête HTTP POST dont le corps contient une ressource de type DocumentReference. Un profil spécifique héritant du profil IHE MHD « SimplifiedPublish.DocumentReference » est créé pour ce volet et nommé PDSm_SimplifiedDocumentReference.</p>
 
 <p>Les ressources référencées à partir de ce profil (ex : Patient, via l’attribut PDSm_SimplifiedDocumentReference.subject) peuvent être  :</p>
+
 <ul>
   <li>Logiques, via le champ identifier</li>
   <li>Littérales,
     <ul>
-      <li>Avec une URL absolue ou relative si la ressource référencée est déjà existante au niveau du système cible</li>
+      <li>Avec une URL absolue ou relative si la ressource référencée est déjà existante au niveau du système cible.</li>
       <li>Avec une référence vers un fragment interne (via l’attribut contained). L’élément DocumentReference.contained [0..*] peut contenir l’ensemble des ressources référencées.</li>
     </ul>
   </li>
@@ -253,12 +252,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Le résultat de l’ajout simplifié d’un document doit être conforme au résultat de l’interaction HTTP « CREATE » de FHIR .
 En cas de succès, le serveur retourne :</p>
+
 <ul>
   <li>Le HTTP Code 201 Created</li>
   <li>Un body contenant la ressource créée avec les attributs ; id, lastUpdated et versionId mis à jour</li>
 </ul>
 
 <p>En cas d’erreur, le serveur retourne :</p>
+
 <ul>
   <li>un HTTP Code statut (400 Bad Request, 404 Not Found, 422 Unprocessable Entity, …)</li>
   <li>En cas d’erreur 422, le corps de la réponse devrait contenir la ressource OperationOutcome détaillant l’erreur.</li>
@@ -311,7 +312,7 @@ En cas de succès, le serveur retourne :</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.pdsm#3.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 29, 2023 16:46+0000">2023-08-29</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.pdsm#3.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 31, 2023 15:17+0000">2023-08-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
