@@ -1,0 +1,37 @@
+{
+  "resourceType" : "SearchParameter",
+  "id" : "PDSm-List-PractitionerRoleAsSource",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSm-List-PractitionerRoleAsSource",
+  "version" : "3.0.1",
+  "name" : "PDSmListPractitionerRoleAsSource",
+  "derivedFrom" : "http://hl7.org/fhir/SearchParameter/List-source",
+  "status" : "active",
+  "date" : "2021-07-30",
+  "publisher" : "ANS",
+  "contact" : [{
+    "name" : "ANS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Paramètre de recherche chaîné créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'élément source:PractitionerRole.practitioner:Practitioner.given et source:PractitionerRole.practitioner:Practitioner.family",
+  "code" : "source",
+  "base" : ["List"],
+  "type" : "reference",
+  "expression" : "List.source",
+  "xpathUsage" : "normal",
+  "target" : ["PractitionerRole"],
+  "multipleOr" : true,
+  "multipleAnd" : true,
+  "modifier" : ["exact",
+  "contains"],
+  "chain" : ["partOf.practitioner.given",
+  "partOf.practitioner.family",
+  "partOf.givenEx",
+  "partOf.familyEx"]
+}

@@ -1,0 +1,24 @@
+Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.pdsm.json	12682	-	0	0	0	0	0	0	5	506	0	0	0	0	0	0	0	0	0	0	171	259	0	0	0	3	0	0
+fsh-generated/resources/SearchParameter-PDSm-List-PatientAsSubject.json	811	11	0	0	0	0	0	0	0	31	0	0	0	0	0	0	0	0	0	0	6	47	0	0	0	1	0	0
+fsh-generated/resources/SearchParameter-PDSm-DocumentReference-period-end.json	839	10	1	0	0	0	0	0	0	12	0	0	0	0	0	0	0	0	0	0	11	30	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-pdsm-comprehensive-provide-document-bundle.json	3778	111	0	0	0	0	0	5526	0	5277	0	0	1	0	0	0	0	4	0	0	1007	6355	0	0	0	27	1	4
+fsh-generated/resources/Bundle-a9c10f8a-882d-4000-a280-7150e0aeb478.json	851	4	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	0	0	0	6	20	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-pdsm-is-archived.json	1835	68	0	0	0	0	0	171	0	159	0	0	0	0	0	0	0	0	0	0	21	213	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-pdsm-find-lists-response.json	2153	70	0	0	0	0	0	2282	0	2149	0	0	0	0	0	0	0	1	0	0	467	1932	0	0	0	12	0	1
+fsh-generated/resources/CapabilityStatement-PDSm-ProducteurDeDocuments.json	2020	4	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	9	35	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-pdsm-find-documentreferences-comprehensive-response.json	1820	37	0	0	0	0	0	1602	0	1552	0	0	0	0	0	0	0	1	0	0	281	1173	0	0	0	8	0	1
+fsh-generated/resources/StructureDefinition-pdsm-folder-comprehensive.json	6071	235	0	0	0	0	0	1054	0	994	0	0	0	0	0	0	0	1	0	0	174	853	0	0	0	6	0	0
+fsh-generated/resources/CapabilityStatement-PDSm-GestionnaireDePartageDeDocuments.json	12253	14	1	0	0	0	0	0	1	15	0	0	0	0	0	0	0	0	0	0	27	26	0	0	0	10	0	0
+fsh-generated/resources/SearchParameter-PDSm-List-PractitionerRoleAsSource.json	1065	3	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	5	14	0	0	0	0	0	0
+fsh-generated/resources/SearchParameter-PDSm-List-PatientAsSource.json	874	3	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	5	14	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-pdsm-submissionset-comprehensive.json	12958	395	0	0	0	0	0	1626	0	1557	0	0	0	0	0	0	0	1	0	0	270	1171	0	0	0	19	0	1
+fsh-generated/resources/SearchParameter-PDSm-DocumentReference-PatientAsSubject.json	914	4	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	5	16	0	0	0	0	0	0
+fsh-generated/resources/SearchParameter-PDSm-DocumentReference-PractitionerRoleAsAuthor.json	1230	3	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	5	13	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-pdsm-simplified-publish.json	17609	422	1	0	0	0	0	1684	0	1646	0	0	0	0	0	0	0	1	0	0	310	1455	0	0	0	21	1	0
+fsh-generated/resources/SearchParameter-PDSm-isArchived.json	701	2	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	4	10	0	0	0	1	0	0
+fsh-generated/resources/SearchParameter-PDSm-List-authorOrg.json	648	3	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	4	8	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-pdsm-comprehensive-document-reference.json	26901	629	0	0	0	0	0	2066	1	2031	0	0	1	0	0	0	0	1	0	0	384	1571	0	0	0	20	0	1
+fsh-generated/resources/CapabilityStatement-PDSm-ConsommateurDeDocuments.json	11854	13	0	0	0	0	0	0	0	14	0	0	0	0	0	0	0	0	0	0	26	14	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-PDSmintendedrecipient.json	1720	66	0	0	0	0	0	175	0	157	0	0	0	0	0	0	0	0	0	0	21	110	0	0	0	2	0	0
+fsh-generated/resources/SearchParameter-PDSm-DocumentReference-period-start.json	833	3	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	4	9	0	0	0	1	0	0

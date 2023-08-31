@@ -1,0 +1,35 @@
+{
+  "resourceType" : "SearchParameter",
+  "id" : "PDSm-List-PatientAsSource",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSm-List-PatientAsSource",
+  "version" : "3.0.1",
+  "name" : "PDSmListPatientAsSource",
+  "derivedFrom" : "http://hl7.org/fhir/SearchParameter/List-source",
+  "status" : "active",
+  "date" : "2021-07-30",
+  "publisher" : "ANS",
+  "contact" : [{
+    "name" : "ANS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Paramètre de recherche chaîné créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'élément source:Patient.given et source:Patient.family",
+  "code" : "source",
+  "base" : ["List"],
+  "type" : "reference",
+  "expression" : "List.source",
+  "xpathUsage" : "normal",
+  "target" : ["Patient"],
+  "multipleOr" : true,
+  "multipleAnd" : true,
+  "modifier" : ["exact",
+  "contains"],
+  "chain" : ["given",
+  "family"]
+}

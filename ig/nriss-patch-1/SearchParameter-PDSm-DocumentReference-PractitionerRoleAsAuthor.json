@@ -1,0 +1,36 @@
+{
+  "resourceType" : "SearchParameter",
+  "id" : "PDSm-DocumentReference-PractitionerRoleAsAuthor",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSm-DocumentReference-PractitionerRoleAsAuthor",
+  "version" : "3.0.1",
+  "name" : "PDSmDocumentReferencePractitionerRoleAsAuthor",
+  "derivedFrom" : "http://hl7.org/fhir/SearchParameter/DocumentReference-author",
+  "status" : "active",
+  "date" : "2021-10-21T14:14:41.3948746+00:00",
+  "publisher" : "ANS",
+  "contact" : [{
+    "name" : "ANS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Paramètre de recherche chaîné créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'élément author:PractitionerRole.practitioner:Practitioner.identifier, author:PractitionerRole.practitioner:Practitioner.given et author:PractitionerRole.practitioner:Practitioner.family",
+  "code" : "author",
+  "base" : ["DocumentReference"],
+  "type" : "reference",
+  "expression" : "DocumentReference.author",
+  "xpathUsage" : "normal",
+  "target" : ["PractitionerRole"],
+  "multipleOr" : true,
+  "multipleAnd" : true,
+  "chain" : ["partOf.practitioner.identifier",
+  "partOf.practitioner.given",
+  "partOf.practitioner.family",
+  "partOf.givenEx",
+  "partOf.familyEx"]
+}
