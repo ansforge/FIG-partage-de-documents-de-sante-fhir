@@ -42,8 +42,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"6"}
-    h3,h4,h5,h6{--heading-prefix:"6.0"}</style>
+    <style type="text/css">h2{--heading-prefix:"5"}
+    h3,h4,h5,h6{--heading-prefix:"5.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -163,7 +163,7 @@
     </ul>
   </li>
   <li>
-    <a href="about.html">A propos de ce guide</a>
+    <a target="_blank" href="https://interop.esante.gouv.fr/ig/documentation/">Documentation</a>
   </li>
 </ul>
             </div>  <!-- /.nav-collapse -->
@@ -181,7 +181,7 @@
 
           <span style="float:right;">
 
-            <a href="about.html">&lt;prev</a> | 
+            <a href="downloads.html">&lt;prev</a> | 
 
             <a href="#bottom">bottom</a>
 
@@ -368,33 +368,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Paramètre de recherche chaîné créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l’élément source:PractitionerRole.practitioner:Practitioner.given et source:PractitionerRole.practitioner:Practitioner.family</p>
 </td>
             </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-PDSm-PractitionerRole-family-ex.html"
-                     title="SearchParameter/PDSm-PractitionerRole-family-ex">PDSm-PractitionerRole-family-ex</a>
-               </td>
-               <td>
-<p>Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l’extension PractitionerRoleName qui permet de préciser le nom d’exercice d’un professionnel (family)</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-PDSm-PractitionerRole-given-ex.html"
-                     title="SearchParameter/PDSm-PractitionerRole-given-ex">PDSm-PractitionerRole-given-ex</a>
-               </td>
-               <td>
-<p>Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l’extension PractitionerRoleName qui permet de préciser le nom d’exercice d’un professionnel (given)</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-PDSm-PractitionerRole-partOf.html"
-                     title="SearchParameter/PDSm-PractitionerRole-partOf">PDSm-PractitionerRole-partOf</a>
-               </td>
-               <td>
-<p>Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l’extension partof qui permet de faire référence à l’exercice professionnel depuis la situation d’exercice</p>
-</td>
-            </tr>
          </tbody>
       </table>
    </p>
@@ -449,7 +422,7 @@ Dans le cas d’une mise à jour d’un classeur, comme List.status ou List.entr
                      title="StructureDefinition/pdsm-folder-comprehensive">PDSm Folder Comprehensive</a>
                </td>
                <td>
-<p>Profil spécifique dérivé du profil IHE MHD v4.0.1 « Comprehensive Folder  » créé pour le volet ANS “Partage de documents de santé en mobilité” ; ce profil concerne le classeur.</p>
+<p>Profil spécifique dérivé du profil IHE MHD « Comprehensive Folder » créé pour le volet ANS “Partage de documents de santé en mobilité” ; ce profil concerne le classeur.</p>
 </td>
             </tr>
             <tr>
@@ -458,12 +431,11 @@ Dans le cas d’une mise à jour d’un classeur, comme List.status ou List.entr
                      title="StructureDefinition/pdsm-simplified-publish">PDSm Simplified Publish</a>
                </td>
                <td>
-<p>Ce profil a été créé en s’inspirant du profil MHD Simplified. 
-Contrairement au profil PDSm_ComprehensiveDocumentReference, le document est directement inclus dans DocumentReference.attachment.data et non dans une ressource « Binary » externe.</p>
+<p>Ce profil est utilisé dans le cadre du flux 9 d’ajout simplifié de document. Le flux et le profil sont inspirés d’IHE MHD, transaction ITI-105.</p>
 
-<p>Ce profil est utilisé dans le cadre du flux 9. Le flux et le profil sont inspirés d’IHE MHD, version build au 03.10.22  : transaction ITI-105  et du profil SimplifiedPublish.DocumentReference.</p>
+<p>Contrairement au profil PDSm_ComprehensiveDocumentReference, le document est directement inclus dans DocumentReference.attachment.data et non dans une ressource « Binary » externe.</p>
 
-<p>La publication simplifiée est un simple POST d’une ressource DocumentReference conforme à ce profil.</p>
+<p>La publication simplifiée est une simple requête HTTP POST d’une ressource DocumentReference conforme à ce profil.</p>
 </td>
             </tr>
             <tr>
@@ -472,7 +444,7 @@ Contrairement au profil PDSm_ComprehensiveDocumentReference, le document est dir
                      title="StructureDefinition/pdsm-submissionset-comprehensive">PDSm SubmissionSet Comprehensive</a>
                </td>
                <td>
-<p>Profil spécifique dérivé du profil IHE MHD v4.0.1 « ComprehensiveSubmissionSet  » créé pour le volet ANS “Partage de documents de santé en mobilité” ; ce profil concerne le lot de soumission.</p>
+<p>Profil spécifique dérivé du profil IHE MHD « ComprehensiveSubmissionSet » créé pour le volet ANS “Partage de documents de santé en mobilité” ; ce profil concerne le lot de soumission.</p>
 </td>
             </tr>
             <tr>
@@ -563,7 +535,7 @@ Contrairement au profil PDSm_ComprehensiveDocumentReference, le document est dir
             <tr>
               <td style="text-align:left">&#xA0;
 
-                <a href="about.html">&lt;prev</a>
+                <a href="downloads.html">&lt;prev</a>
 
               </td>
               <td style="text-align:center">
@@ -581,7 +553,7 @@ Contrairement au profil PDSm_ComprehensiveDocumentReference, le document est dir
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.pdsm#3.1.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 27, 2023 13:11+0000">2023-07-27</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.pdsm#3.1.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Sep 1, 2023 08:02+0000">2023-09-01</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -3,8 +3,7 @@
 <SearchParameter xmlns="http://hl7.org/fhir">
   <id value="PDSm-DocumentReference-period-start"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>PDSmDocumentReferencePeriodStart</h2><p>Parameter <code>period-start</code>:<code>date</code></p><div><p>Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'élément context.period.start correspondant à lobjet dateDebutActe</p>
-</div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R4/documentreference.html">DocumentReference</a></td></tr><tr><td>Expression</td><td><code>DocumentReference.context.period.start</code></td></tr><tr><td>Multiples</td><td>The parameter can repeat (and) and can have repeating values (or)</td></tr><tr><td>Comparators</td><td>Allowed: eq, ne, gt, lt, ge, le, sa, eb, ap</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
   </text>
   <url value="https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSm-DocumentReference-period-start"/>
   <version value="3.1.0-ballot"/>
@@ -26,13 +25,4 @@
   <expression value="DocumentReference.context.period.start"/>
   <multipleOr value="true"/>
   <multipleAnd value="true"/>
-  <comparator value="eq"/>
-  <comparator value="ne"/>
-  <comparator value="gt"/>
-  <comparator value="lt"/>
-  <comparator value="ge"/>
-  <comparator value="le"/>
-  <comparator value="sa"/>
-  <comparator value="eb"/>
-  <comparator value="ap"/>
 </SearchParameter>

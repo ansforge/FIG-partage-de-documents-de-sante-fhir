@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "5323ed94-5917-40cd-a3b3-949a33f2c581-21",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/5323ed94-5917-40cd-a3b3-949a33f2c581-21",
+  "id" : "1dc67d73-6421-4c0c-96fd-ff10132e2c8e-45",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/1dc67d73-6421-4c0c-96fd-ff10132e2c8e-45",
   "name" : "IntersectionPDSm_FolderComprehensiveAndPDSm_FolderComprehensive",
   "title" : "Intersection of PDSm Folder Comprehensive And PDSm Folder Comprehensive",
   "status" : "active",
-  "date" : "2023-07-27T13:12:35+00:00",
+  "date" : "2023-09-01T08:03:23+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "List",
@@ -510,16 +510,18 @@
     },
     {
       "path" : "List.contained",
-      "short" : "Information about an individual or animal receiving health care services",
-      "definition" : "Demographics and other administrative information about an individual or animal receiving care or other health-related services.",
+      "short" : "left: Information about an individual or animal receiving health care services; right: Contained, inline Resources",
+      "definition" : "left: Demographics and other administrative information about an individual or animal receiving care or other health-related services.; right: These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.",
       "comment" : "This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again. Contained resources may have profiles and tags In their meta elements, but SHALL NOT have security labels.",
-      "alias" : ["SubjectOfCare Client Resident"],
+      "alias" : ["SubjectOfCare Client Resident",
+      "inline resources",
+      "anonymous resources",
+      "contained resources"],
       "min" : 1,
       "max" : "*",
       "type" : [{
         "code" : "Patient",
-        "profile" : ["http://interopsante.org/fhir/StructureDefinition/FrPatient",
-        "#sd-fr-patient-fr-patient"]
+        "profile" : ["http://interopsante.org/fhir/StructureDefinition/FrPatient"]
       }],
       "constraint" : [{
         "extension" : [{
@@ -598,6 +600,10 @@
       {
         "identity" : "cda",
         "map" : "ClinicalDocument.recordTarget.patientRole"
+      },
+      {
+        "identity" : "rim",
+        "map" : "N/A"
       }]
     },
     {

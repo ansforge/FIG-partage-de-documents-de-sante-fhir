@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "5323ed94-5917-40cd-a3b3-949a33f2c581-6",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/5323ed94-5917-40cd-a3b3-949a33f2c581-6",
+  "id" : "1dc67d73-6421-4c0c-96fd-ff10132e2c8e-30",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/1dc67d73-6421-4c0c-96fd-ff10132e2c8e-30",
   "name" : "IntersectionPDSm_ComprehensiveDocumentReferenceAndPDSm_ComprehensiveDocumentReference",
   "title" : "Intersection of PDSm Comprehensive DocumentReference And PDSm Comprehensive DocumentReference",
   "status" : "active",
-  "date" : "2023-07-27T13:12:35+00:00",
+  "date" : "2023-09-01T08:03:23+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "DocumentReference",
@@ -225,7 +225,7 @@
     },
     {
       "path" : "DocumentReference.meta.versionId",
-      "short" : "Numéro de version de la fiche d’un document attribué par le système cible. La valeur de la métadonnée version est égale à 1 pour la première version de la fiche. Cet élément est requis lorsque le flux envoyé correspond à une mise à jour des données d’une fiche.",
+      "short" : "left: Numéro de version de la fiche d’un document attribués par le système cible. La valeur de la métadonnée version est égale à 1 pour la première version de la fiche.; right: Numéro de version de la fiche d’un document attribué par le système cible. La valeur de la métadonnée version est égale à 1 pour la première version de la fiche. Cet élément est requis lorsque le flux envoyé correspond à une mise à jour des données d’une fiche.",
       "definition" : "The version specific identifier, as it appears in the version portion of the URL. This value changes when the resource is created, updated, or deleted.",
       "comment" : "The server assigns this value, and ignores what the client specifies, except in the case that the server is imposing version integrity on updates/deletes.",
       "min" : 0,
@@ -243,6 +243,13 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "constr-cdr-maj",
+        "severity" : "error",
+        "human" : "Elément requis lorsque le flux envoyé correspond à une mise à jour des données d’une fiche",
+        "expression" : "f:meta/f:versionId",
+        "source" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"
       }],
       "mustSupport" : true,
       "isModifier" : false,
@@ -498,7 +505,7 @@
     },
     {
       "path" : "DocumentReference.contained",
-      "short" : "Contained, inline Resources",
+      "short" : "left: Contained, inline Resources; right: Ressource contenue. Dans le cadre de ce profil, il est obligatoire qu'il y ait au moins une ressource contenue : la•les ressource•s référencée•s dans les attributs author et authenticator",
       "definition" : "These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.",
       "comment" : "This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again. Contained resources may have profiles and tags In their meta elements, but SHALL NOT have security labels.",
       "alias" : ["inline resources",
@@ -507,7 +514,24 @@
       "min" : 1,
       "max" : "*",
       "type" : [{
-        "code" : "Resource"
+        "code" : "Patient",
+        "profile" : ["http://interopsante.org/fhir/StructureDefinition/FrPatient"]
+      },
+      {
+        "code" : "Device"
+      },
+      {
+        "code" : "PractitionerRole",
+        "profile" : ["https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass",
+        "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-professionalRole-rass"]
+      },
+      {
+        "code" : "Organization",
+        "profile" : ["https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/organization-rass"]
+      },
+      {
+        "code" : "Practitioner",
+        "profile" : ["https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitioner-rass"]
       }],
       "mustSupport" : true,
       "isModifier" : false,
@@ -827,6 +851,7 @@
       "isSummary" : true,
       "binding" : {
         "strength" : "preferred",
+        "description" : "XDS typeCode CI-SIS",
         "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS"
       },
       "mapping" : [{
@@ -934,7 +959,7 @@
     },
     {
       "path" : "DocumentReference.subject",
-      "short" : "Référence vers le patient concerné par le document.",
+      "short" : "left: Représente l'identifiant du patient.; right: Référence vers le patient concerné par le document. Cette même ressource est référencée depuis context.sourcePatientInfo.",
       "definition" : "Who or what the document is about. The document can be about a person, (patient or healthcare practitioner), a device (e.g. a machine) or even a group of subjects (such as a document about a herd of farm animals, or a set of patients that share a common exposure).",
       "min" : 1,
       "max" : "1",
@@ -1057,7 +1082,8 @@
         "code" : "Reference",
         "targetProfile" : ["https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass",
         "http://hl7.org/fhir/StructureDefinition/Device",
-        "http://interopsante.org/fhir/StructureDefinition/FrPatient"],
+        "http://interopsante.org/fhir/StructureDefinition/FrPatient",
+        "#sd-67570c29-fc6d-41d1-a2d6-e65459b7039c-as-practitionerrole"],
         "aggregation" : ["contained"]
       }],
       "constraint" : [{
@@ -1124,7 +1150,8 @@
       "type" : [{
         "code" : "Reference",
         "targetProfile" : ["https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass",
-        "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/organization-rass"],
+        "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/organization-rass",
+        "#sd-67570c29-fc6d-41d1-a2d6-e65459b7039c-as-practitionerrole"],
         "aggregation" : ["contained"]
       }],
       "constraint" : [{

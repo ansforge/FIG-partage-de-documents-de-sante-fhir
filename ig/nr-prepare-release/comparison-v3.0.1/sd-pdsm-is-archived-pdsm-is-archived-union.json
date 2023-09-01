@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "5323ed94-5917-40cd-a3b3-949a33f2c581-35",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/5323ed94-5917-40cd-a3b3-949a33f2c581-35",
+  "id" : "1dc67d73-6421-4c0c-96fd-ff10132e2c8e-47",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/1dc67d73-6421-4c0c-96fd-ff10132e2c8e-47",
   "name" : "UnionPDSm_IsArchivedAndPDSm_IsArchived",
   "title" : "Union of PDSm_isArchived And PDSm_isArchived",
   "status" : "active",
-  "date" : "2023-07-27T13:12:35+00:00",
+  "date" : "2023-09-01T08:03:23+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "Extension",

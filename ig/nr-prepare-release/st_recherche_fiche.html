@@ -163,7 +163,7 @@
     </ul>
   </li>
   <li>
-    <a href="about.html">A propos de ce guide</a>
+    <a target="_blank" href="https://interop.esante.gouv.fr/ig/documentation/">Documentation</a>
   </li>
 </ul>
             </div>  <!-- /.nav-collapse -->
@@ -394,33 +394,27 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </thead>
   <tbody>
     <tr>
-      <td><a href="SearchParameter-PDSm-PractitionerRole-given-ex.html">given-ex</a>*</td>
+      <td>name</td>
       <td>token</td>
-      <td>Recherche sur le prénom de l’auteur</td>
-    </tr>
-    <tr>
-      <td><a href="SearchParameter-PDSm-PractitionerRole-family-ex.html">family-ex</a>*</td>
-      <td>token</td>
-      <td>Recherche sur le nom de l’auteur</td>
+      <td>Recherche sur le nom ou le prénom de l’auteur</td>
     </tr>
   </tbody>
 </table>
 
-<p>* Paramètre de recherche créé pour le volet PDSm</p>
-
 <p>Ci-dessous un exemple de requête :</p>
 
 <ul>
-  <li>Rechercher les ressources de type DocumentReference du patient ayant l’identifiant 32659.
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET http://targetsystem.com/API/DocumentReference?patient.identifier=32659 HTTP/1.1
-</code></pre></div>    </div>
-  </li>
+  <li>Rechercher les ressources de type DocumentReference du patient ayant l’identifiant 32659.</li>
 </ul>
 
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET http://targetsystem.com/API/DocumentReference?patient.identifier=32659 HTTP/1.1
+</code></pre></div></div>
+
 <h3 id="flux-06b--réponse-au-flux-05-b">Flux 06b : réponse au flux 05-b</h3>
+
 <p>Il s’agit du résultat de la recherche de documents retourné par le gestionnaire de partage de documents. La recherche de fiches retourne les ressources DocumentReference qui correspondent aux critères de recherche fournis par le consommateur de documents. On retrouve les mêmes éléments qui constituent les fiches que lors de la demande d’ajout d’un lot de documents.</p>
 
-<p>Un profil spécifique dérivé du profil IHE MHD v4.0.1 « FindDocumentReferencesComprehensiveResponse » est créé pour ce volet et nommé <a href="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-find-documentreferences-comprehensive-response">PDSm_FindDocumentReferencesComprehensiveResponse</a>. Il contient zéro ou plusieurs ressources DocumentReference répondants aux critères de la requête.</p>
+<p>Un profil spécifique dérivé du profil IHE MHD « FindDocumentReferencesComprehensiveResponse » est créé pour ce volet et nommé <a href="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-find-documentreferences-comprehensive-response">PDSm_FindDocumentReferencesComprehensiveResponse</a>. Il contient zéro ou plusieurs ressources DocumentReference répondants aux critères de la requête.</p>
 
 <p>Ce flux correspond à la réponse à la requête reposant sur l’interaction « search » du flux précédent.
 En cas de succès, le gestionnaire de partage de documents retourne un code <code class="language-plaintext highlighter-rouge">HTTP 200 OK</code> ainsi qu’un Bundle de type searchset.</p>
@@ -475,7 +469,7 @@ Si le gestionnaire de partage de documents doit reporter une erreur, il doit uti
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.pdsm#3.1.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 27, 2023 13:11+0000">2023-07-27</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.pdsm#3.1.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Sep 1, 2023 08:02+0000">2023-09-01</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

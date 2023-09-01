@@ -10,14 +10,14 @@
   fhir:id [ fhir:v "ans.fhir.fr.pdsm"] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>PDSm</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/fhir/pdsm/ImplementationGuide/ans.fhir.fr.pdsm</pre></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
   ] ; # 
   fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/ImplementationGuide/ans.fhir.fr.pdsm"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "3.1.0-ballot"] ; # 
   fhir:name [ fhir:v "PDSm"] ; # 
   fhir:title [ fhir:v "Partage de Documents de Santé en mobilité (PDSm)"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-07-27T13:11:24+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-09-01T08:02:25+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -62,13 +62,13 @@
      fhir:packageId [ fhir:v "ihe.iti.mhd" ] ;
      fhir:version [ fhir:v "4.2.0" ]
   ] [
-     fhir:id [ fhir:v "ans_annuaire_fhir_r4" ] ;
+     fhir:id [ fhir:v "ans_fhir_fr_annuaire" ] ;
      fhir:uri [
-       fhir:v "http://fhir.org/packages/ans.annuaire.fhir.r4/ImplementationGuide/ans.annuaire.fhir.r4"^^xsd:anyURI ;
-       fhir:link <http://fhir.org/packages/ans.annuaire.fhir.r4/ImplementationGuide/ans.annuaire.fhir.r4>
+       fhir:v "https://interop.esante.gouv.fr/ig/fhir/annuaire/ImplementationGuide/ans.fhir.fr.annuaire"^^xsd:anyURI ;
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/annuaire/ImplementationGuide/ans.fhir.fr.annuaire>
      ] ;
-     fhir:packageId [ fhir:v "ans.annuaire.fhir.r4" ] ;
-     fhir:version [ fhir:v "0.2.0" ]
+     fhir:packageId [ fhir:v "ans.fhir.fr.annuaire" ] ;
+     fhir:version [ fhir:v "1.0.0-ballot-2" ]
   ] [
      fhir:id [ fhir:v "hl7_fhir_fr_core" ] ;
      fhir:uri [
@@ -590,7 +590,7 @@
          fhir:reference [ fhir:v "StructureDefinition/pdsm-folder-comprehensive" ]
        ] ;
        fhir:name [ fhir:v "PDSm Folder Comprehensive" ] ;
-       fhir:description [ fhir:v "Profil spécifique dérivé du profil IHE MHD v4.0.1 « Comprehensive Folder  » créé pour le volet ANS \"Partage de documents de santé en mobilité\" ; ce profil concerne le classeur." ] ;
+       fhir:description [ fhir:v "Profil spécifique dérivé du profil IHE MHD « Comprehensive Folder » créé pour le volet ANS \"Partage de documents de santé en mobilité\" ; ce profil concerne le classeur." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -602,7 +602,7 @@
          fhir:reference [ fhir:v "StructureDefinition/pdsm-simplified-publish" ]
        ] ;
        fhir:name [ fhir:v "PDSm Simplified Publish" ] ;
-       fhir:description [ fhir:v "Ce profil a été créé en s'inspirant du profil MHD Simplified. \nContrairement au profil PDSm_ComprehensiveDocumentReference, le document est directement inclus dans DocumentReference.attachment.data et non dans une ressource « Binary » externe.\n\nCe profil est utilisé dans le cadre du flux 9. Le flux et le profil sont inspirés d’IHE MHD, version build au 03.10.22  : transaction ITI-105  et du profil SimplifiedPublish.DocumentReference.\n\nLa publication simplifiée est un simple POST d'une ressource DocumentReference conforme à ce profil." ] ;
+       fhir:description [ fhir:v "Ce profil est utilisé dans le cadre du flux 9 d'ajout simplifié de document. Le flux et le profil sont inspirés d’IHE MHD, transaction ITI-105.\n\nContrairement au profil PDSm_ComprehensiveDocumentReference, le document est directement inclus dans DocumentReference.attachment.data et non dans une ressource « Binary » externe.\n\nLa publication simplifiée est une simple requête HTTP POST d'une ressource DocumentReference conforme à ce profil." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -614,7 +614,7 @@
          fhir:reference [ fhir:v "StructureDefinition/pdsm-submissionset-comprehensive" ]
        ] ;
        fhir:name [ fhir:v "PDSm SubmissionSet Comprehensive" ] ;
-       fhir:description [ fhir:v "Profil spécifique dérivé du profil IHE MHD v4.0.1 « ComprehensiveSubmissionSet  » créé pour le volet ANS \"Partage de documents de santé en mobilité\" ; ce profil concerne le lot de soumission." ] ;
+       fhir:description [ fhir:v "Profil spécifique dérivé du profil IHE MHD « ComprehensiveSubmissionSet » créé pour le volet ANS \"Partage de documents de santé en mobilité\" ; ce profil concerne le lot de soumission." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -747,42 +747,6 @@
        ] ;
        fhir:name [ fhir:v "PDSm-List-PractitionerRoleAsSource" ] ;
        fhir:description [ fhir:v "Paramètre de recherche chaîné créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'élément source:PractitionerRole.practitioner:Practitioner.given et source:PractitionerRole.practitioner:Practitioner.family" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "SearchParameter" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSm-PractitionerRole-family-ex> ;
-         fhir:reference [ fhir:v "SearchParameter/PDSm-PractitionerRole-family-ex" ]
-       ] ;
-       fhir:name [ fhir:v "PDSm-PractitionerRole-family-ex" ] ;
-       fhir:description [ fhir:v "Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'extension PractitionerRoleName qui permet de préciser le nom d'exercice d'un professionnel (family)" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "SearchParameter" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSm-PractitionerRole-given-ex> ;
-         fhir:reference [ fhir:v "SearchParameter/PDSm-PractitionerRole-given-ex" ]
-       ] ;
-       fhir:name [ fhir:v "PDSm-PractitionerRole-given-ex" ] ;
-       fhir:description [ fhir:v "Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'extension PractitionerRoleName qui permet de préciser le nom d'exercice d'un professionnel (given)" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "SearchParameter" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSm-PractitionerRole-partOf> ;
-         fhir:reference [ fhir:v "SearchParameter/PDSm-PractitionerRole-partOf" ]
-       ] ;
-       fhir:name [ fhir:v "PDSm-PractitionerRole-partOf" ] ;
-       fhir:description [ fhir:v "Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'extension partof qui permet de faire référence à l'exercice professionnel depuis la situation d'exercice" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -988,14 +952,6 @@
            fhir:title [ fhir:v "Téléchargements et usages" ] ;
            fhir:generation [ fhir:v "markdown" ]
          ] )
-       ] [
-         fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "about.html"^^xsd:anyURI ]
-         ] ) ;
-         fhir:name [ fhir:v "about.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "A propos de ce guide" ] ;
-         fhir:generation [ fhir:v "markdown" ]
        ] )
      ] ;
      fhir:parameter ( [

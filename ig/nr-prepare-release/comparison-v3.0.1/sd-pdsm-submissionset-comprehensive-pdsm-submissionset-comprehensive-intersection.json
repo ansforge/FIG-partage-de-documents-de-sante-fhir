@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "5323ed94-5917-40cd-a3b3-949a33f2c581-42",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/5323ed94-5917-40cd-a3b3-949a33f2c581-42",
+  "id" : "1dc67d73-6421-4c0c-96fd-ff10132e2c8e-54",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/1dc67d73-6421-4c0c-96fd-ff10132e2c8e-54",
   "name" : "IntersectionPDSm_SubmissionSetComprehensiveAndPDSm_SubmissionSetComprehensive",
   "title" : "Intersection of PDSm SubmissionSet Comprehensive And PDSm SubmissionSet Comprehensive",
   "status" : "active",
-  "date" : "2023-07-27T13:12:35+00:00",
+  "date" : "2023-09-01T08:03:23+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "List",
@@ -510,7 +510,7 @@
     },
     {
       "path" : "List.contained",
-      "short" : "Contained, inline Resources",
+      "short" : "left: Contained, inline Resources; right: Ressource contenue. Dans le cadre de ce profil, il est obligatoire qu'il y ait au moins une ressource contenue : source ou source.extension[authorOrg]",
       "definition" : "These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.",
       "comment" : "This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again. Contained resources may have profiles and tags In their meta elements, but SHALL NOT have security labels.",
       "alias" : ["inline resources",
@@ -519,7 +519,24 @@
       "min" : 1,
       "max" : "*",
       "type" : [{
-        "code" : "Resource"
+        "code" : "Practitioner",
+        "profile" : ["https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitioner-rass"]
+      },
+      {
+        "code" : "Organization",
+        "profile" : ["https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/organization-rass"]
+      },
+      {
+        "code" : "Patient",
+        "profile" : ["http://interopsante.org/fhir/StructureDefinition/FrPatient"]
+      },
+      {
+        "code" : "PractitionerRole",
+        "profile" : ["https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass",
+        "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-professionalRole-rass"]
+      },
+      {
+        "code" : "Device"
       }],
       "mustSupport" : true,
       "isModifier" : false,
@@ -809,7 +826,7 @@
     },
     {
       "path" : "List.subject",
-      "short" : "Référence vers la ressource Patient titulaire du dossier.",
+      "short" : "left: Référence vers la ressource Patient contained titulaire du dossier.; right: Référence vers la ressource Patient titulaire du dossier.",
       "definition" : "The common subject (or patient) of the resources that are in the list if there is one.",
       "comment" : "Some purely arbitrary lists do not have a common subject, so this is optional.",
       "requirements" : "The primary purpose of listing the subject explicitly is to help with finding the right list.",
@@ -935,7 +952,7 @@
     },
     {
       "path" : "List.source",
-      "short" : "Représente les personnes physiques ou morales et/ou les dispositifs auteurs d’un lot de soumission.",
+      "short" : "left: Représente les personnes physiques ou morales et/ou les dispositifs auteurs d’un lot de soumission.; right: Représente l'auteur du lot de soumission. Si l'auteur est une organisation, utiliser l'extension authorOrg. Si l’auteur est une personne physique ou un dispositif, utiliser l’attribut source.reference .",
       "definition" : "The entity responsible for deciding what the contents of the list were. Where the list was created by a human, this is the same as the author of the list.",
       "comment" : "The primary source is the entity that made the decisions what items are in the list. This may be software or user.",
       "requirements" : "Allows follow-up as well as context.",
@@ -946,7 +963,8 @@
         "code" : "Reference",
         "targetProfile" : ["https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass",
         "http://hl7.org/fhir/StructureDefinition/Device",
-        "http://interopsante.org/fhir/StructureDefinition/FrPatient"],
+        "http://interopsante.org/fhir/StructureDefinition/FrPatient",
+        "#sd-67570c29-fc6d-41d1-a2d6-e65459b7039c-as-practitionerrole"],
         "aggregation" : ["contained"]
       }],
       "constraint" : [{

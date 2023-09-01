@@ -3,14 +3,14 @@
   "id" : "ans.fhir.fr.pdsm",
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>PDSm</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/fhir/pdsm/ImplementationGuide/ans.fhir.fr.pdsm</pre></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/ImplementationGuide/ans.fhir.fr.pdsm",
   "version" : "3.1.0-ballot",
   "name" : "PDSm",
   "title" : "Partage de Documents de Santé en mobilité (PDSm)",
   "status" : "active",
-  "date" : "2023-07-27T13:11:24+00:00",
+  "date" : "2023-09-01T08:02:25+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -49,10 +49,10 @@
     "version" : "4.2.0"
   },
   {
-    "id" : "ans_annuaire_fhir_r4",
-    "uri" : "http://fhir.org/packages/ans.annuaire.fhir.r4/ImplementationGuide/ans.annuaire.fhir.r4",
-    "packageId" : "ans.annuaire.fhir.r4",
-    "version" : "0.2.0"
+    "id" : "ans_fhir_fr_annuaire",
+    "uri" : "https://interop.esante.gouv.fr/ig/fhir/annuaire/ImplementationGuide/ans.fhir.fr.annuaire",
+    "packageId" : "ans.fhir.fr.annuaire",
+    "version" : "1.0.0-ballot-2"
   },
   {
     "id" : "hl7_fhir_fr_core",
@@ -671,7 +671,7 @@
         "reference" : "StructureDefinition/pdsm-folder-comprehensive"
       },
       "name" : "PDSm Folder Comprehensive",
-      "description" : "Profil spécifique dérivé du profil IHE MHD v4.0.1 « Comprehensive Folder  » créé pour le volet ANS \"Partage de documents de santé en mobilité\" ; ce profil concerne le classeur.",
+      "description" : "Profil spécifique dérivé du profil IHE MHD « Comprehensive Folder » créé pour le volet ANS \"Partage de documents de santé en mobilité\" ; ce profil concerne le classeur.",
       "exampleBoolean" : false
     },
     {
@@ -683,7 +683,7 @@
         "reference" : "StructureDefinition/pdsm-simplified-publish"
       },
       "name" : "PDSm Simplified Publish",
-      "description" : "Ce profil a été créé en s'inspirant du profil MHD Simplified. \nContrairement au profil PDSm_ComprehensiveDocumentReference, le document est directement inclus dans DocumentReference.attachment.data et non dans une ressource « Binary » externe.\n\nCe profil est utilisé dans le cadre du flux 9. Le flux et le profil sont inspirés d’IHE MHD, version build au 03.10.22  : transaction ITI-105  et du profil SimplifiedPublish.DocumentReference.\n\nLa publication simplifiée est un simple POST d'une ressource DocumentReference conforme à ce profil.",
+      "description" : "Ce profil est utilisé dans le cadre du flux 9 d'ajout simplifié de document. Le flux et le profil sont inspirés d’IHE MHD, transaction ITI-105.\n\nContrairement au profil PDSm_ComprehensiveDocumentReference, le document est directement inclus dans DocumentReference.attachment.data et non dans une ressource « Binary » externe.\n\nLa publication simplifiée est une simple requête HTTP POST d'une ressource DocumentReference conforme à ce profil.",
       "exampleBoolean" : false
     },
     {
@@ -695,7 +695,7 @@
         "reference" : "StructureDefinition/pdsm-submissionset-comprehensive"
       },
       "name" : "PDSm SubmissionSet Comprehensive",
-      "description" : "Profil spécifique dérivé du profil IHE MHD v4.0.1 « ComprehensiveSubmissionSet  » créé pour le volet ANS \"Partage de documents de santé en mobilité\" ; ce profil concerne le lot de soumission.",
+      "description" : "Profil spécifique dérivé du profil IHE MHD « ComprehensiveSubmissionSet » créé pour le volet ANS \"Partage de documents de santé en mobilité\" ; ce profil concerne le lot de soumission.",
       "exampleBoolean" : false
     },
     {
@@ -828,42 +828,6 @@
       },
       "name" : "PDSm-List-PractitionerRoleAsSource",
       "description" : "Paramètre de recherche chaîné créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'élément source:PractitionerRole.practitioner:Practitioner.given et source:PractitionerRole.practitioner:Practitioner.family",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/PDSm-PractitionerRole-family-ex"
-      },
-      "name" : "PDSm-PractitionerRole-family-ex",
-      "description" : "Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'extension PractitionerRoleName qui permet de préciser le nom d'exercice d'un professionnel (family)",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/PDSm-PractitionerRole-given-ex"
-      },
-      "name" : "PDSm-PractitionerRole-given-ex",
-      "description" : "Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'extension PractitionerRoleName qui permet de préciser le nom d'exercice d'un professionnel (given)",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/PDSm-PractitionerRole-partOf"
-      },
-      "name" : "PDSm-PractitionerRole-partOf",
-      "description" : "Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'extension partof qui permet de faire référence à l'exercice professionnel depuis la situation d'exercice",
       "exampleBoolean" : false
     },
     {
@@ -1083,15 +1047,6 @@
           "title" : "Téléchargements et usages",
           "generation" : "markdown"
         }]
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "about.html"
-        }],
-        "nameUrl" : "about.html",
-        "title" : "A propos de ce guide",
-        "generation" : "markdown"
       }]
     },
     "parameter" : [{

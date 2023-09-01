@@ -3,14 +3,14 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="ans.fhir.fr.pdsm"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>PDSm</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/fhir/pdsm/ImplementationGuide/ans.fhir.fr.pdsm</pre></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
   </text>
   <url value="https://interop.esante.gouv.fr/ig/fhir/pdsm/ImplementationGuide/ans.fhir.fr.pdsm"/>
   <version value="3.1.0-ballot"/>
   <name value="PDSm"/>
   <title value="Partage de Documents de Santé en mobilité (PDSm)"/>
   <status value="active"/>
-  <date value="2023-07-27T13:11:24+00:00"/>
+  <date value="2023-09-01T08:02:25+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -43,10 +43,10 @@
     <packageId value="ihe.iti.mhd"/>
     <version value="4.2.0"/>
   </dependsOn>
-  <dependsOn id="ans_annuaire_fhir_r4">
-    <uri value="http://fhir.org/packages/ans.annuaire.fhir.r4/ImplementationGuide/ans.annuaire.fhir.r4"/>
-    <packageId value="ans.annuaire.fhir.r4"/>
-    <version value="0.2.0"/>
+  <dependsOn id="ans_fhir_fr_annuaire">
+    <uri value="https://interop.esante.gouv.fr/ig/fhir/annuaire/ImplementationGuide/ans.fhir.fr.annuaire"/>
+    <packageId value="ans.fhir.fr.annuaire"/>
+    <version value="1.0.0-ballot-2"/>
   </dependsOn>
   <dependsOn id="hl7_fhir_fr_core">
     <uri value="http://fhir.org/packages/hl7.fhir.fr.core/ImplementationGuide/hl7.fhir.fr.core"/>
@@ -508,7 +508,7 @@
         <reference value="StructureDefinition/pdsm-folder-comprehensive"/>
       </reference>
       <name value="PDSm Folder Comprehensive"/>
-      <description value="Profil spécifique dérivé du profil IHE MHD v4.0.1 « Comprehensive Folder  » créé pour le volet ANS &quot;Partage de documents de santé en mobilité&quot; ; ce profil concerne le classeur."/>
+      <description value="Profil spécifique dérivé du profil IHE MHD « Comprehensive Folder » créé pour le volet ANS &quot;Partage de documents de santé en mobilité&quot; ; ce profil concerne le classeur."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -519,7 +519,7 @@
         <reference value="StructureDefinition/pdsm-simplified-publish"/>
       </reference>
       <name value="PDSm Simplified Publish"/>
-      <description value="Ce profil a été créé en s'inspirant du profil MHD Simplified. &#xA;Contrairement au profil PDSm_ComprehensiveDocumentReference, le document est directement inclus dans DocumentReference.attachment.data et non dans une ressource « Binary » externe.&#xA;&#xA;Ce profil est utilisé dans le cadre du flux 9. Le flux et le profil sont inspirés d’IHE MHD, version build au 03.10.22  : transaction ITI-105  et du profil SimplifiedPublish.DocumentReference.&#xA;&#xA;La publication simplifiée est un simple POST d'une ressource DocumentReference conforme à ce profil."/>
+      <description value="Ce profil est utilisé dans le cadre du flux 9 d'ajout simplifié de document. Le flux et le profil sont inspirés d’IHE MHD, transaction ITI-105.&#xA;&#xA;Contrairement au profil PDSm_ComprehensiveDocumentReference, le document est directement inclus dans DocumentReference.attachment.data et non dans une ressource « Binary » externe.&#xA;&#xA;La publication simplifiée est une simple requête HTTP POST d'une ressource DocumentReference conforme à ce profil."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -530,7 +530,7 @@
         <reference value="StructureDefinition/pdsm-submissionset-comprehensive"/>
       </reference>
       <name value="PDSm SubmissionSet Comprehensive"/>
-      <description value="Profil spécifique dérivé du profil IHE MHD v4.0.1 « ComprehensiveSubmissionSet  » créé pour le volet ANS &quot;Partage de documents de santé en mobilité&quot; ; ce profil concerne le lot de soumission."/>
+      <description value="Profil spécifique dérivé du profil IHE MHD « ComprehensiveSubmissionSet » créé pour le volet ANS &quot;Partage de documents de santé en mobilité&quot; ; ce profil concerne le lot de soumission."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -652,39 +652,6 @@
       </reference>
       <name value="PDSm-List-PractitionerRoleAsSource"/>
       <description value="Paramètre de recherche chaîné créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'élément source:PractitionerRole.practitioner:Practitioner.given et source:PractitionerRole.practitioner:Practitioner.family"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/PDSm-PractitionerRole-family-ex"/>
-      </reference>
-      <name value="PDSm-PractitionerRole-family-ex"/>
-      <description value="Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'extension PractitionerRoleName qui permet de préciser le nom d'exercice d'un professionnel (family)"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/PDSm-PractitionerRole-given-ex"/>
-      </reference>
-      <name value="PDSm-PractitionerRole-given-ex"/>
-      <description value="Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'extension PractitionerRoleName qui permet de préciser le nom d'exercice d'un professionnel (given)"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/PDSm-PractitionerRole-partOf"/>
-      </reference>
-      <name value="PDSm-PractitionerRole-partOf"/>
-      <description value="Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'extension partof qui permet de faire référence à l'exercice professionnel depuis la situation d'exercice"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -881,14 +848,6 @@
           <title value="Téléchargements et usages"/>
           <generation value="markdown"/>
         </page>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="about.html"/>
-        </extension>
-        <nameUrl value="about.html"/>
-        <title value="A propos de ce guide"/>
-        <generation value="markdown"/>
       </page>
     </page>
     <parameter>
