@@ -3,11 +3,11 @@
   "name" : "PDSm",
   "package-id" : "ans.fhir.fr.pdsm",
   "ig-ver" : "3.0.1",
-  "date" : "Mon, 02 Oct, 2023 16:24:37 +0000",
+  "date" : "Mon, 02 Oct, 2023 16:25:05 +0000",
   "errs" : 20,
   "warnings" : 35,
   "hints" : 1,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 4025298360
+  "maxMemory" : 2805566456
 }
