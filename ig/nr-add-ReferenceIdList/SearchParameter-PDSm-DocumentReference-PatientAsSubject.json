@@ -10,7 +10,7 @@
   "name" : "PDSmDocumentReferencePatientAsSubject",
   "derivedFrom" : "http://hl7.org/fhir/SearchParameter/clinical-patient",
   "status" : "active",
-  "date" : "2023-10-02T16:08:22+00:00",
+  "date" : "2023-10-02T16:24:37+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
