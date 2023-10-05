@@ -276,7 +276,7 @@
         
           Active
           
-            as of 2023-10-02
+            as of 2023-10-05
           
         
       </td>
@@ -333,7 +333,7 @@ Composition.date</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;practiceSetting</td><td>usually from a mapping to a local ValueSet</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourcePatientInfo</td><td>Composition.subject</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;related</td><td>Composition.event.detail</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;related (xdsdocumententry)</td><td>Composition.event.detail</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;related (referenceIdList)</td><td>Composition.event.detail</td> </tr>
 </table>
 <a name="rim"> </a><h3>Mappings for RIM Mapping (<a href="http://hl7.org/comparison-v3.html">http://hl7.org/v3</a>)</h3><table class="grid">
  <tr><td colspan="3"><b>PDSm_ComprehensiveDocumentReference</b></td></tr>
@@ -398,7 +398,7 @@ Composition.date</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier</td><td>.identifier</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display</td><td>N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;related</td><td>./outboundRelationship[typeCode=&quot;PERT&quot; and isNormalActRelationship()] / target[isNormalAct]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;related (xdsdocumententry)</td><td>./outboundRelationship[typeCode=&quot;PERT&quot; and isNormalActRelationship()] / target[isNormalAct]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;related (referenceIdList)</td><td>./outboundRelationship[typeCode=&quot;PERT&quot; and isNormalActRelationship()] / target[isNormalAct]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a, N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reference</td><td>n/a, N/A</td> </tr>
@@ -449,7 +449,7 @@ serviceEvent/effectiveTime/high/
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;practiceSetting</td><td>usually from a mapping to a local ValueSet</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourcePatientInfo</td><td>ClinicalDocument/recordTarget/</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;related</td><td>ClinicalDocument/relatedDocument</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;related (xdsdocumententry)</td><td>ClinicalDocument/relatedDocument</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;related (referenceIdList)</td><td>ClinicalDocument/relatedDocument</td> </tr>
 </table>
 <a name="w5"> </a><h3>Mappings for FiveWs Pattern Mapping (http://hl7.org/fhir/fivews)</h3><table class="grid">
  <tr><td colspan="3"><b>PDSm_ComprehensiveDocumentReference</b></td></tr>
@@ -486,7 +486,7 @@ serviceEvent/effectiveTime/high/
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;start</td><td>DR.1</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end</td><td>DR.2</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;related</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;related (xdsdocumententry)</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;related (referenceIdList)</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier</td><td>CX / EI (occasionally, more often EI maps to a resource id or a URL)</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;use</td><td>N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type</td><td>CE/CNE/CWE, CX.5</td> </tr>
@@ -527,7 +527,7 @@ serviceEvent/effectiveTime/high/
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;practiceSetting</td><td>DocumentEntry.practiceSettingCode</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourcePatientInfo</td><td>DocumentEntry.sourcePatientInfo, DocumentEntry.sourcePatientId</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;related</td><td>DocumentEntry.referenceIdList</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;related (xdsdocumententry)</td><td>DocumentEntry.referenceIdList</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;related (referenceIdList)</td><td>DocumentEntry.referenceIdList</td> </tr>
 </table>
 <a name="DocumentEntry-Mapping"> </a><h3>Mappings for XDS and MHD Mapping (XDS)</h3><table class="grid">
  <tr><td colspan="3"><b>PDSm_ComprehensiveDocumentReference</b></td></tr>
@@ -571,7 +571,7 @@ serviceEvent/effectiveTime/high/
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reference</td><td>DocumentEntry.sourcePatientInfo</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier</td><td>DocumentEntry.sourcePatientId</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;related</td><td>DocumentEntry.referenceIdList using CXi encoding for type when possible</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;related (xdsdocumententry)</td><td>DocumentEntry.referenceIdList using CXi encoding for type when possible</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;related (referenceIdList)</td><td>DocumentEntry.referenceIdList using CXi encoding for type when possible</td><td></td> </tr>
 </table>
 <a name="specmetier-to-PDSmComprehensiveDocumentReference"> </a><h3>Mappings for Spécification métier vers le profil PDSm_ComprehensiveDocumentReference ()</h3><table class="grid">
  <tr><td colspan="3"><b>PDSm_ComprehensiveDocumentReference</b></td></tr>
@@ -682,7 +682,7 @@ serviceEvent/effectiveTime/high/
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.pdsm#3.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Oct 2, 2023 16:25+0000">2023-10-02</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.pdsm#3.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 5, 2023 15:57+0000">2023-10-05</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
