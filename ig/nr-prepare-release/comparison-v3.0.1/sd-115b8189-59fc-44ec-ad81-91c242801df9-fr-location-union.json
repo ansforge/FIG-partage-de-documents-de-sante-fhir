@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "1dc67d73-6421-4c0c-96fd-ff10132e2c8e-14",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/1dc67d73-6421-4c0c-96fd-ff10132e2c8e-14",
+  "id" : "b29649d6-fd22-4425-b2cf-9b086fa9a0d0-14",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/b29649d6-fd22-4425-b2cf-9b086fa9a0d0-14",
   "name" : "UnionLocationRASSAndFrLocation",
   "title" : "Union of null And null",
   "status" : "active",
-  "date" : "2023-09-01T08:03:23+00:00",
+  "date" : "2023-10-11T07:59:36+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "Location",
@@ -299,7 +299,7 @@
         "severity" : "error",
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
-        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "mustSupport" : false,
       "isModifier" : false,
@@ -346,7 +346,7 @@
         "severity" : "error",
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
-        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "mustSupport" : false,
       "isModifier" : true,
@@ -800,7 +800,7 @@
         "severity" : "error",
         "human" : "If present, start SHALL have a lower value than end",
         "expression" : "start.hasValue().not() or end.hasValue().not() or (start <= end)",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Patient"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Address"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -874,7 +874,7 @@
         "severity" : "error",
         "human" : "SHALL have a contained resource if a local reference is provided",
         "expression" : "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Patient"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Practitioner"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -1161,7 +1161,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "Indicates the type of function performed at the location.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/1dc67d73-6421-4c0c-96fd-ff10132e2c8e-17"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/b29649d6-fd22-4425-b2cf-9b086fa9a0d0-17"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -1217,7 +1217,7 @@
         "severity" : "error",
         "human" : "A system is required if a value is provided.",
         "expression" : "value.empty() or system.exists()",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Location"
+        "source" : "http://hl7.org/fhir/StructureDefinition/HealthcareService"
       }],
       "mustSupport" : false,
       "isModifier" : false,
@@ -1319,7 +1319,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Physical form of the location.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/1dc67d73-6421-4c0c-96fd-ff10132e2c8e-23"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/b29649d6-fd22-4425-b2cf-9b086fa9a0d0-23"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -1433,7 +1433,7 @@
         "severity" : "error",
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
-        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "mustSupport" : false,
       "isModifier" : false,
@@ -1481,7 +1481,7 @@
         "severity" : "error",
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
-        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "mustSupport" : false,
       "isModifier" : true,
@@ -1626,7 +1626,7 @@
         "severity" : "error",
         "human" : "SHALL have a contained resource if a local reference is provided",
         "expression" : "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Location"
+        "source" : "http://hl7.org/fhir/StructureDefinition/HealthcareService"
       }],
       "mustSupport" : false,
       "isModifier" : false,
@@ -1680,7 +1680,7 @@
         "severity" : "error",
         "human" : "SHALL have a contained resource if a local reference is provided",
         "expression" : "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Location"
+        "source" : "http://hl7.org/fhir/StructureDefinition/HealthcareService"
       }],
       "mustSupport" : false,
       "isModifier" : false,
@@ -2086,7 +2086,7 @@
         "severity" : "error",
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
-        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "mustSupport" : false,
       "isModifier" : false,
@@ -2134,7 +2134,7 @@
         "severity" : "error",
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
-        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "mustSupport" : false,
       "isModifier" : true,
@@ -2343,7 +2343,7 @@
         "severity" : "error",
         "human" : "SHALL have a contained resource if a local reference is provided",
         "expression" : "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Location"
+        "source" : "http://hl7.org/fhir/StructureDefinition/HealthcareService"
       }],
       "mustSupport" : false,
       "isModifier" : false,

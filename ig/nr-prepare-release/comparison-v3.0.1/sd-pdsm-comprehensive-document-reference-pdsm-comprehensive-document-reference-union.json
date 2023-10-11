@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "1dc67d73-6421-4c0c-96fd-ff10132e2c8e-29",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/1dc67d73-6421-4c0c-96fd-ff10132e2c8e-29",
+  "id" : "b29649d6-fd22-4425-b2cf-9b086fa9a0d0-29",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/b29649d6-fd22-4425-b2cf-9b086fa9a0d0-29",
   "name" : "UnionPDSm_ComprehensiveDocumentReferenceAndPDSm_ComprehensiveDocumentReference",
   "title" : "Union of PDSm Comprehensive DocumentReference And PDSm Comprehensive DocumentReference",
   "status" : "active",
-  "date" : "2023-09-01T08:03:23+00:00",
+  "date" : "2023-10-11T07:59:36+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "DocumentReference",

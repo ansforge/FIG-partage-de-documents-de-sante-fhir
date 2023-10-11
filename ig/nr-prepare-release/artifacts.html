@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>ANS.FHIR.FR.PDSM\Artifacts Summary - FHIR v4.0.1</title>
+    <title>Artifacts Summary - Partage de Documents de Santé en mobilité (PDSm) v3.1.0-ballot</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -20,7 +20,6 @@
   	<link href="assets/css/prism.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style-ans.css"/>
     <link rel="stylesheet" href="assets/css/style-add-ans.css"/>
-    <!-- CSS only -->
     <!-- Placeholder for child template CSS declarations -->
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
@@ -32,10 +31,10 @@
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
@@ -48,11 +47,11 @@
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 <div id="family-nav">
-    <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
-  </div>
-  <div id="ans-nav">
-    <a id="hl7-logo" no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
-  </div>
+  <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+<div id="ans-nav" style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; ">
+  <a id="hl7-logo" no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
+</div>
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Partage de Documents de Santé en mobilité (PDSm)</span>
@@ -219,10 +218,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
    <p>Contents:</p>
    <ul>
       <li>
-         <a href="#1">Comportement: Capability Statements</a>
+         <a href="#1">Behavior: Capability Statements</a>
       </li>
       <li>
-         <a href="#2">Comportement: Search Parameters</a>
+         <a href="#2">Behavior: Search Parameters</a>
       </li>
       <li>
          <a href="#3">Structures: Resource Profiles</a>
@@ -240,9 +239,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
      xmlns:f="http://hl7.org/fhir">
    <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
    <a name="1"> </a>
-   <h3>Comportement: Capability Statements </h3>
+   <h3>Behavior: Capability Statements </h3>
    <p>
-    <p>La ressource CapabilityStatement permet de définir les capacités spécifiques que les systèmes doivent supporter pour être conforme à cet Implementation Guide (IG). Les systèmes conformes à cet IG doivent déclarer leur conformance à au moins une de ces ressources CapabilityStatement.</p>
+    <p>The following artifacts define the specific capabilities that different types of systems are expected to have in order to comply with this implementation guide.  Systems conforming to this implementation guide are expected to declare conformance to one or more of the following capability statements.</p>
 </p>
    <p>
       <table class="grid">
@@ -251,7 +250,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <tr>
                <td style="column-width:30%">
                   <a href="CapabilityStatement-PDSm-ConsommateurDeDocuments.html"
-                     title="CapabilityStatement/PDSm-ConsommateurDeDocuments">PDSm-ConsommateurDeDocuments</a>
+                     title="CapabilityStatement/PDSm-ConsommateurDeDocuments">CI-SIS Partage-De-Documents-De-Sante - ConsommateurDeDocuments</a>
                </td>
                <td>
 <p>Il s’agit d’un système d’information ou d’un composant de système d’information qui recherche des documents selon certains critères, et qui peut consulter les documents qui l’intéressent.</p>
@@ -260,7 +259,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <tr>
                <td style="column-width:30%">
                   <a href="CapabilityStatement-PDSm-GestionnaireDePartageDeDocuments.html"
-                     title="CapabilityStatement/PDSm-GestionnaireDePartageDeDocuments">PDSm-GestionnaireDePartageDeDocuments</a>
+                     title="CapabilityStatement/PDSm-GestionnaireDePartageDeDocuments">CI-SIS Partage-De-Documents-De-Sante - GestionnaireDePartageDeDocuments</a>
                </td>
                <td>
 <p>Il s’agit d’un système d’information ou d’un composant d’un système d’information qui stocke, classe et archive les documents d’un dossier patient.</p>
@@ -269,7 +268,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <tr>
                <td style="column-width:30%">
                   <a href="CapabilityStatement-PDSm-ProducteurDeDocuments.html"
-                     title="CapabilityStatement/PDSm-ProducteurDeDocuments">PDSm-ProducteurDeDocuments</a>
+                     title="CapabilityStatement/PDSm-ProducteurDeDocuments">CI-SIS Partage-De-Documents-De-Sante - ProducteurDeDocuments</a>
                </td>
                <td>
 <p>Il s’agit d’un système d’information ou d’un composant de système d’information qui envoie au gestionnaire de partage de documents une  demande d’ajout de nouveaux documents et/ou des nouvelles versions de documents. Ce système fournit également les modifications des  métadonnées du document.</p>
@@ -279,9 +278,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </table>
    </p>
    <a name="2"> </a>
-   <h3>Comportement: Search Parameters </h3>
+   <h3>Behavior: Search Parameters </h3>
    <p>
-    <p>La ressource SearchParameter permet de définir de nouveaux paramètres de recherche pour les serveurs RESTful. Ces paramètres de recherche peuvent également être utilisés pour trier ou inclure des ressources reliées.</p>
+    <p>These define the properties by which a RESTful server can be searched.  They can also be used for sorting and including related resources.</p>
 </p>
    <p>
       <table class="grid">
@@ -294,6 +293,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>Paramètre de recherche chaîné créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l’élément patient.identifier</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-PDSm-DocumentReference-PractitionerRoleAsAuthor.html"
+                     title="SearchParameter/PDSm-DocumentReference-PractitionerRoleAsAuthor">PDSm-DocumentReference-PractitionerRoleAsAuthor</a>
+               </td>
+               <td>
+<p>Paramètre de recherche chaîné créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l’élément author:PractitionerRole.practitioner:Practitioner.identifier, author:PractitionerRole.practitioner:Practitioner.given et author:PractitionerRole.practitioner:Practitioner.family</p>
 </td>
             </tr>
             <tr>
@@ -312,33 +320,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l’élément context.period.start correspondant à lobjet dateDebutActe</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-PDSm-DocumentReference-PractitionerRoleAsAuthor.html"
-                     title="SearchParameter/PDSm-DocumentReference-PractitionerRoleAsAuthor">PDSm-DocumentReference-PractitionerRoleAsAuthor</a>
-               </td>
-               <td>
-<p>Paramètre de recherche chaîné créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l’élément author:PractitionerRole.practitioner:Practitioner.identifier, author:PractitionerRole.practitioner:Practitioner.given et author:PractitionerRole.practitioner:Practitioner.family</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-PDSm-isArchived.html"
-                     title="SearchParameter/PDSm-isArchived">PDSm-isArchived</a>
-               </td>
-               <td>
-<p>Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère derecherche l’élément isArchived qui permet distinguer les lots de soumission et les fiches archivés des actives.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-PDSm-List-authorOrg.html"
-                     title="SearchParameter/PDSm-List-authorOrg">PDSm-List-authorOrg</a>
-               </td>
-               <td>
-<p>Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l’élément sourceId</p>
 </td>
             </tr>
             <tr>
@@ -368,13 +349,31 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Paramètre de recherche chaîné créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l’élément source:PractitionerRole.practitioner:Practitioner.given et source:PractitionerRole.practitioner:Practitioner.family</p>
 </td>
             </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-PDSm-List-authorOrg.html"
+                     title="SearchParameter/PDSm-List-authorOrg">PDSm-List-authorOrg</a>
+               </td>
+               <td>
+<p>Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l’élément sourceId</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-PDSm-isArchived.html"
+                     title="SearchParameter/PDSm-isArchived">PDSm-isArchived</a>
+               </td>
+               <td>
+<p>Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère derecherche l’élément isArchived qui permet distinguer les lots de soumission et les fiches archivés des actives.</p>
+</td>
+            </tr>
          </tbody>
       </table>
    </p>
    <a name="3"> </a>
    <h3>Structures: Resource Profiles </h3>
    <p>
-    <p>Ces structures définissent les contraintes sur les ressources FHIR par les systèmes conformes à cet Implementation Guide (IG).</p>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
 </p>
    <p>
       <table class="grid">
@@ -462,7 +461,7 @@ Dans le cas d’une mise à jour d’un classeur, comme List.status ou List.entr
    <a name="4"> </a>
    <h3>Structures: Extension Definitions </h3>
    <p>
-    <p>Ces structures définissent les contraintes sur les extensions FHIR par les systèmes conformes à cet Implementation Guide (IG).</p>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
 </p>
    <p>
       <table class="grid">
@@ -492,7 +491,7 @@ Dans le cas d’une mise à jour d’un classeur, comme List.status ou List.entr
    <a name="5"> </a>
    <h3>Example: Example Instances </h3>
    <p>
-    <p>Ces exemples dévoilent à quoi doivent ressembler les données produites et consommées par les systèmes conformes à cet Implementation Guide (IG).</p>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
 </p>
    <p>
       <table class="grid">
@@ -553,14 +552,13 @@ Dans le cas d’une mise à jour d’un classeur, comme List.status ou List.entr
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.pdsm#3.1.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Sep 1, 2023 08:02+0000">2023-09-01</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.pdsm#3.1.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Oct 11, 2023 07:59+0000">2023-10-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
-                  | <a style="color: #81BEF7" target="_blank" href="https://interop.esante.gouv.fr/ig/fhir/pdsm/history.html">Version History</a> | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/FIG-partage-de-documents-de-sante-fhir/issues/new">New Issue</a>
+                  | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/FIG-partage-de-documents-de-sante-fhir/issues/new">New Issue</a>
                 
-
           </span>
         </p>
       </div>  <!-- /inner-wrapper -->
@@ -703,6 +701,4 @@ anchors.add()</script>
   </footer>
   </body>
 </html>
-
-
 

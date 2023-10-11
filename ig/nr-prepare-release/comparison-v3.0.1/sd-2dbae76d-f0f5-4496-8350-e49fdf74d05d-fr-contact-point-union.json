@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "1dc67d73-6421-4c0c-96fd-ff10132e2c8e-26",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/1dc67d73-6421-4c0c-96fd-ff10132e2c8e-26",
+  "id" : "b29649d6-fd22-4425-b2cf-9b086fa9a0d0-26",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/b29649d6-fd22-4425-b2cf-9b086fa9a0d0-26",
   "name" : "UnionFrContactPointAndFrContactPoint",
   "title" : "Union of null And null",
   "status" : "active",
-  "date" : "2023-09-01T08:03:23+00:00",
+  "date" : "2023-10-11T07:59:36+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "ContactPoint",
@@ -33,7 +33,7 @@
         "severity" : "error",
         "human" : "A system is required if a value is provided.",
         "expression" : "value.empty() or system.exists()",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Location"
+        "source" : "http://hl7.org/fhir/StructureDefinition/HealthcareService"
       }],
       "mustSupport" : false,
       "isModifier" : false,
@@ -109,7 +109,7 @@
         "severity" : "error",
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
-        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "mustSupport" : false,
       "isModifier" : false,
