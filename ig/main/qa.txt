@@ -1,9 +1,9 @@
 ﻿PDSm : Validation Results
 =========================================
 
-err = 20, warn = 35, info = 0
-IG Publisher Version: 1.4.13
-Generated Tue Oct 10 15:25:13 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.pdsm#3.0.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/pdsm)
+err = 20, warn = 35, info = 1
+IG Publisher Version: 1.4.14
+Generated Wed Oct 11 18:42:03 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.pdsm#3.0.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/pdsm)
  Build Errors : 6 / 4 / 0
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/Bundle-a9c10f8a-882d-4000-a280-7150e0aeb478 : 0 / 0 / 1
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/CapabilityStatement-PDSm-ConsommateurDeDocuments : 0 / 0 / 1
@@ -20,7 +20,7 @@ Generated Tue Oct 10 15:25:13 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.pdsm#
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/SearchParameter-PDSm-List-authorOrg : 0 / 0 / 1
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/SearchParameter-PDSm-isArchived : 0 / 0 / 1
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/StructureDefinition-PDSmintendedrecipient : 0 / 1 / 1
- /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/StructureDefinition-pdsm-comprehensive-document-reference : 11 / 11 / 1
+ /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/StructureDefinition-pdsm-comprehensive-document-reference : 11 / 11 / 2
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/StructureDefinition-pdsm-comprehensive-provide-document-bundle : 0 / 1 / 1
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/StructureDefinition-pdsm-find-documentreferences-comprehensive-response : 0 / 1 / 1
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/StructureDefinition-pdsm-find-lists-response : 0 / 1 / 1
@@ -57,6 +57,7 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 == fsh-generated/resources/StructureDefinition-PDSmintendedrecipient.json ==
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/PDSmintendedrecipient'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-pdsm-comprehensive-document-reference.json ==
+INFORMATION: StructureDefinition/pdsm-comprehensive-document-reference: StructureDefinition.snapshot.element[98].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 WARNING: StructureDefinition/pdsm-comprehensive-document-reference: StructureDefinition.differential.element[8].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS on element DocumentReference.type could not be resolved
 WARNING: StructureDefinition/pdsm-comprehensive-document-reference: StructureDefinition.differential.element[9].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J06-XdsClassCode-CISIS/FHIR/JDV-J06-XdsClassCode-CISIS on element DocumentReference.category could not be resolved
 WARNING: StructureDefinition/pdsm-comprehensive-document-reference: StructureDefinition.differential.element[26].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J10-XdsFormatCode-CISIS/FHIR/JDV-J10-XdsFormatCode-CISIS on element DocumentReference.content.format could not be resolved
