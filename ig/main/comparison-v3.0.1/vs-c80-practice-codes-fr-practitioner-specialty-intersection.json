@@ -1,9 +1,0 @@
-{
-  "resourceType" : "ValueSet",
-  "id" : "febd932b-21c1-440e-89ca-dea03721d291-12",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/febd932b-21c1-440e-89ca-dea03721d291-12",
-  "name" : "IntersectionPracticeSettingCodeValueSetAndfr-practitioner-specialty",
-  "title" : "Intersection of Practice Setting Code Value Set And null",
-  "status" : "active",
-  "date" : "2023-10-12T08:32:38+00:00"
-}
