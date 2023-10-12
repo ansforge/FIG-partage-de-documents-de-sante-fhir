@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "fba3473b-3771-4b8f-8f85-b386bf592ba9-5",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/fba3473b-3771-4b8f-8f85-b386bf592ba9-5",
+  "id" : "febd932b-21c1-440e-89ca-dea03721d291-5",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/febd932b-21c1-440e-89ca-dea03721d291-5",
   "name" : "UnionPractitionerRoleOrganizationalRoleRASSAndAsPractitionerRoleProfile",
   "title" : "Union of null And AS PractitionerRole Profile",
   "status" : "active",
-  "date" : "2023-10-12T08:02:39+00:00",
+  "date" : "2023-10-12T08:32:38+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "PractitionerRole",
@@ -1590,7 +1590,7 @@
       "binding" : {
         "strength" : "required",
         "description" : "left: The role a person plays representing an organization.; right: The role a person plays representing an organization | Rôle (situation d'exercice) du professionnel de santé au sein de l'organisation. Correspond à la notion de Fonction dans le NOS.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/fba3473b-3771-4b8f-8f85-b386bf592ba9-8"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/febd932b-21c1-440e-89ca-dea03721d291-8"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -1864,7 +1864,7 @@
       "binding" : {
         "strength" : "required",
         "description" : "Specific specialty associated with the agency.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/fba3473b-3771-4b8f-8f85-b386bf592ba9-11"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/febd932b-21c1-440e-89ca-dea03721d291-11"
       },
       "mapping" : [{
         "identity" : "rim",

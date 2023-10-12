@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "fba3473b-3771-4b8f-8f85-b386bf592ba9-45",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/fba3473b-3771-4b8f-8f85-b386bf592ba9-45",
+  "id" : "febd932b-21c1-440e-89ca-dea03721d291-45",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/febd932b-21c1-440e-89ca-dea03721d291-45",
   "name" : "IntersectionPDSm_FolderComprehensiveAndPDSm_FolderComprehensive",
   "title" : "Intersection of PDSm Folder Comprehensive And PDSm Folder Comprehensive",
   "status" : "active",
-  "date" : "2023-10-12T08:02:39+00:00",
+  "date" : "2023-10-12T08:32:38+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "List",

@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "fba3473b-3771-4b8f-8f85-b386bf592ba9-42",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/fba3473b-3771-4b8f-8f85-b386bf592ba9-42",
+  "id" : "febd932b-21c1-440e-89ca-dea03721d291-42",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/febd932b-21c1-440e-89ca-dea03721d291-42",
   "name" : "IntersectionPDSm_FindListsResponseAndPDSm_FindListsResponse",
   "title" : "Intersection of PDSm Find Lists Response And PDSm Find Lists Response",
   "status" : "active",
-  "date" : "2023-10-12T08:02:39+00:00",
+  "date" : "2023-10-12T08:32:38+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "Bundle",

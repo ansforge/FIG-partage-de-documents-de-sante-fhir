@@ -1,9 +1,9 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "fba3473b-3771-4b8f-8f85-b386bf592ba9-9",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/fba3473b-3771-4b8f-8f85-b386bf592ba9-9",
+  "id" : "febd932b-21c1-440e-89ca-dea03721d291-9",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/febd932b-21c1-440e-89ca-dea03721d291-9",
   "name" : "IntersectionPractitionerRoleAndfr-practioner-role-exercice",
   "title" : "Intersection of Practitioner role And null",
   "status" : "draft",
-  "date" : "2023-10-12T08:02:39+00:00"
+  "date" : "2023-10-12T08:32:38+00:00"
 }

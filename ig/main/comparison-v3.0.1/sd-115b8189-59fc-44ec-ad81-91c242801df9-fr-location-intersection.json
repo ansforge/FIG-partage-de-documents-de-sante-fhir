@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "fba3473b-3771-4b8f-8f85-b386bf592ba9-15",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/fba3473b-3771-4b8f-8f85-b386bf592ba9-15",
+  "id" : "febd932b-21c1-440e-89ca-dea03721d291-15",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/febd932b-21c1-440e-89ca-dea03721d291-15",
   "name" : "IntersectionLocationRASSAndFrLocation",
   "title" : "Intersection of null And null",
   "status" : "active",
-  "date" : "2023-10-12T08:02:39+00:00",
+  "date" : "2023-10-12T08:32:38+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "Location",
@@ -688,7 +688,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "Indicates the type of function performed at the location.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/fba3473b-3771-4b8f-8f85-b386bf592ba9-18"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/febd932b-21c1-440e-89ca-dea03721d291-18"
       },
       "mapping" : [{
         "identity" : "rim",
