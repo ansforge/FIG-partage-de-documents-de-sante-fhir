@@ -1,0 +1,61 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "fba3473b-3771-4b8f-8f85-b386bf592ba9-23",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/fba3473b-3771-4b8f-8f85-b386bf592ba9-23",
+  "name" : "UnionLocationTypeAndfr-location-physical-type",
+  "title" : "Union of Location type And null",
+  "status" : "draft",
+  "date" : "2023-10-12T08:02:39+00:00",
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "FTL",
+        "display" : "Emplacement fauteuil"
+      },
+      {
+        "code" : "BTMNT",
+        "display" : "Bâtiment"
+      },
+      {
+        "code" : "L",
+        "display" : "Lieu non spécifié"
+      },
+      {
+        "code" : "ETG",
+        "display" : "Etage"
+      },
+      {
+        "code" : "AL",
+        "display" : "Aile"
+      },
+      {
+        "code" : "CLR",
+        "display" : "Couloir"
+      },
+      {
+        "code" : "R",
+        "display" : "Chambre"
+      },
+      {
+        "code" : "BX",
+        "display" : "Box"
+      },
+      {
+        "code" : "PT",
+        "display" : "Point"
+      },
+      {
+        "code" : "B",
+        "display" : "Emplacement lit"
+      },
+      {
+        "code" : "BLC",
+        "display" : "Bloc"
+      },
+      {
+        "code" : "BR",
+        "display" : "Bureau"
+      }]
+    }]
+  }
+}

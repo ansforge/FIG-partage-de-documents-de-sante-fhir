@@ -6,11 +6,11 @@
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>PDSm</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/fhir/pdsm/ImplementationGuide/ans.fhir.fr.pdsm</pre></div>
   </text>
   <url value="https://interop.esante.gouv.fr/ig/fhir/pdsm/ImplementationGuide/ans.fhir.fr.pdsm"/>
-  <version value="3.0.1"/>
+  <version value="3.1.0-ballot"/>
   <name value="PDSm"/>
   <title value="Partage de Documents de Santé en mobilité (PDSm)"/>
   <status value="active"/>
-  <date value="2023-10-11T18:40:37+00:00"/>
+  <date value="2023-10-12T08:02:08+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>

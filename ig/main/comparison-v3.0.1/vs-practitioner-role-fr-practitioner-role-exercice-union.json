@@ -1,0 +1,31 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "fba3473b-3771-4b8f-8f85-b386bf592ba9-8",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/fba3473b-3771-4b8f-8f85-b386bf592ba9-8",
+  "name" : "UnionPractitionerRoleAndfr-practioner-role-exercice",
+  "title" : "Union of Practitioner role And null",
+  "status" : "draft",
+  "date" : "2023-10-12T08:02:39+00:00",
+  "compose" : {
+    "include" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/practitioner-role"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "223366009"
+      }]
+    },
+    {
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_R21-Fonction/FHIR/TRE-R21-Fonction"
+    },
+    {
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_R96-AutreFonctionSanitaire/FHIR/TRE-R96-AutreFonctionSanitaire"
+    },
+    {
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge"
+    }]
+  }
+}

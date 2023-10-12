@@ -1,6 +1,6 @@
 {
-  "version" : "3.0.1",
+  "version" : "3.1.0-ballot",
   "fhirVersion" : ["4.0.1"],
-  "date" : "20231011183906",
+  "date" : "20231012080054",
   "name" : "ans.fhir.fr.pdsm"
 }

@@ -8,7 +8,7 @@
 </div></td></tr><tr><td>Transaction</td><td>y</td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title="GET a resource (read interaction)">Read</b></th><th><b title="GET all set of resources of the type (search interaction)">Search</b></th><th><b title="PUT a new resource version (update interaction)">Update</b></th><th><b title="PATCH a new resource version (patch interaction)">Patch</b></th><th><b title="POST a new resource (create interaction)">Create</b></th></tr><tr><td>List</td><td><a href="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-submissionset-comprehensive">https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-submissionset-comprehensive</a></td><td>y</td><td>y</td><td></td><td></td><td></td></tr><tr><td>DocumentReference</td><td><a href="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference">https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference</a></td><td>y</td><td>y</td><td></td><td>y</td><td></td></tr><tr><td>Binary</td><td><a href="http://hl7.org/fhir/StructureDefinition/Binary">http://hl7.org/fhir/StructureDefinition/Binary</a></td><td>y</td><td></td><td></td><td></td><td></td></tr></table></div>
   </text>
   <url value="https://interop.esante.gouv.fr/ig/fhir/pdsm/CapabilityStatement/PDSm-GestionnaireDePartageDeDocuments"/>
-  <version value="3.0.1"/>
+  <version value="3.1.0-ballot"/>
   <name value="PDSmGestionnaireDePartageDeDocuments"/>
   <title value="CI-SIS Partage-De-Documents-De-Sante - GestionnaireDePartageDeDocuments"/>
   <status value="active"/>
