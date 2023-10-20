@@ -171,10 +171,6 @@ select {
 iframe {
     border: 0;
 }
-img {
-    height: auto;
-    max-width: 100%;
-}
 [class*="svg-icon"] {
     stroke-width: 0;
     stroke: currentColor;
