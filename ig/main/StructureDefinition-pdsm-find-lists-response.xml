@@ -15,7 +15,7 @@
   <name value="PDSm_FindListsResponse"/>
   <title value="PDSm Find Lists Response"/>
   <status value="active"/>
-  <date value="2023-11-02T15:09:53+00:00"/>
+  <date value="2023-12-04T15:20:04+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -258,9 +258,6 @@
         </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="Language"/>
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-          <valueBoolean value="true"/>
         </extension>
         <strength value="preferred"/>
         <description value="A human language."/>
@@ -3648,9 +3645,6 @@
       <isSummary value="true"/>
     </element>
     <element id="Bundle.signature">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="trial-use"/>
-      </extension>
       <path value="Bundle.signature"/>
       <short value="Digital Signature"/>
       <definition value="Digital Signature - base64 encoded. XML-DSig or a JWT."/>

@@ -13,7 +13,7 @@
   <version value="3.1.0-ballot"/>
   <name value="PDSm_intendedRecipient"/>
   <status value="active"/>
-  <date value="2023-11-02T15:09:53+00:00"/>
+  <date value="2023-12-04T15:20:04+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -128,7 +128,7 @@
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
       </constraint>
     </element>
     <element id="Extension.url">

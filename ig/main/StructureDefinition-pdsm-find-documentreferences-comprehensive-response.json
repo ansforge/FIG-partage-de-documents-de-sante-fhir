@@ -9,7 +9,7 @@
   "version" : "3.1.0-ballot",
   "name" : "PDSm_FindDocumentReferencesComprehensiveResponse",
   "status" : "active",
-  "date" : "2023-11-02T15:09:53+00:00",
+  "date" : "2023-12-04T15:20:04+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -260,10 +260,6 @@
         {
           "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
           "valueString" : "Language"
-        },
-        {
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-          "valueBoolean" : true
         }],
         "strength" : "preferred",
         "description" : "A human language.",
@@ -2686,10 +2682,6 @@
     },
     {
       "id" : "Bundle.signature",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "trial-use"
-      }],
       "path" : "Bundle.signature",
       "short" : "Digital Signature",
       "definition" : "Digital Signature - base64 encoded. XML-DSig or a JWT.",

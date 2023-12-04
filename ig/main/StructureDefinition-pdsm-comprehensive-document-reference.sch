@@ -29,7 +29,6 @@
   <sch:pattern>
     <sch:title>f:DocumentReference/f:context</sch:title>
     <sch:rule context="f:DocumentReference/f:context">
-      <sch:assert test="count(f:event) &lt;= 1">event: maximum cardinality of 'event' is 1</sch:assert>
       <sch:assert test="count(f:period) &gt;= 1">period: minimum cardinality of 'period' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
