@@ -33,4 +33,4 @@ PDSm : Validation Results
 
 err = 20, warn = 13, info = 1
 IG Publisher Version: 1.5.5
-Generated Fri Dec 08 09:30:15 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.pdsm#3.1.0-ballot (canonical = https://interop.esante.gouv.fr/ig/fhir/pdsm)
+Generated Fri Dec 08 09:32:14 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.pdsm#3.1.0-ballot (canonical = https://interop.esante.gouv.fr/ig/fhir/pdsm)
