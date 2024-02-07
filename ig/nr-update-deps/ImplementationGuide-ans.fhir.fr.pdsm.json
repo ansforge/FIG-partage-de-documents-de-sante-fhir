@@ -10,7 +10,7 @@
   "name" : "PDSm",
   "title" : "Partage de Documents de Santé en mobilité (PDSm)",
   "status" : "active",
-  "date" : "2024-02-07T14:11:56+00:00",
+  "date" : "2024-02-07T14:52:46+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -888,7 +888,7 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/PDSmintendedrecipient"
+        "reference" : "StructureDefinition/pdsm-ext-intended-recipient"
       },
       "name" : "PDSm_intendedRecipient",
       "description" : "Représente le destinataire du lot de soumission",
@@ -900,7 +900,7 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/pdsm-is-archived"
+        "reference" : "StructureDefinition/pdsm-ext-is-archived"
       },
       "name" : "PDSm_isArchived",
       "description" : "Extension définie par le volet ANS \"Volet Partage de documents de santé en mobilité\" sur les ressources List et DocumentReference pour distinguer les lots de soumission et les fiches archivés des actives.",

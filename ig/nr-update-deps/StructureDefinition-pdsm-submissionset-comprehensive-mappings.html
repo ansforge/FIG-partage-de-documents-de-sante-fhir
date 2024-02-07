@@ -308,10 +308,11 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value[x] (valueCodeableConcept)</td><td>N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;extension (sourceId)</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;extension (intendedRecipient)</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;extension (isArchived)</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;extension (PDSmintendedRecipient)</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;url</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value[x]</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value[x] (valueReference)</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value[x]</td><td>n/a, N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>.id</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier (uniqueId)</td><td>n/a, II - The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier (entryUUID)</td><td>n/a, II - The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT]</td> </tr>
@@ -357,6 +358,7 @@
 </td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;meta</td><td></td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;profile</td><td>SubmissionSet.limitedMetadata</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;extension (intendedRecipient)</td><td>SubmissionSet.intendedRecipient</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>SubmissionSet.entryUUID and SubmissionSet.uniqueId</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>SubmissionSet.availabilityStatus</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;mode</td><td>shall be 'working'</td><td></td> </tr>
@@ -462,7 +464,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.pdsm#3.1.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 7, 2024 14:11+0000">2024-02-07</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.pdsm#3.1.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 7, 2024 14:52+0000">2024-02-07</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |

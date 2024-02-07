@@ -3,7 +3,7 @@ PDSm : Validation Results
 
 err = 20, warn = 15, info = 1
 IG Publisher Version: 1.5.16
-Generated Wed Feb 07 14:12:44 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.pdsm#3.1.0-ballot (canonical = https://interop.esante.gouv.fr/ig/fhir/pdsm)
+Generated Wed Feb 07 14:53:39 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.pdsm#3.1.0-ballot (canonical = https://interop.esante.gouv.fr/ig/fhir/pdsm)
  Build Errors : 12 / 4 / 0
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/Bundle-a9c10f8a-882d-4000-a280-7150e0aeb478 : 0 / 0 / 1
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/CapabilityStatement-PDSm-ConsommateurDeDocuments : 0 / 0 / 1
@@ -19,13 +19,13 @@ Generated Wed Feb 07 14:12:44 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.pdsm#
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/SearchParameter-PDSm-List-PractitionerRoleAsSource : 0 / 0 / 1
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/SearchParameter-PDSm-List-authorOrg : 0 / 1 / 1
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/SearchParameter-PDSm-isArchived : 0 / 1 / 1
- /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/StructureDefinition-PDSmintendedrecipient : 0 / 1 / 1
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/StructureDefinition-pdsm-comprehensive-document-reference : 11 / 1 / 2
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/StructureDefinition-pdsm-comprehensive-provide-document-bundle : 0 / 1 / 1
+ /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/StructureDefinition-pdsm-ext-intended-recipient : 0 / 1 / 1
+ /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/StructureDefinition-pdsm-ext-is-archived : 0 / 1 / 1
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/StructureDefinition-pdsm-find-documentreferences-comprehensive-response : 0 / 1 / 1
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/StructureDefinition-pdsm-find-lists-response : 0 / 1 / 1
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/StructureDefinition-pdsm-folder-comprehensive : 0 / 1 / 1
- /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/StructureDefinition-pdsm-is-archived : 0 / 1 / 1
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/StructureDefinition-pdsm-simplified-publish : 7 / 1 / 1
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/fsh-generated/resources/StructureDefinition-pdsm-submissionset-comprehensive : 1 / 1 / 1
 </table>
@@ -62,8 +62,6 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 WARNING: SearchParameter/PDSm-List-authorOrg: SearchParameter.expression: Reference to an unknown extension - double check that the URL 'http://profiles.ihe.net/ITI/MHD/StructureDefinition/ihe-authorOrg' is correct
 == fsh-generated/resources/SearchParameter-PDSm-isArchived.json ==
 WARNING: SearchParameter/PDSm-isArchived: SearchParameter.expression: Reference to an unknown extension - double check that the URL 'http://esante.gouv.fr/cisis/fhir/StructureDefinition/PDSm_isArchived' is correct
-== fsh-generated/resources/StructureDefinition-PDSmintendedrecipient.json ==
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/PDSmintendedrecipient'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-pdsm-comprehensive-document-reference.json ==
 INFORMATION: StructureDefinition/pdsm-comprehensive-document-reference: StructureDefinition.snapshot.element[98].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 ERROR: StructureDefinition/pdsm-comprehensive-document-reference: StructureDefinition.snapshot.element[23].constraint[1]: Error in constraint 'constr-bind-type' with expression 'f:type': Error @1, 1: Premature ExpressionNode termination at unexpected token ":"
@@ -80,14 +78,16 @@ ERROR: StructureDefinition/pdsm-comprehensive-document-reference: StructureDefin
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-pdsm-comprehensive-provide-document-bundle.json ==
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-provide-document-bundle'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-pdsm-ext-intended-recipient.json ==
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-ext-intended-recipient'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-pdsm-ext-is-archived.json ==
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-ext-is-archived'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-pdsm-find-documentreferences-comprehensive-response.json ==
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-find-documentreferences-comprehensive-response'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-pdsm-find-lists-response.json ==
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-find-lists-response'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-pdsm-folder-comprehensive.json ==
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-folder-comprehensive'): The Implementation Guide contains no examples for this profile
-== fsh-generated/resources/StructureDefinition-pdsm-is-archived.json ==
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-is-archived'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-pdsm-simplified-publish.json ==
 ERROR: StructureDefinition/pdsm-simplified-publish: StructureDefinition.snapshot.element[21].constraint[1]: Error in constraint 'constr-bind-type' with expression 'f:type': Error @1, 1: Premature ExpressionNode termination at unexpected token ":"
 ERROR: StructureDefinition/pdsm-simplified-publish: StructureDefinition.snapshot.element[22].constraint[1]: Error in constraint 'constr-bind-category' with expression 'f:category': Error @1, 1: Premature ExpressionNode termination at unexpected token ":"
