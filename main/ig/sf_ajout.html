@@ -1,0 +1,827 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Ajout d&#39;un lot de documents - Partage de Documents de Santé en mobilité (PDSm) v3.1.0-ballot</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style-ans.css"/>
+    <link rel="stylesheet" href="assets/css/style-add-ans.css"/>
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"3.1"}
+    h3,h4,h5,h6{--heading-prefix:"3.1"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+<div id="family-nav">
+  <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+<div id="ans-nav" style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; ">
+  <a id="hl7-logo" no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Partage de Documents de Santé en mobilité (PDSm)</span>
+            <br/>
+            <span style="display:inline-block;">3.1.0-ballot - Trial-Implementation
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Accueil</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Description des flux
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="construction_des_flux.html">Vue d&apos;ensemble</a>
+      </li>
+      <li>
+        <a href="st_ajout.html">Ajout d&apos;un lot de documents</a>
+      </li>
+      <li>
+        <a href="st_maj.html">Mise à jour de documents</a>
+      </li>
+      <li>
+        <a href="st_recherche_lot.html">Recherche de lot de documents</a>
+      </li>
+      <li>
+        <a href="st_recherche_fiche.html">Recherche de fiche</a>
+      </li>
+      <li>
+        <a href="st_consultation.html">Consultation de documents</a>
+      </li>
+      <li>
+        <a href="st_ajout_simplifie.html">Ajout simplifié d&apos;un document</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Spécifications fonctionnelles
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="specifications_fonctionnelles.html">Spécifications fonctionnelles</a>
+      </li>
+      <li>
+        <a href="sf_ajout.html">Ajout d&apos;un lot de documents</a>
+      </li>
+      <li>
+        <a href="sf_maj.html">Mise à jour de documents</a>
+      </li>
+      <li>
+        <a href="sf_recherche.html">Recherche de documents</a>
+      </li>
+      <li>
+        <a href="sf_consultation.html">Consultation de documents</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Ressources de conformité</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Autres ressources
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="securite.html">Sécurité</a>
+      </li>
+      <li>
+        <a href="equivalences.html">Equivalences</a>
+      </li>
+      <li>
+        <a href="downloads.html">Téléchargements et usage</a>
+      </li>
+      <li>
+        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">Spécifications FHIR </a>
+      </li>
+      <li>
+        <a target="_blank" href="https://esante.gouv.fr/">Site de l&apos;ANS </a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a target="_blank" href="https://interop.esante.gouv.fr/ig/documentation/">Documentation</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='specifications_fonctionnelles.html'><b>Specifications Fonctionnelles</b></a></li><li><b>Ajout d'un lot de documents</b></li>
+
+          <span style="float:right;">
+
+            <a href="specifications_fonctionnelles.html">&lt;prev</a> | 
+
+            <a href="#bottom">bottom</a>
+
+          | <a href="sf_maj.html">next&gt;</a>
+
+          </span>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Partage de Documents de Santé en mobilité (PDSm) - Local Development build (v3.1.0-ballot) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://interop.esante.gouv.fr/ig/fhir/pdsm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Ajout d&#39;un lot de documents</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#définition" id="markdown-toc-définition">Définition</a></li>
+  <li><a href="#description-et-identification-des-flux" id="markdown-toc-description-et-identification-des-flux">Description et identification des flux</a></li>
+  <li><a href="#flux-1---ajoutlotdocument-modelisation-des-flux-dinformations" id="markdown-toc-flux-1---ajoutlotdocument-modelisation-des-flux-dinformations">Flux 1 - AjoutLotDocument MODELISATION DES FLUX D’INFORMATIONS</a></li>
+  <li><a href="#flux-2---resultatajoutlotdocument-modelisation-des-flux-dinformations" id="markdown-toc-flux-2---resultatajoutlotdocument-modelisation-des-flux-dinformations">Flux 2 - ResultatAjoutLotDocument MODELISATION DES FLUX D’INFORMATIONS</a></li>
+</ul>
+
+</div>
+<h3 id="définition">Définition</h3>
+
+<object data="fonctionnel/fig_2.png" type="image/png"></object>
+<p><br />
+Figure 2 : Processus collaboratif “Ajout d’un lot de documents”</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Service attendu</td>
+      <td>Le producteur de documents envoie au gestionnaire de partage de documents une demande d’ajout d’un lot de documents. Ces documents peuvent être de nouveaux documents et/ou des nouvelles versions de documents.</td>
+    </tr>
+    <tr>
+      <td>Pré- conditions</td>
+      <td>Le producteur de documents doit au préalable : 1. être en possession des documents à modifier, 2. être habilité</td>
+    </tr>
+    <tr>
+      <td>Post-conditions</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Contraintes fonctionnelles</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Scénario nominal</td>
+      <td>N/A</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Table 1 Caractéristiques du processus collaboratif</p>
+
+<h3 id="description-et-identification-des-flux">Description et identification des flux</h3>
+
+<object data="fonctionnel/fig_6.png" type="image/png"></object>
+<p><br />
+Figure 6 : Processus collaboratif “Ajout d’un lot de documents”</p>
+
+<h4 id="description-des-actions">Description des actions</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Action</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Préparer le ou les documents</td>
+      <td>Le producteur de documents rassemble les documents à ajouter et/ou à mettre à jour dans l’infrastructure de partage de documents.</td>
+    </tr>
+    <tr>
+      <td>Traiter la réponse</td>
+      <td>Le producteur de documents reçoit et traite le résultat de la demande d’ajout ou de mise à jour de documents. Il peut afficher à l’utilisateur le résultat de la demande.</td>
+    </tr>
+    <tr>
+      <td>Traiter la demande d’ajout ou de remplacement d’un document</td>
+      <td>L’infrastructure de partage de documents traite la demande d’ajout ou de mise à jour, exécute les actions nécessaires au traitement de ces demandes et retourne le résultat du traitement.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Table 6 Tableau des actions</p>
+
+<h4 id="identification-des-flux">Identification des flux</h4>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>Flux</strong></td>
+      <td><strong>Processus</strong></td>
+      <td><strong>Emetteur</strong></td>
+      <td><strong>Récepteur</strong></td>
+      <td><strong>Périmètre</strong></td>
+    </tr>
+    <tr>
+      <td>Flux 1 - AjoutLotDocument</td>
+      <td>Ajout d’un lot de documents</td>
+      <td>Producteur de documents</td>
+      <td>Gestionnaire de partage de documents</td>
+      <td>Oui</td>
+    </tr>
+    <tr>
+      <td>Flux 2 - ResultatAjoutLotDocument</td>
+      <td>Ajout d’un lot de documents</td>
+      <td>Gestionnaire de partage de documents</td>
+      <td> Producteur de documents</td>
+      <td>Oui</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="flux-1---ajoutlotdocument-modelisation-des-flux-dinformations">Flux 1 - AjoutLotDocument MODELISATION DES FLUX D’INFORMATIONS</h3>
+
+<object data="fonctionnel/fig_10.png" type="image/png"></object>
+<p><br /></p>
+
+<p>Figure 10 Flux 1 - AjoutLotDocument</p>
+
+<h4 id="classe-document">Classe “Document”</h4>
+
+<p>Un document est la plus petite unité d’information déposée dans l’infrastructure de partage de documents. Une fois stocké dans l’infrastructure de partage de documents avec un identifiant unique, le document ne subit plus aucune modification.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Nom</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>contenuDocument : [1..1] ObjetBinaire</td>
+      <td>Contient le document au format binaire </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Table 16 Attributs de la classe “Document”</p>
+
+<h4 id="classe-fiche">Classe “Fiche”</h4>
+<p>Une fiche représente le document stocké dans l’infrastructure de partage de documents. Elle contient les informations décrivant les caractéristiques principales d’un document servant au classement et à la recherche des documents.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Nom</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>idFiche : [0..*] Identifiant</td>
+      <td>Identifiant unique d’une fiche d’un document.</td>
+    </tr>
+    <tr>
+      <td>idUnique : [0..1] Identifiant</td>
+      <td>Identifiant unique global affecté au document par son créateur. Il est utilisable comme référence externe dans d’autres documents.</td>
+    </tr>
+    <tr>
+      <td>auteur : [1..*] Identifiant</td>
+      <td>Identifiant de la personne physique et/ou du dispositif auteur d’un document.</td>
+    </tr>
+    <tr>
+      <td>statut : [1..1] Code</td>
+      <td>Représente le statut de la fiche d’un document.<br />Nomenclature(s) associée(s) :<br />** TRE_R269-AvailabilityStatusProvenanceOasis<br />** TRE_R270-AvailabilityStatus</td>
+    </tr>
+    <tr>
+      <td>classeDocument : [0..1] Code</td>
+      <td> Représente la classe du document (compte rendu, imagerie médicale, traitement, certificat, ….). <br /> Jeu de valeurs issu de la nomenclature TRE_A03-ClasseDocument</td>
+    </tr>
+    <tr>
+      <td>typeDocument : [0..1] Code</td>
+      <td>Représente le type du document.<br /> Jeu de valeurs issu des nomenclatures:<br />** TRE_A04-LoincTypeDocument<br />** TRE_A05-TypeDocComplementaire</td>
+    </tr>
+    <tr>
+      <td>authentificateur : [1..1] Identifiant</td>
+      <td>Cet attribut représente l’acteur validant le document et prenant la responsabilité du contenu médical de celui-ci. Il peut s’agir de l’auteur du document si celui-ci est une personne et s’il endosse la responsabilité du contenu médical de ses documents. Si l’auteur est un dispositif, cet attribut doit représenter la personne responsable de l’action effectuée par le dispositif. Pour les documents d’expression personnelle du patient, cet attribut fait référence au patient. </td>
+    </tr>
+    <tr>
+      <td>dateCreationDocument : [1..1] DateHeure</td>
+      <td>Représente la date et l’heure de la création du document.</td>
+    </tr>
+    <tr>
+      <td>niveauConfidentialite : [0..*] Code</td>
+      <td>Contient les informations définissant le niveau de confidentialité d’un document.<br />Nomenclatures utilisées :<br />** TRE_A08-Confidentiality-HL7<br />** TRE_A07-StatusVisibiliteDocument<br />** JDV_J08-XdsConfidentialityCode-CISIS</td>
+    </tr>
+    <tr>
+      <td>cadreExercice : [0..1] Code</td>
+      <td>Cadre d’exercice de l’acte qui a engendré la création du document. <br />Nomenclature utilisée : TRE_A01-CadreExercice</td>
+    </tr>
+    <tr>
+      <td>idPatient : [0..1] Identifiant</td>
+      <td>Représente l’identifiant du patient.</td>
+    </tr>
+    <tr>
+      <td>secteurActivite : [0..1] Code</td>
+      <td>Secteur d’activité lié à la prise en charge de la personne, en lien avec le document produit.<br />Nomenclature utilisée : TRE_R02-SecteurActivite</td>
+    </tr>
+    <tr>
+      <td>dateDebutActe : [0..1] DateHeure</td>
+      <td>Représente la période de début de l’acte de référence.</td>
+    </tr>
+    <tr>
+      <td>dateFinActe : [0..1] DateHeure</td>
+      <td>Date de fin de l’acte de référence, si connue.</td>
+    </tr>
+    <tr>
+      <td>idFicheAssociation : [0..*] Identifiant</td>
+      <td>Représente l’identifiant d’une association entre deux fiches.</td>
+    </tr>
+    <tr>
+      <td>association : [0..*] Code</td>
+      <td>Représente le type d’association entre deux fiches. Se référer aux spécifications techniques pour plus de détails sur la ou les nomenclatures utilisées.</td>
+    </tr>
+    <tr>
+      <td>commentaire : [0..1] Texte</td>
+      <td>Commentaire associé au document.</td>
+    </tr>
+    <tr>
+      <td>titreDocument : [0..1] Texte</td>
+      <td>Titre du document</td>
+    </tr>
+    <tr>
+      <td>langueDocument : [1..*] Code</td>
+      <td>Langue dans laquelle le document est rédigé, pour tous les documents produits par les systèmes initiateurs français, le codes est “fr-FR’.</td>
+    </tr>
+    <tr>
+      <td>formatDocument : [0..1] Code</td>
+      <td>Format technique détaillé du document.<br />Nomenclatures utilisées :<br />TRE_A06-FormatCodeComplementaire<br />TRE_A09-DICOMuidRegistry<br />TRE_A10-NomenclatureURN<br />TRE_A11-IheFormatCode<br />ASS_X11-CorresModeleCDA-XdsFormatCode-CISIS<br />ASS_A12-CorresMediaTypeCDANonStructure-XdsFormatCode-CISIS</td>
+    </tr>
+    <tr>
+      <td>actePathologie : [0..1] Code</td>
+      <td>Actes et pathologies en rapport avec le document.<br />Nomenclatures utilisées :<br />** CCAM pour les actes médicaux (OID=”“1.2.250.1.213.2.5””);<br />** CIM-10 pour les diagnostics de pathologie (OID=”“2.16.840.1.113883.6.3””);<br />** TRE_A00-ProducteurDocNonPS pour les documents d’expression personnelle du patient.”</td>
+    </tr>
+    <tr>
+      <td>version : [0..1] Numerique</td>
+      <td>Numéro de version de la fiche d’un document. La valeur de la métadonnée version est égale à 1 pour la première version de la fiche.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Table 17 Attributs de la classe “Fiche”</p>
+
+<h4 id="classe-classeur">Classe “Classeur”</h4>
+
+<p>Un assemblage de fiches regroupées par catégorie.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Nom</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>idUnique : [0..*] Identifiant</td>
+      <td>Identifiant unique du classeur.</td>
+    </tr>
+    <tr>
+      <td>listeFiches : [0..*] Identifiant</td>
+      <td>Liste des fiches composant le classeur.</td>
+    </tr>
+    <tr>
+      <td>statut : [1..1] Code</td>
+      <td>Pertinence de la version d’un classeur.</td>
+    </tr>
+    <tr>
+      <td>idPatient : [0..1] Identifiant</td>
+      <td>Informations relatives à la gestion des classes et des données.</td>
+    </tr>
+    <tr>
+      <td>typeActivite : [0..1] Code</td>
+      <td>Représente les codes spécifiant le type d’activité de l’événement clinique ayant abouti au regroupement de la fiche d’un document dans ce classeur.<br />Se référer aux spécifications techniques pour plus de détails sur la ou les nomenclatures utilisées.</td>
+    </tr>
+    <tr>
+      <td>derniereMiseAJour : [0..1] DateHeure</td>
+      <td>Correspond à la date et l’heure de la dernière mise à jour du classeur.</td>
+    </tr>
+    <tr>
+      <td>titreClasseur : [1..1] Texte </td>
+      <td>Titre du classeur.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Table 18 Attributs de la classe “Classeur”</p>
+
+<h4 id="classe-lotsoumission">Classe “LotSoumission”</h4>
+<p>Un lot de soumission regroupe les fiches et les classeurs faisant partie d’une même demande de modification du contenu du dossier. Il atteste l’existence et le statut de la demande et est décrit par un ensemble d’attributs, ses métadonnées. Une fois créé, un lot de soumission est immuable à l’exception de son statut.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Nom</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>idLotSoumission : [0..*] Identifiant</td>
+      <td>Identifiant unique du lot de soumission. Cet attribut est destiné à des fins de gestion interne alors que idUnique est utilisé à des fins de références externes.</td>
+    </tr>
+    <tr>
+      <td>idUnique : [0..1] Identifiant</td>
+      <td>Identifiant unique global affecté à ce lot de soumission par son créateur. Cet attribut est utilisé à des fins de références externes alors que idLotSoumission est destiné à des fins de gestion interne.</td>
+    </tr>
+    <tr>
+      <td>idPatient : [0..1] Identifiant</td>
+      <td>Représente l’identifiant du patient.</td>
+    </tr>
+    <tr>
+      <td>idSource : [0..1] Identifiant</td>
+      <td>Représente l’identifiant unique global du système émetteur du lot de soumission.</td>
+    </tr>
+    <tr>
+      <td>auteur : [1..1] Identifiant</td>
+      <td>Représente les personnes physiques ou morales et/ou les dispositifs auteurs d’un lot de soumission.</td>
+    </tr>
+    <tr>
+      <td>dateSoumission : [1..1] DateHeure</td>
+      <td>Représente la date et heure de soumission.</td>
+    </tr>
+    <tr>
+      <td>typeActivite : [1..1] Code</td>
+      <td>Représente le type d’activité associé à l’événement clinique ayant abouti à la constitution du lot de soumission.<br />Jeu de valeurs issu des nomenclatures:<br />** TRE_R209-TypeActivite<br />** TRE_R02-SecteurActivite</td>
+    </tr>
+    <tr>
+      <td>statut : [1..1] Code</td>
+      <td>Représente le statut du lot de soumission.<br /> Nomenclatures utilisées :<br /> TRE_R269-AvailabilityStatusProvenanceOasis<br /> TRE_R270-AvailabilityStatus</td>
+    </tr>
+    <tr>
+      <td>commentaire : [0..1] Texte</td>
+      <td>Contient le commentaire associé au lot de soumission.</td>
+    </tr>
+    <tr>
+      <td>titre : [0..1] Texte</td>
+      <td>Titre du lot de soumission</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Table 19 Attributs de la classe “LotSoumission”</p>
+
+<h3 id="flux-2---resultatajoutlotdocument-modelisation-des-flux-dinformations">Flux 2 - ResultatAjoutLotDocument MODELISATION DES FLUX D’INFORMATIONS</h3>
+
+<object data="fonctionnel/fig_11.png" type="image/png"></object>
+<p><br />
+Figure 11 Flux 2 - ResultatAjoutLotDocument</p>
+
+<h4 id="classe-lotsoumission-1">Classe “LotSoumission”</h4>
+<p>Un lot de soumission regroupe les fiches et les classeurs faisant partie d’une même demande de modification du contenu du dossier. Il atteste l’existence et le statut de la demande et est décrit par un ensemble d’attributs, ses métadonnées. Une fois créé, un lot de soumission est immuable à l’exception de son statut.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Nom</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>statutAttributLotSoumission : [0..*] Texte</td>
+      <td>La réponse de la demande de modification du dossier patient peut contenir un lot de soumission qui contient le statut (réussite ou échec) de chaque attribut renseigné lors de la demande de modification du dossier patient.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Table 20 Attributs de la classe “LotSoumission”</p>
+
+<h4 id="classe-classeur-1">Classe “Classeur”</h4>
+
+<p>Un assemblage de fiches regroupées par catégorie.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Nom</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>statutAttributClasseur : [0..*] Texte</td>
+      <td>La réponse de la demande de modification du dossier patient peut contenir un lot de soumission qui contient le statut (réussite ou échec) de chaque attribut renseigné lors de la demande de modification du dossier patient.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Table 21 Attributs de la classe “Classeur”</p>
+
+<h4 id="classe-fiche-1">Classe “Fiche”</h4>
+
+<p>Une fiche représente le document stocké dans l’infrastructure de partage de documents. Elle contient les informations décrivant les caractéristiques principales d’un document servant au classement et à la recherche des documents.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Nom</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>statutAttributFiche : [0..*] Texte</td>
+      <td>La réponse de la demande de modification du dossier patient peut contenir une fiche qui contient le statut (réussite ou échec) de chaque attribut renseigné lors de la demande de modification du dossier patient.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Table 22 Attributs de la classe “Fiche”</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div style="background-color:var(--footer-nav-bg-color)">
+        <table style="width:100%">
+          <tbody>
+            <tr>
+              <td style="text-align:left">&#xA0;
+
+                <a href="specifications_fonctionnelles.html">&lt;prev</a>
+
+              </td>
+              <td style="text-align:center">
+                <a href="#top">top</a>
+              </td>
+              <td style="text-align:right">&#xA0;
+
+                <a href="sf_maj.html">next&gt;</a>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.pdsm#3.1.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 30, 2024 14:32+0000">2024-04-30</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA </a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/fhir/pdsm/history.html">Historique des versions </a>
+                  | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/FIG-partage-de-documents-de-sante-fhir/issues/new">New Issue</a>
+                
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+
+  <!-- Ajout ANS -->
+  <script src="assets/js/app.js" type="text/javascript"> </script>
+  <script src="assets/js/vendor.js" type="text/javascript"> </script>
+  <!-- Fin ajout ANS -->
+
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+  
+    
+  
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+
+
+  <!-- AJOUT ANS -->
+
+<footer class="footer footer-principal" role="contentinfo">
+  <div class="footer__region1">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <div class="logos">        
+            <div class="logo logo--0">
+              <a href="https://solidarites-sante.gouv.fr" title="Ministère des Solidarités et de la Santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
+                
+                <img src="assets/images/logo-ministere.svg" alt="Ministère des Solidarités et de la Santé" width="133" height="77" loading="lazy" />
+                
+              </a>
+            </div>
+        
+            <div class="logo logo--1">
+              <a href="https://esante.gouv.fr/" title="Agence du numérique en santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
+                
+                <img src="assets/images/logo-ANS-footer.svg" alt="Agence du numérique en santé" width="106" height="74" loading="lazy" />
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <p class="footer__title">Agence du Numérique en Santé</p>
+          <p>2-10 Rue d'Oradour-sur-Glane 75015 Paris</p>
+
+          <!-- <div class="m-social">
+            <ul class="m-social__list">        
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.linkedin.com/company/agence-du-numerique-en-sante/" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-linkedin" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#linkedin"></use></svg>
+                  </div>
+                  <span class="sr-only">linkedin</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://twitter.com/esante_gouv_fr" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-twitter" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#twitter"></use></svg>
+                  </div>
+                  <span class="sr-only">twitter</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.youtube.com/channel/UCd1zuSaU5cE1lRCpwv_HSMA" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-youtube" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#youtube"></use></svg>
+                  </div>
+                  <span class="sr-only">youtube</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://esante.gouv.fr/rss.xml" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-rss" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#rss"></use></svg>
+                  </div>
+                  <span class="sr-only">rss</span>
+                </a>
+              </li>
+            </ul>
+          </div> -->
+        </div>
+        
+        <div class="col-6 col-lg-4">
+          <ul class="footer-list">
+            <li class="footer-list__item footer-list__item--hasIcon">
+              <a href="mailto:ci-sis@esante.gouv.fr" class="mailto-link">
+                <svg class="svg-icon svg-angle-right" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#angle-right"></use></svg>Contact</a>
+              </li>
+              <!-- <li class="footer-list__item">
+                <a href="https://interop-pprod.esante.gouv.fr/ci-sis-specifications/wp-content/uploads/CGU_espace_de_tests_v1.1.pdf" class="file-link">Mentions légales</a>
+              </li>
+               -->
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+    <!-- <div class="footer__region2">
+      <div class="container">
+        <div class="footer-contentinfo">
+          <ul class="footer-list footer-list--inline">
+
+          </ul>
+        </div>
+      </div>
+    </div> -->
+  </footer>
+  </body>
+</html>
+

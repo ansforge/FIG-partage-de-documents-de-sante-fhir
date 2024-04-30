@@ -1,0 +1,207 @@
+@startuml
+set namespaceSeparator ?
+hide circle
+hide class fields
+
+package IG #DDDDDD{
+
+     package Profiles #DDDDDD{
+
+        class PDSm_ComprehensiveDocumentReference{
+
+             DocumentReference => [None..None]
+             DocumentReference.meta.versionId => [None..None]
+             DocumentReference.contained => [1..None]
+             DocumentReference.extension => [None..None]
+             DocumentReference.extension:isArchived => <&plus>[0..1]
+             DocumentReference.masterIdentifier => [None..None]
+             DocumentReference.identifier => [None..None]
+             DocumentReference.status => [None..None]
+             DocumentReference.type => [None..None]
+             DocumentReference.category => [None..None]
+             DocumentReference.subject => [None..None]
+             DocumentReference.date => [None..None]
+             DocumentReference.author => [1..None]
+             DocumentReference.authenticator => [1..None]
+             DocumentReference.relatesTo => [None..None]
+             DocumentReference.relatesTo.code => [None..None]
+             DocumentReference.relatesTo.target => [None..None]
+             DocumentReference.description => [None..None]
+             DocumentReference.securityLabel => [None..None]
+             DocumentReference.content => [None..None]
+             DocumentReference.content.attachment.language => [None..None]
+             DocumentReference.content.attachment.url => [None..None]
+             DocumentReference.content.attachment.size => [1..None]
+             DocumentReference.content.attachment.hash => [1..None]
+             DocumentReference.content.attachment.title => [1..None]
+             DocumentReference.content.attachment.creation => [None..None]
+             DocumentReference.content.format => [None..None]
+             DocumentReference.context => [None..None]
+             DocumentReference.context.event => [None..None]
+             DocumentReference.context.period => [1..None]
+             DocumentReference.context.period.start => [1..None]
+             DocumentReference.context.period.end => [None..None]
+             DocumentReference.context.facilityType => [None..None]
+             DocumentReference.context.practiceSetting => [None..None]
+             DocumentReference.context.sourcePatientInfo => [None..None]
+             DocumentReference.context.related => [None..None]
+             DocumentReference.context.related:referenceIdList => [0..*]
+             DocumentReference.context.related:referenceIdList.identifier => [None..None]
+             DocumentReference.context.related:referenceIdList.identifier.type.coding.system => [None..None]
+             DocumentReference.context.related:referenceIdList.identifier.type.coding.code => [None..None]
+             DocumentReference.context.related:referenceIdList.identifier.system => [None..None]
+             DocumentReference.context.related:referenceIdList.identifier.value => [1..None]
+        } 
+
+        class PDSm_ComprehensiveProvideDocumentBundle{
+
+             Bundle => [None..None]
+             Bundle.entry:SubmissionSet => [None..None]
+             Bundle.entry:SubmissionSet.resource => [None..None]
+             Bundle.entry:DocumentRefs => [None..None]
+             Bundle.entry:DocumentRefs.resource => [None..None]
+             Bundle.entry:Folders => [None..None]
+             Bundle.entry:Folders.resource => [None..None]
+        } 
+
+        class PDSm_FindDocumentReferencesComprehensiveResponse{
+
+             Bundle => [None..None]
+             Bundle.entry:DocumentReference => [None..None]
+             Bundle.entry:DocumentReference.resource => [None..None]
+        } 
+
+        class PDSm_FindListsResponse{
+
+             Bundle => [None..None]
+             Bundle.entry:SubmissionSet => [None..None]
+             Bundle.entry:SubmissionSet.resource => [None..None]
+             Bundle.entry:Folder => [None..None]
+             Bundle.entry:Folder.resource => [None..None]
+        } 
+
+        class PDSm_FolderComprehensive{
+
+             List => [None..None]
+             List.extension:designationType => <&plus>[None..1]
+             List.identifier:uniqueId => [None..None]
+             List.identifier:entryUUID => [None..None]
+             List.status => [None..None]
+             List.mode => [None..None]
+             List.title => [None..None]
+             List.code => [None..None]
+             List.subject => [None..None]
+             List.date => [1..None]
+             List.note => [None..None]
+             List.entry => [1..None]
+             List.entry.item => [None..None]
+        } 
+
+        class PDSm_SimplifiedPublish{
+
+             DocumentReference => [None..None]
+             DocumentReference.meta.versionId => [None..None]
+             DocumentReference.masterIdentifier => [None..None]
+             DocumentReference.identifier => [None..None]
+             DocumentReference.status => [None..None]
+             DocumentReference.type => [None..None]
+             DocumentReference.category => [None..None]
+             DocumentReference.subject => [None..None]
+             DocumentReference.date => [None..None]
+             DocumentReference.author => [1..None]
+             DocumentReference.authenticator => [None..None]
+             DocumentReference.description => [None..None]
+             DocumentReference.securityLabel => [None..None]
+             DocumentReference.content => [None..None]
+             DocumentReference.content.attachment.language => [None..None]
+             DocumentReference.content.attachment.data => [None..None]
+             DocumentReference.content.attachment.size => [None..None]
+             DocumentReference.content.attachment.hash => [None..None]
+             DocumentReference.content.attachment.title => [1..None]
+             DocumentReference.content.attachment.creation => [None..None]
+             DocumentReference.content.format => [None..None]
+             DocumentReference.context => [None..None]
+             DocumentReference.context.event => [None..1]
+             DocumentReference.context.facilityType => [None..None]
+             DocumentReference.context.practiceSetting => [None..None]
+             DocumentReference.context.sourcePatientInfo => [None..None]
+        } 
+
+        class PDSm_SubmissionSetComprehensive{
+
+             List => [None..None]
+             List.contained => [1..None]
+             List.extension:designationType => <&plus>[None..None]
+             List.extension:designationType.value[x] => <&plus>[None..None]
+             List.extension:sourceId => <&plus>[None..None]
+             List.extension:intendedRecipient => <&plus>[None..None]
+             List.extension:intendedRecipient.value[x] => <&plus>[None..None]
+             List.extension:isArchived => <&plus>[0..1]
+             List.identifier:uniqueId => [None..None]
+             List.identifier:entryUUID => [None..None]
+             List.status => [None..None]
+             List.mode => [None..None]
+             List.title => [None..None]
+             List.code => [None..None]
+             List.subject => [None..None]
+             List.date => [None..None]
+             List.source => [1..None]
+             List.source.extension:authorOrg => <&plus>[None..None]
+             List.source.extension:authorOrg.value[x] => <&plus>[None..None]
+             List.note => [None..None]
+             List.entry.item => [None..None]
+         }
+
+     }
+     package extension #paleturquoise {
+
+     PDSm_ComprehensiveDocumentReference -[#black,dashed,thickness=2]-> PDSm_IsArchived
+     PDSm_SubmissionSetComprehensive -[#black,dashed,thickness=2]-> PDSm_IsArchived
+
+        class PDSm_intendedRecipient{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class PDSm_IsArchived{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [1..None]
+         }
+     }
+     package valueset #PaleVioletRed{
+       }
+
+package "Ressources de base" #palegreen {
+
+ class "https://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.Comprehensive.DocumentReference" as  class63e6f5cfb1205824015e49e87846b7f5 
+
+    class63e6f5cfb1205824015e49e87846b7f5 --> PDSm_ComprehensiveDocumentReference
+
+ class "https://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.Comprehensive.ProvideBundle" as  classd96aced8133a6f001036d2ce8ffb64c0 
+
+    classd96aced8133a6f001036d2ce8ffb64c0 --> PDSm_ComprehensiveProvideDocumentBundle
+
+ class "https://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.FindDocumentReferencesComprehensiveResponseMessage" as  class3adc48d30e5d04ccabc32483fd09a06e 
+
+    class3adc48d30e5d04ccabc32483fd09a06e --> PDSm_FindDocumentReferencesComprehensiveResponse
+
+ class "https://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.FindDocumentListsResponseMessage" as  class6e517420f9989e1aea021d0a6a3f3224 
+
+    class6e517420f9989e1aea021d0a6a3f3224 --> PDSm_FindListsResponse
+
+ class "https://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.Comprehensive.Folder" as  class2034553831a9abf358120f143f9b7812 
+
+    class2034553831a9abf358120f143f9b7812 --> PDSm_FolderComprehensive
+
+ class "https://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.SimplifiedPublish.DocumentReference" as  class0d16ddb8f4c96a9cebe4bccd50a3a75f 
+
+    class0d16ddb8f4c96a9cebe4bccd50a3a75f --> PDSm_SimplifiedPublish
+
+ class "https://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.Comprehensive.SubmissionSet" as  class0df2c023c622d6385d20f0f68ba98222 
+
+    class0df2c023c622d6385d20f0f68ba98222 --> PDSm_SubmissionSetComprehensive
+}
+@enduml
