@@ -3,8 +3,8 @@ PDSm : Validation Results
 
 err = 26, warn = 15, info = 1
 IG Publisher Version: 1.6.6
-Generated Tue Apr 30 14:34:29 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.pdsm#3.1.0-ballot (canonical = https://interop.esante.gouv.fr/ig/fhir/pdsm)
- Build Errors : 15 / 5 / 0
+Generated Thu May 02 07:45:50 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.pdsm#3.1.0-ballot (canonical = https://interop.esante.gouv.fr/ig/fhir/pdsm)
+ Build Errors : 13 / 5 / 0
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/igSource/fsh-generated/resources/Bundle-a9c10f8a-882d-4000-a280-7150e0aeb478 : 0 / 0 / 1
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/igSource/fsh-generated/resources/CapabilityStatement-PDSm-ConsommateurDeDocuments : 1 / 0 / 1
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/igSource/fsh-generated/resources/CapabilityStatement-PDSm-GestionnaireDePartageDeDocuments : 1 / 0 / 1
@@ -41,8 +41,6 @@ ERROR: /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-d
 ERROR: /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/igSource/output/CapabilityStatement-PDSm-GestionnaireDePartageDeDocuments.json.html#/html/body/div/div/div/div/div/pre/code/a at Line 310, column 7: The link 'ImplementationGuide-ans.fhir.fr.pdsm.html' for "🔗" cannot be resolved
 ERROR: /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/igSource/output/CapabilityStatement-PDSm-ProducteurDeDocuments.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 310, column 792: The link 'ImplementationGuide-ans.fhir.fr.pdsm.html' for "https://interop.esante.gouv.fr/ig/fhir/pdsm/ImplementationGuide/ans.fhir.fr.pdsm" cannot be resolved
 ERROR: /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/igSource/output/CapabilityStatement-PDSm-ProducteurDeDocuments.json.html#/html/body/div/div/div/div/div/pre/code/a at Line 310, column 7: The link 'ImplementationGuide-ans.fhir.fr.pdsm.html' for "🔗" cannot be resolved
-ERROR: /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/igSource/output/construction_des_flux.html#/html/body/div/div/div/div/div/ul/li/a at Line 260, column 11: The link 'st_flux3.html' for "flux 03" cannot be resolved
-ERROR: /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/igSource/output/construction_des_flux.html#/html/body/div/div/div/div/div/ul/li/a at Line 261, column 11: The link 'st_flux4.html' for "flux 04" cannot be resolved
 ERROR: /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/igSource/output/equivalences.html#/html/body/div/div/div/div/div/h4/a at Line 525, column 119: The link 'StructureDefinition-PDSmSubmissionSetComprehensive.html' for "PDSmSubmissionSetComprehensive" cannot be resolved
 ERROR: /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/igSource/output/equivalences.html#/html/body/div/div/div/div/div/h4/a at Line 586, column 99: The link 'StructureDefinition-PDSmComprehensiveDocumentReference.html' for "PDSmComprehensiveDocumentReference" cannot be resolved
 WARNING: /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/igSource/output/st_recherche_fiche.html#/html/body/div/div/div/div/div/p/a at Line 416, column 131: The link 'https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-find-documentreferences-comprehensive-response' for "PDSm_FindDocumentReferencesComprehensiveResponse" is a canonical link and is therefore unsafe with regard to versions
@@ -66,9 +64,9 @@ ERROR: CapabilityStatement.text.div: Hyperlink 'ImplementationGuide-ans.fhir.fr.
 == fsh-generated/resources/SearchParameter-PDSm-List-PatientAsSubject.json ==
 == fsh-generated/resources/SearchParameter-PDSm-List-PractitionerRoleAsSource.json ==
 == fsh-generated/resources/SearchParameter-PDSm-List-authorOrg.json ==
-WARNING: SearchParameter/PDSm-List-authorOrg: SearchParameter.expression: Reference to an unknown extension - double check that the URL 'http://profiles.ihe.net/ITI/MHD/StructureDefinition/ihe-authorOrg' is correct
+WARNING: SearchParameter/PDSm-List-authorOrg: SearchParameter.expression: The left side is inherently a collection, and so the expression 'extension('https://profiles.ihe.net/ITI/MHD/StructureDefinition/ihe-authorOrg').value as Reference' may fail or return false if there is more than one item in the content being evaluated
 == fsh-generated/resources/SearchParameter-PDSm-isArchived.json ==
-WARNING: SearchParameter/PDSm-isArchived: SearchParameter.expression: Reference to an unknown extension - double check that the URL 'http://esante.gouv.fr/cisis/fhir/StructureDefinition/PDSm_isArchived' is correct
+WARNING: SearchParameter/PDSm-isArchived: SearchParameter.expression: Reference to an unknown extension - double check that the URL 'https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSm-isArchived' is correct
 == fsh-generated/resources/StructureDefinition-PDSmintendedrecipient.json ==
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/PDSmintendedrecipient'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-pdsm-comprehensive-document-reference.json ==
