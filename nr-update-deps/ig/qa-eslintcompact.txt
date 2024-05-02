@@ -12,8 +12,6 @@ Generic: line 0, col 0, Error - The link 'ImplementationGuide-ans.fhir.fr.pdsm.h
 Generic: line 0, col 0, Error - The link 'ImplementationGuide-ans.fhir.fr.pdsm.html' for "🔗" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'ImplementationGuide-ans.fhir.fr.pdsm.html' for "https://interop.esante.gouv.fr/ig/fhir/pdsm/ImplementationGuide/ans.fhir.fr.pdsm" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'ImplementationGuide-ans.fhir.fr.pdsm.html' for "🔗" cannot be resolved (NOTFOUND)
-Generic: line 0, col 0, Error - The link 'SearchParameter-PDSm-DocumentReference-PatientAsSubject.html' for "patient" cannot be resolved (NOTFOUND)
-Generic: line 0, col 0, Error - The link 'SearchParameter-PDSm-DocumentReference-PractitionerRoleAsAuthor.html' for "author" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Warning - The link 'https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-find-documentreferences-comprehensive-response' for "PDSm_FindDocumentReferencesComprehensiveResponse" is a canonical link and is therefore unsafe with regard to versions (NOTFOUND)
 Generic: line 0, col 0, Warning - The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide (NOTFOUND)
 Generic: line 0, col 0, Warning - An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide (NOTFOUND)

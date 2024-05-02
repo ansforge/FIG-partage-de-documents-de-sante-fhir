@@ -3,8 +3,8 @@ PDSm : Validation Results
 
 err = 8, warn = 52, info = 39
 IG Publisher Version: 1.6.6
-Generated Thu May 02 12:32:03 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.pdsm#3.1.0-ballot (canonical = https://interop.esante.gouv.fr/ig/fhir/pdsm)
- Build Errors : 12 / 5 / 0
+Generated Thu May 02 12:38:35 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.pdsm#3.1.0-ballot (canonical = https://interop.esante.gouv.fr/ig/fhir/pdsm)
+ Build Errors : 10 / 5 / 0
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/igSource/fsh-generated/resources/Bundle-a9c10f8a-882d-4000-a280-7150e0aeb478 : 0 / 0 / 1
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/igSource/fsh-generated/resources/CapabilityStatement-PDSm-ConsommateurDeDocuments : 1 / 0 / 1
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/igSource/fsh-generated/resources/CapabilityStatement-PDSm-GestionnaireDePartageDeDocuments : 1 / 0 / 1
@@ -39,8 +39,6 @@ ERROR: /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-d
 ERROR: /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/igSource/output/CapabilityStatement-PDSm-GestionnaireDePartageDeDocuments.json.html#/html/body/div/div/div/div/div/pre/code/a at Line 310, column 7: The link 'ImplementationGuide-ans.fhir.fr.pdsm.html' for "🔗" cannot be resolved
 ERROR: /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/igSource/output/CapabilityStatement-PDSm-ProducteurDeDocuments.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 310, column 792: The link 'ImplementationGuide-ans.fhir.fr.pdsm.html' for "https://interop.esante.gouv.fr/ig/fhir/pdsm/ImplementationGuide/ans.fhir.fr.pdsm" cannot be resolved
 ERROR: /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/igSource/output/CapabilityStatement-PDSm-ProducteurDeDocuments.json.html#/html/body/div/div/div/div/div/pre/code/a at Line 310, column 7: The link 'ImplementationGuide-ans.fhir.fr.pdsm.html' for "🔗" cannot be resolved
-ERROR: /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/igSource/output/st_recherche_fiche.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 329, column 12: The link 'SearchParameter-PDSm-DocumentReference-PatientAsSubject.html' for "patient" cannot be resolved
-ERROR: /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/igSource/output/st_recherche_fiche.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 334, column 12: The link 'SearchParameter-PDSm-DocumentReference-PractitionerRoleAsAuthor.html' for "author" cannot be resolved
 WARNING: /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/igSource/output/st_recherche_fiche.html#/html/body/div/div/div/div/div/p/a at Line 416, column 131: The link 'https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-find-documentreferences-comprehensive-response' for "PDSm_FindDocumentReferencesComprehensiveResponse" is a canonical link and is therefore unsafe with regard to versions
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
