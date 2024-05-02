@@ -59,7 +59,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 - TRE_A00-ProducteurDocNonPS, OID : 1.2.250.1.213.1.1.4.6 
 - TRE_R209-TypeActivite, OID : 1.2.250.1.213.2.2 
 - TRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J59-ContentTypeCode-DMP). 
-En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J03-XdsContentTypeCode-CISIS peut être utilisé. {f:extension[designationType]}","typeActivite : [1..1] Code"
+En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J03-XdsContentTypeCode-CISIS peut être utilisé. {null}","typeActivite : [1..1] Code"
 "List.extension:designationType.id","List.extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "List.extension:designationType.extension","List.extension.extension","","","",0,0,"","","","Extension {[]} {[]}

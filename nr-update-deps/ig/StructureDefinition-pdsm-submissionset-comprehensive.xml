@@ -36,7 +36,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J03-Xd
   <name value="PDSm_SubmissionSetComprehensive"/>
   <title value="PDSm SubmissionSet Comprehensive"/>
   <status value="active"/>
-  <date value="2024-04-30T14:34:12+00:00"/>
+  <date value="2024-05-02T08:43:49+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -674,7 +674,6 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J03-Xd
         <key value="constr-bind-designationtype"/>
         <severity value="error"/>
         <human value="Les valeurs possibles doivent provenir d’une des terminologies de référence suivantes : &#xA;- TRE_A00-ProducteurDocNonPS, OID : 1.2.250.1.213.1.1.4.6 &#xA;- TRE_R209-TypeActivite, OID : 1.2.250.1.213.2.2 &#xA;- TRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J59-ContentTypeCode-DMP). &#xA;En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J03-XdsContentTypeCode-CISIS peut être utilisé."/>
-        <expression value="f:extension[designationType]"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-submissionset-comprehensive"/>
       </constraint>
       <mustSupport value="true"/>
@@ -2521,7 +2520,6 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J03-Xd
         <key value="constr-bind-designationtype"/>
         <severity value="error"/>
         <human value="Les valeurs possibles doivent provenir d’une des terminologies de référence suivantes : &#xA;- TRE_A00-ProducteurDocNonPS, OID : 1.2.250.1.213.1.1.4.6 &#xA;- TRE_R209-TypeActivite, OID : 1.2.250.1.213.2.2 &#xA;- TRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J59-ContentTypeCode-DMP). &#xA;En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J03-XdsContentTypeCode-CISIS peut être utilisé."/>
-        <expression value="f:extension[designationType]"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-submissionset-comprehensive"/>
       </constraint>
       <mapping>

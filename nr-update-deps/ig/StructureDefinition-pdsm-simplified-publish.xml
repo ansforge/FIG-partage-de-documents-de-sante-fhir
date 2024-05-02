@@ -63,7 +63,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
   <name value="PDSm_SimplifiedPublish"/>
   <title value="PDSm Simplified Publish"/>
   <status value="active"/>
-  <date value="2024-04-30T14:34:12+00:00"/>
+  <date value="2024-05-02T08:43:49+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -977,7 +977,6 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <key value="constr-bind-type"/>
         <severity value="error"/>
         <human value="Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :&#xA;&#xD;&#xA; TRE_A05-TypeDocComplementaireCISIS, OID : 1.2.250.1.213.1.1.4.12&#xA;&#xD;&#xA; TRE_A04-TypeDocument-LOINC, OID : 2.16.840.1.113883.6.1&#xA;&#xD;&#xA; TRE_A12-NomenclatureASTM, OID : ASTM&#xA;&#xD;&#xA;Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J66-TypeCode-DMP).&#xD;&#xA;En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J07-XdsTypeCode-CISIS peut être utilisé."/>
-        <expression value="f:type"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish"/>
       </constraint>
       <mustSupport value="true"/>
@@ -1044,7 +1043,6 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <key value="constr-bind-category"/>
         <severity value="error"/>
         <human value="Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :&#xA;-&#x9;TRE_A03-ClasseDocument-CISIS, OID : 1.2.250.1.213.1.1.4.1&#xA;-&#x9;TRE_A10-NomenclatureURN, OID : URN&#xA;Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J57-ClassCode-DMP).&#xA;En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J06-XdsClassCode-CISIS peut être utilisé."/>
-        <expression value="f:category"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish"/>
       </constraint>
       <mustSupport value="true"/>
@@ -1629,7 +1627,6 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <key value="constr-bind-securityLabel"/>
         <severity value="error"/>
         <human value="Les codes pour cet élément doivent provenir du ValueSet spécifié par le standard. Lorsqu’aucun code ne correspond au concept recherché, un code provenant de la terminologie de référence TRE_A07-StatusVisibiliteDocument, OID : 1.2.250.1.213.1.1.4.13 peut être utilisé."/>
-        <expression value="f:securityLabel"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish"/>
       </constraint>
       <mustSupport value="true"/>
@@ -2247,7 +2244,6 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <key value="constr-bind-format"/>
         <severity value="error"/>
         <human value="Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :&#xA;- TRE_A06-FormatCodeComplementaire, OID : 1.2.250.1.213.1.1.4.2.282&#xA;- TRE_A11-IheFormatCode, OID : 1.3.6.1.4.1.19376.1.2.3&#xA;- TRE_A09-DICOMuidRegistry, OID : 1.2.840.10008.2.6.1&#xA;- TRE_A10-NomenclatureURN, OID : URN&#xA;Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J60-FormatCode-DMP).&#xA;En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J10-XdsFormatCode-CISIS peut être utilisé."/>
-        <expression value="f:content/f:format"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish"/>
       </constraint>
       <mustSupport value="true"/>
@@ -2483,7 +2479,6 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <key value="constr-bind-context-event"/>
         <severity value="error"/>
         <human value="Nomenclatures utilisées : 1) CCAM pour les actes médicaux (OID=&quot;1.2.250.1.213.2.5&quot;); 2) CIM-10 pour les diagnostics de pathologie (OID=&quot;2.16.840.1.113883.6.3&quot;), 3) TRE_A00-ProducteurDocNonPS pour les documents d'expression personnelle du patient, 4) autre"/>
-        <expression value="f:context/f:event"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish"/>
       </constraint>
       <isModifier value="false"/>
@@ -2577,7 +2572,6 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <key value="constr-bind-ProducteurDoc-simplified"/>
         <severity value="error"/>
         <human value="L’utilisation de cette nomenclature est recommandée mais non obligatoire (prefered) :&#xA;-&#x9;TRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 (lorsque l’auteur du document est un professionnel ou un équipement sous sa responsabilité)&#xA;Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J61-HealthcareFacilityTypeCode-DMP).&#xA;En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-XdsHealthcareFacilityTypeCode-CISIS peut être utilisé."/>
-        <expression value="f:context/f:practiceSetting or f:context/f:facilityType"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish"/>
       </constraint>
       <mustSupport value="true"/>
@@ -2632,7 +2626,6 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <key value="constr-bind-ProducteurDoc-simplified"/>
         <severity value="error"/>
         <human value="L’utilisation de cette nomenclature est recommandée mais non obligatoire (prefered) :&#xA;-&#x9;TRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 (lorsque l’auteur du document est un professionnel ou un équipement sous sa responsabilité)&#xA;Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J61-HealthcareFacilityTypeCode-DMP).&#xA;En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-XdsHealthcareFacilityTypeCode-CISIS peut être utilisé."/>
-        <expression value="f:context/f:practiceSetting or f:context/f:facilityType"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish"/>
       </constraint>
       <mustSupport value="true"/>
@@ -2775,7 +2768,6 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <key value="constr-bind-type"/>
         <severity value="error"/>
         <human value="Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :&#xA;&#xD;&#xA; TRE_A05-TypeDocComplementaireCISIS, OID : 1.2.250.1.213.1.1.4.12&#xA;&#xD;&#xA; TRE_A04-TypeDocument-LOINC, OID : 2.16.840.1.113883.6.1&#xA;&#xD;&#xA; TRE_A12-NomenclatureASTM, OID : ASTM&#xA;&#xD;&#xA;Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J66-TypeCode-DMP).&#xD;&#xA;En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J07-XdsTypeCode-CISIS peut être utilisé."/>
-        <expression value="f:type"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish"/>
       </constraint>
       <binding>
@@ -2790,7 +2782,6 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <key value="constr-bind-category"/>
         <severity value="error"/>
         <human value="Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :&#xA;-&#x9;TRE_A03-ClasseDocument-CISIS, OID : 1.2.250.1.213.1.1.4.1&#xA;-&#x9;TRE_A10-NomenclatureURN, OID : URN&#xA;Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J57-ClassCode-DMP).&#xA;En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J06-XdsClassCode-CISIS peut être utilisé."/>
-        <expression value="f:category"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish"/>
       </constraint>
       <binding>
@@ -2846,7 +2837,6 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <key value="constr-bind-securityLabel"/>
         <severity value="error"/>
         <human value="Les codes pour cet élément doivent provenir du ValueSet spécifié par le standard. Lorsqu’aucun code ne correspond au concept recherché, un code provenant de la terminologie de référence TRE_A07-StatusVisibiliteDocument, OID : 1.2.250.1.213.1.1.4.13 peut être utilisé."/>
-        <expression value="f:securityLabel"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish"/>
       </constraint>
     </element>
@@ -2886,7 +2876,6 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <key value="constr-bind-format"/>
         <severity value="error"/>
         <human value="Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :&#xA;- TRE_A06-FormatCodeComplementaire, OID : 1.2.250.1.213.1.1.4.2.282&#xA;- TRE_A11-IheFormatCode, OID : 1.3.6.1.4.1.19376.1.2.3&#xA;- TRE_A09-DICOMuidRegistry, OID : 1.2.840.10008.2.6.1&#xA;- TRE_A10-NomenclatureURN, OID : URN&#xA;Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J60-FormatCode-DMP).&#xA;En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J10-XdsFormatCode-CISIS peut être utilisé."/>
-        <expression value="f:content/f:format"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish"/>
       </constraint>
       <binding>
@@ -2906,7 +2895,6 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <key value="constr-bind-context-event"/>
         <severity value="error"/>
         <human value="Nomenclatures utilisées : 1) CCAM pour les actes médicaux (OID=&quot;1.2.250.1.213.2.5&quot;); 2) CIM-10 pour les diagnostics de pathologie (OID=&quot;2.16.840.1.113883.6.3&quot;), 3) TRE_A00-ProducteurDocNonPS pour les documents d'expression personnelle du patient, 4) autre"/>
-        <expression value="f:context/f:event"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish"/>
       </constraint>
     </element>
@@ -2917,7 +2905,6 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <key value="constr-bind-ProducteurDoc-simplified"/>
         <severity value="error"/>
         <human value="L’utilisation de cette nomenclature est recommandée mais non obligatoire (prefered) :&#xA;-&#x9;TRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 (lorsque l’auteur du document est un professionnel ou un équipement sous sa responsabilité)&#xA;Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J61-HealthcareFacilityTypeCode-DMP).&#xA;En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-XdsHealthcareFacilityTypeCode-CISIS peut être utilisé."/>
-        <expression value="f:context/f:practiceSetting or f:context/f:facilityType"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish"/>
       </constraint>
       <binding>
@@ -2932,7 +2919,6 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <key value="constr-bind-ProducteurDoc-simplified"/>
         <severity value="error"/>
         <human value="L’utilisation de cette nomenclature est recommandée mais non obligatoire (prefered) :&#xA;-&#x9;TRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 (lorsque l’auteur du document est un professionnel ou un équipement sous sa responsabilité)&#xA;Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J61-HealthcareFacilityTypeCode-DMP).&#xA;En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-XdsHealthcareFacilityTypeCode-CISIS peut être utilisé."/>
-        <expression value="f:context/f:practiceSetting or f:context/f:facilityType"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish"/>
       </constraint>
       <binding>

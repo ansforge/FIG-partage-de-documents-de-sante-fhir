@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "PDSm_SubmissionSetComprehensive"] ; # 
   fhir:title [ fhir:v "PDSm SubmissionSet Comprehensive"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-04-30T14:34:12+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-05-02T08:43:49+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -730,7 +730,6 @@
          fhir:key [ fhir:v "constr-bind-designationtype" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Les valeurs possibles doivent provenir d’une des terminologies de référence suivantes : \n- TRE_A00-ProducteurDocNonPS, OID : 1.2.250.1.213.1.1.4.6 \n- TRE_R209-TypeActivite, OID : 1.2.250.1.213.2.2 \n- TRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J59-ContentTypeCode-DMP). \nEn l’absence de spécifications complémentaires, le jeu de valeurs JDV_J03-XdsContentTypeCode-CISIS peut être utilisé." ] ;
-         fhir:expression [ fhir:v "f:extension[designationType]" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-submissionset-comprehensive"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-submissionset-comprehensive>
@@ -2769,7 +2768,6 @@
          fhir:key [ fhir:v "constr-bind-designationtype" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Les valeurs possibles doivent provenir d’une des terminologies de référence suivantes : \n- TRE_A00-ProducteurDocNonPS, OID : 1.2.250.1.213.1.1.4.6 \n- TRE_R209-TypeActivite, OID : 1.2.250.1.213.2.2 \n- TRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J59-ContentTypeCode-DMP). \nEn l’absence de spécifications complémentaires, le jeu de valeurs JDV_J03-XdsContentTypeCode-CISIS peut être utilisé." ] ;
-         fhir:expression [ fhir:v "f:extension[designationType]" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-submissionset-comprehensive"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-submissionset-comprehensive>

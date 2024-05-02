@@ -299,7 +299,7 @@
         
           Active
           
-            as of 2024-04-30
+            as of 2024-05-02
           
         
       </td>
@@ -536,7 +536,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J03-Xd
 - TRE_A00-ProducteurDocNonPS, OID : 1.2.250.1.213.1.1.4.6 
 - TRE_R209-TypeActivite, OID : 1.2.250.1.213.2.2 
 - TRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J59-ContentTypeCode-DMP). 
-En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J03-XdsContentTypeCode-CISIS peut être utilisé.<br/>: f:extension[designationType]</td><td></td></tr>
+En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J03-XdsContentTypeCode-CISIS peut être utilisé.<br/>: </td><td></td></tr>
 </table>
 
           
@@ -786,7 +786,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J03-Xd
 - TRE_A00-ProducteurDocNonPS, OID : 1.2.250.1.213.1.1.4.6 
 - TRE_R209-TypeActivite, OID : 1.2.250.1.213.2.2 
 - TRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J59-ContentTypeCode-DMP). 
-En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J03-XdsContentTypeCode-CISIS peut être utilisé.<br/>: f:extension[designationType]</td><td></td></tr>
+En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J03-XdsContentTypeCode-CISIS peut être utilisé.<br/>: </td><td></td></tr>
 <tr><td>dom-2</td><td>error</td><td>List</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
 <tr><td>dom-3</td><td>error</td><td>List</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
 <tr><td>dom-4</td><td>error</td><td>List</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
@@ -1277,7 +1277,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 - TRE_A00-ProducteurDocNonPS, OID : 1.2.250.1.213.1.1.4.6 
 - TRE_R209-TypeActivite, OID : 1.2.250.1.213.2.2 
 - TRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J59-ContentTypeCode-DMP). 
-En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J03-XdsContentTypeCode-CISIS peut être utilisé.<br/>: f:extension[designationType]</td><td></td></tr>
+En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J03-XdsContentTypeCode-CISIS peut être utilisé.<br/>: </td><td></td></tr>
 <tr><td>dom-2</td><td>error</td><td>List</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
 <tr><td>dom-3</td><td>error</td><td>List</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
 <tr><td>dom-4</td><td>error</td><td>List</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
@@ -1583,7 +1583,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J03-Xd
 - TRE_A00-ProducteurDocNonPS, OID : 1.2.250.1.213.1.1.4.6 
 - TRE_R209-TypeActivite, OID : 1.2.250.1.213.2.2 
 - TRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J59-ContentTypeCode-DMP). 
-En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J03-XdsContentTypeCode-CISIS peut être utilisé.<br/>: f:extension[designationType]</td><td></td></tr>
+En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J03-XdsContentTypeCode-CISIS peut être utilisé.<br/>: </td><td></td></tr>
 </table>
 
           
@@ -1833,7 +1833,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J03-Xd
 - TRE_A00-ProducteurDocNonPS, OID : 1.2.250.1.213.1.1.4.6 
 - TRE_R209-TypeActivite, OID : 1.2.250.1.213.2.2 
 - TRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J59-ContentTypeCode-DMP). 
-En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J03-XdsContentTypeCode-CISIS peut être utilisé.<br/>: f:extension[designationType]</td><td></td></tr>
+En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J03-XdsContentTypeCode-CISIS peut être utilisé.<br/>: </td><td></td></tr>
 <tr><td>dom-2</td><td>error</td><td>List</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
 <tr><td>dom-3</td><td>error</td><td>List</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
 <tr><td>dom-4</td><td>error</td><td>List</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
@@ -2324,7 +2324,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 - TRE_A00-ProducteurDocNonPS, OID : 1.2.250.1.213.1.1.4.6 
 - TRE_R209-TypeActivite, OID : 1.2.250.1.213.2.2 
 - TRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J59-ContentTypeCode-DMP). 
-En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J03-XdsContentTypeCode-CISIS peut être utilisé.<br/>: f:extension[designationType]</td><td></td></tr>
+En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J03-XdsContentTypeCode-CISIS peut être utilisé.<br/>: </td><td></td></tr>
 <tr><td>dom-2</td><td>error</td><td>List</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
 <tr><td>dom-3</td><td>error</td><td>List</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
 <tr><td>dom-4</td><td>error</td><td>List</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
@@ -2540,7 +2540,7 @@ The type is the Canonical URL of Resource Definition that is the type this refer
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.pdsm#3.1.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 30, 2024 14:34+0000">2024-04-30</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.pdsm#3.1.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 2, 2024 08:43+0000">2024-05-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
