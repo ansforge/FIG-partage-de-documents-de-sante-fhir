@@ -28,20 +28,6 @@
     "name" : "PDSm"
   },
   {
-    "id" : "PDSm-DocumentReference-PatientAsSubject",
-    "type" : "SearchParameter",
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSm-DocumentReference-PatientAsSubject",
-    "version" : "3.1.0-ballot",
-    "name" : "PDSmDocumentReferencePatientAsSubject"
-  },
-  {
-    "id" : "PDSm-DocumentReference-PractitionerRoleAsAuthor",
-    "type" : "SearchParameter",
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSm-DocumentReference-PractitionerRoleAsAuthor",
-    "version" : "3.1.0-ballot",
-    "name" : "PDSmDocumentReferencePractitionerRoleAsAuthor"
-  },
-  {
     "id" : "PDSm-DocumentReference-period-end",
     "type" : "SearchParameter",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSm-DocumentReference-period-end",

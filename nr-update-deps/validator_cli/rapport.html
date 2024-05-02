@@ -1,18 +1,18 @@
 
 ----------------------------------------------------------------------------------
-./fsh-generated/resources/SearchParameter-PDSm-DocumentReference-period-end.json 08:45:39
+./fsh-generated/resources/SearchParameter-PDSm-DocumentReference-period-end.json 12:18:03
 [1, 2] SearchParameter: Information - Validate resource against profile http://hl7.org/fhir/StructureDefinition/SearchParameter|4.0.1
 [1, 2] SearchParameter: Warning - Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
 
 
 ----------------------------------------------------------------------------------
-./fsh-generated/resources/StructureDefinition-pdsm-find-documentreferences-comprehensive-response.json 08:45:39
+./fsh-generated/resources/StructureDefinition-pdsm-find-documentreferences-comprehensive-response.json 12:18:03
 [1, 2] StructureDefinition: Information - Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition|4.0.1
 [1, 2] StructureDefinition: Warning - Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
 
 
 ----------------------------------------------------------------------------------
-./fsh-generated/resources/StructureDefinition-pdsm-submissionset-comprehensive.json 08:45:39
+./fsh-generated/resources/StructureDefinition-pdsm-submissionset-comprehensive.json 12:18:03
 [1, 2] StructureDefinition: Information - Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition|4.0.1
 [1, 2] StructureDefinition: Warning - Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
 [46, 12] StructureDefinition.differential.element[2].constraint[0]: Information - The constraint 'constr-bind-designationtype' has no computable expression, so validators will not be able to check it
@@ -20,125 +20,89 @@
 
 
 ----------------------------------------------------------------------------------
-./fsh-generated/resources/StructureDefinition-pdsm-ext-is-archived.json 08:45:39
+./fsh-generated/resources/StructureDefinition-pdsm-ext-is-archived.json 12:18:03
 [1, 2] StructureDefinition: Information - Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition|4.0.1
 [1, 2] StructureDefinition: Warning - Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
 
 
 ----------------------------------------------------------------------------------
-./fsh-generated/resources/StructureDefinition-pdsm-comprehensive-provide-document-bundle.json 08:45:39
+./fsh-generated/resources/StructureDefinition-pdsm-comprehensive-provide-document-bundle.json 12:18:03
 [1, 2] StructureDefinition: Information - Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition|4.0.1
 [1, 2] StructureDefinition: Warning - Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
 
 
 ----------------------------------------------------------------------------------
-./fsh-generated/resources/StructureDefinition-pdsm-ext-intended-recipient.json 08:45:39
+./fsh-generated/resources/StructureDefinition-pdsm-ext-intended-recipient.json 12:18:03
 [1, 2] StructureDefinition: Information - Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition|4.0.1
 [1, 2] StructureDefinition: Warning - Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
 
 
 ----------------------------------------------------------------------------------
-./fsh-generated/resources/SearchParameter-PDSm-isArchived.json 08:45:39
+./fsh-generated/resources/SearchParameter-PDSm-isArchived.json 12:18:03
 [1, 2] SearchParameter: Information - Validate resource against profile http://hl7.org/fhir/StructureDefinition/SearchParameter|4.0.1
 [1, 2] SearchParameter: Warning - Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
-[16, 126] SearchParameter.expression: Warning - Reference to an unknown extension - double check that the URL 'https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSm-isArchived' is correct
+[16, 135] SearchParameter.expression: Warning - The left side is inherently a collection, and so the expression 'extension('https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-ext-is-archived').value as Boolean' may fail or return false if there is more than one item in the content being evaluated
 
 
 ----------------------------------------------------------------------------------
-./fsh-generated/resources/ImplementationGuide-ans.fhir.fr.pdsm.json 08:45:39
+./fsh-generated/resources/ImplementationGuide-ans.fhir.fr.pdsm.json 12:18:03
 [1, 2] ImplementationGuide: Information - Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide|4.0.1
 [1, 2] ImplementationGuide: Warning - Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
-[334, 32] ImplementationGuide.definition.parameter[0].code: Error - The value provided ('copyrightyear') was not found in the value set 'GuideParameterCode' (http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1), and a code is required from this value set  (error message = The System URI could not be determined for the code 'copyrightyear' in the ValueSet 'http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1'; None of the provided codes ['#copyrightyear'] are in the value set 'http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1')
-[338, 31] ImplementationGuide.definition.parameter[1].code: Error - The value provided ('releaselabel') was not found in the value set 'GuideParameterCode' (http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1), and a code is required from this value set  (error message = The System URI could not be determined for the code 'releaselabel' in the ValueSet 'http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1'; None of the provided codes ['#releaselabel'] are in the value set 'http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1')
-[342, 26] ImplementationGuide.definition.parameter[2].code: Error - The value provided ('shownav') was not found in the value set 'GuideParameterCode' (http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1), and a code is required from this value set  (error message = The System URI could not be determined for the code 'shownav' in the ValueSet 'http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1'; None of the provided codes ['#shownav'] are in the value set 'http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1')
+[318, 32] ImplementationGuide.definition.parameter[0].code: Error - The value provided ('copyrightyear') was not found in the value set 'GuideParameterCode' (http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1), and a code is required from this value set  (error message = The System URI could not be determined for the code 'copyrightyear' in the ValueSet 'http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1'; None of the provided codes ['#copyrightyear'] are in the value set 'http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1')
+[322, 31] ImplementationGuide.definition.parameter[1].code: Error - The value provided ('releaselabel') was not found in the value set 'GuideParameterCode' (http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1), and a code is required from this value set  (error message = The System URI could not be determined for the code 'releaselabel' in the ValueSet 'http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1'; None of the provided codes ['#releaselabel'] are in the value set 'http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1')
+[326, 26] ImplementationGuide.definition.parameter[2].code: Error - The value provided ('shownav') was not found in the value set 'GuideParameterCode' (http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1), and a code is required from this value set  (error message = The System URI could not be determined for the code 'shownav' in the ValueSet 'http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1'; None of the provided codes ['#shownav'] are in the value set 'http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1')
 
 
 ----------------------------------------------------------------------------------
-./fsh-generated/resources/CapabilityStatement-PDSm-ConsommateurDeDocuments.json 08:45:39
+./fsh-generated/resources/CapabilityStatement-PDSm-ConsommateurDeDocuments.json 12:18:03
 [1, 2] CapabilityStatement: Information - Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement|4.0.1
 [1, 2] CapabilityStatement: Warning - Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
-[68, 105] CapabilityStatement.rest[0].resource[0].searchParam[4].definition: Information - Canonical URL 'https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmIsArchived' does not resolve
-[92, 104] CapabilityStatement.rest[0].resource[0].searchParam[8].definition: Information - Canonical URL 'https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmAuthorOrg' does not resolve
-[104, 114] CapabilityStatement.rest[0].resource[0].searchParam[10].definition: Information - Canonical URL 'https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmListPatientAsSource' does not resolve
-[110, 115] CapabilityStatement.rest[0].resource[0].searchParam[11].definition: Information - Canonical URL 'https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmListPatientAsSubject' does not resolve
-[116, 123] CapabilityStatement.rest[0].resource[0].searchParam[12].definition: Information - Canonical URL 'https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmListPractitionerRoleAsSource' does not resolve
-[172, 105] CapabilityStatement.rest[0].resource[1].searchParam[6].definition: Information - Canonical URL 'https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmIsArchived' does not resolve
-[178, 123] CapabilityStatement.rest[0].resource[1].searchParam[7].definition: Information - Canonical URL 'https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmDocumentReferencePeriodStart' does not resolve
-[184, 121] CapabilityStatement.rest[0].resource[1].searchParam[8].definition: Information - Canonical URL 'https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmDocumentReferencePeriodEnd' does not resolve
-[220, 128] CapabilityStatement.rest[0].resource[1].searchParam[14].definition: Information - Canonical URL 'https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmDocumentReferencePatientAsSubject' does not resolve
-[226, 126] CapabilityStatement.rest[0].resource[1].searchParam[15].definition: Information - Canonical URL 'https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmDocumentReferenceDeviceAsAuthor' does not resolve
-[232, 127] CapabilityStatement.rest[0].resource[1].searchParam[16].definition: Information - Canonical URL 'https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmDocumentReferencePatientAsAuthor' does not resolve
-[238, 136] CapabilityStatement.rest[0].resource[1].searchParam[17].definition: Information - Canonical URL 'https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmDocumentReferencePractitionerRoleAsAuthor' does not resolve
 
 
 ----------------------------------------------------------------------------------
-./fsh-generated/resources/SearchParameter-PDSm-DocumentReference-PatientAsSubject.json 08:45:39
-[1, 2] SearchParameter: Information - Validate resource against profile http://hl7.org/fhir/StructureDefinition/SearchParameter|4.0.1
-[1, 2] SearchParameter: Warning - Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
-
-
-----------------------------------------------------------------------------------
-./fsh-generated/resources/Bundle-a9c10f8a-882d-4000-a280-7150e0aeb478.json 08:45:39
+./fsh-generated/resources/Bundle-a9c10f8a-882d-4000-a280-7150e0aeb478.json 12:18:03
 [1, 2] Bundle: Information - Validate resource against profile http://hl7.org/fhir/StructureDefinition/Bundle|4.0.1
-[1, 2] Bundle: Information - Validate resource against profile https://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.ProvideDocumentBundleResponse|4.2.0 (per meta)
+[1, 2] Bundle: Information - Validate resource against profile https://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.ProvideDocumentBundleResponse|4.2.1 (per meta)
 
 
 ----------------------------------------------------------------------------------
-./fsh-generated/resources/StructureDefinition-pdsm-folder-comprehensive.json 08:45:39
+./fsh-generated/resources/StructureDefinition-pdsm-folder-comprehensive.json 12:18:03
 [1, 2] StructureDefinition: Information - Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition|4.0.1
 [1, 2] StructureDefinition: Warning - Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
 
 
 ----------------------------------------------------------------------------------
-./fsh-generated/resources/SearchParameter-PDSm-List-PatientAsSource.json 08:45:39
+./fsh-generated/resources/SearchParameter-PDSm-List-PatientAsSource.json 12:18:03
 [1, 2] SearchParameter: Information - Validate resource against profile http://hl7.org/fhir/StructureDefinition/SearchParameter|4.0.1
 [1, 2] SearchParameter: Warning - Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
 
 
 ----------------------------------------------------------------------------------
-./fsh-generated/resources/SearchParameter-PDSm-DocumentReference-PractitionerRoleAsAuthor.json 08:45:39
-[1, 2] SearchParameter: Information - Validate resource against profile http://hl7.org/fhir/StructureDefinition/SearchParameter|4.0.1
-[1, 2] SearchParameter: Warning - Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
-
-
-----------------------------------------------------------------------------------
-./fsh-generated/resources/CapabilityStatement-PDSm-GestionnaireDePartageDeDocuments.json 08:45:39
+./fsh-generated/resources/CapabilityStatement-PDSm-GestionnaireDePartageDeDocuments.json 12:18:03
 [1, 2] CapabilityStatement: Information - Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement|4.0.1
 [1, 2] CapabilityStatement: Warning - Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
-[68, 105] CapabilityStatement.rest[0].resource[0].searchParam[4].definition: Information - Canonical URL 'https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmIsArchived' does not resolve
-[92, 104] CapabilityStatement.rest[0].resource[0].searchParam[8].definition: Information - Canonical URL 'https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmAuthorOrg' does not resolve
-[104, 114] CapabilityStatement.rest[0].resource[0].searchParam[10].definition: Information - Canonical URL 'https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmListPatientAsSource' does not resolve
-[110, 115] CapabilityStatement.rest[0].resource[0].searchParam[11].definition: Information - Canonical URL 'https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmListPatientAsSubject' does not resolve
-[116, 123] CapabilityStatement.rest[0].resource[0].searchParam[12].definition: Information - Canonical URL 'https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmListPractitionerRoleAsSource' does not resolve
-[176, 105] CapabilityStatement.rest[0].resource[1].searchParam[6].definition: Information - Canonical URL 'https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmIsArchived' does not resolve
-[182, 123] CapabilityStatement.rest[0].resource[1].searchParam[7].definition: Information - Canonical URL 'https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmDocumentReferencePeriodStart' does not resolve
-[188, 121] CapabilityStatement.rest[0].resource[1].searchParam[8].definition: Information - Canonical URL 'https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmDocumentReferencePeriodEnd' does not resolve
-[224, 128] CapabilityStatement.rest[0].resource[1].searchParam[14].definition: Information - Canonical URL 'https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmDocumentReferencePatientAsSubject' does not resolve
-[230, 126] CapabilityStatement.rest[0].resource[1].searchParam[15].definition: Information - Canonical URL 'https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmDocumentReferenceDeviceAsAuthor' does not resolve
-[236, 127] CapabilityStatement.rest[0].resource[1].searchParam[16].definition: Information - Canonical URL 'https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmDocumentReferencePatientAsAuthor' does not resolve
-[242, 136] CapabilityStatement.rest[0].resource[1].searchParam[17].definition: Information - Canonical URL 'https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSmDocumentReferencePractitionerRoleAsAuthor' does not resolve
 
 
 ----------------------------------------------------------------------------------
-./fsh-generated/resources/SearchParameter-PDSm-List-PatientAsSubject.json 08:45:39
+./fsh-generated/resources/SearchParameter-PDSm-List-PatientAsSubject.json 12:18:03
 [1, 2] SearchParameter: Information - Validate resource against profile http://hl7.org/fhir/StructureDefinition/SearchParameter|4.0.1
 [1, 2] SearchParameter: Warning - Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
 
 
 ----------------------------------------------------------------------------------
-./fsh-generated/resources/SearchParameter-PDSm-DocumentReference-period-start.json 08:45:39
+./fsh-generated/resources/SearchParameter-PDSm-DocumentReference-period-start.json 12:18:03
 [1, 2] SearchParameter: Information - Validate resource against profile http://hl7.org/fhir/StructureDefinition/SearchParameter|4.0.1
 [1, 2] SearchParameter: Warning - Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
 
 
 ----------------------------------------------------------------------------------
-./fsh-generated/resources/SearchParameter-PDSm-List-PractitionerRoleAsSource.json 08:45:39
+./fsh-generated/resources/SearchParameter-PDSm-List-PractitionerRoleAsSource.json 12:18:03
 [1, 2] SearchParameter: Information - Validate resource against profile http://hl7.org/fhir/StructureDefinition/SearchParameter|4.0.1
 [1, 2] SearchParameter: Warning - Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
 
 
 ----------------------------------------------------------------------------------
-./fsh-generated/resources/StructureDefinition-pdsm-simplified-publish.json 08:45:39
+./fsh-generated/resources/StructureDefinition-pdsm-simplified-publish.json 12:18:03
 [1, 2] StructureDefinition: Information - Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition|4.0.1
 [1, 2] StructureDefinition: Warning - Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
 [44, 12] StructureDefinition.differential.element[4].constraint[0]: Information - The constraint 'constr-bind-type' has no computable expression, so validators will not be able to check it
@@ -158,14 +122,14 @@
 
 
 ----------------------------------------------------------------------------------
-./fsh-generated/resources/SearchParameter-PDSm-List-authorOrg.json 08:45:39
+./fsh-generated/resources/SearchParameter-PDSm-List-authorOrg.json 12:18:03
 [1, 2] SearchParameter: Information - Validate resource against profile http://hl7.org/fhir/StructureDefinition/SearchParameter|4.0.1
 [1, 2] SearchParameter: Warning - Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
 [14, 119] SearchParameter.expression: Warning - The left side is inherently a collection, and so the expression 'extension('https://profiles.ihe.net/ITI/MHD/StructureDefinition/ihe-authorOrg').value as Reference' may fail or return false if there is more than one item in the content being evaluated
 
 
 ----------------------------------------------------------------------------------
-./fsh-generated/resources/StructureDefinition-pdsm-comprehensive-document-reference.json 08:45:39
+./fsh-generated/resources/StructureDefinition-pdsm-comprehensive-document-reference.json 12:18:03
 [1, 2] StructureDefinition: Information - Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition|4.0.1
 [1, 2] StructureDefinition: Warning - Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
 [126, 12] StructureDefinition.differential.element[8].constraint[0]: Information - The constraint 'constr-bind-type' has no computable expression, so validators will not be able to check it
@@ -193,13 +157,13 @@
 
 
 ----------------------------------------------------------------------------------
-./fsh-generated/resources/StructureDefinition-pdsm-find-lists-response.json 08:45:39
+./fsh-generated/resources/StructureDefinition-pdsm-find-lists-response.json 12:18:03
 [1, 2] StructureDefinition: Information - Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition|4.0.1
 [1, 2] StructureDefinition: Warning - Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
 
 
 ----------------------------------------------------------------------------------
-./fsh-generated/resources/CapabilityStatement-PDSm-ProducteurDeDocuments.json 08:45:39
+./fsh-generated/resources/CapabilityStatement-PDSm-ProducteurDeDocuments.json 12:18:03
 [1, 2] CapabilityStatement: Information - Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement|4.0.1
 [1, 2] CapabilityStatement: Warning - Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
 

@@ -10,7 +10,7 @@
   "name" : "PDSm",
   "title" : "Partage de Documents de Santé en mobilité (PDSm)",
   "status" : "active",
-  "date" : "2024-05-02T08:44:38+00:00",
+  "date" : "2024-05-02T12:17:05+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -768,18 +768,6 @@
         "valueString" : "SearchParameter"
       }],
       "reference" : {
-        "reference" : "SearchParameter/PDSm-DocumentReference-PatientAsSubject"
-      },
-      "name" : "PDSm-DocumentReference-PatientAsSubject",
-      "description" : "Paramètre de recherche chaîné créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'élément patient.identifier",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
         "reference" : "SearchParameter/PDSm-DocumentReference-period-end"
       },
       "name" : "PDSm-DocumentReference-period-end",
@@ -796,18 +784,6 @@
       },
       "name" : "PDSm-DocumentReference-period-start",
       "description" : "Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'élément context.period.start correspondant à lobjet dateDebutActe",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/PDSm-DocumentReference-PractitionerRoleAsAuthor"
-      },
-      "name" : "PDSm-DocumentReference-PractitionerRoleAsAuthor",
-      "description" : "Paramètre de recherche chaîné créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'élément author:PractitionerRole.practitioner:Practitioner.identifier, author:PractitionerRole.practitioner:Practitioner.given et author:PractitionerRole.practitioner:Practitioner.family",
       "exampleBoolean" : false
     },
     {

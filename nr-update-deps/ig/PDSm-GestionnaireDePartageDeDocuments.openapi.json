@@ -159,7 +159,7 @@
           {
             "name": "PDSm_isArchived",
             "in": "query",
-            "description": "permet distinguer les lots de soumission et les fiches archivés des actifs.",
+            "description": "Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère derecherche l\u0027élément isArchived qui permet distinguer les lots de soumission et les fiches archivés des actives.",
             "schema": {
               "type": "string"
             }
@@ -191,7 +191,7 @@
           {
             "name": "PDSm_authorOrg",
             "in": "query",
-            "description": "Représente l’auteur du lot de soumission, quand l\u0027auteur est de type organization.",
+            "description": "Recherche sur l\u0027auteur d\u0027une organisation",
             "schema": {
               "type": "string"
             }
@@ -207,7 +207,7 @@
           {
             "name": "PDSm_List_PatientAsSource",
             "in": "query",
-            "description": "Recherche sur les éléments source:Patient.given et source:Patient.family.",
+            "description": "Paramètre de recherche chaîné créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l\u0027élément source:Patient.given et source:Patient.family",
             "schema": {
               "type": "string"
             }
@@ -215,7 +215,7 @@
           {
             "name": "PDSm_List_PatientAsSubject",
             "in": "query",
-            "description": "Recherche sur l\u0027élément subject:Patient.identifier.",
+            "description": "Paramètre de recherche chaîné créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l\u0027élément subject:Patient.identifier",
             "schema": {
               "type": "string"
             }
@@ -223,7 +223,7 @@
           {
             "name": "PDSm_List_PractitionerRoleAsSource",
             "in": "query",
-            "description": "Recherche sur les éléments source:PractitionerRole.practitioner:Practitioner.given et source:PractitionerRole.practitioner:Practitioner.family.",
+            "description": "Paramètre de recherche chaîné créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l\u0027élément source:PractitionerRole.practitioner:Practitioner.given et source:PractitionerRole.practitioner:Practitioner.family",
             "schema": {
               "type": "string"
             }
@@ -399,7 +399,7 @@
           {
             "name": "PDSm_isArchived",
             "in": "query",
-            "description": "permet distinguer les lots de soumission et les fiches archivés des actifs.",
+            "description": "Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère derecherche l\u0027élément isArchived qui permet distinguer les lots de soumission et les fiches archivés des actives.",
             "schema": {
               "type": "string"
             }
@@ -407,7 +407,7 @@
           {
             "name": "PDSm_DocumentReference_period-start",
             "in": "query",
-            "description": "Représente la date de début de l’acte de référence.",
+            "description": "Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l\u0027élément context.period.start correspondant à lobjet dateDebutActe",
             "schema": {
               "type": "string",
               "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
@@ -416,7 +416,7 @@
           {
             "name": "PDSm_DocumentReference_period-end",
             "in": "query",
-            "description": "Représente la date de fin de l’acte de référence.",
+            "description": "Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l\u0027élément context.period.end correspondant à lobjet dateFinActe",
             "schema": {
               "type": "string",
               "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
@@ -464,33 +464,17 @@
             }
           },
           {
-            "name": "PDSm_DocumentReference_PatientAsSubject",
+            "name": "DocumentReference Patient",
             "in": "query",
-            "description": "Représente l\u0027identifiant du patient qui est le sujet du document.",
+            "description": "Who/what is the subject of the document",
             "schema": {
               "type": "string"
             }
           },
           {
-            "name": "PDSm_DocumentReference_DeviceAsAuthor",
+            "name": "DocumentRefence Author",
             "in": "query",
-            "description": "Représente l\u0027identifiant du dispositif médical qui est l\u0027auteur du document.",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "PDSm_DocumentReference_PatientAsAuthor",
-            "in": "query",
-            "description": "Représente l\u0027identifiant, le nom, le prénom du patient qui est l\u0027auteur du document.",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "PDSm_DocumentReference_PractitionerRoleAsAuthor",
-            "in": "query",
-            "description": "Représente l\u0027identifiant, le nom, le prénom du praticien dans sa situation d\u0027exercice qui est l\u0027auteur du document.",
+            "description": "Who and/or what authored the document",
             "schema": {
               "type": "string"
             }

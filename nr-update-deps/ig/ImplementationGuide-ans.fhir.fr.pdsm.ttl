@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "PDSm"] ; # 
   fhir:title [ fhir:v "Partage de Documents de Santé en mobilité (PDSm)"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-05-02T08:44:38+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-05-02T12:17:05+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -684,18 +684,6 @@
          fhir:value [ fhir:v "SearchParameter" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSm-DocumentReference-PatientAsSubject> ;
-         fhir:reference [ fhir:v "SearchParameter/PDSm-DocumentReference-PatientAsSubject" ]
-       ] ;
-       fhir:name [ fhir:v "PDSm-DocumentReference-PatientAsSubject" ] ;
-       fhir:description [ fhir:v "Paramètre de recherche chaîné créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'élément patient.identifier" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "SearchParameter" ]
-       ] ) ;
-       fhir:reference [
          fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSm-DocumentReference-period-end> ;
          fhir:reference [ fhir:v "SearchParameter/PDSm-DocumentReference-period-end" ]
        ] ;
@@ -713,18 +701,6 @@
        ] ;
        fhir:name [ fhir:v "PDSm-DocumentReference-period-start" ] ;
        fhir:description [ fhir:v "Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'élément context.period.start correspondant à lobjet dateDebutActe" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "SearchParameter" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSm-DocumentReference-PractitionerRoleAsAuthor> ;
-         fhir:reference [ fhir:v "SearchParameter/PDSm-DocumentReference-PractitionerRoleAsAuthor" ]
-       ] ;
-       fhir:name [ fhir:v "PDSm-DocumentReference-PractitionerRoleAsAuthor" ] ;
-       fhir:description [ fhir:v "Paramètre de recherche chaîné créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'élément author:PractitionerRole.practitioner:Practitioner.identifier, author:PractitionerRole.practitioner:Practitioner.given et author:PractitionerRole.practitioner:Practitioner.family" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

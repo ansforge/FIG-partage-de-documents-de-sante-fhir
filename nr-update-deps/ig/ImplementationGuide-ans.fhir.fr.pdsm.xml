@@ -10,7 +10,7 @@
   <name value="PDSm"/>
   <title value="Partage de Documents de Santé en mobilité (PDSm)"/>
   <status value="active"/>
-  <date value="2024-05-02T08:44:38+00:00"/>
+  <date value="2024-05-02T12:17:05+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -592,17 +592,6 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/PDSm-DocumentReference-PatientAsSubject"/>
-      </reference>
-      <name value="PDSm-DocumentReference-PatientAsSubject"/>
-      <description value="Paramètre de recherche chaîné créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'élément patient.identifier"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
         <reference value="SearchParameter/PDSm-DocumentReference-period-end"/>
       </reference>
       <name value="PDSm-DocumentReference-period-end"/>
@@ -618,17 +607,6 @@
       </reference>
       <name value="PDSm-DocumentReference-period-start"/>
       <description value="Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'élément context.period.start correspondant à lobjet dateDebutActe"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/PDSm-DocumentReference-PractitionerRoleAsAuthor"/>
-      </reference>
-      <name value="PDSm-DocumentReference-PractitionerRoleAsAuthor"/>
-      <description value="Paramètre de recherche chaîné créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'élément author:PractitionerRole.practitioner:Practitioner.identifier, author:PractitionerRole.practitioner:Practitioner.given et author:PractitionerRole.practitioner:Practitioner.family"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
