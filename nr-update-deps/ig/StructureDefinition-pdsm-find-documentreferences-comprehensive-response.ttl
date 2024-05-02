@@ -16,7 +16,7 @@
   fhir:version [ fhir:v "3.1.0-ballot"] ; # 
   fhir:name [ fhir:v "PDSm_FindDocumentReferencesComprehensiveResponse"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-05-02T08:43:49+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-05-02T08:44:38+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
