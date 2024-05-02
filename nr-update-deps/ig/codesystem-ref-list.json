@@ -96,8 +96,8 @@
       "oids" : ["URN"],
       "uses" : {
       },
-      "https://interop.esante.gouv.fr/ig/nos/1.2.0/ValueSet-JDV-J06-XdsClassCode-CISIS.html" : "JDV_J06-XdsClassCode-CISIS",
-      "https://interop.esante.gouv.fr/ig/nos/1.2.0/ValueSet-JDV-J10-XdsFormatCode-CISIS.html" : "JDV_J10-XdsFormatCode-CISIS"
+      "https://interop.esante.gouv.fr/ig/nos/1.2.0/ValueSet-JDV-J10-XdsFormatCode-CISIS.html" : "JDV_J10-XdsFormatCode-CISIS",
+      "https://interop.esante.gouv.fr/ig/nos/1.2.0/ValueSet-JDV-J06-XdsClassCode-CISIS.html" : "JDV_J06-XdsClassCode-CISIS"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_A11-IheFormatCode/FHIR/TRE-A11-IheFormatCode",
