@@ -302,12 +302,7 @@ Ce volet met en place l’option du profil MHD « Comprehensive Metadata » qui 
 
 <h4 id="ressources-fhir-et-profils">Ressources FHIR et profils</h4>
 
-<p>Les ressources utilisées et les niveaux de maturité sont les suivants : DocumentReference (NM 3), List (NM 1), Patient (NM N), Practitioner (NM 3), PractitionerRole (NM 2), Organization (NM 3), Device (NM 2), Binary (NM N), Bundle (NM N)</p>
-
-<p>Certaines ressources FHIR ont été profilées pour le contexte français et sont utilisés dans le cadre des spécifications techniques du volet « Partage de documents de santé en mobilité ».</p>
-
-<p>Le tableau ci-après spécifie les profils utilisés pour les ressources et types de données mentionnés dans ce document. Les présentes spécifications définissent également des profils propres au présent volet (préfixe PDSm).
-Pour les ressources et types de données non mentionnés dans ce tableau, le profil à utiliser est celui défini par HL7 FHIR.</p>
+<p>Le tableau ci-après spécifie les profils utilisés pour les ressources et types de données mentionnés dans ce document.</p>
 
 <table class="grid"><tr><td style="background-color: #eeeeee">Titre du profil</td><td style="background-color: #eeeeee">Description</td></tr><tr><td><div><p><a href="StructureDefinition-pdsm-comprehensive-document-reference.html">PDSm Comprehensive DocumentReference</a></p>
 </div></td><td>Profil spécifique dérivé du profil IHE MHD v4.0.1 &quot;ComprehensiveDocumentReference&quot; créé pour le volet &quot;Partage de documents de santé en mobilité&quot;.</td></tr><tr><td><div><p><a href="StructureDefinition-pdsm-comprehensive-provide-document-bundle.html">PDSm Comprehensive Provide Document Bundle</a></p>
@@ -321,8 +316,14 @@ Dans le cas d’un dépôt d’un nouveau document, l’élément DocumentRefere
 Dans le cas d’une demande de mise à jour d’un document par remplacement, l’élément DocumentReference.relatesTo doit être renseigné afin d’indiquer le lien avec un DocumentReference existant et de préciser la nature de la mise à jour. L’élément DocumentReference.content.attachment.url doit pointer vers une ressource Binary, représentant le document qui remplace l’ancien, présente dans le bundle.
 Dans le cas d’une mise à jour d’un classeur, comme List.status ou List.entry pour reclasser des documents, une nouvelle version de la ressource List est envoyée.</li>
 </ul>
-</div></td></tr><tr><td><div><p><a href="StructureDefinition-pdsm-folder-comprehensive.html">PDSm Folder Comprehensive</a></p>
-</div></td><td>Profil spécifique dérivé du profil IHE MHD « Comprehensive Folder » créé pour le volet ANS &quot;Partage de documents de santé en mobilité&quot; ; ce profil concerne le classeur.</td></tr><tr><td><div><p><a href="StructureDefinition-pdsm-submissionset-comprehensive.html">PDSm SubmissionSet Comprehensive</a></p>
+</div></td></tr><tr><td><div><p><a href="StructureDefinition-pdsm-find-documentreferences-comprehensive-response.html">PDSm Find DocumentReferences Comprehensive Response</a></p>
+</div></td><td>Profil de réponse de la transaction IHE &quot;Find Document References [ITI-67]&quot; basée sur le bundle MHD http://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.FindDocumentReferencesComprehensiveResponseMessage et profilé pour le volet PDSm</td></tr><tr><td><div><p><a href="StructureDefinition-pdsm-find-lists-response.html">PDSm Find Lists Response</a></p>
+</div></td><td>Profil de réponse de la transaction IHE &quot;Find Document Lists [ITI-66]&quot; basée sur le bundle MHD http://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.FindDocumentListsResponseMessage et profilé pour le volet PDSm</td></tr><tr><td><div><p><a href="StructureDefinition-pdsm-folder-comprehensive.html">PDSm Folder Comprehensive</a></p>
+</div></td><td>Profil spécifique dérivé du profil IHE MHD « Comprehensive Folder » créé pour le volet ANS &quot;Partage de documents de santé en mobilité&quot; ; ce profil concerne le classeur.</td></tr><tr><td><div><p><a href="StructureDefinition-pdsm-simplified-publish.html">PDSm Simplified Publish Document Reference</a></p>
+</div></td><td><div><p>Profil utilisé dans le cadre du flux 9 d'ajout simplifié de document. Le flux et le profil sont inspirés d’IHE MHD, transaction ITI-105.</p>
+<p>Contrairement au profil PDSm_ComprehensiveDocumentReference, le document est directement inclus dans DocumentReference.attachment.data et non dans une ressource « Binary » externe.</p>
+<p>La publication simplifiée est une simple requête HTTP POST d'une ressource DocumentReference conforme à ce profil.</p>
+</div></td></tr><tr><td><div><p><a href="StructureDefinition-pdsm-submissionset-comprehensive.html">PDSm SubmissionSet Comprehensive</a></p>
 </div></td><td>Profil spécifique dérivé du profil IHE MHD « ComprehensiveSubmissionSet » créé pour le volet ANS &quot;Partage de documents de santé en mobilité&quot; ; ce profil concerne le lot de soumission.</td></tr></table>
 
 <h5 id="alimentation-utilisant-comprehensive-metadata">Alimentation utilisant Comprehensive Metadata</h5>
@@ -507,7 +508,7 @@ Dans le cas d’une mise à jour d’un classeur, comme List.status ou List.entr
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.pdsm#3.1.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, May 3, 2024 11:45+0000">2024-05-03</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.pdsm#3.1.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, May 3, 2024 11:56+0000">2024-05-03</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
