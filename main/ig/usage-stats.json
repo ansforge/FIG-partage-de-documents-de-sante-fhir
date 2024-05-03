@@ -4,14 +4,14 @@
   "fhirVersion": "4.0.1",
   "extensions": [
     {
-      "url": "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/PDSmintendedrecipient",
+      "url": "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-ext-intended-recipient",
       "title": "PDSm_intendedRecipient",
       "types": [
         "Reference"
       ]
     },
     {
-      "url": "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-is-archived",
+      "url": "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-ext-is-archived",
       "title": "PDSm_isArchived",
       "types": [
         "boolean"
@@ -88,7 +88,10 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
-    "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-is-archived": [
+    "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-ext-intended-recipient": [
+      "List"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-ext-is-archived": [
       "DocumentReference",
       "List"
     ],

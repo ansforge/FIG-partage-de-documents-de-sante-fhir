@@ -88,7 +88,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
   </coding>
 </valueCodeableConcept>","","","",,"required","","https://profiles.ihe.net/ITI/MHD/ValueSet/MHDlistTypesVS","",,,,"List.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".code","FiveWs.what[x]","shall be 'folder'"
-"List.subject","List.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://interopsante.org/fhir/StructureDefinition/FrPatient]]}
+"List.subject","List.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient]]}
 ","If all resources have the same subject","The common subject (or patient) of the resources that are in the list if there is one.","Some purely arbitrary lists do not have a common subject, so this is optional.","The primary purpose of listing the subject explicitly is to help with finding the right list.","","","","","","","",,,,,"",,,,"List.subject",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","idPatient : [0..1] Identifiant",".participation[typeCode<SUB].role (and sometimes .player)","FiveWs.subject[x]","FiveWs.subject","Folder.patientId"
 "List.encounter","List.encounter","","","",0,0,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Encounter]]}

@@ -10,7 +10,7 @@
   "name" : "PDSm",
   "title" : "Partage de Documents de Santé en mobilité (PDSm)",
   "status" : "active",
-  "date" : "2024-05-02T07:44:53+00:00",
+  "date" : "2024-05-03T07:57:36+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -52,19 +52,19 @@
     "id" : "ans_fhir_fr_annuaire",
     "uri" : "https://interop.esante.gouv.fr/ig/fhir/annuaire/ImplementationGuide/ans.fhir.fr.annuaire",
     "packageId" : "ans.fhir.fr.annuaire",
-    "version" : "1.0.0-ballot-2"
+    "version" : "1.0.1"
   },
   {
     "id" : "hl7_fhir_fr_core",
-    "uri" : "http://fhir.org/packages/hl7.fhir.fr.core/ImplementationGuide/hl7.fhir.fr.core",
+    "uri" : "https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core",
     "packageId" : "hl7.fhir.fr.core",
-    "version" : "1.1.0"
+    "version" : "2.0.1"
   },
   {
     "id" : "ans_fr_nos",
     "uri" : "https://interop.esante.gouv.fr/ig/nos/ImplementationGuide/ans.fr.nos",
     "packageId" : "ans.fr.nos",
-    "version" : "1.1.0"
+    "version" : "1.2.0"
   }],
   "definition" : {
     "extension" : [{
@@ -85,7 +85,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "Trial-Implementation"
+        "valueString" : "trial-use"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -375,7 +375,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "Trial-Implementation"
+        "valueString" : "trial-use"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -768,18 +768,6 @@
         "valueString" : "SearchParameter"
       }],
       "reference" : {
-        "reference" : "SearchParameter/PDSm-DocumentReference-PatientAsSubject"
-      },
-      "name" : "PDSm-DocumentReference-PatientAsSubject",
-      "description" : "Paramètre de recherche chaîné créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'élément patient.identifier",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
         "reference" : "SearchParameter/PDSm-DocumentReference-period-end"
       },
       "name" : "PDSm-DocumentReference-period-end",
@@ -796,18 +784,6 @@
       },
       "name" : "PDSm-DocumentReference-period-start",
       "description" : "Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'élément context.period.start correspondant à lobjet dateDebutActe",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/PDSm-DocumentReference-PractitionerRoleAsAuthor"
-      },
-      "name" : "PDSm-DocumentReference-PractitionerRoleAsAuthor",
-      "description" : "Paramètre de recherche chaîné créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'élément author:PractitionerRole.practitioner:Practitioner.identifier, author:PractitionerRole.practitioner:Practitioner.given et author:PractitionerRole.practitioner:Practitioner.family",
       "exampleBoolean" : false
     },
     {
@@ -888,7 +864,7 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/PDSmintendedrecipient"
+        "reference" : "StructureDefinition/pdsm-ext-intended-recipient"
       },
       "name" : "PDSm_intendedRecipient",
       "description" : "Représente le destinataire du lot de soumission",
@@ -900,7 +876,7 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/pdsm-is-archived"
+        "reference" : "StructureDefinition/pdsm-ext-is-archived"
       },
       "name" : "PDSm_isArchived",
       "description" : "Extension définie par le volet ANS \"Volet Partage de documents de santé en mobilité\" sur les ressources List et DocumentReference pour distinguer les lots de soumission et les fiches archivés des actives.",

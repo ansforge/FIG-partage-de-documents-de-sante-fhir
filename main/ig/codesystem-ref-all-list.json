@@ -34,8 +34,8 @@
       "oids" : ["2.16.840.1.113883.4.642.4.8"],
       "uses" : {
       },
-      "https://profiles.ihe.net/ITI/MHD/4.2.0/ValueSet-DocumentReferenceStats.html" : "MHD DocumentReference status codes",
-      "http://hl7.org/fhir/R4/valueset-document-reference-status.html" : "DocumentReferenceStatus"
+      "http://hl7.org/fhir/R4/valueset-document-reference-status.html" : "DocumentReferenceStatus",
+      "https://profiles.ihe.net/ITI/MHD/4.2.0/ValueSet-DocumentReferenceStats.html" : "MHD DocumentReference status codes"
     },
     {
       "url" : "http://hl7.org/fhir/document-relationship-type",
@@ -59,9 +59,9 @@
       "oids" : ["2.16.840.1.113883.4.642.4.625"],
       "uses" : {
       },
+      "http://hl7.org/fhir/R4/valueset-http-verb.html" : "HTTPVerb",
       "https://profiles.ihe.net/ITI/MHD/4.2.0/ValueSet-MHDprovideFolderActions.html" : "MHD Folder List Types ValueSet",
-      "https://profiles.ihe.net/ITI/MHD/4.2.0/ValueSet-MHDprovidePatientActions.html" : "MHD Patient Types ValueSet",
-      "http://hl7.org/fhir/R4/valueset-http-verb.html" : "HTTPVerb"
+      "https://profiles.ihe.net/ITI/MHD/4.2.0/ValueSet-MHDprovidePatientActions.html" : "MHD Patient Types ValueSet"
     },
     {
       "url" : "http://hl7.org/fhir/identifier-use",
@@ -184,7 +184,7 @@
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_A00-ProducteurDocNonPS/FHIR/TRE-A00-ProducteurDocNonPS",
-      "version" : "1.1.0",
+      "version" : "1.2.0",
       "status" : "active",
       "name" : "TRE_A00-ProducteurDocNonPS",
       "title" : null,
@@ -192,13 +192,13 @@
       "oids" : ["1.2.250.1.213.1.1.4.6"],
       "uses" : {
       },
-      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J02-XdsHealthcareFacilityTypeCode-CISIS.html" : "JDV_J02-XdsHealthcareFacilityTypeCode-CISIS",
-      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J04-XdsPracticeSettingCode-CISIS.html" : "JDV_J04-XdsPracticeSettingCode-CISIS",
-      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J03-XdsContentTypeCode-CISIS.html" : "JDV_J03-XdsContentTypeCode-CISIS"
+      "https://interop.esante.gouv.fr/ig/nos/1.2.0/ValueSet-JDV-J03-XdsContentTypeCode-CISIS.html" : "JDV_J03-XdsContentTypeCode-CISIS",
+      "https://interop.esante.gouv.fr/ig/nos/1.2.0/ValueSet-JDV-J04-XdsPracticeSettingCode-CISIS.html" : "JDV_J04-XdsPracticeSettingCode-CISIS",
+      "https://interop.esante.gouv.fr/ig/nos/1.2.0/ValueSet-JDV-J02-XdsHealthcareFacilityTypeCode-CISIS.html" : "JDV_J02-XdsHealthcareFacilityTypeCode-CISIS"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_A01-CadreExercice/FHIR/TRE-A01-CadreExercice",
-      "version" : "1.1.0",
+      "version" : "1.2.0",
       "status" : "active",
       "name" : "TRE_A01-CadreExercice",
       "title" : null,
@@ -206,11 +206,11 @@
       "oids" : ["1.2.250.1.213.1.1.4.9"],
       "uses" : {
       },
-      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J04-XdsPracticeSettingCode-CISIS.html" : "JDV_J04-XdsPracticeSettingCode-CISIS"
+      "https://interop.esante.gouv.fr/ig/nos/1.2.0/ValueSet-JDV-J04-XdsPracticeSettingCode-CISIS.html" : "JDV_J04-XdsPracticeSettingCode-CISIS"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_A03-ClasseDocument/FHIR/TRE-A03-ClasseDocument",
-      "version" : "1.1.0",
+      "version" : "1.2.0",
       "status" : "active",
       "name" : "TRE_A03-ClasseDocument",
       "title" : null,
@@ -218,11 +218,11 @@
       "oids" : ["1.2.250.1.213.1.1.4.1"],
       "uses" : {
       },
-      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J06-XdsClassCode-CISIS.html" : "JDV_J06-XdsClassCode-CISIS"
+      "https://interop.esante.gouv.fr/ig/nos/1.2.0/ValueSet-JDV-J06-XdsClassCode-CISIS.html" : "JDV_J06-XdsClassCode-CISIS"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc",
-      "version" : "1.1.0",
+      "version" : "1.2.0",
       "status" : "active",
       "name" : "TRE_A04-Loinc",
       "title" : null,
@@ -230,11 +230,11 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
-      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J07-XdsTypeCode-CISIS.html" : "JDV_J07-XdsTypeCode-CISIS"
+      "https://interop.esante.gouv.fr/ig/nos/1.2.0/ValueSet-JDV-J07-XdsTypeCode-CISIS.html" : "JDV_J07-XdsTypeCode-CISIS"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_A05-TypeDocComplementaire/FHIR/TRE-A05-TypeDocComplementaire",
-      "version" : "1.1.0",
+      "version" : "1.2.0",
       "status" : "active",
       "name" : "TRE_A05-TypeDocComplementaire",
       "title" : null,
@@ -242,11 +242,11 @@
       "oids" : ["1.2.250.1.213.1.1.4.12"],
       "uses" : {
       },
-      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J07-XdsTypeCode-CISIS.html" : "JDV_J07-XdsTypeCode-CISIS"
+      "https://interop.esante.gouv.fr/ig/nos/1.2.0/ValueSet-JDV-J07-XdsTypeCode-CISIS.html" : "JDV_J07-XdsTypeCode-CISIS"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_A06-FormatCodeComplementaire/FHIR/TRE-A06-FormatCodeComplementaire",
-      "version" : "1.1.0",
+      "version" : "1.2.0",
       "status" : "active",
       "name" : "TRE_A06-FormatCodeComplementaire",
       "title" : null,
@@ -254,11 +254,11 @@
       "oids" : ["1.2.250.1.213.1.1.4.2.282"],
       "uses" : {
       },
-      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J10-XdsFormatCode-CISIS.html" : "JDV_J10-XdsFormatCode-CISIS"
+      "https://interop.esante.gouv.fr/ig/nos/1.2.0/ValueSet-JDV-J10-XdsFormatCode-CISIS.html" : "JDV_J10-XdsFormatCode-CISIS"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_A09-DICOMuidRegistry/FHIR/TRE-A09-DICOMuidRegistry",
-      "version" : "1.1.0",
+      "version" : "1.2.0",
       "status" : "active",
       "name" : "TRE_A09-DICOMuidRegistry",
       "title" : null,
@@ -266,11 +266,11 @@
       "oids" : ["1.2.840.10008.2.6.1"],
       "uses" : {
       },
-      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J10-XdsFormatCode-CISIS.html" : "JDV_J10-XdsFormatCode-CISIS"
+      "https://interop.esante.gouv.fr/ig/nos/1.2.0/ValueSet-JDV-J10-XdsFormatCode-CISIS.html" : "JDV_J10-XdsFormatCode-CISIS"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_A10-NomenclatureURN/FHIR/TRE-A10-NomenclatureURN",
-      "version" : "1.1.0",
+      "version" : "1.2.0",
       "status" : "active",
       "name" : "TRE_A10-NomenclatureURN",
       "title" : null,
@@ -278,12 +278,12 @@
       "oids" : ["URN"],
       "uses" : {
       },
-      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J06-XdsClassCode-CISIS.html" : "JDV_J06-XdsClassCode-CISIS",
-      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J10-XdsFormatCode-CISIS.html" : "JDV_J10-XdsFormatCode-CISIS"
+      "https://interop.esante.gouv.fr/ig/nos/1.2.0/ValueSet-JDV-J10-XdsFormatCode-CISIS.html" : "JDV_J10-XdsFormatCode-CISIS",
+      "https://interop.esante.gouv.fr/ig/nos/1.2.0/ValueSet-JDV-J06-XdsClassCode-CISIS.html" : "JDV_J06-XdsClassCode-CISIS"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_A11-IheFormatCode/FHIR/TRE-A11-IheFormatCode",
-      "version" : "1.1.0",
+      "version" : "1.2.0",
       "status" : "active",
       "name" : "TRE_A11-IheFormatCode",
       "title" : null,
@@ -291,11 +291,11 @@
       "oids" : ["1.3.6.1.4.1.19376.1.2.3"],
       "uses" : {
       },
-      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J10-XdsFormatCode-CISIS.html" : "JDV_J10-XdsFormatCode-CISIS"
+      "https://interop.esante.gouv.fr/ig/nos/1.2.0/ValueSet-JDV-J10-XdsFormatCode-CISIS.html" : "JDV_J10-XdsFormatCode-CISIS"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_A12-NomenclatureASTM/FHIR/TRE-A12-NomenclatureASTM",
-      "version" : "1.1.0",
+      "version" : "1.2.0",
       "status" : "active",
       "name" : "TRE_A12-NomenclatureASTM",
       "title" : null,
@@ -303,11 +303,11 @@
       "oids" : ["ASTM"],
       "uses" : {
       },
-      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J07-XdsTypeCode-CISIS.html" : "JDV_J07-XdsTypeCode-CISIS"
+      "https://interop.esante.gouv.fr/ig/nos/1.2.0/ValueSet-JDV-J07-XdsTypeCode-CISIS.html" : "JDV_J07-XdsTypeCode-CISIS"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_R02-SecteurActivite/FHIR/TRE-R02-SecteurActivite",
-      "version" : "1.1.0",
+      "version" : "1.2.0",
       "status" : "active",
       "name" : "TRE_R02-SecteurActivite",
       "title" : null,
@@ -315,12 +315,12 @@
       "oids" : ["1.2.250.1.71.4.2.4"],
       "uses" : {
       },
-      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J02-XdsHealthcareFacilityTypeCode-CISIS.html" : "JDV_J02-XdsHealthcareFacilityTypeCode-CISIS",
-      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J03-XdsContentTypeCode-CISIS.html" : "JDV_J03-XdsContentTypeCode-CISIS"
+      "https://interop.esante.gouv.fr/ig/nos/1.2.0/ValueSet-JDV-J03-XdsContentTypeCode-CISIS.html" : "JDV_J03-XdsContentTypeCode-CISIS",
+      "https://interop.esante.gouv.fr/ig/nos/1.2.0/ValueSet-JDV-J02-XdsHealthcareFacilityTypeCode-CISIS.html" : "JDV_J02-XdsHealthcareFacilityTypeCode-CISIS"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_R209-TypeActivite/FHIR/TRE-R209-TypeActivite",
-      "version" : "1.1.0",
+      "version" : "1.2.0",
       "status" : "active",
       "name" : "TRE_R209-TypeActivite",
       "title" : null,
@@ -328,11 +328,11 @@
       "oids" : ["1.2.250.1.213.2.2"],
       "uses" : {
       },
-      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J03-XdsContentTypeCode-CISIS.html" : "JDV_J03-XdsContentTypeCode-CISIS"
+      "https://interop.esante.gouv.fr/ig/nos/1.2.0/ValueSet-JDV-J03-XdsContentTypeCode-CISIS.html" : "JDV_J03-XdsContentTypeCode-CISIS"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_R276-FormeActivite/FHIR/TRE-R276-FormeActivite",
-      "version" : "1.1.0",
+      "version" : "1.2.0",
       "status" : "active",
       "name" : "TRE_R276-FormeActivite",
       "title" : null,
@@ -340,7 +340,7 @@
       "oids" : ["1.2.250.1.213.1.6.1.128"],
       "uses" : {
       },
-      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J03-XdsContentTypeCode-CISIS.html" : "JDV_J03-XdsContentTypeCode-CISIS"
+      "https://interop.esante.gouv.fr/ig/nos/1.2.0/ValueSet-JDV-J03-XdsContentTypeCode-CISIS.html" : "JDV_J03-XdsContentTypeCode-CISIS"
     },
     {
       "url" : "https://profiles.ihe.net/ITI/MHD/CodeSystem/MHDlistTypes",

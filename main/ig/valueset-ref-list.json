@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "https://mos.esante.gouv.fr/NOS/JDV_J02-XdsHealthcareFacilityTypeCode-CISIS/FHIR/JDV-J02-XdsHealthcareFacilityTypeCode-CISIS",
-      "version" : "1.1.0",
+      "version" : "1.2.0",
       "status" : "active",
       "name" : "JDV_J02-XdsHealthcareFacilityTypeCode-CISIS",
       "title" : null,
@@ -20,7 +20,7 @@
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/JDV_J03-XdsContentTypeCode-CISIS/FHIR/JDV-J03-XdsContentTypeCode-CISIS",
-      "version" : "1.1.0",
+      "version" : "1.2.0",
       "status" : "active",
       "name" : "JDV_J03-XdsContentTypeCode-CISIS",
       "title" : null,
@@ -39,7 +39,7 @@
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/JDV_J04-XdsPracticeSettingCode-CISIS/FHIR/JDV-J04-XdsPracticeSettingCode-CISIS",
-      "version" : "1.1.0",
+      "version" : "1.2.0",
       "status" : "active",
       "name" : "JDV_J04-XdsPracticeSettingCode-CISIS",
       "title" : null,
@@ -57,7 +57,7 @@
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/JDV_J06-XdsClassCode-CISIS/FHIR/JDV-J06-XdsClassCode-CISIS",
-      "version" : "1.1.0",
+      "version" : "1.2.0",
       "status" : "active",
       "name" : "JDV_J06-XdsClassCode-CISIS",
       "title" : null,
@@ -75,7 +75,7 @@
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS",
-      "version" : "1.1.0",
+      "version" : "1.2.0",
       "status" : "active",
       "name" : "JDV_J07-XdsTypeCode-CISIS",
       "title" : null,
@@ -94,7 +94,7 @@
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/JDV_J10-XdsFormatCode-CISIS/FHIR/JDV-J10-XdsFormatCode-CISIS",
-      "version" : "1.1.0",
+      "version" : "1.2.0",
       "status" : "active",
       "name" : "JDV_J10-XdsFormatCode-CISIS",
       "title" : null,

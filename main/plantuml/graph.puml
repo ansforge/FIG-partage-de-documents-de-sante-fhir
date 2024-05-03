@@ -134,9 +134,9 @@ package IG #DDDDDD{
              List.extension:designationType => <&plus>[None..None]
              List.extension:designationType.value[x] => <&plus>[None..None]
              List.extension:sourceId => <&plus>[None..None]
-             List.extension:intendedRecipient => <&plus>[None..None]
-             List.extension:intendedRecipient.value[x] => <&plus>[None..None]
              List.extension:isArchived => <&plus>[0..1]
+             List.extension:PDSmintendedRecipient => <&plus>[0..*]
+             List.extension:PDSmintendedRecipient.value[x] => <&plus>[None..None]
              List.identifier:uniqueId => [None..None]
              List.identifier:entryUUID => [None..None]
              List.status => [None..None]
@@ -157,6 +157,7 @@ package IG #DDDDDD{
 
      PDSm_ComprehensiveDocumentReference -[#black,dashed,thickness=2]-> PDSm_IsArchived
      PDSm_SubmissionSetComprehensive -[#black,dashed,thickness=2]-> PDSm_IsArchived
+     PDSm_SubmissionSetComprehensive -[#black,dashed,thickness=2]-> PDSm_intendedRecipient
 
         class PDSm_intendedRecipient{
 

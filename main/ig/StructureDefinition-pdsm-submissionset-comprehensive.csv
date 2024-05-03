@@ -59,7 +59,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 - TRE_A00-ProducteurDocNonPS, OID : 1.2.250.1.213.1.1.4.6 
 - TRE_R209-TypeActivite, OID : 1.2.250.1.213.2.2 
 - TRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J59-ContentTypeCode-DMP). 
-En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J03-XdsContentTypeCode-CISIS peut être utilisé. {f:extension[designationType]}","typeActivite : [1..1] Code"
+En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J03-XdsContentTypeCode-CISIS peut être utilisé. {null}","typeActivite : [1..1] Code"
 "List.extension:designationType.id","List.extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "List.extension:designationType.extension","List.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
@@ -78,28 +78,29 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "List.extension:sourceId","List.extension","sourceId","","",1,1,"","","","Extension {[CanonicalType[https://profiles.ihe.net/ITI/MHD/StructureDefinition/ihe-sourceId]]} {[]}
 ","Représente l’identifiant unique global du système émetteur du lot de soumission.","The globally unique, immutable, identifier of the entity that contributed the SubmissionSet. When a broker is involved in sending SubmissionSets from a collection of client systems, it shall use a different sourceId for submissions from each separate system to allow for tracking. The format of the identifier is an OID.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","idSource : [0..1] Identifiant"
-"List.extension:intendedRecipient","List.extension","intendedRecipient","","",0,*,"Y","","","Extension {[CanonicalType[https://profiles.ihe.net/ITI/MHD/StructureDefinition/ihe-intendedRecipient]]} {[]}
-","Représente le destinataire du lot de soumission. Il peut s'agir d'un AsPractitioner associé à un AsPractitionerRole ou bien d'une AsOrganization.","holds the identity of the organization or person the SubmissionSet is intended. For XDR and eMail (e.g. Direct) this tends to be a Practitioner or Patient with a telecom holding an email, but this is not strictly required.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"List.extension:intendedRecipient.id","List.extension.id","","","",0,1,"","","","string {[]} {[]}
-","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
-"List.extension:intendedRecipient.extension","List.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
-","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
-","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"List.extension:intendedRecipient.url","List.extension.url","","","",1,1,"","","","uri {[]} {[]}
-","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""https://profiles.ihe.net/ITI/MHD/StructureDefinition/ihe-intendedRecipient""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
-"List.extension:intendedRecipient.value[x]","List.extension.value[x]","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization], CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson], CanonicalType[http://hl7.org/fhir/StructureDefinition/Group], CanonicalType[http://hl7.org/fhir/StructureDefinition/Device], CanonicalType[http://hl7.org/fhir/StructureDefinition/Location]]} (contained
-)
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"","type:$this}
-","",,"closed","Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","N/A"
-"List.extension:intendedRecipient.value[x]:valueReference","List.extension.value[x]","valueReference","","",1,1,"","","","Reference {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","N/A"
-"List.extension:isArchived","List.extension","isArchived","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-is-archived]]} {[]}
+"List.extension:intendedRecipient","List.extension","intendedRecipient","","",0,*,"","","","Extension {[CanonicalType[https://profiles.ihe.net/ITI/MHD/StructureDefinition/ihe-intendedRecipient]]} {[]}
+","Intended recipient of the SubmissionSet","holds the identity of the organization or person the SubmissionSet is intended. For XDR and eMail (e.g. Direct) this tends to be a Practitioner or Patient with a telecom holding an email, but this is not strictly required.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","SubmissionSet.intendedRecipient"
+"List.extension:isArchived","List.extension","isArchived","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-ext-is-archived]]} {[]}
 ","Extension définie par ce volet pour distinguer les lots de soumission archivés des actives.","Extension définie par le volet ANS ""Volet Partage de documents de santé en mobilité"" sur les ressources List et DocumentReference pour distinguer les lots de soumission et les fiches archivés des actives.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","statut : [1..1] Code"
+"List.extension:PDSmintendedRecipient","List.extension","PDSmintendedRecipient","","",0,*,"Y","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-ext-intended-recipient]]} {[]}
+","Représente le destinataire du lot de soumission. Il peut s'agir d'un AsPractitioner associé à un AsPractitionerRole ou bien d'une AsOrganization.","Représente le destinataire du lot de soumission","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"List.extension:PDSmintendedRecipient.id","List.extension.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"List.extension:PDSmintendedRecipient.extension","List.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"List.extension:PDSmintendedRecipient.url","List.extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-ext-intended-recipient""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
+"List.extension:PDSmintendedRecipient.value[x]","List.extension.value[x]","","","",0,1,"","","","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner], CanonicalType[https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole], CanonicalType[https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization]]} (contained
+)
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","n/a","N/A"
 "List.modifierExtension","List.modifierExtension","","","",0,0,"","Y","","Extension {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"",,,,"DomainResource.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -132,7 +133,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
   </coding>
 </valueCodeableConcept>","","","",,"required","","https://profiles.ihe.net/ITI/MHD/ValueSet/MHDlistTypesVS","",,,,"List.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".code","FiveWs.what[x]","shall be 'submissionset'"
-"List.subject","List.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://interopsante.org/fhir/StructureDefinition/FrPatient]]}
+"List.subject","List.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient]]}
 ","Référence vers la ressource Patient titulaire du dossier.","The common subject (or patient) of the resources that are in the list if there is one.","Some purely arbitrary lists do not have a common subject, so this is optional.","The primary purpose of listing the subject explicitly is to help with finding the right list.","","","","","","","",,,,,"",,,,"List.subject",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","idPatient : [0..1] Identifiant",".participation[typeCode<SUB].role (and sometimes .player)","FiveWs.subject[x]","FiveWs.subject","SubmissionSet.patientId"
 "List.encounter","List.encounter","","","",0,0,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Encounter]]}
@@ -142,7 +143,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Représente la date et heure de soumission.","The date that the list was prepared.","The actual important date is the date of currency of the resources that were summarized, but it is usually assumed that these are current when the preparation occurs.","Identifies how current the list is which affects relevance.","","","","","","","",,,,,"",,,,"List.date",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","dateSoumission : [1..1] DateHeure",".participation[typeCode<AUT].time[type=TS]","FiveWs.recorded","SubmissionSet.submissionTime"
 "List.source","List.source","","Author
-","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole], CanonicalType[http://hl7.org/fhir/StructureDefinition/Device], CanonicalType[http://interopsante.org/fhir/StructureDefinition/FrPatient]]} (contained
+","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole], CanonicalType[http://hl7.org/fhir/StructureDefinition/Device], CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient]]} (contained
 )
 ","Représente l'auteur du lot de soumission. Si l'auteur est une organisation, utiliser l'extension authorOrg. Si l’auteur est une personne physique ou un dispositif, utiliser l’attribut source.reference .","The entity responsible for deciding what the contents of the list were. Where the list was created by a human, this is the same as the author of the list.","The primary source is the entity that made the decisions what items are in the list. This may be software or user.","Allows follow-up as well as context.","","","","","","","",,,,,"",,,,"List.source",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".participation[typeCode<AUT].role[classCode=REL].player[classCode=PSN,determinerCode=INST] or .participation[typeCode<AUT].role[classCode=REL].player[classCode=DEV,determinerCode=INST]","FiveWs.author","SubmissionSet.author"

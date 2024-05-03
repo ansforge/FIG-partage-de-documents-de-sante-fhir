@@ -1,3 +1,5 @@
+<!-- get modelType -->
+
 
 
 <?xml version="1.0" encoding="UTF-8"?>
@@ -5,7 +7,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>PDSm-DocumentReference-PatientAsSubject - JSON Representation - Partage de Documents de Santé en mobilité (PDSm) v3.1.0-ballot</title>
+    <title> - Partage de Documents de Santé en mobilité (PDSm) v3.1.0-ballot</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -43,8 +45,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"5.4"}
-    h3,h4,h5,h6{--heading-prefix:"5.4"}</style>
+    <style type="text/css">h2{--heading-prefix:""}
+    h3,h4,h5,h6{--heading-prefix:""}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -58,7 +60,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Partage de Documents de Santé en mobilité (PDSm)</span>
             <br/>
-            <span style="display:inline-block;">3.1.0-ballot - Trial-Implementation
+            <span style="display:inline-block;">3.1.0-ballot - trial-use
 
 
             </span>
@@ -178,15 +180,11 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>PDSm-DocumentReference-PatientAsSubject</b></li>
+          
 
           <span style="float:right;">
 
-            <a href="SearchParameter-PDSm-DocumentReference-PatientAsSubject.xml.html">&lt;prev</a> | 
-
             <a href="#bottom">bottom</a>
-
-          | <a href="SearchParameter-PDSm-DocumentReference-PatientAsSubject.ttl.html">next&gt;</a>
 
           </span>
 
@@ -200,8 +198,12 @@
         <div class="row">
           <div class="inner-wrapper">
 
-<div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Partage de Documents de Santé en mobilité (PDSm) - Local Development build (v3.1.0-ballot) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://interop.esante.gouv.fr/ig/fhir/pdsm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+<div style="counter-reset: section 10" class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Partage de Documents de Santé en mobilité (PDSm) - Local Development build (v3.1.0-ballot) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://interop.esante.gouv.fr/ig/fhir/pdsm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
 
 
 
@@ -214,40 +216,55 @@
 <ul class="nav nav-tabs">
 
   <li>
-    <a href="SearchParameter-PDSm-DocumentReference-PatientAsSubject.html">Narrative Content</a>
+    <a href="StructureDefinition-pdsm-ext-intended-recipient.html">Content</a>
+  </li>
+
+
+
+  <li>
+    <a href="StructureDefinition-pdsm-ext-intended-recipient-definitions.html">Detailed Descriptions</a>
   </li>
 
 
 
   
     <li>
-      <a href="SearchParameter-PDSm-DocumentReference-PatientAsSubject.xml.html">XML</a>
+      <a href="StructureDefinition-pdsm-ext-intended-recipient-mappings.html">Mappings</a>
     </li>
   
 
 
+
+
+
+
+
   
-    <li class="active">
-      <a href="#">JSON</a>
+    <li>
+      <a href="StructureDefinition-pdsm-ext-intended-recipient.profile.xml.html">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="SearchParameter-PDSm-DocumentReference-PatientAsSubject.ttl.html">TTL</a>
+      <a href="StructureDefinition-pdsm-ext-intended-recipient.profile.json.html">JSON</a>
     </li>
   
 
+
+  
+    <li>
+      <a href="StructureDefinition-pdsm-ext-intended-recipient.profile.ttl.html">TTL</a>
+    </li>
+  
 
 
 </ul>
 
 
-<a name="root"> </a>
-
-
-<h2 id="root">: PDSm-DocumentReference-PatientAsSubject - JSON Representation</h2>
+  <a name="root"> </a>
+  <h2 id="root">Extension: PDSm_intendedRecipient - Change History</h2>
 
   <table class="colsi">
     <tr>
@@ -256,7 +273,7 @@
         
           Active
           
-            as of 2024-05-02
+            as of 2024-05-03
           
         
       </td>
@@ -264,67 +281,12 @@
     </tr>
   </table>
 
+  <p>Changes in the pdsm-ext-intended-recipient extension.</p>
 
-<p><a href="SearchParameter-PDSm-DocumentReference-PatientAsSubject.json" no-download="true">Raw json</a> | <a href="SearchParameter-PDSm-DocumentReference-PatientAsSubject.json" download>Download</a></p>
-
-  <!-- insert intro if present -->
   
-
-
-
-  <pre class="json" style="white-space: pre; text-wrap: nowrap;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">
-{
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter">resourceType</a>" : "SearchParameter",
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.id">id</a>" : "PDSm-DocumentReference-PatientAsSubject",
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.text">text</a>" : {
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2&gt;PDSmDocumentReferencePatientAsSubject&lt;/h2&gt;&lt;p&gt;Parameter &lt;code&gt;patient&lt;/code&gt;:&lt;code&gt;reference&lt;/code&gt;&lt;/p&gt;&lt;div&gt;&lt;p&gt;Paramètre de recherche chaîné créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'élément patient.identifier&lt;/p&gt;\n&lt;/div&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;Resource&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/documentreference.html\&quot;&gt;DocumentReference&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Expression&lt;/td&gt;&lt;td&gt;&lt;code&gt;DocumentReference.subject.where(resolve() is Patient)&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Processing Mode&lt;/td&gt;&lt;td&gt;Normal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Multiples&lt;/td&gt;&lt;td&gt;&lt;ul&gt;&lt;li&gt;multipleAnd: The parameter may repeat in order to specify multiple values that must all be true&lt;/li&gt;&lt;li&gt;multipleOr: The parameter may have multiple values (separated by comma) where at least one must be true&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Modifiers&lt;/td&gt;&lt;td&gt;Allowed: missing, type, identifier&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Chains&lt;/td&gt;&lt;td&gt;Allowed: identifier&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
-  },
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.url">url</a>" : "https://interop.esante.gouv.fr/ig/fhir/pdsm/SearchParameter/PDSm-DocumentReference-PatientAsSubject",
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.version">version</a>" : "3.1.0-ballot",
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.name">name</a>" : "PDSmDocumentReferencePatientAsSubject",
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.derivedFrom">derivedFrom</a>" : "http://hl7.org/fhir/SearchParameter/clinical-patient",
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.status">status</a>" : "active",
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.date">date</a>" : "2024-05-02T07:44:53+00:00",
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.publisher">publisher</a>" : "ANS",
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.contact">contact</a>" : [
-    {
-      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "ANS",
-      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "https://esante.gouv.fr"
-        }
-      ]
-    }
-  ],
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.description">description</a>" : "Paramètre de recherche chaîné créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'élément patient.identifier",
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.code">code</a>" : "patient",
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.base">base</a>" : [
-    "DocumentReference"
-  ],
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.type">type</a>" : "reference",
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.expression">expression</a>" : "DocumentReference.subject.where(resolve() is Patient)",
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.xpathUsage">xpathUsage</a>" : "normal",
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.multipleOr">multipleOr</a>" : true,
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.multipleAnd">multipleAnd</a>" : true,
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.modifier">modifier</a>" : [
-    "missing",
-    "type",
-    "identifier"
-  ],
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.chain">chain</a>" : [
-    "identifier"
-  ]
-}</code></pre>
-
-
-  <!-- insert notes if present -->
-  
-
-
 
 </div>
+
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
@@ -332,6 +294,29 @@
 
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    try {
+      var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index');
+    } catch(exception) {
+    }
+
+    if (!currentTabIndex)
+      currentTabIndex = '0';
+
+    $( '#tabs' ).tabs({
+      active: currentTabIndex,
+      activate: function( event, ui ) {
+        var active = $('.selector').tabs('option', 'active');
+        currentTabIndex = ui.newTab.index();
+        document.activeElement.blur();
+        try {
+          sessionStorage.setItem('fhir-resource-tab-index', currentTabIndex);
+        } catch(exception) {
+        }
+      }
+    });
+  </script>
 
   <script type="text/javascript">
     $(document).ready(function(){
@@ -350,7 +335,7 @@
             <tr>
               <td style="text-align:left">&#xA0;
 
-                <a href="SearchParameter-PDSm-DocumentReference-PatientAsSubject.xml.html">&lt;prev</a>
+                <span style="visibility:hidden">&lt;prev</span>
 
               </td>
               <td style="text-align:center">
@@ -358,7 +343,7 @@
               </td>
               <td style="text-align:right">&#xA0;
 
-                <a href="SearchParameter-PDSm-DocumentReference-PatientAsSubject.ttl.html">next&gt;</a>
+                <span style="visibility:hidden">next&gt;</span>
 
               </td>
             </tr>
@@ -368,7 +353,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.pdsm#3.1.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 2, 2024 07:44+0000">2024-05-02</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.pdsm#3.1.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, May 3, 2024 07:57+0000">2024-05-03</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
