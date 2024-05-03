@@ -1,14 +1,14 @@
 PDSm : Validation Results
 =========================================
 
-err = 7, warn = 51, info = 39
+err = 1, warn = 51, info = 39
 IG Publisher Version: 1.6.6
-Generated Fri May 03 12:00:52 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.pdsm#3.1.0-ballot (canonical = https://interop.esante.gouv.fr/ig/fhir/pdsm)
- Build Errors : 10 / 4 / 0
+Generated Fri May 03 13:00:11 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.pdsm#3.1.0-ballot (canonical = https://interop.esante.gouv.fr/ig/fhir/pdsm)
+ Build Errors : 1 / 4 / 0
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/igSource/fsh-generated/resources/Bundle-a9c10f8a-882d-4000-a280-7150e0aeb478 : 0 / 0 / 1
- /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/igSource/fsh-generated/resources/CapabilityStatement-PDSm-ConsommateurDeDocuments : 1 / 0 / 1
- /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/igSource/fsh-generated/resources/CapabilityStatement-PDSm-GestionnaireDePartageDeDocuments : 1 / 0 / 1
- /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/igSource/fsh-generated/resources/CapabilityStatement-PDSm-ProducteurDeDocuments : 1 / 0 / 1
+ /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/igSource/fsh-generated/resources/CapabilityStatement-PDSm-ConsommateurDeDocuments : 0 / 0 / 1
+ /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/igSource/fsh-generated/resources/CapabilityStatement-PDSm-GestionnaireDePartageDeDocuments : 0 / 0 / 1
+ /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/igSource/fsh-generated/resources/CapabilityStatement-PDSm-ProducteurDeDocuments : 0 / 0 / 1
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.pdsm : 0 / 0 / 1
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/igSource/fsh-generated/resources/SearchParameter-PDSm-DocumentReference-period-end : 0 / 0 / 1
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/igSource/fsh-generated/resources/SearchParameter-PDSm-DocumentReference-period-start : 0 / 0 / 1
@@ -30,25 +30,13 @@ Generated Fri May 03 12:00:52 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.pdsm#
 == n/a ==
 ERROR: ImplementationGuide.definition.parameter[24].value: Supressed messages file not found
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/a9c10f8a-882d-4000-a280-7150e0aeb478.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/igSource/output/Bundle-a9c10f8a-882d-4000-a280-7150e0aeb478.change.history.html#/html/body/script at Line 262, column 4: The <script> tag containing the javascript 'try {       var curr'... is illegal and not allowed on the HL7 cibuild - put the script in a  .js file in a trusted template (also in 80 other files)
-ERROR: /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/igSource/output/Bundle-a9c10f8a-882d-4000-a280-7150e0aeb478.change.history.html#/html/body/script at Line 285, column 4: The <script> tag containing the javascript '$(document).ready(fu'... is illegal and not allowed on the HL7 cibuild - put the script in a  .js file in a trusted template (also in 144 other files)
-ERROR: /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/igSource/output/Bundle-a9c10f8a-882d-4000-a280-7150e0aeb478.change.history.html#/html/body/script at Line 355, column 4: The <script> tag containing the javascript 'anchors.options.visi'... is illegal and not allowed on the HL7 cibuild - put the script in a  .js file in a trusted template (also in 144 other files)
-ERROR: /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/igSource/output/CapabilityStatement-PDSm-ConsommateurDeDocuments.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 310, column 794: The link 'ImplementationGuide-ans.fhir.fr.pdsm.html' for "https://interop.esante.gouv.fr/ig/fhir/pdsm/ImplementationGuide/ans.fhir.fr.pdsm" cannot be resolved
-ERROR: /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/igSource/output/CapabilityStatement-PDSm-ConsommateurDeDocuments.json.html#/html/body/div/div/div/div/div/pre/code/a at Line 310, column 7: The link 'ImplementationGuide-ans.fhir.fr.pdsm.html' for "🔗" cannot be resolved
-ERROR: /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/igSource/output/CapabilityStatement-PDSm-GestionnaireDePartageDeDocuments.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 310, column 803: The link 'ImplementationGuide-ans.fhir.fr.pdsm.html' for "https://interop.esante.gouv.fr/ig/fhir/pdsm/ImplementationGuide/ans.fhir.fr.pdsm" cannot be resolved
-ERROR: /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/igSource/output/CapabilityStatement-PDSm-GestionnaireDePartageDeDocuments.json.html#/html/body/div/div/div/div/div/pre/code/a at Line 310, column 7: The link 'ImplementationGuide-ans.fhir.fr.pdsm.html' for "🔗" cannot be resolved
-ERROR: /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/igSource/output/CapabilityStatement-PDSm-ProducteurDeDocuments.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 310, column 792: The link 'ImplementationGuide-ans.fhir.fr.pdsm.html' for "https://interop.esante.gouv.fr/ig/fhir/pdsm/ImplementationGuide/ans.fhir.fr.pdsm" cannot be resolved
-ERROR: /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/igSource/output/CapabilityStatement-PDSm-ProducteurDeDocuments.json.html#/html/body/div/div/div/div/div/pre/code/a at Line 310, column 7: The link 'ImplementationGuide-ans.fhir.fr.pdsm.html' for "🔗" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/Bundle-a9c10f8a-882d-4000-a280-7150e0aeb478.json ==
 == fsh-generated/resources/CapabilityStatement-PDSm-ConsommateurDeDocuments.json ==
-ERROR: CapabilityStatement.text.div: Hyperlink 'ImplementationGuide-ans.fhir.fr.pdsm.html' at 'div/ul/li/a' for 'https://interop.esante.gouv.fr/ig/fhir/pdsm/ImplementationGuide/ans.fhir.fr.pdsm' does not resolve
 == fsh-generated/resources/CapabilityStatement-PDSm-GestionnaireDePartageDeDocuments.json ==
-ERROR: CapabilityStatement.text.div: Hyperlink 'ImplementationGuide-ans.fhir.fr.pdsm.html' at 'div/ul/li/a' for 'https://interop.esante.gouv.fr/ig/fhir/pdsm/ImplementationGuide/ans.fhir.fr.pdsm' does not resolve
 == fsh-generated/resources/CapabilityStatement-PDSm-ProducteurDeDocuments.json ==
-ERROR: CapabilityStatement.text.div: Hyperlink 'ImplementationGuide-ans.fhir.fr.pdsm.html' at 'div/ul/li/a' for 'https://interop.esante.gouv.fr/ig/fhir/pdsm/ImplementationGuide/ans.fhir.fr.pdsm' does not resolve
 == fsh-generated/resources/ImplementationGuide-ans.fhir.fr.pdsm.json ==
 == fsh-generated/resources/SearchParameter-PDSm-DocumentReference-period-end.json ==
 == fsh-generated/resources/SearchParameter-PDSm-DocumentReference-period-start.json ==
