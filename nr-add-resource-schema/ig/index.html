@@ -47,11 +47,11 @@
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 <div id="family-nav">
-  <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
-</div>
-<div id="ans-nav" style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; ">
-  <a id="hl7-logo" no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
-</div>
+    <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+  </div>
+  <div id="ans-nav" style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; ">
+    <a id="hl7-logo" no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
+  </div>
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Partage de Documents de Santé en mobilité (PDSm)</span>
@@ -237,7 +237,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Active
           
-            as of 2024-05-03
+            as of 2024-05-28
           
         
       </td>
@@ -288,9 +288,7 @@ This is a part of the service layer specifying the terms of document sharing wit
 
 <p>A noter que la dénomination du volet « Partage de documents de santé en mobilité » n’est pas restrictive. En effet, les standards sous-jacents aux spécifications techniques, par opposition au volet historique « Partage de documents de santé », permettent le déploiement de cas d’usage en mobilité mais ces spécifications peuvent également être mises en œuvre dans d’autres cas d’usage.</p>
 
-<p>Ce document s’adresse aux développeurs des interfaces interopérables des systèmes implémentant le partage de documents de santé ou à toute autre personne intervenant dans le processus de mise en place de ces interfaces.</p>
-
-<p>Les spécifications d’interopérabilité présentées dans ce volet ne présagent pas des conditions de leur mise en œuvre dans le cadre d’un système d’information partagé. Il appartient à tout responsable de traitement de s’assurer que les services utilisant ces spécifications respectent les cadres et bonnes pratiques applicables à ce genre de service (ex.: cadre juridique, bonnes pratiques de sécurité, ergonomie, accessibilité …).</p>
+<p>Ce document s’adresse aux personnes intervenant dans la mise en place des interfaces interopérables des systèmes implémentant le partage de documents de santé.</p>
 
 <h3 id="ressources-fhir-et-profils">Ressources FHIR et profils</h3>
 
@@ -309,8 +307,8 @@ Dans le cas d’une demande de mise à jour d’un document par remplacement, l�
 Dans le cas d’une mise à jour d’un classeur, comme List.status ou List.entry pour reclasser des documents, une nouvelle version de la ressource List est envoyée.</li>
 </ul>
 </div></td></tr><tr><td><div><p><a href="StructureDefinition-pdsm-find-documentreferences-comprehensive-response.html">PDSm Find DocumentReferences Comprehensive Response</a></p>
-</div></td><td>Profil de réponse de la transaction IHE &quot;Find Document References [ITI-67]&quot; basée sur le bundle MHD http://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.FindDocumentReferencesComprehensiveResponseMessage et profilé pour le volet PDSm</td></tr><tr><td><div><p><a href="StructureDefinition-pdsm-find-lists-response.html">PDSm Find Lists Response</a></p>
-</div></td><td>Profil de réponse de la transaction IHE &quot;Find Document Lists [ITI-66]&quot; basée sur le bundle MHD http://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.FindDocumentListsResponseMessage et profilé pour le volet PDSm</td></tr><tr><td><div><p><a href="StructureDefinition-pdsm-folder-comprehensive.html">PDSm Folder Comprehensive</a></p>
+</div></td><td>Profil de réponse de la transaction IHE &quot;Find Document References [ITI-67]&quot; basée sur le bundle MHD FindDocumentReferencesComprehensiveResponseMessage et profilé pour le volet PDSm</td></tr><tr><td><div><p><a href="StructureDefinition-pdsm-find-lists-response.html">PDSm Find Lists Response</a></p>
+</div></td><td>Profil de réponse de la transaction IHE &quot;Find Document Lists [ITI-66]&quot; basée sur le bundle MHD FindDocumentListsResponseMessage et profilé pour le volet PDSm</td></tr><tr><td><div><p><a href="StructureDefinition-pdsm-folder-comprehensive.html">PDSm Folder Comprehensive</a></p>
 </div></td><td>Profil spécifique dérivé du profil IHE MHD « Comprehensive Folder » créé pour le volet ANS &quot;Partage de documents de santé en mobilité&quot; ; ce profil concerne le classeur.</td></tr><tr><td><div><p><a href="StructureDefinition-pdsm-simplified-publish.html">PDSm Simplified Publish Document Reference</a></p>
 </div></td><td><div><p>Profil utilisé dans le cadre du flux 9 d'ajout simplifié de document. Le flux et le profil sont inspirés d’IHE MHD, transaction ITI-105.</p>
 <p>Contrairement au profil PDSm_ComprehensiveDocumentReference, le document est directement inclus dans DocumentReference.attachment.data et non dans une ressource « Binary » externe.</p>
@@ -371,7 +369,7 @@ Dans le cas d’une mise à jour d’un classeur, comme List.status ou List.entr
 <ul>
   <li>1) la fiche document <a href="StructureDefinition-pdsm-comprehensive-document-reference.html">PDSm_ComprehensiveDocumentReference</a>,</li>
   <li>2) le classeur <a href="StructureDefinition-pdsm-folder-comprehensive.html">PDSm_FolderComprehensive</a>,</li>
-  <li>3) le Lot de soumission <a href="StructureDefinition-pdsm-submissionset-comprehensive.html">PDSm_SubmissionSetComprehensive</a></li>
+  <li>3) le lot de soumission <a href="StructureDefinition-pdsm-submissionset-comprehensive.html">PDSm_SubmissionSetComprehensive</a></li>
 </ul>
 
 <p>Ces trois profils doivent être encapsulés dans le <a href="StructureDefinition-pdsm-comprehensive-provide-document-bundle.html">Bundle Comprehensive Provide Document</a>.</p>
@@ -492,14 +490,13 @@ Dans le cas d’une mise à jour d’un classeur, comme List.status ou List.entr
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.pdsm#3.1.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, May 3, 2024 12:59+0000">2024-05-03</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.pdsm#3.1.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, May 28, 2024 07:52+0000">2024-05-28</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
-                      Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
-                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA </a> |
-                 <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/fhir/pdsm/history.html">Historique des versions </a>
-                  | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/FIG-partage-de-documents-de-sante-fhir/issues/new">New Issue</a>
-                
+            Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA </a> |
+<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/fhir/pdsm/history.html">Historique des versions </a>
+ | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/FIG-partage-de-documents-de-sante-fhir/issues/new">New Issue</a>
 
           </span>
         </p>

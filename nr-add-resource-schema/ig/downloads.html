@@ -47,11 +47,11 @@
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 <div id="family-nav">
-  <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
-</div>
-<div id="ans-nav" style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; ">
-  <a id="hl7-logo" no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
-</div>
+    <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+  </div>
+  <div id="ans-nav" style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; ">
+    <a id="hl7-logo" no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
+  </div>
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Partage de Documents de Santé en mobilité (PDSm)</span>
@@ -222,11 +222,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
-</div>
-<h3 id="téléchargements-et-usage">Téléchargements et usage</h3>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#définitions" id="markdown-toc-définitions">Définitions</a></li>
+  <li><a href="#exemples" id="markdown-toc-exemples">Exemples</a></li>
+</ul>
 
+</div>
 <p>L’implementation guide contient un package <a href="package.tgz">téléchargeable ici</a> permettant de valider les instances par rapport aux profils qu’il contient.</p>
 
 <p>Pour cela, il suffit de télécharger le <a href="package.tgz">package.tgz</a> et l’importer dans un serveur, par exemple sur hapi en suivant ce <a href="https://github.com/nmdp-bioinformatics/igloader">script python</a> open source.</p>
@@ -234,14 +236,26 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Vous pourrez ensuite utiliser l’opération <a href="https://www.hl7.org/fhir/resource-operation-validate.html">$validate</a> pour valider les instances de ressource contre un profil issu de cette spécification.</p>
 
 <p>Ensemble des ressources téléchargeables :</p>
+
 <ul>
   <li><a href="full-ig.zip">L’ensemble de la specification (zip)</a></li>
   <li><a href="package.tgz">Package (tgz)</a></li>
-  <li><a href="definitions.json.zip">JSON Définitions (zip)</a></li>
-  <li><a href="examples.json.zip">JSON Exemples (zip)</a></li>
-  <li><a href="definitions.xml.zip">XML Definitions (zip)</a></li>
-  <li><a href="examples.ttl.zip">XML Exemples (zip)</a></li>
-  <li><a href="definitions.ttl.zip">Turtle Définitions</a></li>
+</ul>
+
+<h3 id="définitions">Définitions</h3>
+
+<ul>
+  <li><a href="definitions.json.zip">Définitions JSON (zip)</a></li>
+  <li><a href="definitions.xml.zip">Définitions XML (zip)</a></li>
+  <li><a href="definitions.ttl.zip">Définitions Turtle (zip)</a></li>
+</ul>
+
+<h3 id="exemples">Exemples</h3>
+
+<ul>
+  <li><a href="examples.xml.zip">Exemples XML (zip)</a></li>
+  <li><a href="examples.json.zip">Exemples JSON (zip)</a></li>
+  <li><a href="examples.ttl.zip">Exemples JSON (zip)</a></li>
 </ul>
 
 
@@ -284,14 +298,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.pdsm#3.1.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, May 3, 2024 12:59+0000">2024-05-03</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.pdsm#3.1.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, May 28, 2024 07:52+0000">2024-05-28</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
-                      Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
-                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA </a> |
-                 <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/fhir/pdsm/history.html">Historique des versions </a>
-                  | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/FIG-partage-de-documents-de-sante-fhir/issues/new">New Issue</a>
-                
+            Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA </a> |
+<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/fhir/pdsm/history.html">Historique des versions </a>
+ | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/FIG-partage-de-documents-de-sante-fhir/issues/new">New Issue</a>
 
           </span>
         </p>

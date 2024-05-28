@@ -2,8 +2,8 @@ PDSm : Validation Results
 =========================================
 
 err = 1, warn = 51, info = 39
-IG Publisher Version: 1.6.6
-Generated Fri May 03 13:00:11 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.pdsm#3.1.0-ballot (canonical = https://interop.esante.gouv.fr/ig/fhir/pdsm)
+IG Publisher Version: 1.6.10
+Generated Tue May 28 07:53:58 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.pdsm#3.1.0-ballot (canonical = https://interop.esante.gouv.fr/ig/fhir/pdsm)
  Build Errors : 1 / 4 / 0
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/igSource/fsh-generated/resources/Bundle-a9c10f8a-882d-4000-a280-7150e0aeb478 : 0 / 0 / 1
  /home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/igSource/fsh-generated/resources/CapabilityStatement-PDSm-ConsommateurDeDocuments : 0 / 0 / 1
