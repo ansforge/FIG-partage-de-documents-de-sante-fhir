@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "PDSm"] ; # 
   fhir:title [ fhir:v "Partage de Documents de Santé en mobilité (PDSm)"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-05-03T07:57:36+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-05-28T08:41:18+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -636,11 +636,23 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-find-documentreferences-comprehensive-response> ;
+         fhir:reference [ fhir:v "StructureDefinition/pdsm-find-documentreferences-comprehensive-response" ]
+       ] ;
+       fhir:name [ fhir:v "PDSm Find DocumentReferences Comprehensive Response" ] ;
+       fhir:description [ fhir:v "Profil de réponse de la transaction IHE \"Find Document References [ITI-67]\" basée sur le bundle MHD FindDocumentReferencesComprehensiveResponseMessage et profilé pour le volet PDSm" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-find-lists-response> ;
          fhir:reference [ fhir:v "StructureDefinition/pdsm-find-lists-response" ]
        ] ;
        fhir:name [ fhir:v "PDSm Find Lists Response" ] ;
-       fhir:description [ fhir:v "Réponse de la transaction IHE \"Find Document Lists [ITI-66]\" basée sur le bundle MHD http://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.FindDocumentListsResponseMessage et profilé pour le volet PDSm" ] ;
+       fhir:description [ fhir:v "Profil de réponse de la transaction IHE \"Find Document Lists [ITI-66]\" basée sur le bundle MHD FindDocumentListsResponseMessage et profilé pour le volet PDSm" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -663,8 +675,8 @@
          fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish> ;
          fhir:reference [ fhir:v "StructureDefinition/pdsm-simplified-publish" ]
        ] ;
-       fhir:name [ fhir:v "PDSm Simplified Publish" ] ;
-       fhir:description [ fhir:v "Ce profil est utilisé dans le cadre du flux 9 d'ajout simplifié de document. Le flux et le profil sont inspirés d’IHE MHD, transaction ITI-105.\n\nContrairement au profil PDSm_ComprehensiveDocumentReference, le document est directement inclus dans DocumentReference.attachment.data et non dans une ressource « Binary » externe.\n\nLa publication simplifiée est une simple requête HTTP POST d'une ressource DocumentReference conforme à ce profil." ] ;
+       fhir:name [ fhir:v "PDSm Simplified Publish Document Reference" ] ;
+       fhir:description [ fhir:v "Profil utilisé dans le cadre du flux 9 d'ajout simplifié de document. Le flux et le profil sont inspirés d’IHE MHD, transaction ITI-105.\n\nContrairement au profil PDSm_ComprehensiveDocumentReference, le document est directement inclus dans DocumentReference.attachment.data et non dans une ressource « Binary » externe.\n\nLa publication simplifiée est une simple requête HTTP POST d'une ressource DocumentReference conforme à ce profil." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -761,18 +773,6 @@
        ] ;
        fhir:name [ fhir:v "PDSm-List-PractitionerRoleAsSource" ] ;
        fhir:description [ fhir:v "Paramètre de recherche chaîné créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'élément source:PractitionerRole.practitioner:Practitioner.given et source:PractitionerRole.practitioner:Practitioner.family" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-find-documentreferences-comprehensive-response> ;
-         fhir:reference [ fhir:v "StructureDefinition/pdsm-find-documentreferences-comprehensive-response" ]
-       ] ;
-       fhir:name [ fhir:v "PDSm_FindDocumentReferencesComprehensiveResponse" ] ;
-       fhir:description [ fhir:v "Réponse de la transaction IHE \"Find Document References [ITI-67]\" basée sur le bundle MHD http://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.FindDocumentReferencesComprehensiveResponseMessage et profilé pour le volet PDSm" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

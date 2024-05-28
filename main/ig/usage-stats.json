@@ -22,7 +22,7 @@
     "DocumentReference": [
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish",
-        "title": "PDSm Simplified Publish"
+        "title": "PDSm Simplified Publish Document Reference"
       }
     ],
     "Bundle": [
@@ -32,7 +32,7 @@
       },
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-find-documentreferences-comprehensive-response",
-        "title": "PDSm_FindDocumentReferencesComprehensiveResponse"
+        "title": "PDSm Find DocumentReferences Comprehensive Response"
       },
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-find-lists-response",

@@ -47,11 +47,11 @@
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 <div id="family-nav">
-  <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
-</div>
-<div id="ans-nav" style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; ">
-  <a id="hl7-logo" no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
-</div>
+    <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+  </div>
+  <div id="ans-nav" style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; ">
+    <a id="hl7-logo" no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
+  </div>
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Partage de Documents de Santé en mobilité (PDSm)</span>
@@ -237,7 +237,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Active
           
-            as of 2024-05-03
+            as of 2024-05-28
           
         
       </td>
@@ -264,8 +264,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div class="markdown-toc">
 <ul id="markdown-toc">
   <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
-  <li><a href="#lectorat-cible" id="markdown-toc-lectorat-cible">Lectorat cible</a></li>
-  <li><a href="#standards-utilisés" id="markdown-toc-standards-utilisés">Standards utilisés</a></li>
+  <li><a href="#ressources-fhir-et-profils" id="markdown-toc-ressources-fhir-et-profils">Ressources FHIR et profils</a></li>
   <li><a href="#les-flux" id="markdown-toc-les-flux">Les flux</a></li>
   <li><a href="#dépendances" id="markdown-toc-dépendances">Dépendances</a></li>
 </ul>
@@ -289,156 +288,33 @@ This is a part of the service layer specifying the terms of document sharing wit
 
 <p>A noter que la dénomination du volet « Partage de documents de santé en mobilité » n’est pas restrictive. En effet, les standards sous-jacents aux spécifications techniques, par opposition au volet historique « Partage de documents de santé », permettent le déploiement de cas d’usage en mobilité mais ces spécifications peuvent également être mises en œuvre dans d’autres cas d’usage.</p>
 
-<h3 id="lectorat-cible">Lectorat cible</h3>
+<p>Ce document s’adresse aux personnes intervenant dans la mise en place des interfaces interopérables des systèmes implémentant le partage de documents de santé.</p>
 
-<p>Ce document s’adresse aux développeurs des interfaces interopérables des systèmes implémentant le partage de documents de santé ou à toute autre personne intervenant dans le processus de mise en place de ces interfaces.</p>
+<h3 id="ressources-fhir-et-profils">Ressources FHIR et profils</h3>
 
-<h3 id="standards-utilisés">Standards utilisés</h3>
+<p>Le tableau ci-après spécifie les profils utilisés pour les ressources et types de données mentionnés dans ce document.</p>
 
-<p>Ces spécifications techniques se basent sur le standard HL7 FHIR Release 4, et plus particulièrement sur les contraintes spécifiées par le profil MHD. Elles font référence à un certain nombre de ressources du standard ainsi qu’aux spécifications de l’API REST FHIR, basées sur le protocole HTTP. Les syntaxes retenues sont la syntaxe XML et JSON.</p>
-
-<p>Une <a href="equivalences.html">mise en équivalence</a> entre les acteurs et les flux identifiés dans les SFE-PDS et ceux présentés dans le profil MHD est disponible.
-Ce volet met en place l’option du profil MHD « Comprehensive Metadata » qui permet aux acteurs d’échanger des métadonnées complètes répondant aux exigences définies dans le profil XDS.</p>
-
-<h4 id="ressources-fhir-utilisées">Ressources FHIR utilisées</h4>
-
-<p>Les ressources utilisées et les niveaux de maturité sont les suivants : DocumentReference (NM 3), List (NM 1), Patient (NM N), Practitioner (NM 3), PractitionerRole (NM 2), Organization (NM 3), Device (NM 2), Binary (NM N), Bundle (NM N)</p>
-
-<h4 id="profils-utilisés">Profils utilisés</h4>
-
-<p>Des ressources FHIR ont été profilées pour le contexte français et sont utilisés dans le cadre des spécifications techniques du volet « Partage de documents de santé en mobilité ».</p>
-
-<p>Deux sources seront utilisées dans le cadre de ce volet :</p>
-
+<table class="grid"><tr><td style="background-color: #eeeeee">Titre du profil</td><td style="background-color: #eeeeee">Description</td></tr><tr><td><div><p><a href="StructureDefinition-pdsm-comprehensive-document-reference.html">PDSm Comprehensive DocumentReference</a></p>
+</div></td><td>Profil spécifique dérivé du profil IHE MHD v4.0.1 &quot;ComprehensiveDocumentReference&quot; créé pour le volet &quot;Partage de documents de santé en mobilité&quot;.</td></tr><tr><td><div><p><a href="StructureDefinition-pdsm-comprehensive-provide-document-bundle.html">PDSm Comprehensive Provide Document Bundle</a></p>
+</div></td><td><div><p>Profil basé sur la transaction IHE &quot;Provide Document Bundle [ITI-65]&quot; du profil MHD ; le bundle est de type transaction et contient :</p>
 <ul>
-  <li>
-    <p>Le profil FHIR « FrPatient » publié par HL7 France (Interop’Santé) est utilisé dans ce volet. Les présentes spécifications se basent sur les profils du package hl7.fhir.fr.core.</p>
-  </li>
-  <li>
-    <p>Dans le cadre de l’annuaire santé, l’ANS met à disposition un service national de publication des données des professionnels et des structures au format FHIR; les profils de l’annuaire santé, à savoir « AsPractitionerRoleProfile », « AsPractitionerProfile » et « AsOrganizationProfile » sont utilisés.</p>
-  </li>
+<li>une ressource de type « List » représentant le lot de soumission,</li>
+<li>une à plusieurs ressources de type « DocumentReference », représentant les fiches de documents,</li>
+<li>zero à plusieurs ressources « Binary » représentant les documents envoyés dans le flux,</li>
+<li>zero à plusieurs ressources de type « List » représentant les classeurs.
+Dans le cas d’un dépôt d’un nouveau document, l’élément DocumentReference.content.attachment.url doit pointer vers une ressource Binary, représentant le document, présente dans le bundle.
+Dans le cas d’une demande de mise à jour d’un document par remplacement, l’élément DocumentReference.relatesTo doit être renseigné afin d’indiquer le lien avec un DocumentReference existant et de préciser la nature de la mise à jour. L’élément DocumentReference.content.attachment.url doit pointer vers une ressource Binary, représentant le document qui remplace l’ancien, présente dans le bundle.
+Dans le cas d’une mise à jour d’un classeur, comme List.status ou List.entry pour reclasser des documents, une nouvelle version de la ressource List est envoyée.</li>
 </ul>
-
-<p>Ces spécifications s’appuient également sur les profils définis dans le profil IHE MHD relatifs à l’option « Comprehensive Metadata ».</p>
-
-<p>Le tableau ci-après spécifie les profils utilisés pour les ressources et types de données mentionnés dans ce document. Les présentes spécifications définissent également des profils propres au présent volet (préfixe PDSm).
-Pour les ressources et types de données non mentionnés dans ce tableau, le profil à utiliser est celui défini par HL7 FHIR.</p>
-
-<p>Cet Implementation Guide contient 7 profils :</p>
-
-<ul>
-  <li>3 profils pour le flux d’alimentation :
-    <ul>
-      <li>1) la fiche document <a href="StructureDefinition-pdsm-comprehensive-document-reference.html">PDSm_ComprehensiveDocumentReference</a>,</li>
-      <li>2) le classeur <a href="StructureDefinition-pdsm-folder-comprehensive.html">PDSm_FolderComprehensive</a>,</li>
-      <li>3) le Lot de soumission <a href="StructureDefinition-pdsm-submissionset-comprehensive.html">PDSm_SubmissionSetComprehensive</a></li>
-    </ul>
-  </li>
-  <li>1 profil pour le flux d’alimentation simplifié :
-    <ul>
-      <li>1) la fiche document <a href="StructureDefinition-pdsm-simplified-publish.html">PDSm_SimplifiedPublish</a>,</li>
-    </ul>
-  </li>
-  <li>1 profil Bundle pour encapsuler l’envoi des documents :
-    <ul>
-      <li><a href="StructureDefinition-pdsm-comprehensive-provide-document-bundle.html">PDSm_ComprehensiveProvideDocumentBundle</a></li>
-    </ul>
-  </li>
-  <li>2 profils Bundle pour encapsuler les résultats de recherche :
-    <ul>
-      <li>1) par fiche <a href="StructureDefinition-pdsm-find-documentreferences-comprehensive-response.html">PDSm_FindDocumentReferencesComprehensiveResponse</a>,</li>
-      <li>2) par lot de soumission <a href="StructureDefinition-pdsm-find-lists-response.html">PDSm_FindListsResponse</a></li>
-    </ul>
-  </li>
-</ul>
-
-<p>Au total, les ressources à utiliser dans le cadre de cet Implementation Guide sont :</p>
-
-<table class="grid">
-  <thead>
-    <tr>
-      <th><strong>Ressource</strong></th>
-      <th><strong>Profil</strong></th>
-      <th><strong>Description</strong></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Bundle</td>
-      <td>PDSm_ComprehensiveProvideDocumentBundle</td>
-      <td>Profil défini dans ce volet et héritant de ComprehensiveProvideDocumentBundle défini dans le profil MHD</td>
-    </tr>
-    <tr>
-      <td>Bundle</td>
-      <td>PDSm_FindDocumentReferencesComprehensiveResponse</td>
-      <td>Profil défini dans ce volet et héritant de FindDocumentReferencesComprehensiveResponse défini dans le profil MHD</td>
-    </tr>
-    <tr>
-      <td>Bundle</td>
-      <td>PDSm_FindListsResponse</td>
-      <td>Profil défini dans ce volet et héritant de FindListsResponse défini dans le profil MHD</td>
-    </tr>
-    <tr>
-      <td>Bundle</td>
-      <td>ProvideDocumentBundleResponse</td>
-      <td>Profil défini dans le profil MHD</td>
-    </tr>
-    <tr>
-      <td>DocumentReference</td>
-      <td>PDSm_ComprehensiveDocumentReference</td>
-      <td>Profil défini dans ce volet et héritant de ComprehensiveDocumentReference défini dans le profil MHD</td>
-    </tr>
-    <tr>
-      <td>DocumentReference</td>
-      <td>PDSm_SimplifiedPublish</td>
-      <td>Profil défini dans ce volet en s’inspirant du flux simplifié défini dans le profil MHD</td>
-    </tr>
-    <tr>
-      <td>List</td>
-      <td>PDSm_SubmissionSetComprehensive</td>
-      <td>Profil défini dans ce volet et héritant de SubmissionSetComprehensive défini dans le profil MHD</td>
-    </tr>
-    <tr>
-      <td>List</td>
-      <td>PDSm_FolderComprehensive</td>
-      <td>Profil défini dans ce volet et héritant de FolderComprehensive défini dans le profil MHD</td>
-    </tr>
-    <tr>
-      <td>Patient</td>
-      <td><a href="https://simplifier.net/packages/hl7-france-fhir.administrative/10.2021.1/files/424014">FrPatient</a></td>
-      <td>Profil français publié par Interop’Santé, spécifiant les identifiants de patient utilisés en France</td>
-    </tr>
-    <tr>
-      <td>Practitioner</td>
-      <td><a href="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner">AsPractitionerProfile</a></td>
-      <td>Profil de l’annuaire représentant un professionnel. Il contraint les types d’identifiants du professionnel en France. </td>
-    </tr>
-    <tr>
-      <td>PractitionerRole</td>
-      <td><a href="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole">AsPractitionerRoleProfile</a></td>
-      <td>Profil de l’annuaire santé représentant la situation d’exercice et l’exercice professionnel</td>
-    </tr>
-    <tr>
-      <td>Organization</td>
-      <td><a href="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization">AsOrganizationProfile</a></td>
-      <td>Profil représentant une personne morale. Ce profil spécifie les types d’identifiants pour l’organisation en France, et ajoute des extensions françaises.</td>
-    </tr>
-    <tr>
-      <td>Device</td>
-      <td>-</td>
-      <td>La ressource du standard est utilisée. Pas de profil spécifique.</td>
-    </tr>
-    <tr>
-      <td>Binary</td>
-      <td>-</td>
-      <td>La ressource du standard est utilisée. Pas de profil spécifique.</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 id="utilisation-de-lig">Utilisation de l’IG</h4>
-
-<p>Les spécifications d’interopérabilité présentées dans ce volet ne présagent pas des conditions de leur mise en œuvre dans le cadre d’un système d’information partagé. Il appartient à tout responsable de traitement de s’assurer que les services utilisant ces spécifications respectent les cadres et bonnes pratiques applicables à ce genre de service (ex.: cadre juridique, bonnes pratiques de sécurité, ergonomie, accessibilité …).</p>
+</div></td></tr><tr><td><div><p><a href="StructureDefinition-pdsm-find-documentreferences-comprehensive-response.html">PDSm Find DocumentReferences Comprehensive Response</a></p>
+</div></td><td>Profil de réponse de la transaction IHE &quot;Find Document References [ITI-67]&quot; basée sur le bundle MHD FindDocumentReferencesComprehensiveResponseMessage et profilé pour le volet PDSm</td></tr><tr><td><div><p><a href="StructureDefinition-pdsm-find-lists-response.html">PDSm Find Lists Response</a></p>
+</div></td><td>Profil de réponse de la transaction IHE &quot;Find Document Lists [ITI-66]&quot; basée sur le bundle MHD FindDocumentListsResponseMessage et profilé pour le volet PDSm</td></tr><tr><td><div><p><a href="StructureDefinition-pdsm-folder-comprehensive.html">PDSm Folder Comprehensive</a></p>
+</div></td><td>Profil spécifique dérivé du profil IHE MHD « Comprehensive Folder » créé pour le volet ANS &quot;Partage de documents de santé en mobilité&quot; ; ce profil concerne le classeur.</td></tr><tr><td><div><p><a href="StructureDefinition-pdsm-simplified-publish.html">PDSm Simplified Publish Document Reference</a></p>
+</div></td><td><div><p>Profil utilisé dans le cadre du flux 9 d'ajout simplifié de document. Le flux et le profil sont inspirés d’IHE MHD, transaction ITI-105.</p>
+<p>Contrairement au profil PDSm_ComprehensiveDocumentReference, le document est directement inclus dans DocumentReference.attachment.data et non dans une ressource « Binary » externe.</p>
+<p>La publication simplifiée est une simple requête HTTP POST d'une ressource DocumentReference conforme à ce profil.</p>
+</div></td></tr><tr><td><div><p><a href="StructureDefinition-pdsm-submissionset-comprehensive.html">PDSm SubmissionSet Comprehensive</a></p>
+</div></td><td>Profil spécifique dérivé du profil IHE MHD « ComprehensiveSubmissionSet » créé pour le volet ANS &quot;Partage de documents de santé en mobilité&quot; ; ce profil concerne le lot de soumission.</td></tr></table>
 
 <h3 id="les-flux">Les flux</h3>
 
@@ -486,7 +362,55 @@ Pour les ressources et types de données non mentionnés dans ce tableau, le pro
   </tbody>
 </table>
 
+<h4 id="alimentation-utilisant-comprehensive-metadata">Alimentation utilisant Comprehensive Metadata</h4>
+
+<p>Les trois profils utilisés pour le flux d’alimentation sont :</p>
+
+<ul>
+  <li>1) la fiche document <a href="StructureDefinition-pdsm-comprehensive-document-reference.html">PDSm_ComprehensiveDocumentReference</a>,</li>
+  <li>2) le classeur <a href="StructureDefinition-pdsm-folder-comprehensive.html">PDSm_FolderComprehensive</a>,</li>
+  <li>3) le lot de soumission <a href="StructureDefinition-pdsm-submissionset-comprehensive.html">PDSm_SubmissionSetComprehensive</a></li>
+</ul>
+
+<p>Ces trois profils doivent être encapsulés dans le <a href="StructureDefinition-pdsm-comprehensive-provide-document-bundle.html">Bundle Comprehensive Provide Document</a>.</p>
+
+<div class="figure" style="width:100%;">
+    <p><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="400px" preserveAspectRatio="none" style="width:593px;height:400px;background:#FFFFFF;" version="1.1" viewBox="0 0 593 400" width="593px" zoomAndPan="magnify"><defs /><g><!--entity cbu--><g id="elem_cbu"><a href="StructureDefinition-pdsm-comprehensive-provide-document-bundle.html" target="_top" title="StructureDefinition-pdsm-comprehensive-provide-document-bundle.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-pdsm-comprehensive-provide-document-bundle.html" xlink:show="new" xlink:title="StructureDefinition-pdsm-comprehensive-provide-document-bundle.html" xlink:type="simple"><rect fill="#99FF99" height="39.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="370" x="7" y="7" /><polygon fill="#99FF99" points="360,12,360,26,372,26,372,18,366,12,360,12" style="stroke:#181818;stroke-width:0.5;" /><line style="stroke:#181818;stroke-width:0.5;" x1="366" x2="366" y1="12" y2="18" /><line style="stroke:#181818;stroke-width:0.5;" x1="372" x2="366" y1="18" y2="18" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="340" x="17" y="32.9951">PDSm Comprehensive Provide Document Bundle</text></a></g><!--entity cdr--><g id="elem_cdr"><a href="StructureDefinition-pdsm-comprehensive-document-reference.html" target="_top" title="StructureDefinition-pdsm-comprehensive-document-reference.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-pdsm-comprehensive-document-reference.html" xlink:show="new" xlink:title="StructureDefinition-pdsm-comprehensive-document-reference.html" xlink:type="simple"><rect fill="#F1F1F1" height="39.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="334" x="94" y="355" /><polygon fill="#F1F1F1" points="411,360,411,374,423,374,423,366,417,360,411,360" style="stroke:#181818;stroke-width:0.5;" /><line style="stroke:#181818;stroke-width:0.5;" x1="417" x2="417" y1="360" y2="366" /><line style="stroke:#181818;stroke-width:0.5;" x1="423" x2="417" y1="366" y2="366" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="304" x="104" y="380.9951">PDSm Comprehensive DocumentReference</text></a></g><!--entity fc--><g id="elem_fc"><a href="StructureDefinition-pdsm-folder-comprehensive.html" target="_top" title="StructureDefinition-pdsm-folder-comprehensive.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-pdsm-folder-comprehensive.html" xlink:show="new" xlink:title="StructureDefinition-pdsm-folder-comprehensive.html" xlink:type="simple"><rect fill="#F1F1F1" height="39.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="232" x="145" y="239" /><polygon fill="#F1F1F1" points="360,244,360,258,372,258,372,250,366,244,360,244" style="stroke:#181818;stroke-width:0.5;" /><line style="stroke:#181818;stroke-width:0.5;" x1="366" x2="366" y1="244" y2="250" /><line style="stroke:#181818;stroke-width:0.5;" x1="372" x2="366" y1="250" y2="250" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="202" x="155" y="264.9951">PDSm Folder Comprehensive</text></a></g><!--entity ssc--><g id="elem_ssc"><a href="StructureDefinition-pdsm-submissionset-comprehensive.html" target="_top" title="StructureDefinition-pdsm-submissionset-comprehensive.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-pdsm-submissionset-comprehensive.html" xlink:show="new" xlink:title="StructureDefinition-pdsm-submissionset-comprehensive.html" xlink:type="simple"><rect fill="#F1F1F1" height="39.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="292" x="289" y="123" /><polygon fill="#F1F1F1" points="564,128,564,142,576,142,576,134,570,128,564,128" style="stroke:#181818;stroke-width:0.5;" /><line style="stroke:#181818;stroke-width:0.5;" x1="570" x2="570" y1="128" y2="134" /><line style="stroke:#181818;stroke-width:0.5;" x1="576" x2="570" y1="134" y2="134" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="262" x="299" y="148.9951">PDSm SubmissionSet Comprehensive</text></a></g><!--link cbu to ssc--><g id="link_cbu_ssc"><path d="M231.58,46.07 C275.27,66.56 345.41,99.47 390.84,120.78 " fill="none" id="cbu-to-ssc" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="395.43,122.94,388.9864,115.4915,390.9049,120.8131,385.5833,122.7316,395.43,122.94" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="61" x="329" y="89.0669">entry 1..1</text></g><!--link cbu to cdr--><g id="link_cbu_cdr"><path d="M178.7,46.1 C149.76,89.08 86.82,197.73 128,278 C145.49,312.09 181.43,336.76 211.55,352.47 " fill="none" id="cbu-to-cdr" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="216.33,354.92,210.1274,347.2696,211.8751,352.6497,206.495,354.3974,216.33,354.92" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="60" x="118" y="205.0669">entry 0..*</text></g><!--link cbu to fc--><g id="link_cbu_fc"><path d="M192.41,46.23 C193.46,72.65 197.14,122.09 210,162 C218.4,188.06 233.75,215.38 245.42,234.09 " fill="none" id="cbu-to-fc" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="248.31,238.66,246.8848,228.9148,245.6395,234.4329,240.1214,233.1876,248.31,238.66" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="60" x="211" y="147.0669">entry 0..*</text></g><!--link fc to cdr--><g id="link_fc_cdr"><path d="M261,278.07 C261,297.61 261,328.44 261,349.74 " fill="none" id="fc-to-cdr" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="261,354.94,265,345.94,261,349.94,257,345.94,261,354.94" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="94" x="262" y="321.0669">entry.item 0..1</text></g><!--link ssc to cdr--><g id="link_ssc_cdr"><path d="M433.41,162.11 C429.22,199.01 414.53,281.6 365,325 C352.03,336.36 335.95,345.59 320.33,352.82 " fill="none" id="ssc-to-cdr" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="315.5,355,325.3487,354.9429,320.0572,352.9428,322.0572,347.6513,315.5,355" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="94" x="417" y="263.0669">entry.item 1..1</text></g><!--link ssc to fc--><g id="link_ssc_fc"><path d="M381.91,162.1 C363.1,169.91 342.32,179.99 325,192 C307.71,203.98 291.2,221.08 279.28,234.8 " fill="none" id="ssc-to-fc" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="275.73,238.94,284.6241,234.7099,278.984,235.1437,278.5501,229.5035,275.73,238.94" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="94" x="326" y="205.0669">entry.item 1..1</text></g></g></svg></p>
+</div>
+
+<h4 id="alimentation-utilisant-la-publication-simplifiée">Alimentation utilisant la publication simplifiée</h4>
+
+<p>La publication simplifiée utilise le profil <a href="StructureDefinition-pdsm-simplified-publish.html">DocumentReference Simplified Publish</a>.</p>
+
+<h4 id="recherche-par-lot-ou-par-fiche">Recherche par lot ou par fiche</h4>
+
+<p>Il existe deux profils Bundle permettent d’encapsuler les résultats de recherche.</p>
+
+<ul>
+  <li>1) Le bundle permettant de renvoyer les résultats d’une recherche de fiche <a href="StructureDefinition-pdsm-find-documentreferences-comprehensive-response.html">PDSm_FindDocumentReferencesComprehensiveResponse</a>,</li>
+  <li>2) Le bundle permettant de renvoyer les résultats d’une recherche de lot de soumission <a href="StructureDefinition-pdsm-find-lists-response.html">PDSm_FindListsResponse</a></li>
+</ul>
+
 <h3 id="dépendances">Dépendances</h3>
+
+<p>Plusieurs spécifications sont utilisées dans le cadre de ce volet :</p>
+
+<ul>
+  <li>
+    <p>Ce volet met en place l’option du profil MHD « Comprehensive Metadata » qui permet aux acteurs d’échanger des métadonnées complètes répondant aux exigences définies dans le profil XDS.</p>
+  </li>
+  <li>
+    <p>Le profil FHIR « FrPatient » publié par HL7 France (Interop’Santé) est utilisé dans ce volet. Les présentes spécifications se basent sur les profils du package hl7.fhir.fr.core.</p>
+  </li>
+  <li>
+    <p>Dans le cadre de l’annuaire santé, l’ANS met à disposition un service national de publication des données des professionnels et des structures au format FHIR; les profils de l’annuaire santé, à savoir « AsPractitionerRoleProfile », « AsPractitionerProfile » et « AsOrganizationProfile » sont utilisés.</p>
+  </li>
+  <li>
+    <p>Des ressources standards (Device, Binary) pourront également être utilisées pour compléter les profils définis.</p>
+  </li>
+</ul>
+
+<p>Une <a href="equivalences.html">mise en équivalence</a> entre les acteurs et les flux identifiés dans les SFE-PDS et ceux présentés dans le profil MHD est disponible.</p>
 
 <div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Implementation Guide Reference">IG</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Explains why this dependency exists">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/igSource/temp/pagesdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy" /> <span title="Canonical: https://interop.esante.gouv.fr/ig/fhir/pdsm">Partage de Documents de Santé en mobilité (PDSm)</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://simplifier.net/packages/ans.fhir.fr.pdsm/3.1.0-ballot">ans.fhir.fr.pdsm#3.1.0-ballot</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/runner/work/IG-fhir-partage-de-documents-de-sante/IG-fhir-partage-de-documents-de-sante/igSource/temp/pagesdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy" /> <a href="http://terminology.hl7.org/5.5.0" title="Canonical: http://terminology.hl7.org">HL7 Terminology (THO)</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://simplifier.net/packages/hl7.terminology.r4/5.5.0">hl7.terminology.r4#5.5.0</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Automatically added as a dependency - all IGs depend on HL7 Terminology</td></tr>
@@ -537,13 +461,7 @@ Pour les ressources et types de données non mentionnés dans ce tableau, le pro
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
-  <script type="text/javascript">
-    $(document).ready(function(){
-      if(window.location.hash != "") {
-          $('a[href="' + window.location.hash + '"]').click()
-      }
-    });
-  </script>
+<script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
@@ -572,14 +490,13 @@ Pour les ressources et types de données non mentionnés dans ce tableau, le pro
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.pdsm#3.1.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, May 3, 2024 07:57+0000">2024-05-03</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.pdsm#3.1.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, May 28, 2024 08:41+0000">2024-05-28</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
-                      Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
-                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA </a> |
-                 <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/fhir/pdsm/history.html">Historique des versions </a>
-                  | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/FIG-partage-de-documents-de-sante-fhir/issues/new">New Issue</a>
-                
+            Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA </a> |
+<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/fhir/pdsm/history.html">Historique des versions </a>
+ | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/FIG-partage-de-documents-de-sante-fhir/issues/new">New Issue</a>
 
           </span>
         </p>
@@ -607,20 +524,8 @@ Pour les ressources et types de données non mentionnés dans ce tableau, le pro
   <script src="assets/js/vendor.js" type="text/javascript"> </script>
   <!-- Fin ajout ANS -->
 
-  <script>anchors.options.visible = 'hover'
-anchors.add()</script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
   
-<!-- feedback form - Google forms -->
-<!-- v0.1, 2021-01-09 -->
-
-
-  
-    
-  
-
-
-
-<!-- / feedback form  -->
 
   <!-- Analytics Below
   ================================================== -->
