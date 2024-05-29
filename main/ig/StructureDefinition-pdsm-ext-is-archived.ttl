@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "PDSm_IsArchived"] ; # 
   fhir:title [ fhir:v "PDSm_isArchived"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-05-29T09:54:05+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-05-29T09:54:37+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
