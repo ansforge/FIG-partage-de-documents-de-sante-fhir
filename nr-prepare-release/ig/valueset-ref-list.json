@@ -1,0 +1,116 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J02-XdsHealthcareFacilityTypeCode-CISIS/FHIR/JDV-J02-XdsHealthcareFacilityTypeCode-CISIS",
+      "version" : "1.2.0",
+      "status" : "active",
+      "name" : "JDV_J02-XdsHealthcareFacilityTypeCode-CISIS",
+      "title" : null,
+      "description" : "XDS healthcareFacilityTypeCode CI-SIS",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_A00-ProducteurDocNonPS/FHIR/TRE-A00-ProducteurDocNonPS",
+        "https://mos.esante.gouv.fr/NOS/TRE_R02-SecteurActivite/FHIR/TRE-R02-SecteurActivite"
+      ],
+      "oids" : ["1.2.250.1.213.1.1.5.466"],
+      "sources" : ["1.2.250.1.213.1.1.5.466"],
+      "uses" : {
+      },
+      "StructureDefinition-pdsm-comprehensive-document-reference.html" : "PDSm Comprehensive DocumentReference",
+      "StructureDefinition-pdsm-simplified-publish.html" : "PDSm Simplified Publish Document Reference"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J03-XdsContentTypeCode-CISIS/FHIR/JDV-J03-XdsContentTypeCode-CISIS",
+      "version" : "1.2.0",
+      "status" : "active",
+      "name" : "JDV_J03-XdsContentTypeCode-CISIS",
+      "title" : null,
+      "description" : "XDS contentTypeCode CI-SIS",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_A00-ProducteurDocNonPS/FHIR/TRE-A00-ProducteurDocNonPS",
+        "https://mos.esante.gouv.fr/NOS/TRE_R02-SecteurActivite/FHIR/TRE-R02-SecteurActivite",
+        "https://mos.esante.gouv.fr/NOS/TRE_R276-FormeActivite/FHIR/TRE-R276-FormeActivite",
+        "https://mos.esante.gouv.fr/NOS/TRE_R209-TypeActivite/FHIR/TRE-R209-TypeActivite"
+      ],
+      "oids" : ["1.2.250.1.213.1.1.5.464"],
+      "sources" : ["1.2.250.1.213.1.1.5.464"],
+      "uses" : {
+      },
+      "StructureDefinition-pdsm-submissionset-comprehensive.html" : "PDSm SubmissionSet Comprehensive"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J04-XdsPracticeSettingCode-CISIS/FHIR/JDV-J04-XdsPracticeSettingCode-CISIS",
+      "version" : "1.2.0",
+      "status" : "active",
+      "name" : "JDV_J04-XdsPracticeSettingCode-CISIS",
+      "title" : null,
+      "description" : "XDS practiceSettingCode CI-SIS",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_A01-CadreExercice/FHIR/TRE-A01-CadreExercice",
+        "https://mos.esante.gouv.fr/NOS/TRE_A00-ProducteurDocNonPS/FHIR/TRE-A00-ProducteurDocNonPS"
+      ],
+      "oids" : ["1.2.250.1.213.1.1.5.467"],
+      "sources" : ["1.2.250.1.213.1.1.5.467"],
+      "uses" : {
+      },
+      "StructureDefinition-pdsm-comprehensive-document-reference.html" : "PDSm Comprehensive DocumentReference",
+      "StructureDefinition-pdsm-simplified-publish.html" : "PDSm Simplified Publish Document Reference"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J06-XdsClassCode-CISIS/FHIR/JDV-J06-XdsClassCode-CISIS",
+      "version" : "1.2.0",
+      "status" : "active",
+      "name" : "JDV_J06-XdsClassCode-CISIS",
+      "title" : null,
+      "description" : "XDS classCode CI-SIS",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_A10-NomenclatureURN/FHIR/TRE-A10-NomenclatureURN",
+        "https://mos.esante.gouv.fr/NOS/TRE_A03-ClasseDocument/FHIR/TRE-A03-ClasseDocument"
+      ],
+      "oids" : ["1.2.250.1.213.1.1.5.462"],
+      "sources" : ["1.2.250.1.213.1.1.5.462"],
+      "uses" : {
+      },
+      "StructureDefinition-pdsm-comprehensive-document-reference.html" : "PDSm Comprehensive DocumentReference",
+      "StructureDefinition-pdsm-simplified-publish.html" : "PDSm Simplified Publish Document Reference"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS",
+      "version" : "1.2.0",
+      "status" : "active",
+      "name" : "JDV_J07-XdsTypeCode-CISIS",
+      "title" : null,
+      "description" : "XDS typeCode CI-SIS",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc",
+        "https://mos.esante.gouv.fr/NOS/TRE_A12-NomenclatureASTM/FHIR/TRE-A12-NomenclatureASTM",
+        "https://mos.esante.gouv.fr/NOS/TRE_A05-TypeDocComplementaire/FHIR/TRE-A05-TypeDocComplementaire"
+      ],
+      "oids" : ["1.2.250.1.213.1.1.5.471"],
+      "sources" : ["1.2.250.1.213.1.1.5.471"],
+      "uses" : {
+      },
+      "StructureDefinition-pdsm-comprehensive-document-reference.html" : "PDSm Comprehensive DocumentReference",
+      "StructureDefinition-pdsm-simplified-publish.html" : "PDSm Simplified Publish Document Reference"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J10-XdsFormatCode-CISIS/FHIR/JDV-J10-XdsFormatCode-CISIS",
+      "version" : "1.2.0",
+      "status" : "active",
+      "name" : "JDV_J10-XdsFormatCode-CISIS",
+      "title" : null,
+      "description" : "XDS formatCode documents CI-SIS",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_A10-NomenclatureURN/FHIR/TRE-A10-NomenclatureURN",
+        "https://mos.esante.gouv.fr/NOS/TRE_A06-FormatCodeComplementaire/FHIR/TRE-A06-FormatCodeComplementaire",
+        "https://mos.esante.gouv.fr/NOS/TRE_A11-IheFormatCode/FHIR/TRE-A11-IheFormatCode",
+        "https://mos.esante.gouv.fr/NOS/TRE_A09-DICOMuidRegistry/FHIR/TRE-A09-DICOMuidRegistry"
+      ],
+      "oids" : ["1.2.250.1.213.1.1.5.465"],
+      "sources" : ["1.2.250.1.213.1.1.5.465"],
+      "uses" : {
+      },
+      "StructureDefinition-pdsm-comprehensive-document-reference.html" : "PDSm Comprehensive DocumentReference",
+      "StructureDefinition-pdsm-simplified-publish.html" : "PDSm Simplified Publish Document Reference"
+    }
+  ]
+}

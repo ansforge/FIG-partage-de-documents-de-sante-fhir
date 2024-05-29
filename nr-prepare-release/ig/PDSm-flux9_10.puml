@@ -1,0 +1,27 @@
+@startuml
+hide footbox
+
+skinparam sequence {
+ arrowColor black
+ ParticipantBorderColor RoyalBlue
+ ParticipantBackgroundColor white
+ LifeLineBorderColor RoyalBlue
+ LifeLineBackgroundColor RoyalBlue
+ ParticipantFontSize 14
+ ParticipantFontName arial
+ ParticipantPadding 20
+}
+skinparam  roundcorner 20
+
+
+participant "Consommateur\n de documents" as CONS
+participant "Gestionnaire de partage\n de documents" as INFRA
+
+
+CONS-[#black]> INFRA : Flux 9 **AjoutSimplifieDocument** [ITI-105] \n <color #FireBrick>HTTP POST [base] + ressource "DocumentReference"</color>
+activate INFRA
+activate CONS
+INFRA-[#black]-> CONS : Flux 10 **ResultatAjoutSimplifieDocument** [ITI-105] \n <color #FireBrick>HTTP OK 20O (+ ressource "DocumentReference")</color>
+deactivate CONS
+deactivate INFRA
+@enduml
