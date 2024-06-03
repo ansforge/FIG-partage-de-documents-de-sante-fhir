@@ -1,6 +1,7 @@
 {
   "version" : "3.1.0",
   "fhirVersion" : ["4.0.1"],
-  "date" : "20240529101231",
-  "name" : "ans.fhir.fr.pdsm"
+  "date" : "20240603140224",
+  "name" : "ans.fhir.fr.pdsm",
+  "jurisdiction" : "urn:iso:std:iso:3166#FR"
 }

@@ -10,13 +10,20 @@
   "name" : "PDSm",
   "title" : "Partage de Documents de Santé en mobilité (PDSm)",
   "status" : "active",
-  "date" : "2024-05-29T10:13:28+00:00",
+  "date" : "2024-06-03T14:03:18+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
     "telecom" : [{
       "system" : "url",
       "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
     }]
   }],
   "packageId" : "ans.fhir.fr.pdsm",

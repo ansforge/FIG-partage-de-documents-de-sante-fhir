@@ -28,6 +28,13 @@
      ] )
   ] ) ; # 
   fhir:description [ fhir:v "Il s’agit d’un système d’information ou d’un composant de système d’information qui envoie au gestionnaire de partage de documents une  demande d’ajout de nouveaux documents et/ou des nouvelles versions de documents. Ce système fournit également les modifications des  métadonnées du document."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "FR" ] ;
+       fhir:display [ fhir:v "FRANCE" ]
+     ] )
+  ] ) ; # 
   fhir:kind [ fhir:v "requirements"] ; # 
   fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
   fhir:format ( [ fhir:v "xml"] [ fhir:v "json"] ) ; # 

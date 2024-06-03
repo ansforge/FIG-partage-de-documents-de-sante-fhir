@@ -9,7 +9,7 @@
   "version" : "3.1.0",
   "name" : "PDSm_intendedRecipient",
   "status" : "active",
-  "date" : "2024-05-29T10:13:28+00:00",
+  "date" : "2024-06-03T14:03:18+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -19,6 +19,13 @@
     }]
   }],
   "description" : "Représente le destinataire du lot de soumission",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
   "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "rim",

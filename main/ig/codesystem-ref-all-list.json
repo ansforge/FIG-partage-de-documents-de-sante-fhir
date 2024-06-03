@@ -59,9 +59,9 @@
       "oids" : ["2.16.840.1.113883.4.642.4.625"],
       "uses" : {
       },
+      "https://profiles.ihe.net/ITI/MHD/4.2.0/ValueSet-MHDprovidePatientActions.html" : "MHD Patient Types ValueSet",
       "http://hl7.org/fhir/R4/valueset-http-verb.html" : "HTTPVerb",
-      "https://profiles.ihe.net/ITI/MHD/4.2.0/ValueSet-MHDprovideFolderActions.html" : "MHD Folder List Types ValueSet",
-      "https://profiles.ihe.net/ITI/MHD/4.2.0/ValueSet-MHDprovidePatientActions.html" : "MHD Patient Types ValueSet"
+      "https://profiles.ihe.net/ITI/MHD/4.2.0/ValueSet-MHDprovideFolderActions.html" : "MHD Folder List Types ValueSet"
     },
     {
       "url" : "http://hl7.org/fhir/identifier-use",

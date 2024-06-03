@@ -9,7 +9,7 @@
   "version" : "3.1.0",
   "name" : "PDSmAuthorOrg",
   "status" : "active",
-  "date" : "2024-05-29T10:13:28+00:00",
+  "date" : "2024-06-03T14:03:18+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -19,6 +19,13 @@
     }]
   }],
   "description" : "Recherche sur l'auteur d'une organisation",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
   "purpose" : "Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'auteur quand celui-ci correspond à une organisation",
   "code" : "authorOrg",
   "base" : ["List"],

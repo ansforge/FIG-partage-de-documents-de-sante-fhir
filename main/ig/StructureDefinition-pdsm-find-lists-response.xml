@@ -16,7 +16,7 @@
   <name value="PDSm_FindListsResponse"/>
   <title value="PDSm Find Lists Response"/>
   <status value="active"/>
-  <date value="2024-05-29T10:13:28+00:00"/>
+  <date value="2024-06-03T14:03:18+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -26,6 +26,13 @@
     </telecom>
   </contact>
   <description value="Profil de réponse de la transaction IHE &quot;Find Document Lists [ITI-66]&quot; basée sur le bundle MHD FindDocumentListsResponseMessage et profilé pour le volet PDSm"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="FRANCE"/>
+    </coding>
+  </jurisdiction>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="v2"/>

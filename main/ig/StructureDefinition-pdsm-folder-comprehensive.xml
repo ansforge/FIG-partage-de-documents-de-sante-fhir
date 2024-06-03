@@ -25,7 +25,7 @@
   <name value="PDSm_FolderComprehensive"/>
   <title value="PDSm Folder Comprehensive"/>
   <status value="active"/>
-  <date value="2024-05-29T10:13:28+00:00"/>
+  <date value="2024-06-03T14:03:18+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -35,6 +35,13 @@
     </telecom>
   </contact>
   <description value="Profil spécifique dérivé du profil IHE MHD « Comprehensive Folder » créé pour le volet ANS &quot;Partage de documents de santé en mobilité&quot; ; ce profil concerne le classeur."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="FRANCE"/>
+    </coding>
+  </jurisdiction>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="specmetier-to-PDSmFolderComprehensive"/>

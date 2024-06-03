@@ -18,7 +18,7 @@
   <name value="PDSm_ComprehensiveProvideDocumentBundle"/>
   <title value="PDSm Comprehensive Provide Document Bundle"/>
   <status value="active"/>
-  <date value="2024-05-29T10:13:28+00:00"/>
+  <date value="2024-06-03T14:03:18+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -28,6 +28,13 @@
     </telecom>
   </contact>
   <description value="Profil basé sur la transaction IHE &quot;Provide Document Bundle [ITI-65]&quot; du profil MHD ; le bundle est de type transaction et contient : &#xA;- une ressource de type « List » représentant le lot de soumission,&#xA;- une à plusieurs ressources de type « DocumentReference », représentant les fiches de documents,&#xA;- zero à plusieurs ressources « Binary » représentant les documents envoyés dans le flux,&#xA;- zero à plusieurs ressources de type « List » représentant les classeurs.&#xA;Dans le cas d’un dépôt d’un nouveau document, l’élément DocumentReference.content.attachment.url doit pointer vers une ressource Binary, représentant le document, présente dans le bundle.&#xA;Dans le cas d’une demande de mise à jour d’un document par remplacement, l’élément DocumentReference.relatesTo doit être renseigné afin d’indiquer le lien avec un DocumentReference existant et de préciser la nature de la mise à jour. L’élément DocumentReference.content.attachment.url doit pointer vers une ressource Binary, représentant le document qui remplace l’ancien, présente dans le bundle.&#xA;Dans le cas d’une mise à jour d’un classeur, comme List.status ou List.entry pour reclasser des documents, une nouvelle version de la ressource List est envoyée."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="FRANCE"/>
+    </coding>
+  </jurisdiction>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="v2"/>

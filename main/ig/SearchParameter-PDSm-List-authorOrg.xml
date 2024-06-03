@@ -10,7 +10,7 @@
   <version value="3.1.0"/>
   <name value="PDSmAuthorOrg"/>
   <status value="active"/>
-  <date value="2024-05-29T10:13:28+00:00"/>
+  <date value="2024-06-03T14:03:18+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -20,6 +20,13 @@
     </telecom>
   </contact>
   <description value="Recherche sur l'auteur d'une organisation"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="FRANCE"/>
+    </coding>
+  </jurisdiction>
   <purpose value="Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'auteur quand celui-ci correspond à une organisation"/>
   <code value="authorOrg"/>
   <base value="List"/>

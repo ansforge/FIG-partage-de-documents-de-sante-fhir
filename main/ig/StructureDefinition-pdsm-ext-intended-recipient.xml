@@ -13,7 +13,7 @@
   <version value="3.1.0"/>
   <name value="PDSm_intendedRecipient"/>
   <status value="active"/>
-  <date value="2024-05-29T10:13:28+00:00"/>
+  <date value="2024-06-03T14:03:18+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -23,6 +23,13 @@
     </telecom>
   </contact>
   <description value="Représente le destinataire du lot de soumission"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="FRANCE"/>
+    </coding>
+  </jurisdiction>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="rim"/>

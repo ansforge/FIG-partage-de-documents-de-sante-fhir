@@ -10,7 +10,7 @@
   "name" : "PDSm_FindListsResponse",
   "title" : "PDSm Find Lists Response",
   "status" : "active",
-  "date" : "2024-05-29T10:13:28+00:00",
+  "date" : "2024-06-03T14:03:18+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -20,6 +20,13 @@
     }]
   }],
   "description" : "Profil de réponse de la transaction IHE \"Find Document Lists [ITI-66]\" basée sur le bundle MHD FindDocumentListsResponseMessage et profilé pour le volet PDSm",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
   "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "v2",

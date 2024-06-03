@@ -2,6 +2,7 @@
   "package": "ans.fhir.fr.pdsm",
   "version": "3.1.0",
   "fhirVersion": "4.0.1",
+  "jurisdiction": "FR",
   "extensions": [
     {
       "url": "https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-ext-intended-recipient",

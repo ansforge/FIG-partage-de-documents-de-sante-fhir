@@ -26,6 +26,13 @@
      ] )
   ] ) ; # 
   fhir:description [ fhir:v "Paramètre de recherche créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'élément context.period.end correspondant à lobjet dateFinActe"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "FR" ] ;
+       fhir:display [ fhir:v "FRANCE" ]
+     ] )
+  ] ) ; # 
   fhir:code [ fhir:v "period-end"] ; # 
   fhir:base ( [ fhir:v "DocumentReference"] ) ; # 
   fhir:type [ fhir:v "date"] ; # 

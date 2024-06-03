@@ -30,6 +30,13 @@
      ] )
   ] ) ; # 
   fhir:description [ fhir:v "Paramètre de recherche chaîné créé pour le volet PDSm de manière à pouvoir utiliser comme critère de recherche l'élément subject:Patient.identifier"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "FR" ] ;
+       fhir:display [ fhir:v "FRANCE" ]
+     ] )
+  ] ) ; # 
   fhir:code [ fhir:v "patient"] ; # 
   fhir:base ( [ fhir:v "List"] ) ; # 
   fhir:type [ fhir:v "reference"] ; # 
