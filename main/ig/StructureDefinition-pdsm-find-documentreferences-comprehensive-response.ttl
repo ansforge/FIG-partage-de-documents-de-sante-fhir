@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "PDSm_FindDocumentReferencesComprehensiveResponse"] ; # 
   fhir:title [ fhir:v "PDSm Find DocumentReferences Comprehensive Response"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-06-03T14:03:18+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-03T14:20:42+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
