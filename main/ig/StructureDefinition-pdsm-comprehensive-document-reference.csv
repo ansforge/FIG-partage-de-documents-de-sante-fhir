@@ -84,7 +84,7 @@ constr-bind-type:Les valeurs possibles pour cet élément doivent provenir d’u
 
  TRE_A05-TypeDocComplementaireCISIS, OID : 1.2.250.1.213.1.1.4.12
 
- TRE_A04-TypeDocument-LOINC, OID : 2.16.840.1.113883.6.1
+ LOINC, OID : 2.16.840.1.113883.6.1
 
  TRE_A12-NomenclatureASTM, OID : ASTM
 

@@ -3,26 +3,26 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="pdsm-comprehensive-document-reference"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-pdsm-comprehensive-document-reference-definitions.html#DocumentReference">DocumentReference</a><a name="DocumentReference"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://profiles.ihe.net/ITI/MHD/4.2.0/StructureDefinition-IHE.MHD.Comprehensive.DocumentReference.html">ComprehensiveDocumentReference</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">A reference to a document</span></td></tr>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureDefinition pdsm-comprehensive-document-reference</b></p><a name="pdsm-comprehensive-document-reference"> </a><a name="hcpdsm-comprehensive-document-reference"> </a><a name="pdsm-comprehensive-document-reference-fr-FR"> </a><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-pdsm-comprehensive-document-reference-definitions.html#DocumentReference">DocumentReference</a><a name="DocumentReference"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://profiles.ihe.net/ITI/MHD/4.2.0/StructureDefinition-IHE.MHD.Comprehensive.DocumentReference.html">ComprehensiveDocumentReference</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">A reference to a document</span></td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-pdsm-comprehensive-document-reference-definitions.html#DocumentReference.meta">meta</a><a name="DocumentReference.meta"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-pdsm-comprehensive-document-reference-definitions.html#DocumentReference.meta.versionId">versionId</a><a name="DocumentReference.meta.versionId"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#id">id</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Numéro de version de la fiche d’un document attribué par le système cible. La valeur de la métadonnée version est égale à 1 pour la première version de la fiche. Cet élément est requis lorsque le flux envoyé correspond à une mise à jour des données d’une fiche.</td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-pdsm-comprehensive-document-reference-definitions.html#DocumentReference.contained">contained</a><a name="DocumentReference.contained"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Resource</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Ressource contenue. Dans le cadre de ce profil, il est obligatoire qu'il y ait au moins une ressource contenue : la•les ressource•s référencée•s dans les attributs author et authenticator</td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck13.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension_simple.png" alt="." style="background-color: white; background-color: inherit" title="Simple Extension" class="hierarchy"/> <a href="StructureDefinition-pdsm-comprehensive-document-reference-definitions.html#DocumentReference.extension">Slices for extension</a><a name="DocumentReference.extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Extension</span><br/><span style="font-weight:bold">Slice: </span>Unordered, Open by value:url</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck124.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-pdsm-comprehensive-document-reference-definitions.html#DocumentReference.extension:isArchived" title="Extension URL = https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-ext-is-archived">isArchived</a><a name="DocumentReference.extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Extension définie pour distinguer les fiches archivées des actives.<br/><span style="font-weight:bold">URL: </span><a href="StructureDefinition-pdsm-ext-is-archived.html">https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-ext-is-archived</a></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck124.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-pdsm-comprehensive-document-reference-definitions.html#DocumentReference.extension:isArchived" title="Extension URL = https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-ext-is-archived">isArchived</a><a name="DocumentReference.extension.2"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Extension définie pour distinguer les fiches archivées des actives.<br/><span style="font-weight:bold">URL: </span><a href="StructureDefinition-pdsm-ext-is-archived.html">https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-ext-is-archived</a></td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-pdsm-comprehensive-document-reference-definitions.html#DocumentReference.masterIdentifier">masterIdentifier</a><a name="DocumentReference.masterIdentifier"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="https://profiles.ihe.net/ITI/MHD/4.2.0/StructureDefinition-IHE.MHD.UniqueIdIdentifier.html" title="Identifier">UniqueIdIdentifier</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Représente l’identifiant unique global affecté au document par son créateur. Il est utilisable comme référence externe dans d’autres documents.</td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-pdsm-comprehensive-document-reference-definitions.html#DocumentReference.identifier">identifier</a><a name="DocumentReference.identifier"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Other identifiers for the document</span></td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-pdsm-comprehensive-document-reference-definitions.html#DocumentReference.status">status</a><a name="DocumentReference.status"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">current | superseded | entered-in-error</span></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-pdsm-comprehensive-document-reference-definitions.html#DocumentReference.type">type</a><a name="DocumentReference.type"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;" href="http://hl7.org/fhir/R4/conformance-rules.html#constraints" title="This element has or is affected by constraints ( constr-bind-type )">C</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Représente le type du document.<br/><span style="font-weight:bold">Binding: </span><a href="https://interop.esante.gouv.fr/ig/nos/1.2.0/ValueSet-JDV-J07-XdsTypeCode-CISIS.html" title="https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS">JDV_J07-XdsTypeCode-CISIS</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.">preferred</a>)<br/><span style="font-weight:bold">constr-bind-type: </span>Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-pdsm-comprehensive-document-reference-definitions.html#DocumentReference.type">type</a><a name="DocumentReference.type"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;" href="http://hl7.org/fhir/R4/conformance-rules.html#constraints" title="This element has or is affected by constraints ( constr-bind-type )">C</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Représente le type du document.<br/><span style="font-weight:bold">Binding: </span><a href="https://interop.esante.gouv.fr/ig/nos/1.3.0/ValueSet-JDV-J07-XdsTypeCode-CISIS.html" title="https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS">JDV_J07-XdsTypeCode-CISIS</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.">preferred</a>)<br/><span style="font-weight:bold">constr-bind-type: </span>Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :
 
  TRE_A05-TypeDocComplementaireCISIS, OID : 1.2.250.1.213.1.1.4.12
 
- TRE_A04-TypeDocument-LOINC, OID : 2.16.840.1.113883.6.1
+ LOINC, OID : 2.16.840.1.113883.6.1
 
  TRE_A12-NomenclatureASTM, OID : ASTM
 
 Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J66-TypeCode-DMP).
 En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J07-XdsTypeCode-CISIS peut être utilisé.</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-pdsm-comprehensive-document-reference-definitions.html#DocumentReference.category">category</a><a name="DocumentReference.category"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;" href="http://hl7.org/fhir/R4/conformance-rules.html#constraints" title="This element has or is affected by constraints ( constr-bind-category )">C</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Représente la classe du document (compte rendu, imagerie médicale, traitement, certificat,...).<br/><span style="font-weight:bold">Binding: </span><a href="https://interop.esante.gouv.fr/ig/nos/1.2.0/ValueSet-JDV-J06-XdsClassCode-CISIS.html" title="https://mos.esante.gouv.fr/NOS/JDV_J06-XdsClassCode-CISIS/FHIR/JDV-J06-XdsClassCode-CISIS">JDV_J06-XdsClassCode-CISIS</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.">preferred</a>)<br/><span style="font-weight:bold">constr-bind-category: </span>Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-pdsm-comprehensive-document-reference-definitions.html#DocumentReference.category">category</a><a name="DocumentReference.category"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;" href="http://hl7.org/fhir/R4/conformance-rules.html#constraints" title="This element has or is affected by constraints ( constr-bind-category )">C</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Représente la classe du document (compte rendu, imagerie médicale, traitement, certificat,...).<br/><span style="font-weight:bold">Binding: </span><a href="https://interop.esante.gouv.fr/ig/nos/1.3.0/ValueSet-JDV-J06-XdsClassCode-CISIS.html" title="https://mos.esante.gouv.fr/NOS/JDV_J06-XdsClassCode-CISIS/FHIR/JDV-J06-XdsClassCode-CISIS">JDV_J06-XdsClassCode-CISIS</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.">preferred</a>)<br/><span style="font-weight:bold">constr-bind-category: </span>Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :
 -	TRE_A03-ClasseDocument-CISIS, OID : 1.2.250.1.213.1.1.4.1
 -	TRE_A10-NomenclatureURN, OID : URN
 Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J57-ClassCode-DMP).
@@ -45,7 +45,7 @@ Dans le cas de la recherche, il s’agit de l’URL permettant d’accéder au d
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-pdsm-comprehensive-document-reference-definitions.html#DocumentReference.content.attachment.hash">hash</a><a name="DocumentReference.content.attachment.hash"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#base64Binary">base64Binary</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Représente le résultat de hachage du document (SHA 1).</td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-pdsm-comprehensive-document-reference-definitions.html#DocumentReference.content.attachment.title">title</a><a name="DocumentReference.content.attachment.title"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Label to display in place of the data</span></td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-pdsm-comprehensive-document-reference-definitions.html#DocumentReference.content.attachment.creation">creation</a><a name="DocumentReference.content.attachment.creation"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Représente la date et l’heure de création du document</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-pdsm-comprehensive-document-reference-definitions.html#DocumentReference.content.format">format</a><a name="DocumentReference.content.format"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;" href="http://hl7.org/fhir/R4/conformance-rules.html#constraints" title="This element has or is affected by constraints ( constr-bind-format )">C</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Format technique détaillé du document.<br/><span style="font-weight:bold">Binding: </span><a href="https://interop.esante.gouv.fr/ig/nos/1.2.0/ValueSet-JDV-J10-XdsFormatCode-CISIS.html" title="https://mos.esante.gouv.fr/NOS/JDV_J10-XdsFormatCode-CISIS/FHIR/JDV-J10-XdsFormatCode-CISIS">JDV_J10-XdsFormatCode-CISIS</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.">preferred</a>)<br/><span style="font-weight:bold">constr-bind-format: </span>Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-pdsm-comprehensive-document-reference-definitions.html#DocumentReference.content.format">format</a><a name="DocumentReference.content.format"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;" href="http://hl7.org/fhir/R4/conformance-rules.html#constraints" title="This element has or is affected by constraints ( constr-bind-format )">C</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Format technique détaillé du document.<br/><span style="font-weight:bold">Binding: </span><a href="https://interop.esante.gouv.fr/ig/nos/1.3.0/ValueSet-JDV-J10-XdsFormatCode-CISIS.html" title="https://mos.esante.gouv.fr/NOS/JDV_J10-XdsFormatCode-CISIS/FHIR/JDV-J10-XdsFormatCode-CISIS">JDV_J10-XdsFormatCode-CISIS</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.">preferred</a>)<br/><span style="font-weight:bold">constr-bind-format: </span>Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :
 - TRE_A06-FormatCodeComplementaire, OID : 1.2.250.1.213.1.1.4.2.282
 - TRE_A11-IheFormatCode, OID : 1.3.6.1.4.1.19376.1.2.3
 - TRE_A09-DICOMuidRegistry, OID : 1.2.840.10008.2.6.1
@@ -57,19 +57,19 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J10-Xd
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck011.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-pdsm-comprehensive-document-reference-definitions.html#DocumentReference.context.period">period</a><a name="DocumentReference.context.period"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#Period">Period</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Time of service that is being documented</span></td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-pdsm-comprehensive-document-reference-definitions.html#DocumentReference.context.period.start">start</a><a name="DocumentReference.context.period.start"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Starting time with inclusive boundary</span></td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-pdsm-comprehensive-document-reference-definitions.html#DocumentReference.context.period.end">end</a><a name="DocumentReference.context.period.end"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">End time with inclusive boundary, if not ongoing</span></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-pdsm-comprehensive-document-reference-definitions.html#DocumentReference.context.facilityType">facilityType</a><a name="DocumentReference.context.facilityType"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;" href="http://hl7.org/fhir/R4/conformance-rules.html#constraints" title="This element has or is affected by constraints ( constr-bind-ProducteurDoc )">C</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Secteur d'activité lié à la prise en charge de la personne, en lien avec le document produit.<br/><span style="font-weight:bold">Binding: </span><a href="https://interop.esante.gouv.fr/ig/nos/1.2.0/ValueSet-JDV-J02-XdsHealthcareFacilityTypeCode-CISIS.html" title="https://mos.esante.gouv.fr/NOS/JDV_J02-XdsHealthcareFacilityTypeCode-CISIS/FHIR/JDV-J02-XdsHealthcareFacilityTypeCode-CISIS">JDV_J02-XdsHealthcareFacilityTypeCode-CISIS</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.">preferred</a>)<br/><span style="font-weight:bold">constr-bind-ProducteurDoc: </span>Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-pdsm-comprehensive-document-reference-definitions.html#DocumentReference.context.facilityType">facilityType</a><a name="DocumentReference.context.facilityType"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;" href="http://hl7.org/fhir/R4/conformance-rules.html#constraints" title="This element has or is affected by constraints ( constr-bind-ProducteurDoc )">C</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Secteur d'activité lié à la prise en charge de la personne, en lien avec le document produit.<br/><span style="font-weight:bold">Binding: </span><a href="https://interop.esante.gouv.fr/ig/nos/1.3.0/ValueSet-JDV-J02-XdsHealthcareFacilityTypeCode-CISIS.html" title="https://mos.esante.gouv.fr/NOS/JDV_J02-XdsHealthcareFacilityTypeCode-CISIS/FHIR/JDV-J02-XdsHealthcareFacilityTypeCode-CISIS">JDV_J02-XdsHealthcareFacilityTypeCode-CISIS</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.">preferred</a>)<br/><span style="font-weight:bold">constr-bind-ProducteurDoc: </span>Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :
 -	TRE_A00-ProducteurDocNonPS, OID : 1.2.250.1.213.1.1.4.6 (lorsque l’auteur du document est un patient ou un équipement sous sa responsabilité)
 -	TRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 (lorsque l’auteur du document est un professionnel ou un équipement sous sa responsabilité)
 Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J61-HealthcareFacilityTypeCode-DMP).
 En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-XdsHealthcareFacilityTypeCode-CISIS peut être utilisé.</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-pdsm-comprehensive-document-reference-definitions.html#DocumentReference.context.practiceSetting">practiceSetting</a><a name="DocumentReference.context.practiceSetting"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;" href="http://hl7.org/fhir/R4/conformance-rules.html#constraints" title="This element has or is affected by constraints ( constr-bind-ProducteurDoc )">C</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Cadre d’exercice de l’acte qui a engendré la création du document.<br/><span style="font-weight:bold">Binding: </span><a href="https://interop.esante.gouv.fr/ig/nos/1.2.0/ValueSet-JDV-J04-XdsPracticeSettingCode-CISIS.html" title="https://mos.esante.gouv.fr/NOS/JDV_J04-XdsPracticeSettingCode-CISIS/FHIR/JDV-J04-XdsPracticeSettingCode-CISIS">JDV_J04-XdsPracticeSettingCode-CISIS</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.">preferred</a>)<br/><span style="font-weight:bold">constr-bind-ProducteurDoc: </span>Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-pdsm-comprehensive-document-reference-definitions.html#DocumentReference.context.practiceSetting">practiceSetting</a><a name="DocumentReference.context.practiceSetting"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;" href="http://hl7.org/fhir/R4/conformance-rules.html#constraints" title="This element has or is affected by constraints ( constr-bind-ProducteurDoc )">C</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Cadre d’exercice de l’acte qui a engendré la création du document.<br/><span style="font-weight:bold">Binding: </span><a href="https://interop.esante.gouv.fr/ig/nos/1.3.0/ValueSet-JDV-J04-XdsPracticeSettingCode-CISIS.html" title="https://mos.esante.gouv.fr/NOS/JDV_J04-XdsPracticeSettingCode-CISIS/FHIR/JDV-J04-XdsPracticeSettingCode-CISIS">JDV_J04-XdsPracticeSettingCode-CISIS</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.">preferred</a>)<br/><span style="font-weight:bold">constr-bind-ProducteurDoc: </span>Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :
 -	TRE_A00-ProducteurDocNonPS, OID : 1.2.250.1.213.1.1.4.6 (lorsque l’auteur du document est un patient ou un équipement sous sa responsabilité)
 -	TRE_R02-SecteurActivite, OID : 1.2.250.1.71.4.2.4 (lorsque l’auteur du document est un professionnel ou un équipement sous sa responsabilité)
 Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J61-HealthcareFacilityTypeCode-DMP).
 En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-XdsHealthcareFacilityTypeCode-CISIS peut être utilisé.</td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="StructureDefinition-pdsm-comprehensive-document-reference-definitions.html#DocumentReference.context.sourcePatientInfo">sourcePatientInfo</a><a name="DocumentReference.context.sourcePatientInfo"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="https://hl7.fr/ig/fhir/core/2.0.1/StructureDefinition-fr-core-patient.html">FR Core Patient Profile</a>)<a href="http://hl7.org/fhir/R4/valueset-resource-aggregation-mode.html"> {</a><a href="http://hl7.org/fhir/R4/valueset-resource-aggregation-mode.html" title="The reference is a local reference to a contained resource.">c</a><a href="http://hl7.org/fhir/R4/valueset-resource-aggregation-mode.html">}</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Référence vers la ressource Patient titulaire du dossier.</td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck003.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Slice Definition" class="hierarchy"/> <a style="font-style: italic" href="StructureDefinition-pdsm-comprehensive-document-reference-definitions.html#DocumentReference.context.related">Slices for related</a><a name="DocumentReference.context.related"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red; font-style: italic" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-style: italic"/><span style="opacity: 0.5; font-style: italic">0</span><span style="opacity: 0.5; font-style: italic">..</span><span style="opacity: 0.5; font-style: italic">*</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="font-style: italic" href="http://hl7.org/fhir/R4/references.html">Reference</a><span style="font-style: italic">(</span><a style="opacity: 0.5; font-style: italic" href="http://hl7.org/fhir/R4/resource.html">Resource</a><span style="font-style: italic">)</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5; font-style: italic">Related identifiers or resources</span><br style="font-style: italic"/><span style="font-weight:bold; font-style: italic">Slice: </span><span style="font-style: italic">Unordered, Open by pattern:type</span></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0025.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: white; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-pdsm-comprehensive-document-reference-definitions.html#DocumentReference.context.related:referenceIdList" title="Slice referenceIdList">related:referenceIdList</a><a name="DocumentReference.context.related"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a style="opacity: 0.5" href="http://hl7.org/fhir/R4/resource.html">Resource</a>)</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Données d’un « identifiant de référence » (referenceIdList)<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0025.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: white; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-pdsm-comprehensive-document-reference-definitions.html#DocumentReference.context.related:referenceIdList" title="Slice referenceIdList">related:referenceIdList</a><a name="DocumentReference.context.related.2"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a style="opacity: 0.5" href="http://hl7.org/fhir/R4/resource.html">Resource</a>)</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Données d’un « identifiant de référence » (referenceIdList)<br/></td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00241.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-pdsm-comprehensive-document-reference-definitions.html#DocumentReference.context.related:referenceIdList.identifier">identifier</a><a name="DocumentReference.context.related.identifier"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Logical reference, when literal reference is not known</span></td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck002411.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-pdsm-comprehensive-document-reference-definitions.html#DocumentReference.context.related:referenceIdList.identifier.type">type</a><a name="DocumentReference.context.related.identifier.type"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0024101.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-pdsm-comprehensive-document-reference-definitions.html#DocumentReference.context.related:referenceIdList.identifier.type.coding">coding</a><a name="DocumentReference.context.related.identifier.type.coding"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
@@ -84,7 +84,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
   <name value="PDSm_ComprehensiveDocumentReference"/>
   <title value="PDSm Comprehensive DocumentReference"/>
   <status value="active"/>
-  <date value="2024-06-03T14:20:42+00:00"/>
+  <date value="2024-10-31T16:32:22+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -220,6 +220,10 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
       <isModifier value="false"/>
       <isSummary value="false"/>
       <mapping>
+        <identity value="specmetier-to-PDSmComprehensiveDocumentReference"/>
+        <map value="Fiche"/>
+      </mapping>
+      <mapping>
         <identity value="rim"/>
         <map value="Entity. Role, or Act"/>
       </mapping>
@@ -243,10 +247,6 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <identity value="DocumentEntry-Mapping"/>
         <map value="XDS DocumentEntry"/>
         <comment value="Used in the context of the IHE MHD ImplementationGuide"/>
-      </mapping>
-      <mapping>
-        <identity value="specmetier-to-PDSmComprehensiveDocumentReference"/>
-        <map value="Fiche"/>
       </mapping>
     </element>
     <element id="DocumentReference.id">
@@ -816,6 +816,10 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
       <mustSupport value="true"/>
       <isModifier value="false"/>
       <mapping>
+        <identity value="specmetier-to-PDSmComprehensiveDocumentReference"/>
+        <map value="idUnique : [0..1] Identifiant"/>
+      </mapping>
+      <mapping>
         <identity value="rim"/>
         <map value="n/a"/>
       </mapping>
@@ -834,10 +838,6 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
       <mapping>
         <identity value="DocumentEntry-Mapping"/>
         <map value="DocumentEntry.uniqueId"/>
-      </mapping>
-      <mapping>
-        <identity value="specmetier-to-PDSmComprehensiveDocumentReference"/>
-        <map value="idUnique : [0..1] Identifiant"/>
       </mapping>
     </element>
     <element id="DocumentReference.identifier">
@@ -873,6 +873,10 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
       <isModifier value="false"/>
       <isSummary value="true"/>
       <mapping>
+        <identity value="specmetier-to-PDSmComprehensiveDocumentReference"/>
+        <map value="idFiche : [0..*] Identifiant"/>
+      </mapping>
+      <mapping>
         <identity value="workflow"/>
         <map value="Event.identifier"/>
       </mapping>
@@ -895,10 +899,6 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
       <mapping>
         <identity value="DocumentEntry-Mapping"/>
         <map value="DocumentEntry.entryUUID"/>
-      </mapping>
-      <mapping>
-        <identity value="specmetier-to-PDSmComprehensiveDocumentReference"/>
-        <map value="idFiche : [0..*] Identifiant"/>
       </mapping>
     </element>
     <element id="DocumentReference.identifier:entryUUID">
@@ -976,6 +976,10 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <valueSet value="https://profiles.ihe.net/ITI/MHD/ValueSet/DocumentReferenceStats"/>
       </binding>
       <mapping>
+        <identity value="specmetier-to-PDSmComprehensiveDocumentReference"/>
+        <map value="statut : [1..1] Code"/>
+      </mapping>
+      <mapping>
         <identity value="workflow"/>
         <map value="Event.status"/>
       </mapping>
@@ -998,10 +1002,6 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
       <mapping>
         <identity value="DocumentEntry-Mapping"/>
         <map value="DocumentEntry.availabilityStatus"/>
-      </mapping>
-      <mapping>
-        <identity value="specmetier-to-PDSmComprehensiveDocumentReference"/>
-        <map value="statut : [1..1] Code"/>
       </mapping>
     </element>
     <element id="DocumentReference.docStatus">
@@ -1080,7 +1080,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
       <constraint>
         <key value="constr-bind-type"/>
         <severity value="error"/>
-        <human value="Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :&#xA;&#xD;&#xA; TRE_A05-TypeDocComplementaireCISIS, OID : 1.2.250.1.213.1.1.4.12&#xA;&#xD;&#xA; TRE_A04-TypeDocument-LOINC, OID : 2.16.840.1.113883.6.1&#xA;&#xD;&#xA; TRE_A12-NomenclatureASTM, OID : ASTM&#xA;&#xD;&#xA;Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J66-TypeCode-DMP).&#xD;&#xA;En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J07-XdsTypeCode-CISIS peut être utilisé."/>
+        <human value="Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :&#xA;&#xD;&#xA; TRE_A05-TypeDocComplementaireCISIS, OID : 1.2.250.1.213.1.1.4.12&#xA;&#xD;&#xA; LOINC, OID : 2.16.840.1.113883.6.1&#xA;&#xD;&#xA; TRE_A12-NomenclatureASTM, OID : ASTM&#xA;&#xD;&#xA;Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J66-TypeCode-DMP).&#xD;&#xA;En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J07-XdsTypeCode-CISIS peut être utilisé."/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"/>
       </constraint>
       <mustSupport value="true"/>
@@ -1090,6 +1090,10 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <strength value="preferred"/>
         <valueSet value="https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS"/>
       </binding>
+      <mapping>
+        <identity value="specmetier-to-PDSmComprehensiveDocumentReference"/>
+        <map value="typeDocument : [0..1] Code"/>
+      </mapping>
       <mapping>
         <identity value="workflow"/>
         <map value="Event.code"/>
@@ -1121,10 +1125,6 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
       <mapping>
         <identity value="DocumentEntry-Mapping"/>
         <map value="DocumentEntry.typeCode"/>
-      </mapping>
-      <mapping>
-        <identity value="specmetier-to-PDSmComprehensiveDocumentReference"/>
-        <map value="typeDocument : [0..1] Code"/>
       </mapping>
     </element>
     <element id="DocumentReference.category">
@@ -1165,6 +1165,10 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <valueSet value="https://mos.esante.gouv.fr/NOS/JDV_J06-XdsClassCode-CISIS/FHIR/JDV-J06-XdsClassCode-CISIS"/>
       </binding>
       <mapping>
+        <identity value="specmetier-to-PDSmComprehensiveDocumentReference"/>
+        <map value="classeDocument : [0..1] Code"/>
+      </mapping>
+      <mapping>
         <identity value="w5"/>
         <map value="FiveWs.class"/>
       </mapping>
@@ -1187,10 +1191,6 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
       <mapping>
         <identity value="DocumentEntry-Mapping"/>
         <map value="DocumentEntry.classCode"/>
-      </mapping>
-      <mapping>
-        <identity value="specmetier-to-PDSmComprehensiveDocumentReference"/>
-        <map value="classeDocument : [0..1] Code"/>
       </mapping>
     </element>
     <element id="DocumentReference.subject">
@@ -1219,6 +1219,10 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
       <mustSupport value="true"/>
       <isModifier value="false"/>
       <isSummary value="true"/>
+      <mapping>
+        <identity value="specmetier-to-PDSmComprehensiveDocumentReference"/>
+        <map value="idPatient : [0..1] Identifiant"/>
+      </mapping>
       <mapping>
         <identity value="workflow"/>
         <map value="Event.subject"/>
@@ -1254,10 +1258,6 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
       <mapping>
         <identity value="DocumentEntry-Mapping"/>
         <map value="DocumentEntry.patientId"/>
-      </mapping>
-      <mapping>
-        <identity value="specmetier-to-PDSmComprehensiveDocumentReference"/>
-        <map value="idPatient : [0..1] Identifiant"/>
       </mapping>
     </element>
     <element id="DocumentReference.date">
@@ -1335,6 +1335,10 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
       <isModifier value="false"/>
       <isSummary value="true"/>
       <mapping>
+        <identity value="specmetier-to-PDSmComprehensiveDocumentReference"/>
+        <map value="auteur : [1..*] Identifiant"/>
+      </mapping>
+      <mapping>
         <identity value="workflow"/>
         <map value="Event.performer.actor"/>
       </mapping>
@@ -1361,10 +1365,6 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
       <mapping>
         <identity value="DocumentEntry-Mapping"/>
         <map value="DocumentEntry.author"/>
-      </mapping>
-      <mapping>
-        <identity value="specmetier-to-PDSmComprehensiveDocumentReference"/>
-        <map value="auteur : [1..*] Identifiant"/>
       </mapping>
     </element>
     <element id="DocumentReference.authenticator">
@@ -1397,6 +1397,10 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
       <isModifier value="false"/>
       <isSummary value="false"/>
       <mapping>
+        <identity value="specmetier-to-PDSmComprehensiveDocumentReference"/>
+        <map value="authentificateur : [1..1] Identifiant"/>
+      </mapping>
+      <mapping>
         <identity value="workflow"/>
         <map value="Event.performer.actor"/>
       </mapping>
@@ -1427,10 +1431,6 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
       <mapping>
         <identity value="DocumentEntry-Mapping"/>
         <map value="DocumentEntry.legalAuthenticator"/>
-      </mapping>
-      <mapping>
-        <identity value="specmetier-to-PDSmComprehensiveDocumentReference"/>
-        <map value="authentificateur : [1..1] Identifiant"/>
       </mapping>
     </element>
     <element id="DocumentReference.custodian">
@@ -1673,6 +1673,10 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <valueSet value="http://hl7.org/fhir/ValueSet/document-relationship-type|4.0.1"/>
       </binding>
       <mapping>
+        <identity value="specmetier-to-PDSmComprehensiveDocumentReference"/>
+        <map value="association : [0..*] Code"/>
+      </mapping>
+      <mapping>
         <identity value="fhircomposition"/>
         <map value="Composition.relatesTo.code"/>
       </mapping>
@@ -1687,10 +1691,6 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
       <mapping>
         <identity value="DocumentEntry-Mapping"/>
         <map value="DocumentEntry Associations.type"/>
-      </mapping>
-      <mapping>
-        <identity value="specmetier-to-PDSmComprehensiveDocumentReference"/>
-        <map value="association : [0..*] Code"/>
       </mapping>
     </element>
     <element id="DocumentReference.relatesTo.target">
@@ -1725,6 +1725,10 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
       <isModifier value="false"/>
       <isSummary value="true"/>
       <mapping>
+        <identity value="specmetier-to-PDSmComprehensiveDocumentReference"/>
+        <map value="idFicheAssociation : [0..*] Identifiant"/>
+      </mapping>
+      <mapping>
         <identity value="fhircomposition"/>
         <map value="Composition.relatesTo.target"/>
       </mapping>
@@ -1739,10 +1743,6 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
       <mapping>
         <identity value="DocumentEntry-Mapping"/>
         <map value="DocumentEntry Associations.reference"/>
-      </mapping>
-      <mapping>
-        <identity value="specmetier-to-PDSmComprehensiveDocumentReference"/>
-        <map value="idFicheAssociation : [0..*] Identifiant"/>
       </mapping>
     </element>
     <element id="DocumentReference.description">
@@ -1773,6 +1773,10 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
       <isModifier value="false"/>
       <isSummary value="true"/>
       <mapping>
+        <identity value="specmetier-to-PDSmComprehensiveDocumentReference"/>
+        <map value="commentaire : [0..1] Texte"/>
+      </mapping>
+      <mapping>
         <identity value="v2"/>
         <map value="TXA-25"/>
       </mapping>
@@ -1787,10 +1791,6 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
       <mapping>
         <identity value="DocumentEntry-Mapping"/>
         <map value="DocumentEntry.comments"/>
-      </mapping>
-      <mapping>
-        <identity value="specmetier-to-PDSmComprehensiveDocumentReference"/>
-        <map value="commentaire : [0..1] Texte"/>
       </mapping>
     </element>
     <element id="DocumentReference.securityLabel">
@@ -1835,6 +1835,10 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <valueSet value="http://hl7.org/fhir/ValueSet/security-labels"/>
       </binding>
       <mapping>
+        <identity value="specmetier-to-PDSmComprehensiveDocumentReference"/>
+        <map value="niveauConfidentialite : [0..*] code"/>
+      </mapping>
+      <mapping>
         <identity value="fhircomposition"/>
         <map value="Composition.confidentiality, Composition.meta.security"/>
       </mapping>
@@ -1857,10 +1861,6 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
       <mapping>
         <identity value="DocumentEntry-Mapping"/>
         <map value="DocumentEntry.confidentialityCode"/>
-      </mapping>
-      <mapping>
-        <identity value="specmetier-to-PDSmComprehensiveDocumentReference"/>
-        <map value="niveauConfidentialite : [0..*] code"/>
       </mapping>
     </element>
     <element id="DocumentReference.content">
@@ -2215,16 +2215,16 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <valueSet value="http://hl7.org/fhir/ValueSet/languages"/>
       </binding>
       <mapping>
+        <identity value="specmetier-to-PDSmComprehensiveDocumentReference"/>
+        <map value="langueDocument : [1..*] Code"/>
+      </mapping>
+      <mapping>
         <identity value="rim"/>
         <map value="./language"/>
       </mapping>
       <mapping>
         <identity value="DocumentEntry-Mapping"/>
         <map value="DocumentEntry.languageCode"/>
-      </mapping>
-      <mapping>
-        <identity value="specmetier-to-PDSmComprehensiveDocumentReference"/>
-        <map value="langueDocument : [1..*] Code"/>
       </mapping>
     </element>
     <element id="DocumentReference.content.attachment.data">
@@ -2299,6 +2299,10 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
       <isModifier value="false"/>
       <isSummary value="true"/>
       <mapping>
+        <identity value="specmetier-to-PDSmComprehensiveDocumentReference"/>
+        <map value="Document : [0..1]"/>
+      </mapping>
+      <mapping>
         <identity value="v2"/>
         <map value="RP.1+RP.2 - if they refer to a URL (see v2.6)"/>
       </mapping>
@@ -2309,10 +2313,6 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
       <mapping>
         <identity value="DocumentEntry-Mapping"/>
         <map value="DocumentEntry.repositoryUniqueId or DocuemntEntry.URI"/>
-      </mapping>
-      <mapping>
-        <identity value="specmetier-to-PDSmComprehensiveDocumentReference"/>
-        <map value="Document : [0..1]"/>
       </mapping>
     </element>
     <element id="DocumentReference.content.attachment.size">
@@ -2418,16 +2418,16 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
       <isModifier value="false"/>
       <isSummary value="true"/>
       <mapping>
+        <identity value="specmetier-to-PDSmComprehensiveDocumentReference"/>
+        <map value="titreDocument : [0..1] Texte"/>
+      </mapping>
+      <mapping>
         <identity value="rim"/>
         <map value="./title/data"/>
       </mapping>
       <mapping>
         <identity value="DocumentEntry-Mapping"/>
         <map value="DocumentEntry.title"/>
-      </mapping>
-      <mapping>
-        <identity value="specmetier-to-PDSmComprehensiveDocumentReference"/>
-        <map value="titreDocument : [0..1] Texte"/>
       </mapping>
     </element>
     <element id="DocumentReference.content.attachment.creation">
@@ -2457,16 +2457,16 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
       <isModifier value="false"/>
       <isSummary value="true"/>
       <mapping>
+        <identity value="specmetier-to-PDSmComprehensiveDocumentReference"/>
+        <map value="dateCreationDocument : [1..1] DateHeure"/>
+      </mapping>
+      <mapping>
         <identity value="rim"/>
         <map value="N/A (needs data type R3 proposal)"/>
       </mapping>
       <mapping>
         <identity value="DocumentEntry-Mapping"/>
         <map value="DocumentEntry.creationTime"/>
-      </mapping>
-      <mapping>
-        <identity value="specmetier-to-PDSmComprehensiveDocumentReference"/>
-        <map value="dateCreationDocument : [1..1] DateHeure"/>
       </mapping>
     </element>
     <element id="DocumentReference.content.format">
@@ -2506,6 +2506,10 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <valueSet value="https://mos.esante.gouv.fr/NOS/JDV_J10-XdsFormatCode-CISIS/FHIR/JDV-J10-XdsFormatCode-CISIS"/>
       </binding>
       <mapping>
+        <identity value="specmetier-to-PDSmComprehensiveDocumentReference"/>
+        <map value="formatDocument : [0..1] Code"/>
+      </mapping>
+      <mapping>
         <identity value="fhircomposition"/>
         <map value="Composition.meta.profile"/>
       </mapping>
@@ -2524,10 +2528,6 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
       <mapping>
         <identity value="DocumentEntry-Mapping"/>
         <map value="DocumentEntry.formatCode"/>
-      </mapping>
-      <mapping>
-        <identity value="specmetier-to-PDSmComprehensiveDocumentReference"/>
-        <map value="formatDocument : [0..1] Code"/>
       </mapping>
     </element>
     <element id="DocumentReference.context">
@@ -2756,6 +2756,10 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActCode"/>
       </binding>
       <mapping>
+        <identity value="specmetier-to-PDSmComprehensiveDocumentReference"/>
+        <map value="actePathologie : [0..1] Code"/>
+      </mapping>
+      <mapping>
         <identity value="fhircomposition"/>
         <map value="Composition.event.code"/>
       </mapping>
@@ -2770,10 +2774,6 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
       <mapping>
         <identity value="DocumentEntry-Mapping"/>
         <map value="DocumentEntry.eventCodeList"/>
-      </mapping>
-      <mapping>
-        <identity value="specmetier-to-PDSmComprehensiveDocumentReference"/>
-        <map value="actePathologie : [0..1] Code"/>
       </mapping>
     </element>
     <element id="DocumentReference.context.period">
@@ -2918,6 +2918,10 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
       <isModifier value="false"/>
       <isSummary value="true"/>
       <mapping>
+        <identity value="specmetier-to-PDSmComprehensiveDocumentReference"/>
+        <map value="dateDebutActe : [0..1] DateHeure"/>
+      </mapping>
+      <mapping>
         <identity value="v2"/>
         <map value="DR.1"/>
       </mapping>
@@ -2928,10 +2932,6 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
       <mapping>
         <identity value="DocumentEntry-Mapping"/>
         <map value="DocumetEntry.serviceStartTime"/>
-      </mapping>
-      <mapping>
-        <identity value="specmetier-to-PDSmComprehensiveDocumentReference"/>
-        <map value="dateDebutActe : [0..1] DateHeure"/>
       </mapping>
     </element>
     <element id="DocumentReference.context.period.end">
@@ -2962,6 +2962,10 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
       <isModifier value="false"/>
       <isSummary value="true"/>
       <mapping>
+        <identity value="specmetier-to-PDSmComprehensiveDocumentReference"/>
+        <map value="dateFinActe : [0..1] DateHeure"/>
+      </mapping>
+      <mapping>
         <identity value="v2"/>
         <map value="DR.2"/>
       </mapping>
@@ -2972,10 +2976,6 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
       <mapping>
         <identity value="DocumentEntry-Mapping"/>
         <map value="DocumentEntry.serviceStopTime"/>
-      </mapping>
-      <mapping>
-        <identity value="specmetier-to-PDSmComprehensiveDocumentReference"/>
-        <map value="dateFinActe : [0..1] DateHeure"/>
       </mapping>
     </element>
     <element id="DocumentReference.context.facilityType">
@@ -3014,6 +3014,10 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <valueSet value="https://mos.esante.gouv.fr/NOS/JDV_J02-XdsHealthcareFacilityTypeCode-CISIS/FHIR/JDV-J02-XdsHealthcareFacilityTypeCode-CISIS"/>
       </binding>
       <mapping>
+        <identity value="specmetier-to-PDSmComprehensiveDocumentReference"/>
+        <map value="secteurActivite : [0..1] Code"/>
+      </mapping>
+      <mapping>
         <identity value="fhircomposition"/>
         <map value="usually from a mapping to a local ValueSet"/>
       </mapping>
@@ -3032,10 +3036,6 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
       <mapping>
         <identity value="DocumentEntry-Mapping"/>
         <map value="DocumentEntry.healthcareFacilityTypeCode"/>
-      </mapping>
-      <mapping>
-        <identity value="specmetier-to-PDSmComprehensiveDocumentReference"/>
-        <map value="secteurActivite : [0..1] Code"/>
       </mapping>
     </element>
     <element id="DocumentReference.context.practiceSetting">
@@ -3076,6 +3076,10 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <valueSet value="https://mos.esante.gouv.fr/NOS/JDV_J04-XdsPracticeSettingCode-CISIS/FHIR/JDV-J04-XdsPracticeSettingCode-CISIS"/>
       </binding>
       <mapping>
+        <identity value="specmetier-to-PDSmComprehensiveDocumentReference"/>
+        <map value="cadreExercice : [0..1] Code"/>
+      </mapping>
+      <mapping>
         <identity value="fhircomposition"/>
         <map value="usually from a mapping to a local ValueSet"/>
       </mapping>
@@ -3094,10 +3098,6 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
       <mapping>
         <identity value="DocumentEntry-Mapping"/>
         <map value="DocumentEntry.practiceSettingCode"/>
-      </mapping>
-      <mapping>
-        <identity value="specmetier-to-PDSmComprehensiveDocumentReference"/>
-        <map value="cadreExercice : [0..1] Code"/>
       </mapping>
     </element>
     <element id="DocumentReference.context.sourcePatientInfo">
@@ -4458,7 +4458,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <human value="If present, start SHALL have a lower value than end"/>
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)"/>
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Questionnaire"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Appointment"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
@@ -4517,7 +4517,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Appointment"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
@@ -4658,7 +4658,7 @@ En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J02-Xd
       <constraint>
         <key value="constr-bind-type"/>
         <severity value="error"/>
-        <human value="Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :&#xA;&#xD;&#xA; TRE_A05-TypeDocComplementaireCISIS, OID : 1.2.250.1.213.1.1.4.12&#xA;&#xD;&#xA; TRE_A04-TypeDocument-LOINC, OID : 2.16.840.1.113883.6.1&#xA;&#xD;&#xA; TRE_A12-NomenclatureASTM, OID : ASTM&#xA;&#xD;&#xA;Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J66-TypeCode-DMP).&#xD;&#xA;En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J07-XdsTypeCode-CISIS peut être utilisé."/>
+        <human value="Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :&#xA;&#xD;&#xA; TRE_A05-TypeDocComplementaireCISIS, OID : 1.2.250.1.213.1.1.4.12&#xA;&#xD;&#xA; LOINC, OID : 2.16.840.1.113883.6.1&#xA;&#xD;&#xA; TRE_A12-NomenclatureASTM, OID : ASTM&#xA;&#xD;&#xA;Les valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J66-TypeCode-DMP).&#xD;&#xA;En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J07-XdsTypeCode-CISIS peut être utilisé."/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference"/>
       </constraint>
       <binding>
