@@ -145,7 +145,7 @@ Severity:    #error
 Invariant:   constr-bind-type
 Description: """Les valeurs possibles pour cet élément doivent provenir d’une des terminologies de référence suivantes :
 \r\n TRE_A05-TypeDocComplementaireCISIS, OID : 1.2.250.1.213.1.1.4.12
-\r\n TRE_A04-TypeDocument-LOINC, OID : 2.16.840.1.113883.6.1
+\r\n LOINC, OID : 2.16.840.1.113883.6.1
 \r\n TRE_A12-NomenclatureASTM, OID : ASTM
 \r\nLes valeurs possibles peuvent être restreintes en fonction du jeu de valeurs correspondant mis à disposition par le projet (exemple : JDV_J66-TypeCode-DMP).\r\nEn l’absence de spécifications complémentaires, le jeu de valeurs JDV_J07-XdsTypeCode-CISIS peut être utilisé."""
 // Expression:       "f:type"

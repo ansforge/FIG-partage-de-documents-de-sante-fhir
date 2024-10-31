@@ -64,7 +64,7 @@ Le document dont les caractéristiques principales correspondent aux critères d
 
 | **Nom** | **Description** |
 | ----- | ----- |
-|typeDocument | Représente le type du document.<br/>Jeu de valeurs issu des nomenclatures:<br/> ** TRE_A04-LoincTypeDocument <br/> ** TRE_A05-TypeDocComplementaire |
+|typeDocument | Représente le type du document.<br/>Jeu de valeurs issu des nomenclatures<br/> ** LOINC <br/> ** et TRE_A05-TypeDocComplementaire |
 | idPatient | Représente l'identifiant du patient. |
 | secteurActivite | Secteur d'activité lié à la prise en charge de la personne, en lien avec le document produit.<br/> Nomenclature utilisée : TRE_R02-SecteurActivite |
 | dateDebutActe | Représente la période de début de l’acte de référence. |
@@ -128,7 +128,7 @@ Une fiche représente le document stocké dans l’infrastructure de partage de 
 | auteur : [1..*] Identifiant | Identifiant de la personne physique et/ou du dispositif auteur d'un document.|
 | statut : [1..1] Code | Représente le statut de la fiche d'un document.<br/> Nomenclature(s) associée(s) :<br/>** TRE_R269-AvailabilityStatusProvenanceOasis<br/>** TRE_R270-AvailabilityStatus |
 | classeDocument : [0..1] Code | Représente la classe du document (compte rendu, imagerie médicale, traitement, certificat, ....).<br/> Jeu de valeurs issu de la nomenclature TRE_A03-ClasseDocument|
-| typeDocument : [0..1] Code | Représente le type du document.<br/> Jeu de valeurs issu des nomenclatures:<br/>** TRE_A04-LoincTypeDocument <br/>** TRE_A05-TypeDocComplementaire |
+| typeDocument : [0..1] Code | Représente le type du document.<br/> Jeu de valeurs issu des nomenclatures:<br/>** LOINC <br/>** et TRE_A05-TypeDocComplementaire |
 | authentificateur : [1..1] Identifiant | Cet attribut représente l’acteur validant le document et prenant la responsabilité du contenu médical de celui-ci. Il peut s’agir de l’auteur du document si celui-ci est une personne et s’il endosse la responsabilité du contenu médical de ses documents. Si l’auteur est un dispositif, cet attribut doit représenter la personne responsable de l’action effectuée par le dispositif. Pour les documents d’expression personnelle du patient, cet attribut fait référence au patient.|
 | dateCreationDocument : [1..1] DateHeure | Représente la date et l'heure de la création du document.
 | niveauConfidentialite : [0..*] Code | Contient les informations définissant le niveau de confidentialité d'un document.<br/>Nomenclatures utilisées :<br/>** TRE_A08-Confidentiality-HL7<br/>** TRE_A07-StatusVisibiliteDocument<br/>** JDV_J08-XdsConfidentialityCode-CISIS|
